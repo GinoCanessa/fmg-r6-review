@@ -1,0 +1,70 @@
+<html><head><style>table, th, td {border: 1px solid;}</style></head><body>
+<ac:structured-macro ac:name="panel">
+    <ac:parameter ac:name="title">R6 Checklist for Patient Care</ac:parameter>
+
+    <ac:rich-text-body>
+        <h2>Workgroup: pc - Patient Care</h2>
+
+        <h3>Specification Pages</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Page File Name</th>
+                    <th>Maturity Label</th>
+                    <th>Maturity Level</th>
+                    <th>Standards Status</th>
+                    <th>Content Disposition</th>
+                    <th>Disposition Location</th>
+                    <th>Ready For Removal</th>
+                    <th>Management Comments</th>
+                    <th>Workgroup Comments</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>clinicalsummary-module.html</td><td>Informative</td><td></td><td>Informative</td><td>Unknown</td><td></td><td></td><td></td><td></td></tr>
+            </tbody>
+        </table>
+
+        <h3>Artifacts</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Name</th>
+                    <th>Artifact Type</th>
+                    <th>Status</th>
+                    <th>Maturity Level</th>
+                    <th>Standards Status</th>
+                    <th>Content Disposition</th>
+                    <th>Disposition Location</th>
+                    <th>Ready For Removal</th>
+                    <th>Management Comments</th>
+                    <th>Workgroup Comments</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>AdverseEvent</td><td>AdverseEvent</td><td>Resource</td><td>Draft</td><td>2</td><td>trial-use</td><td>CoreAsNormative</td><td></td><td></td><td>Differing opinions on Normative Resources (whether to keep in R6)
+Generally, there is more harm/consequences with removing resources vs possibly needing breaking changes on normative resources
+Russ Leftwich is most concerned that the decision is binary - either normative or nothing.  Resources may not have been fully implemented (implementers focused on elements in US Core profiles).  Lack of detailed tracking on which elements have been implemented (beyond just the IG). </td><td></td></tr>
+                <tr><td>AllergyIntolerance</td><td>AllergyIntolerance</td><td>Resource</td><td>Draft</td><td>3</td><td>trial-use</td><td>CoreAsNormative</td><td></td><td></td><td>Agreement for Patient Care to remove the Trial Use designation on all 4 elements (all have been implemented by large EHRs as well as having been available since DSTU2)
+AllergyIntolerance.type
+AllergyIntolerance.reaction</td><td></td></tr>
+                <tr><td>CarePlan</td><td>CarePlan</td><td>Resource</td><td>Draft</td><td>2</td><td>trial-use</td><td>CoreAsNormative</td><td></td><td></td><td></td><td></td></tr>
+                <tr><td>CareTeam</td><td>CareTeam</td><td>Resource</td><td>Draft</td><td>2</td><td>trial-use</td><td>CoreAsNormative</td><td></td><td></td><td></td><td></td></tr>
+                <tr><td>ClinicalAssessment</td><td>ClinicalAssessment</td><td>Resource</td><td>Draft</td><td>1</td><td>trial-use</td><td>MoveToGuide</td><td></td><td></td><td>Agreement on Additional Resources recommendation from FMG (remove from R6) – ConditionDefinition, ClinicalAssessment, and Linkage</td><td></td></tr>
+                <tr><td>Communication</td><td>Communication</td><td>Resource</td><td>Draft</td><td>2</td><td>trial-use</td><td>CoreAsNormative</td><td></td><td></td><td></td><td></td></tr>
+                <tr><td>CommunicationRequest</td><td>CommunicationRequest</td><td>Resource</td><td>Draft</td><td>2</td><td>trial-use</td><td>CoreAsNormative</td><td></td><td></td><td></td><td></td></tr>
+                <tr><td>Condition</td><td>Condition</td><td>Resource</td><td>Draft</td><td>5</td><td>trial-use</td><td>CoreAsNormative</td><td></td><td></td><td>Agreement for Patient Care to remove the Trial Use designation on all 4 elements (all have been implemented by large EHRs as well as having been available since DSTU2)
+Condition.stage
+Condition.evidence</td><td></td></tr>
+                <tr><td>ConditionDefinition</td><td>ConditionDefinition</td><td>Resource</td><td>Draft</td><td>0</td><td>trial-use</td><td>MoveToGuide</td><td></td><td></td><td>Agreement on Additional Resources recommendation from FMG (remove from R6) – ConditionDefinition, ClinicalAssessment, and Linkage</td><td></td></tr>
+                <tr><td>FamilyMemberHistory</td><td>FamilyMemberHistory</td><td>Resource</td><td>Draft</td><td>2</td><td>trial-use</td><td>CoreAsNormative</td><td></td><td></td><td></td><td></td></tr>
+                <tr><td>Flag</td><td>Flag</td><td>Resource</td><td>Draft</td><td>1</td><td>trial-use</td><td>CoreAsNormative</td><td></td><td></td><td></td><td></td></tr>
+                <tr><td>Goal</td><td>Goal</td><td>Resource</td><td>Draft</td><td>2</td><td>trial-use</td><td>CoreAsNormative</td><td></td><td></td><td></td><td></td></tr>
+                <tr><td>Linkage</td><td>Linkage</td><td>Resource</td><td>Draft</td><td>0</td><td>draft</td><td>MoveToGuide</td><td></td><td></td><td>Agreement on Additional Resources recommendation from FMG (remove from R6) – ConditionDefinition, ClinicalAssessment, and Linkage</td><td></td></tr>
+                <tr><td>Procedure</td><td>Procedure</td><td>Resource</td><td>Draft</td><td>4</td><td>trial-use</td><td>CoreAsNormative</td><td></td><td></td><td></td><td></td></tr>
+            </tbody>
+
+    </ac:rich-text-body>
+</ac:structured-macro>
+</body></html>

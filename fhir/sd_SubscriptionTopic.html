@@ -1,0 +1,1306 @@
+<html><head><style>table, th, td {border: 1px solid;}</style></head><body>
+<ac:structured-macro ac:name="panel">
+    <ac:parameter ac:name="title">R6 Checklist for SubscriptionTopic</ac:parameter>
+    <ac:rich-text-body>
+        <h2>Artifact SubscriptionTopic (SubscriptionTopic)</h2>
+
+        <h3>Urgent Item Checklist</h3>
+                <ul>
+            <li>Confirm workgroup disposition vote has been recorded and sent to FMG!</li>
+            <li>ValueSet: <code>version-algorithm</code> (VersionAlgorithm) bound to element <code>SubscriptionTopic.versionAlgorithm[x]</code> is flagged as <code>trial-use</code></li>
+            <li>CodeSystem: <code>version-algorithm</code> (VersionAlgorithm) referenced by ValueSet <code>version-algorithm</code> bound to element <code>SubscriptionTopic.versionAlgorithm[x]</code> is flagged as <code>trial-use</code></li>
+            <li>ValueSet: <code>interaction-trigger</code> (InteractionTrigger) bound to element <code>SubscriptionTopic.trigger.supportedInteraction</code> is flagged as <code>trial-use</code></li>
+            <li>CodeSystem: <code>restful-interaction</code> (FHIRRestfulInteractions) referenced by ValueSet <code>interaction-trigger</code> bound to element <code>SubscriptionTopic.trigger.supportedInteraction</code> is flagged as <code>experimental</code></li>
+            <li>ValueSet: <code>subscriptiontopic-cr-behavior</code> (CriteriaNotExistsBehavior) bound to element <code>SubscriptionTopic.trigger.queryCriteria.resultForCreate</code> is flagged as <code>trial-use</code></li>
+            <li>CodeSystem: <code>subscriptiontopic-cr-behavior</code> (CriteriaNotExistsBehavior) referenced by ValueSet <code>subscriptiontopic-cr-behavior</code> bound to element <code>SubscriptionTopic.trigger.queryCriteria.resultForCreate</code> is flagged as <code>trial-use</code></li>
+            <li>ValueSet: <code>subscriptiontopic-cr-behavior</code> (CriteriaNotExistsBehavior) bound to element <code>SubscriptionTopic.trigger.queryCriteria.resultForDelete</code> is flagged as <code>trial-use</code></li>
+            <li>CodeSystem: <code>subscriptiontopic-cr-behavior</code> (CriteriaNotExistsBehavior) referenced by ValueSet <code>subscriptiontopic-cr-behavior</code> bound to element <code>SubscriptionTopic.trigger.queryCriteria.resultForDelete</code> is flagged as <code>trial-use</code></li>
+            <li>ValueSet: <code>search-comparator</code> (SearchComparator) bound to element <code>SubscriptionTopic.trigger.canFilterBy.comparator</code> is flagged as <code>trial-use</code></li>
+            <li>CodeSystem: <code>search-comparator</code> (SearchComparator) referenced by ValueSet <code>search-comparator</code> bound to element <code>SubscriptionTopic.trigger.canFilterBy.comparator</code> is flagged as <code>trial-use</code></li>
+            <li>ValueSet: <code>search-modifier-code</code> (SearchModifierCode) bound to element <code>SubscriptionTopic.trigger.canFilterBy.modifier</code> is flagged as <code>trial-use</code></li>
+            <li>CodeSystem: <code>search-modifier-code</code> (SearchModifierCode) referenced by ValueSet <code>search-modifier-code</code> bound to element <code>SubscriptionTopic.trigger.canFilterBy.modifier</code> is flagged as <code>trial-use</code></li>
+            <li>Search Parameter: <code>CanonicalResource-date</code> (date) flagged as <code>trial-use</code></li>
+            <li>Search Parameter: <code>CanonicalResource-identifier</code> (identifier) flagged as <code>trial-use</code></li>
+            <li>Search Parameter: <code>CanonicalResource-status</code> (status) flagged as <code>trial-use</code></li>
+            <li>Search Parameter: <code>CanonicalResource-title</code> (title) flagged as <code>trial-use</code></li>
+            <li>Search Parameter: <code>CanonicalResource-url</code> (url) flagged as <code>trial-use</code></li>
+            <li>Search Parameter: <code>CanonicalResource-version</code> (version) flagged as <code>trial-use</code></li>
+            <li>Search Parameter: <code>SubscriptionTopic-derived-or-self</code> (derived-or-self) flagged as <code>trial-use</code></li>
+            <li>Search Parameter: <code>SubscriptionTopic-effective</code> (effective) flagged as <code>trial-use</code></li>
+            <li>Search Parameter: <code>SubscriptionTopic-event</code> (event) flagged as <code>trial-use</code></li>
+            <li>Search Parameter: <code>SubscriptionTopic-resource</code> (resource) flagged as <code>trial-use</code></li>
+            <li>Search Parameter: <code>SubscriptionTopic-trigger-description</code> (trigger-description) flagged as <code>trial-use</code></li>
+        </ul>
+
+
+        <h2>All Analysis Information</h2>
+        The following content was generated to assist in the review of this artifact for R6 compliance.
+
+        <h3>Information Page</h3>
+                <h3>General Information:</h3>
+        <table>
+            <tbody>
+                <tr>
+                    <td>Page File Name</td>
+                    <td><code>subscriptiontopic-introduction.xml</code></td>
+                </tr>
+                <tr>
+                    <td>Responsible Workgroup</td>
+                    <td><code>fhir</code></td>
+                </tr>
+                <tr>
+                    <td>Maturity Label</td>
+                    <td><code>Draft</code></td>
+                </tr>
+                <tr>
+                    <td>Maturity Level</td>
+                    <td><code>2</code></td>
+                </tr>
+                <tr>
+                    <td>Standards Status</td>
+                    <td><code>trial-use</code></td>
+                </tr>
+                <tr>
+                    <td>Management Comments</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Workgroup Comments</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Exists In <code>publish.ini</code></td>
+                    <td><code>No</code></td>
+                </tr>
+                <tr>
+                    <td>Exists In Source Directory</td>
+                    <td><code>Yes</code></td>
+                </tr>
+                <tr>
+                    <td>'<code>deprecated</code>' Literal Count</td>
+                    <td><code>0</code></td>
+                </tr>
+                <tr>
+                    <td>Zulip Link Count</td>
+                    <td><code>0</code></td>
+                </tr>
+                <tr>
+                    <td>Confluence Link Count</td>
+                    <td><code>0</code></td>
+                </tr>
+            </tbody>
+        </table>
+
+
+        <h3>Conformance Language Summary</h3>
+        <p>'Conformant' conformance language appears in all-upper case. 'Non-conformant' covers all other cases appearing in the content.</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>Literal</th>
+                    <th>Conformant</th>
+                    <th>Non-Conformant</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><b>SHALL</b></td>
+                    <td>0</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td><b>SHALL NOT</b></td>
+                    <td>0</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td><b>SHOULD</b></td>
+                    <td>0</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td><b>SHOULD NOT</b></td>
+                    <td>0</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td><b>MAY</b></td>
+                    <td>1</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td><b>MAY NOT</b></td>
+                    <td>0</td>
+                    <td>0</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h3>Possibly Removed FHIR Artifact Literals Found on Page</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Word</th>
+                    <th>Artifact Class</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+            </tbody>
+        </table>
+
+        <h3>Unknown Words Found on Page</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Word</th>
+                    <th>Known Typo</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td><code>canFilterBy.<code></td><td>No</td></tr>
+            <tr><td><code>notificationShape.<code></td><td>No</td></tr>
+            </tbody>
+        </table>
+
+        <h3>Images with Issues</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Source</th>
+                    <th>Missing Alt Text</th>
+                    <th>Not In Figure Tag</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+            </tbody>
+        </table>
+
+        <h3>Possible Incomplete Markers Found on Page</h3>
+        <ul>
+            
+        </ul>
+
+        <h3>Reader Review Notes Found on Page</h3>
+        <ul>
+            
+        </ul>
+
+        <h3>Notes Page</h3>
+                <h3>General Information:</h3>
+        <table>
+            <tbody>
+                <tr>
+                    <td>Page File Name</td>
+                    <td><code>subscriptiontopic-notes.xml</code></td>
+                </tr>
+                <tr>
+                    <td>Responsible Workgroup</td>
+                    <td><code>fhir</code></td>
+                </tr>
+                <tr>
+                    <td>Maturity Label</td>
+                    <td><code>Draft</code></td>
+                </tr>
+                <tr>
+                    <td>Maturity Level</td>
+                    <td><code>2</code></td>
+                </tr>
+                <tr>
+                    <td>Standards Status</td>
+                    <td><code>trial-use</code></td>
+                </tr>
+                <tr>
+                    <td>Management Comments</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Workgroup Comments</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Exists In <code>publish.ini</code></td>
+                    <td><code>No</code></td>
+                </tr>
+                <tr>
+                    <td>Exists In Source Directory</td>
+                    <td><code>Yes</code></td>
+                </tr>
+                <tr>
+                    <td>'<code>deprecated</code>' Literal Count</td>
+                    <td><code>0</code></td>
+                </tr>
+                <tr>
+                    <td>Zulip Link Count</td>
+                    <td><code>0</code></td>
+                </tr>
+                <tr>
+                    <td>Confluence Link Count</td>
+                    <td><code>0</code></td>
+                </tr>
+            </tbody>
+        </table>
+
+
+        <h3>Conformance Language Summary</h3>
+        <p>'Conformant' conformance language appears in all-upper case. 'Non-conformant' covers all other cases appearing in the content.</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>Literal</th>
+                    <th>Conformant</th>
+                    <th>Non-Conformant</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><b>SHALL</b></td>
+                    <td>6</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td><b>SHALL NOT</b></td>
+                    <td>0</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td><b>SHOULD</b></td>
+                    <td>16</td>
+                    <td>8</td>
+                </tr>
+                <tr>
+                    <td><b>SHOULD NOT</b></td>
+                    <td>0</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td><b>MAY</b></td>
+                    <td>11</td>
+                    <td>15</td>
+                </tr>
+                <tr>
+                    <td><b>MAY NOT</b></td>
+                    <td>0</td>
+                    <td>0</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h3>Possibly Removed FHIR Artifact Literals Found on Page</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Word</th>
+                    <th>Artifact Class</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+            </tbody>
+        </table>
+
+        <h3>Unknown Words Found on Page</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Word</th>
+                    <th>Known Typo</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td><code>canFilterBy.resource<code></td><td>No</td></tr>
+            <tr><td><code>trigger.canFilterBy).<code></td><td>No</td></tr>
+            <tr><td><code>supportedInteraction<code></td><td>No</td></tr>
+            <tr><td><code>queryCriteria<code></td><td>No</td></tr>
+            <tr><td><code>fhirPathCriteria.<code></td><td>No</td></tr>
+            <tr><td><code>resultForCreate<code></td><td>No</td></tr>
+            <tr><td><code>requireBoth<code></td><td>No</td></tr>
+            <tr><td><code>fhirPathCriteria<code></td><td>No</td></tr>
+            <tr><td><code>resultForDelete<code></td><td>No</td></tr>
+            <tr><td><code>HL7v2).<code></td><td>No</td></tr>
+            <tr><td><code>HL7v2<code></td><td>No</td></tr>
+            <tr><td><code>ADT^A01<code></td><td>No</td></tr>
+            <tr><td><code>FHIRcast<code></td><td>No</td></tr>
+            <tr><td><code>canFilterBy.filterParameter<code></td><td>No</td></tr>
+            <tr><td><code>canFilterBy.filterDefinition<code></td><td>No</td></tr>
+            <tr><td><code>filterDefinition<code></td><td>No</td></tr>
+            <tr><td><code>(filterParameter)<code></td><td>No</td></tr>
+            <tr><td><code>notificationShape.<code></td><td>No</td></tr>
+            <tr><td><code>trigger.notificationShape.resource<code></td><td>No</td></tr>
+            <tr><td><code>notificationShape<code></td><td>No</td></tr>
+            <tr><td><code>(B2B)<code></td><td>No</td></tr>
+            <tr><td><code>notificationShape.resource<code></td><td>No</td></tr>
+            <tr><td><code>notificationShape.include<code></td><td>No</td></tr>
+            <tr><td><code>notificationShape.revInclude,<code></td><td>No</td></tr>
+            <tr><td><code>notificationShape.relatedQuery<code></td><td>No</td></tr>
+            <tr><td><code>derivedFrom<code></td><td>No</td></tr>
+            <tr><td><code>canFilterBy<code></td><td>No</td></tr>
+            </tbody>
+        </table>
+
+        <h3>Images with Issues</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Source</th>
+                    <th>Missing Alt Text</th>
+                    <th>Not In Figure Tag</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+            </tbody>
+        </table>
+
+        <h3>Possible Incomplete Markers Found on Page</h3>
+        <ul>
+            
+        </ul>
+
+        <h3>Reader Review Notes Found on Page</h3>
+        <ul>
+            <li>feedback</li>
+            <li>stu-note</li>
+        </ul>
+
+        <h3>Element Review</h3>
+        <table>
+    <thead>
+        <tr>
+            <th>Path</th>
+            <th>Is Required</th>
+            <th>Not Array</th>
+            <th>Trial Use</th>
+            <th>Has fixed[x]</th>
+            <th>Has pattern[x]</th>
+            <th>Required Binding</th>
+            <th>External Required Binding</th>
+            <th>Check <code>meaningWhenMissing</code></th>
+            <th>Is Modifier</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><code>SubscriptionTopic</code></td>
+            <td></td>
+            <td>X</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><code></code></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><code>SubscriptionTopic.url</code></td>
+            <td>X</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><code></code></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><code>SubscriptionTopic.identifier</code></td>
+            <td></td>
+            <td>X</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><code></code></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><code>SubscriptionTopic.version</code></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><code></code></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><code>SubscriptionTopic.versionAlgorithm[x]</code></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><code></code></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><code>SubscriptionTopic.name</code></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><code></code></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><code>SubscriptionTopic.title</code></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><code></code></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><code>SubscriptionTopic.derivedFrom</code></td>
+            <td></td>
+            <td>X</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><code></code></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><code>SubscriptionTopic.status</code></td>
+            <td>X</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>Has 'unknown'</td>
+            <td><code></code></td>
+            <td></td>
+            <td>X</td>
+        </tr>
+        <tr>
+            <td><code>SubscriptionTopic.experimental</code></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><code></code></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><code>SubscriptionTopic.date</code></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><code></code></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><code>SubscriptionTopic.publisher</code></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><code></code></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><code>SubscriptionTopic.contact</code></td>
+            <td></td>
+            <td>X</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><code></code></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><code>SubscriptionTopic.description</code></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><code></code></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><code>SubscriptionTopic.useContext</code></td>
+            <td></td>
+            <td>X</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><code></code></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><code>SubscriptionTopic.jurisdiction</code></td>
+            <td></td>
+            <td>X</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><code></code></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><code>SubscriptionTopic.purpose</code></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><code></code></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><code>SubscriptionTopic.copyright</code></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><code></code></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><code>SubscriptionTopic.copyrightLabel</code></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><code></code></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><code>SubscriptionTopic.approvalDate</code></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><code></code></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><code>SubscriptionTopic.lastReviewDate</code></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><code></code></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><code>SubscriptionTopic.effectivePeriod</code></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><code></code></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><code>SubscriptionTopic.trigger</code></td>
+            <td></td>
+            <td>X</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><code></code></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><code>SubscriptionTopic.trigger.description</code></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><code></code></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><code>SubscriptionTopic.trigger.resource</code></td>
+            <td>X</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><code></code></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><code>SubscriptionTopic.trigger.supportedInteraction</code></td>
+            <td></td>
+            <td>X</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><i>optional</i> - NO 'other' or 'unknown'</td>
+            <td><code></code></td>
+            <td>X</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><code>SubscriptionTopic.trigger.queryCriteria</code></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><code></code></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><code>SubscriptionTopic.trigger.queryCriteria.previous</code></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><code></code></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><code>SubscriptionTopic.trigger.queryCriteria.resultForCreate</code></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><i>optional</i> - NO 'other' or 'unknown'</td>
+            <td><code></code></td>
+            <td>X</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><code>SubscriptionTopic.trigger.queryCriteria.current</code></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><code></code></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><code>SubscriptionTopic.trigger.queryCriteria.resultForDelete</code></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><i>optional</i> - NO 'other' or 'unknown'</td>
+            <td><code></code></td>
+            <td>X</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><code>SubscriptionTopic.trigger.queryCriteria.requireBoth</code></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><code></code></td>
+            <td>X</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><code>SubscriptionTopic.trigger.fhirPathCriteria</code></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><code></code></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><code>SubscriptionTopic.trigger.event</code></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><code></code></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><code>SubscriptionTopic.trigger.canFilterBy</code></td>
+            <td></td>
+            <td>X</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><code></code></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><code>SubscriptionTopic.trigger.canFilterBy.description</code></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><code></code></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><code>SubscriptionTopic.trigger.canFilterBy.resource</code></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><code></code></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><code>SubscriptionTopic.trigger.canFilterBy.filterParameter</code></td>
+            <td>X</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><code></code></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><code>SubscriptionTopic.trigger.canFilterBy.filterDefinition</code></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><code></code></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><code>SubscriptionTopic.trigger.canFilterBy.comparator</code></td>
+            <td></td>
+            <td>X</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><i>optional</i> - NO 'other' or 'unknown'</td>
+            <td><code></code></td>
+            <td>X</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><code>SubscriptionTopic.trigger.canFilterBy.modifier</code></td>
+            <td></td>
+            <td>X</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><i>optional</i> - NO 'other' or 'unknown'</td>
+            <td><code></code></td>
+            <td>X</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><code>SubscriptionTopic.trigger.notificationShape</code></td>
+            <td></td>
+            <td>X</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><code></code></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><code>SubscriptionTopic.trigger.notificationShape.resource</code></td>
+            <td>X</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><code></code></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><code>SubscriptionTopic.trigger.notificationShape.include</code></td>
+            <td></td>
+            <td>X</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><code></code></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><code>SubscriptionTopic.trigger.notificationShape.revInclude</code></td>
+            <td></td>
+            <td>X</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><code></code></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><code>SubscriptionTopic.trigger.notificationShape.relatedQuery</code></td>
+            <td></td>
+            <td>X</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><code></code></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><code>SubscriptionTopic.trigger.notificationShape.relatedQuery.queryType</code></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><code></code></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><code>SubscriptionTopic.trigger.notificationShape.relatedQuery.query</code></td>
+            <td>X</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><code></code></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </tbody>
+</table>
+
+
+        <h3>Operations</h3>
+        <p>No operations found.</p>
+
+
+        <h3>Search Parameters</h3>
+        <table>
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Publication Status</th>
+            <th>FMM</th>
+            <th>Standards Status</th>
+            <th>IsExperimental</th>
+            <th>WorkGroup</th>
+            <th>Search Type</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><code>CanonicalResource-date</code></td>
+            <td><code>date</code></td>
+            <td>Draft</td>
+            <td></td>
+            <td>trial-use</td>
+            <td>False</td>
+            <td>cds</td>
+            <td>date</td>
+            <td>Multiple Resources: 
+
+* [ActivityDefinition](http://hl7.org/fhir/R6/activitydefinition.html): The activity definition publication date
+* [ActorDefinition](http://hl7.org/fhir/R6/actordefinition.html): The Actor Definition publication date
+* [CapabilityStatement](http://hl7.org/fhir/R6/capabilitystatement.html): The capability statement publication date
+* [ChargeItemDefinition](http://hl7.org/fhir/R6/chargeitemdefinition.html): The charge item definition publication date
+* [Citation](http://hl7.org/fhir/R6/citation.html): The citation publication date
+* [CodeSystem](http://hl7.org/fhir/R6/codesystem.html): The code system publication date
+* [CompartmentDefinition](http://hl7.org/fhir/R6/compartmentdefinition.html): The compartment definition publication date
+* [ConceptMap](http://hl7.org/fhir/R6/conceptmap.html): The concept map publication date
+* [ConditionDefinition](http://hl7.org/fhir/R6/conditiondefinition.html): The condition definition publication date
+* [EventDefinition](http://hl7.org/fhir/R6/eventdefinition.html): The event definition publication date
+* [Evidence](http://hl7.org/fhir/R6/evidence.html): The evidence publication date
+* [EvidenceVariable](http://hl7.org/fhir/R6/evidencevariable.html): The evidence variable publication date
+* [ExampleScenario](http://hl7.org/fhir/R6/examplescenario.html): The example scenario publication date
+* [GraphDefinition](http://hl7.org/fhir/R6/graphdefinition.html): The graph definition publication date
+* [ImplementationGuide](http://hl7.org/fhir/R6/implementationguide.html): The implementation guide publication date
+* [Library](http://hl7.org/fhir/R6/library.html): The library publication date
+* [Measure](http://hl7.org/fhir/R6/measure.html): The measure publication date
+* [MessageDefinition](http://hl7.org/fhir/R6/messagedefinition.html): The message definition publication date
+* [NamingSystem](http://hl7.org/fhir/R6/namingsystem.html): The naming system publication date
+* [OperationDefinition](http://hl7.org/fhir/R6/operationdefinition.html): The operation definition publication date
+* [PlanDefinition](http://hl7.org/fhir/R6/plandefinition.html): The plan definition publication date
+* [Questionnaire](http://hl7.org/fhir/R6/questionnaire.html): The questionnaire publication date
+* [Requirements](http://hl7.org/fhir/R6/requirements.html): The requirements publication date
+* [SearchParameter](http://hl7.org/fhir/R6/searchparameter.html): The search parameter publication date
+* [StructureDefinition](http://hl7.org/fhir/R6/structuredefinition.html): The structure definition publication date
+* [StructureMap](http://hl7.org/fhir/R6/structuremap.html): The structure map publication date
+* [SubscriptionTopic](http://hl7.org/fhir/R6/subscriptiontopic.html): Date status first applied
+* [TerminologyCapabilities](http://hl7.org/fhir/R6/terminologycapabilities.html): The terminology capabilities publication date
+* [ValueSet](http://hl7.org/fhir/R6/valueset.html): The value set publication date
+</td>
+        </tr>
+        <tr>
+            <td><code>CanonicalResource-identifier</code></td>
+            <td><code>identifier</code></td>
+            <td>Draft</td>
+            <td></td>
+            <td>trial-use</td>
+            <td>False</td>
+            <td>cds</td>
+            <td>token</td>
+            <td>Multiple Resources: 
+
+* [ActivityDefinition](http://hl7.org/fhir/R6/activitydefinition.html): External identifier for the activity definition
+* [ActorDefinition](http://hl7.org/fhir/R6/actordefinition.html): External identifier for the Actor Definition
+* [CapabilityStatement](http://hl7.org/fhir/R6/capabilitystatement.html): External identifier for the capability statement
+* [ChargeItemDefinition](http://hl7.org/fhir/R6/chargeitemdefinition.html): External identifier for the charge item definition
+* [Citation](http://hl7.org/fhir/R6/citation.html): External identifier for the citation
+* [CodeSystem](http://hl7.org/fhir/R6/codesystem.html): External identifier for the code system
+* [ConceptMap](http://hl7.org/fhir/R6/conceptmap.html): External identifier for the concept map
+* [ConditionDefinition](http://hl7.org/fhir/R6/conditiondefinition.html): External identifier for the condition definition
+* [DeviceDefinition](http://hl7.org/fhir/R6/devicedefinition.html): The identifier of the component
+* [EventDefinition](http://hl7.org/fhir/R6/eventdefinition.html): External identifier for the event definition
+* [Evidence](http://hl7.org/fhir/R6/evidence.html): External identifier for the evidence
+* [EvidenceVariable](http://hl7.org/fhir/R6/evidencevariable.html): External identifier for the evidence variable
+* [ExampleScenario](http://hl7.org/fhir/R6/examplescenario.html): External identifier for the example scenario
+* [GraphDefinition](http://hl7.org/fhir/R6/graphdefinition.html): External identifier for the graph definition
+* [Group](http://hl7.org/fhir/R6/group.html): Unique id
+* [ImplementationGuide](http://hl7.org/fhir/R6/implementationguide.html): External identifier for the implementation guide
+* [Library](http://hl7.org/fhir/R6/library.html): External identifier for the library
+* [Measure](http://hl7.org/fhir/R6/measure.html): External identifier for the measure
+* [MedicationKnowledge](http://hl7.org/fhir/R6/medicationknowledge.html): Business identifier for this medication
+* [MessageDefinition](http://hl7.org/fhir/R6/messagedefinition.html): External identifier for the message definition
+* [NamingSystem](http://hl7.org/fhir/R6/namingsystem.html): External identifier for the naming system
+* [ObservationDefinition](http://hl7.org/fhir/R6/observationdefinition.html): The unique identifier associated with the specimen definition
+* [OperationDefinition](http://hl7.org/fhir/R6/operationdefinition.html): External identifier for the search parameter
+* [PlanDefinition](http://hl7.org/fhir/R6/plandefinition.html): External identifier for the plan definition
+* [Questionnaire](http://hl7.org/fhir/R6/questionnaire.html): External identifier for the questionnaire
+* [Requirements](http://hl7.org/fhir/R6/requirements.html): External identifier for the requirements
+* [SearchParameter](http://hl7.org/fhir/R6/searchparameter.html): External identifier for the search parameter
+* [SpecimenDefinition](http://hl7.org/fhir/R6/specimendefinition.html): The unique identifier associated with the SpecimenDefinition
+* [StructureDefinition](http://hl7.org/fhir/R6/structuredefinition.html): External identifier for the structure definition
+* [StructureMap](http://hl7.org/fhir/R6/structuremap.html): External identifier for the structure map
+* [SubscriptionTopic](http://hl7.org/fhir/R6/subscriptiontopic.html): Business Identifier for SubscriptionTopic
+* [TerminologyCapabilities](http://hl7.org/fhir/R6/terminologycapabilities.html): External identifier for the terminology capabilities
+* [ValueSet](http://hl7.org/fhir/R6/valueset.html): External identifier for the value set
+</td>
+        </tr>
+        <tr>
+            <td><code>CanonicalResource-status</code></td>
+            <td><code>status</code></td>
+            <td>Draft</td>
+            <td></td>
+            <td>trial-use</td>
+            <td>False</td>
+            <td>cds</td>
+            <td>token</td>
+            <td>Multiple Resources: 
+
+* [ActivityDefinition](http://hl7.org/fhir/R6/activitydefinition.html): The current status of the activity definition
+* [ActorDefinition](http://hl7.org/fhir/R6/actordefinition.html): The current status of the Actor Definition
+* [CapabilityStatement](http://hl7.org/fhir/R6/capabilitystatement.html): The current status of the capability statement
+* [ChargeItemDefinition](http://hl7.org/fhir/R6/chargeitemdefinition.html): The current status of the charge item definition
+* [Citation](http://hl7.org/fhir/R6/citation.html): The current status of the citation
+* [CodeSystem](http://hl7.org/fhir/R6/codesystem.html): The current status of the code system
+* [CompartmentDefinition](http://hl7.org/fhir/R6/compartmentdefinition.html): The current status of the compartment definition
+* [ConceptMap](http://hl7.org/fhir/R6/conceptmap.html): The current status of the concept map
+* [ConditionDefinition](http://hl7.org/fhir/R6/conditiondefinition.html): The current status of the condition definition
+* [EventDefinition](http://hl7.org/fhir/R6/eventdefinition.html): The current status of the event definition
+* [Evidence](http://hl7.org/fhir/R6/evidence.html): The current status of the evidence
+* [EvidenceVariable](http://hl7.org/fhir/R6/evidencevariable.html): The current status of the evidence variable
+* [ExampleScenario](http://hl7.org/fhir/R6/examplescenario.html): The current status of the example scenario
+* [GraphDefinition](http://hl7.org/fhir/R6/graphdefinition.html): The current status of the graph definition
+* [Group](http://hl7.org/fhir/R6/group.html): The current status of the Group
+* [ImplementationGuide](http://hl7.org/fhir/R6/implementationguide.html): The current status of the implementation guide
+* [Library](http://hl7.org/fhir/R6/library.html): The current status of the library
+* [Measure](http://hl7.org/fhir/R6/measure.html): The current status of the measure
+* [MedicationKnowledge](http://hl7.org/fhir/R6/medicationknowledge.html): active | inactive | entered-in-error
+* [MessageDefinition](http://hl7.org/fhir/R6/messagedefinition.html): The current status of the message definition
+* [NamingSystem](http://hl7.org/fhir/R6/namingsystem.html): The current status of the naming system
+* [ObservationDefinition](http://hl7.org/fhir/R6/observationdefinition.html): Publication status of the ObservationDefinition: draft, active, retired, unknown
+* [OperationDefinition](http://hl7.org/fhir/R6/operationdefinition.html): The current status of the operation definition
+* [PlanDefinition](http://hl7.org/fhir/R6/plandefinition.html): The current status of the plan definition
+* [Questionnaire](http://hl7.org/fhir/R6/questionnaire.html): The current status of the questionnaire
+* [Requirements](http://hl7.org/fhir/R6/requirements.html): The current status of the requirements
+* [SearchParameter](http://hl7.org/fhir/R6/searchparameter.html): The current status of the search parameter
+* [SpecimenDefinition](http://hl7.org/fhir/R6/specimendefinition.html): Publication status of the SpecimenDefinition: draft, active, retired, unknown
+* [StructureDefinition](http://hl7.org/fhir/R6/structuredefinition.html): The current status of the structure definition
+* [StructureMap](http://hl7.org/fhir/R6/structuremap.html): The current status of the structure map
+* [SubscriptionTopic](http://hl7.org/fhir/R6/subscriptiontopic.html): draft | active | retired | unknown
+* [TerminologyCapabilities](http://hl7.org/fhir/R6/terminologycapabilities.html): The current status of the terminology capabilities
+* [ValueSet](http://hl7.org/fhir/R6/valueset.html): The current status of the value set
+</td>
+        </tr>
+        <tr>
+            <td><code>CanonicalResource-title</code></td>
+            <td><code>title</code></td>
+            <td>Draft</td>
+            <td></td>
+            <td>trial-use</td>
+            <td>False</td>
+            <td>cds</td>
+            <td>string</td>
+            <td>Multiple Resources: 
+
+* [ActivityDefinition](http://hl7.org/fhir/R6/activitydefinition.html): The human-friendly name of the activity definition
+* [ActorDefinition](http://hl7.org/fhir/R6/actordefinition.html): The human-friendly name of the Actor Definition
+* [CapabilityStatement](http://hl7.org/fhir/R6/capabilitystatement.html): The human-friendly name of the capability statement
+* [ChargeItemDefinition](http://hl7.org/fhir/R6/chargeitemdefinition.html): The human-friendly name of the charge item definition
+* [Citation](http://hl7.org/fhir/R6/citation.html): The human-friendly name of the citation
+* [CodeSystem](http://hl7.org/fhir/R6/codesystem.html): The human-friendly name of the code system
+* [ConceptMap](http://hl7.org/fhir/R6/conceptmap.html): The human-friendly name of the concept map
+* [ConditionDefinition](http://hl7.org/fhir/R6/conditiondefinition.html): The human-friendly name of the condition definition
+* [EventDefinition](http://hl7.org/fhir/R6/eventdefinition.html): The human-friendly name of the event definition
+* [Evidence](http://hl7.org/fhir/R6/evidence.html): The human-friendly name of the evidence
+* [EvidenceVariable](http://hl7.org/fhir/R6/evidencevariable.html): The human-friendly name of the evidence variable
+* [ImplementationGuide](http://hl7.org/fhir/R6/implementationguide.html): The human-friendly name of the implementation guide
+* [Library](http://hl7.org/fhir/R6/library.html): The human-friendly name of the library
+* [Measure](http://hl7.org/fhir/R6/measure.html): The human-friendly name of the measure
+* [MessageDefinition](http://hl7.org/fhir/R6/messagedefinition.html): The human-friendly name of the message definition
+* [ObservationDefinition](http://hl7.org/fhir/R6/observationdefinition.html): Human-friendly name of the ObservationDefinition
+* [OperationDefinition](http://hl7.org/fhir/R6/operationdefinition.html): The human-friendly name of the operation definition
+* [PlanDefinition](http://hl7.org/fhir/R6/plandefinition.html): The human-friendly name of the plan definition
+* [Questionnaire](http://hl7.org/fhir/R6/questionnaire.html): The human-friendly name of the questionnaire
+* [Requirements](http://hl7.org/fhir/R6/requirements.html): The human-friendly name of the requirements
+* [SpecimenDefinition](http://hl7.org/fhir/R6/specimendefinition.html): Human-friendly name of the SpecimenDefinition
+* [StructureDefinition](http://hl7.org/fhir/R6/structuredefinition.html): The human-friendly name of the structure definition
+* [StructureMap](http://hl7.org/fhir/R6/structuremap.html): The human-friendly name of the structure map
+* [SubscriptionTopic](http://hl7.org/fhir/R6/subscriptiontopic.html): Name for this SubscriptionTopic (Human friendly)
+* [TerminologyCapabilities](http://hl7.org/fhir/R6/terminologycapabilities.html): The human-friendly name of the terminology capabilities
+* [ValueSet](http://hl7.org/fhir/R6/valueset.html): The human-friendly name of the value set
+</td>
+        </tr>
+        <tr>
+            <td><code>CanonicalResource-url</code></td>
+            <td><code>url</code></td>
+            <td>Draft</td>
+            <td></td>
+            <td>trial-use</td>
+            <td>False</td>
+            <td>cds</td>
+            <td>uri</td>
+            <td>Multiple Resources: 
+
+* [ActivityDefinition](http://hl7.org/fhir/R6/activitydefinition.html): The uri that identifies the activity definition
+* [ActorDefinition](http://hl7.org/fhir/R6/actordefinition.html): The uri that identifies the Actor Definition
+* [CapabilityStatement](http://hl7.org/fhir/R6/capabilitystatement.html): The uri that identifies the capability statement
+* [ChargeItemDefinition](http://hl7.org/fhir/R6/chargeitemdefinition.html): The uri that identifies the charge item definition
+* [Citation](http://hl7.org/fhir/R6/citation.html): The uri that identifies the citation
+* [CodeSystem](http://hl7.org/fhir/R6/codesystem.html): The uri that identifies the code system
+* [CompartmentDefinition](http://hl7.org/fhir/R6/compartmentdefinition.html): The uri that identifies the compartment definition
+* [ConceptMap](http://hl7.org/fhir/R6/conceptmap.html): The URI that identifies the concept map
+* [ConditionDefinition](http://hl7.org/fhir/R6/conditiondefinition.html): The uri that identifies the condition definition
+* [DeviceDefinition](http://hl7.org/fhir/R6/devicedefinition.html): The uri that identifies the code system
+* [EventDefinition](http://hl7.org/fhir/R6/eventdefinition.html): The uri that identifies the event definition
+* [Evidence](http://hl7.org/fhir/R6/evidence.html): The uri that identifies the evidence
+* [EvidenceVariable](http://hl7.org/fhir/R6/evidencevariable.html): The uri that identifies the evidence variable
+* [ExampleScenario](http://hl7.org/fhir/R6/examplescenario.html): The uri that identifies the example scenario
+* [GraphDefinition](http://hl7.org/fhir/R6/graphdefinition.html): The uri that identifies the graph definition
+* [Group](http://hl7.org/fhir/R6/group.html): The uri that identifies the Group
+* [ImplementationGuide](http://hl7.org/fhir/R6/implementationguide.html): The uri that identifies the implementation guide
+* [Library](http://hl7.org/fhir/R6/library.html): The uri that identifies the library
+* [Measure](http://hl7.org/fhir/R6/measure.html): The uri that identifies the measure
+* [MessageDefinition](http://hl7.org/fhir/R6/messagedefinition.html): The uri that identifies the message definition
+* [NamingSystem](http://hl7.org/fhir/R6/namingsystem.html): The uri that identifies the naming system
+* [ObservationDefinition](http://hl7.org/fhir/R6/observationdefinition.html): The uri that identifies the observation definition
+* [OperationDefinition](http://hl7.org/fhir/R6/operationdefinition.html): The uri that identifies the operation definition
+* [PlanDefinition](http://hl7.org/fhir/R6/plandefinition.html): The uri that identifies the plan definition
+* [Questionnaire](http://hl7.org/fhir/R6/questionnaire.html): The uri that identifies the questionnaire
+* [Requirements](http://hl7.org/fhir/R6/requirements.html): The uri that identifies the requirements
+* [SearchParameter](http://hl7.org/fhir/R6/searchparameter.html): The uri that identifies the search parameter
+* [SpecimenDefinition](http://hl7.org/fhir/R6/specimendefinition.html): The uri that identifies the specimen definition
+* [StructureDefinition](http://hl7.org/fhir/R6/structuredefinition.html): The uri that identifies the structure definition
+* [StructureMap](http://hl7.org/fhir/R6/structuremap.html): The uri that identifies the structure map
+* [SubscriptionTopic](http://hl7.org/fhir/R6/subscriptiontopic.html): Logical canonical URL to reference this SubscriptionTopic (globally unique)
+* [TerminologyCapabilities](http://hl7.org/fhir/R6/terminologycapabilities.html): The uri that identifies the terminology capabilities
+* [ValueSet](http://hl7.org/fhir/R6/valueset.html): The uri that identifies the value set
+</td>
+        </tr>
+        <tr>
+            <td><code>CanonicalResource-version</code></td>
+            <td><code>version</code></td>
+            <td>Draft</td>
+            <td></td>
+            <td>trial-use</td>
+            <td>False</td>
+            <td>cds</td>
+            <td>token</td>
+            <td>Multiple Resources: 
+
+* [ActivityDefinition](http://hl7.org/fhir/R6/activitydefinition.html): The business version of the activity definition
+* [ActorDefinition](http://hl7.org/fhir/R6/actordefinition.html): The business version of the Actor Definition
+* [CapabilityStatement](http://hl7.org/fhir/R6/capabilitystatement.html): The business version of the capability statement
+* [ChargeItemDefinition](http://hl7.org/fhir/R6/chargeitemdefinition.html): The business version of the charge item definition
+* [Citation](http://hl7.org/fhir/R6/citation.html): The business version of the citation
+* [CodeSystem](http://hl7.org/fhir/R6/codesystem.html): The business version of the code system
+* [CompartmentDefinition](http://hl7.org/fhir/R6/compartmentdefinition.html): The business version of the compartment definition
+* [ConceptMap](http://hl7.org/fhir/R6/conceptmap.html): The business version of the concept map
+* [ConditionDefinition](http://hl7.org/fhir/R6/conditiondefinition.html): The business version of the condition definition
+* [DeviceDefinition](http://hl7.org/fhir/R6/devicedefinition.html): The specific version of the device
+* [EventDefinition](http://hl7.org/fhir/R6/eventdefinition.html): The business version of the event definition
+* [Evidence](http://hl7.org/fhir/R6/evidence.html): The business version of the evidence
+* [EvidenceVariable](http://hl7.org/fhir/R6/evidencevariable.html): The business version of the evidence variable
+* [ExampleScenario](http://hl7.org/fhir/R6/examplescenario.html): The business version of the example scenario
+* [GraphDefinition](http://hl7.org/fhir/R6/graphdefinition.html): The business version of the graph definition
+* [ImplementationGuide](http://hl7.org/fhir/R6/implementationguide.html): The business version of the implementation guide
+* [Library](http://hl7.org/fhir/R6/library.html): The business version of the library
+* [Measure](http://hl7.org/fhir/R6/measure.html): The business version of the measure
+* [MessageDefinition](http://hl7.org/fhir/R6/messagedefinition.html): The business version of the message definition
+* [NamingSystem](http://hl7.org/fhir/R6/namingsystem.html): The business version of the naming system
+* [OperationDefinition](http://hl7.org/fhir/R6/operationdefinition.html): The business version of the operation definition
+* [PlanDefinition](http://hl7.org/fhir/R6/plandefinition.html): The business version of the plan definition
+* [Questionnaire](http://hl7.org/fhir/R6/questionnaire.html): The business version of the questionnaire
+* [Requirements](http://hl7.org/fhir/R6/requirements.html): The business version of the requirements
+* [SearchParameter](http://hl7.org/fhir/R6/searchparameter.html): The business version of the search parameter
+* [StructureDefinition](http://hl7.org/fhir/R6/structuredefinition.html): The business version of the structure definition
+* [StructureMap](http://hl7.org/fhir/R6/structuremap.html): The business version of the structure map
+* [SubscriptionTopic](http://hl7.org/fhir/R6/subscriptiontopic.html): Business version of the SubscriptionTopic
+* [TerminologyCapabilities](http://hl7.org/fhir/R6/terminologycapabilities.html): The business version of the terminology capabilities
+* [ValueSet](http://hl7.org/fhir/R6/valueset.html): The business version of the value set
+</td>
+        </tr>
+        <tr>
+            <td><code>SubscriptionTopic-derived-or-self</code></td>
+            <td><code>derived-or-self</code></td>
+            <td>Draft</td>
+            <td></td>
+            <td>trial-use</td>
+            <td>False</td>
+            <td>fhir</td>
+            <td>uri</td>
+            <td>A server defined search that matches either the url or derivedFrom</td>
+        </tr>
+        <tr>
+            <td><code>SubscriptionTopic-effective</code></td>
+            <td><code>effective</code></td>
+            <td>Draft</td>
+            <td></td>
+            <td>trial-use</td>
+            <td>False</td>
+            <td>fhir</td>
+            <td>date</td>
+            <td>Effective period</td>
+        </tr>
+        <tr>
+            <td><code>SubscriptionTopic-event</code></td>
+            <td><code>event</code></td>
+            <td>Draft</td>
+            <td></td>
+            <td>trial-use</td>
+            <td>False</td>
+            <td>fhir</td>
+            <td>token</td>
+            <td>Event trigger</td>
+        </tr>
+        <tr>
+            <td><code>SubscriptionTopic-resource</code></td>
+            <td><code>resource</code></td>
+            <td>Draft</td>
+            <td></td>
+            <td>trial-use</td>
+            <td>False</td>
+            <td>fhir</td>
+            <td>uri</td>
+            <td>Allowed resource for this definition</td>
+        </tr>
+        <tr>
+            <td><code>SubscriptionTopic-trigger-description</code></td>
+            <td><code>trigger-description</code></td>
+            <td>Draft</td>
+            <td></td>
+            <td>trial-use</td>
+            <td>False</td>
+            <td>fhir</td>
+            <td>string</td>
+            <td>Text representation of the trigger</td>
+        </tr>
+    </tbody>
+</table>
+
+    </ac:rich-text-body>
+</ac:structured-macro>
+</body></html>

@@ -1,0 +1,884 @@
+<html><head><style>table, th, td {border: 1px solid;}</style></head><body>
+<ac:structured-macro ac:name="panel">
+    <ac:parameter ac:name="title">R6 Checklist for Subscription</ac:parameter>
+    <ac:rich-text-body>
+        <h2>Artifact Subscription (Subscription)</h2>
+
+        <h3>Urgent Item Checklist</h3>
+                <ul>
+            <li>Confirm workgroup disposition vote has been recorded and sent to FMG!</li>
+            <li>ValueSet: <code>subscription-status</code> (SubscriptionStatusCodes) bound to element <code>Subscription.status</code> is flagged as <code>trial-use</code></li>
+            <li>ValueSet: <code>search-comparator</code> (SearchComparator) bound to element <code>Subscription.filterBy.comparator</code> is flagged as <code>trial-use</code></li>
+            <li>CodeSystem: <code>search-comparator</code> (SearchComparator) referenced by ValueSet <code>search-comparator</code> bound to element <code>Subscription.filterBy.comparator</code> is flagged as <code>trial-use</code></li>
+            <li>ValueSet: <code>search-modifier-code</code> (SearchModifierCode) bound to element <code>Subscription.filterBy.modifier</code> is flagged as <code>trial-use</code></li>
+            <li>CodeSystem: <code>search-modifier-code</code> (SearchModifierCode) referenced by ValueSet <code>search-modifier-code</code> bound to element <code>Subscription.filterBy.modifier</code> is flagged as <code>trial-use</code></li>
+            <li>ValueSet: <code>subscription-channel-type</code> (SubscriptionChannelType) bound to element <code>Subscription.channelType</code> is flagged as <code>trial-use</code></li>
+            <li>ValueSet: <code>subscription-payload-content</code> (SubscriptionPayloadContent) bound to element <code>Subscription.content</code> is flagged as <code>trial-use</code></li>
+            <li>CodeSystem: <code>subscription-payload-content</code> (SubscriptionPayloadContent) referenced by ValueSet <code>subscription-payload-content</code> bound to element <code>Subscription.content</code> is flagged as <code>trial-use</code></li>
+            <li>Operation: <code>Subscription-events</code> (Events) flagged as <code>trial-use</code></li>
+            <li>Operation: <code>Subscription-get-ws-binding-token</code> (GetWsBindingToken) flagged as <code>trial-use</code></li>
+            <li>Operation: <code>Subscription-status</code> (Status) flagged as <code>trial-use</code></li>
+            <li>Search Parameter: <code>Subscription-contact</code> (contact) flagged as <code>trial-use</code></li>
+            <li>Search Parameter: <code>Subscription-content-level</code> (content-level) flagged as <code>trial-use</code></li>
+            <li>Search Parameter: <code>Subscription-filter-event</code> (filter-event) flagged as <code>trial-use</code></li>
+            <li>Search Parameter: <code>Subscription-filter-value</code> (filter-value) flagged as <code>trial-use</code></li>
+            <li>Search Parameter: <code>Subscription-identifier</code> (identifier) flagged as <code>trial-use</code></li>
+            <li>Search Parameter: <code>Subscription-name</code> (name) flagged as <code>trial-use</code></li>
+            <li>Search Parameter: <code>Subscription-owner</code> (owner) flagged as <code>trial-use</code></li>
+            <li>Search Parameter: <code>Subscription-payload</code> (payload) flagged as <code>trial-use</code></li>
+            <li>Search Parameter: <code>Subscription-status</code> (status) flagged as <code>trial-use</code></li>
+            <li>Search Parameter: <code>Subscription-topic</code> (topic) flagged as <code>trial-use</code></li>
+            <li>Search Parameter: <code>Subscription-type</code> (type) flagged as <code>trial-use</code></li>
+            <li>Search Parameter: <code>Subscription-url</code> (url) flagged as <code>trial-use</code></li>
+        </ul>
+
+
+        <h2>All Analysis Information</h2>
+        The following content was generated to assist in the review of this artifact for R6 compliance.
+
+        <h3>Information Page</h3>
+                <h3>General Information:</h3>
+        <table>
+            <tbody>
+                <tr>
+                    <td>Page File Name</td>
+                    <td><code>subscription-introduction.xml</code></td>
+                </tr>
+                <tr>
+                    <td>Responsible Workgroup</td>
+                    <td><code>fhir</code></td>
+                </tr>
+                <tr>
+                    <td>Maturity Label</td>
+                    <td><code>Draft</code></td>
+                </tr>
+                <tr>
+                    <td>Maturity Level</td>
+                    <td><code>3</code></td>
+                </tr>
+                <tr>
+                    <td>Standards Status</td>
+                    <td><code>trial-use</code></td>
+                </tr>
+                <tr>
+                    <td>Management Comments</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Workgroup Comments</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Exists In <code>publish.ini</code></td>
+                    <td><code>No</code></td>
+                </tr>
+                <tr>
+                    <td>Exists In Source Directory</td>
+                    <td><code>Yes</code></td>
+                </tr>
+                <tr>
+                    <td>'<code>deprecated</code>' Literal Count</td>
+                    <td><code>0</code></td>
+                </tr>
+                <tr>
+                    <td>Zulip Link Count</td>
+                    <td><code>0</code></td>
+                </tr>
+                <tr>
+                    <td>Confluence Link Count</td>
+                    <td><code>0</code></td>
+                </tr>
+            </tbody>
+        </table>
+
+
+        <h3>Conformance Language Summary</h3>
+        <p>'Conformant' conformance language appears in all-upper case. 'Non-conformant' covers all other cases appearing in the content.</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>Literal</th>
+                    <th>Conformant</th>
+                    <th>Non-Conformant</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><b>SHALL</b></td>
+                    <td>0</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td><b>SHALL NOT</b></td>
+                    <td>0</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td><b>SHOULD</b></td>
+                    <td>0</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td><b>SHOULD NOT</b></td>
+                    <td>0</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td><b>MAY</b></td>
+                    <td>0</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td><b>MAY NOT</b></td>
+                    <td>0</td>
+                    <td>0</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h3>Possibly Removed FHIR Artifact Literals Found on Page</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Word</th>
+                    <th>Artifact Class</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td><code>(SubscriptionTopic.canFilterBy),<code></td><td>Element</td></tr>
+            </tbody>
+        </table>
+
+        <h3>Unknown Words Found on Page</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Word</th>
+                    <th>Known Typo</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+            </tbody>
+        </table>
+
+        <h3>Images with Issues</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Source</th>
+                    <th>Missing Alt Text</th>
+                    <th>Not In Figure Tag</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+            </tbody>
+        </table>
+
+        <h3>Possible Incomplete Markers Found on Page</h3>
+        <ul>
+            
+        </ul>
+
+        <h3>Reader Review Notes Found on Page</h3>
+        <ul>
+            
+        </ul>
+
+        <h3>Notes Page</h3>
+                <h3>General Information:</h3>
+        <table>
+            <tbody>
+                <tr>
+                    <td>Page File Name</td>
+                    <td><code>subscription-notes.xml</code></td>
+                </tr>
+                <tr>
+                    <td>Responsible Workgroup</td>
+                    <td><code>fhir</code></td>
+                </tr>
+                <tr>
+                    <td>Maturity Label</td>
+                    <td><code>Draft</code></td>
+                </tr>
+                <tr>
+                    <td>Maturity Level</td>
+                    <td><code>3</code></td>
+                </tr>
+                <tr>
+                    <td>Standards Status</td>
+                    <td><code>trial-use</code></td>
+                </tr>
+                <tr>
+                    <td>Management Comments</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Workgroup Comments</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Exists In <code>publish.ini</code></td>
+                    <td><code>No</code></td>
+                </tr>
+                <tr>
+                    <td>Exists In Source Directory</td>
+                    <td><code>Yes</code></td>
+                </tr>
+                <tr>
+                    <td>'<code>deprecated</code>' Literal Count</td>
+                    <td><code>0</code></td>
+                </tr>
+                <tr>
+                    <td>Zulip Link Count</td>
+                    <td><code>0</code></td>
+                </tr>
+                <tr>
+                    <td>Confluence Link Count</td>
+                    <td><code>0</code></td>
+                </tr>
+            </tbody>
+        </table>
+
+
+        <h3>Conformance Language Summary</h3>
+        <p>'Conformant' conformance language appears in all-upper case. 'Non-conformant' covers all other cases appearing in the content.</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>Literal</th>
+                    <th>Conformant</th>
+                    <th>Non-Conformant</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><b>SHALL</b></td>
+                    <td>16</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td><b>SHALL NOT</b></td>
+                    <td>4</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td><b>SHOULD</b></td>
+                    <td>11</td>
+                    <td>10</td>
+                </tr>
+                <tr>
+                    <td><b>SHOULD NOT</b></td>
+                    <td>0</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td><b>MAY</b></td>
+                    <td>14</td>
+                    <td>18</td>
+                </tr>
+                <tr>
+                    <td><b>MAY NOT</b></td>
+                    <td>0</td>
+                    <td>0</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h3>Possibly Removed FHIR Artifact Literals Found on Page</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Word</th>
+                    <th>Artifact Class</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+            </tbody>
+        </table>
+
+        <h3>Unknown Words Found on Page</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Word</th>
+                    <th>Known Typo</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td><code>filterBy.resourceType<code></td><td>No</td></tr>
+            <tr><td><code>channelType<code></td><td>No</td></tr>
+            <tr><td><code>heartbeatPeriod).<code></td><td>No</td></tr>
+            <tr><td><code>(wss://<code></td><td>No</td></tr>
+            <tr><td><code>JWT<code></td><td>No</td></tr>
+            <tr><td><code>desireable<code></td><td>Yes</td></tr>
+            <tr><td><code>'secure-mq'<code></td><td>No</td></tr>
+            </tbody>
+        </table>
+
+        <h3>Images with Issues</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Source</th>
+                    <th>Missing Alt Text</th>
+                    <th>Not In Figure Tag</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td><code>subscription-channel-rest-hook.svg<code></td><td>Yes</td><td>No</td></tr>
+            <tr><td><code>subscription-channel-websocket.svg<code></td><td>Yes</td><td>No</td></tr>
+            <tr><td><code>subscription-channel-email.svg<code></td><td>Yes</td><td>No</td></tr>
+            <tr><td><code>subscription-channel-messaging.svg<code></td><td>Yes</td><td>No</td></tr>
+            </tbody>
+        </table>
+
+        <h3>Possible Incomplete Markers Found on Page</h3>
+        <ul>
+            
+        </ul>
+
+        <h3>Reader Review Notes Found on Page</h3>
+        <ul>
+            <li>feedback</li>
+            <li>stu-note</li>
+        </ul>
+
+        <h3>Element Review</h3>
+        <table>
+    <thead>
+        <tr>
+            <th>Path</th>
+            <th>Is Required</th>
+            <th>Not Array</th>
+            <th>Trial Use</th>
+            <th>Has fixed[x]</th>
+            <th>Has pattern[x]</th>
+            <th>Required Binding</th>
+            <th>External Required Binding</th>
+            <th>Check <code>meaningWhenMissing</code></th>
+            <th>Is Modifier</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><code>Subscription</code></td>
+            <td></td>
+            <td>X</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><code></code></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><code>Subscription.identifier</code></td>
+            <td></td>
+            <td>X</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><code></code></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><code>Subscription.name</code></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><code></code></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><code>Subscription.status</code></td>
+            <td>X</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>NO 'other' or 'unknown'</td>
+            <td><code></code></td>
+            <td></td>
+            <td>X</td>
+        </tr>
+        <tr>
+            <td><code>Subscription.topic</code></td>
+            <td>X</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><code></code></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><code>Subscription.contact</code></td>
+            <td></td>
+            <td>X</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><code></code></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><code>Subscription.end</code></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><code></code></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><code>Subscription.managingEntity</code></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><code></code></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><code>Subscription.reason</code></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><code></code></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><code>Subscription.filterBy</code></td>
+            <td></td>
+            <td>X</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><code></code></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><code>Subscription.filterBy.resource</code></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><code></code></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><code>Subscription.filterBy.filterParameter</code></td>
+            <td>X</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><code></code></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><code>Subscription.filterBy.comparator</code></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><i>optional</i> - NO 'other' or 'unknown'</td>
+            <td><code></code></td>
+            <td>X</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><code>Subscription.filterBy.modifier</code></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><i>optional</i> - NO 'other' or 'unknown'</td>
+            <td><code></code></td>
+            <td>X</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><code>Subscription.filterBy.value</code></td>
+            <td>X</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><code></code></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><code>Subscription.filterBy.event</code></td>
+            <td></td>
+            <td>X</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><code></code></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><code>Subscription.channelType</code></td>
+            <td>X</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><code></code></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><code>Subscription.endpoint</code></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><code></code></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><code>Subscription.parameter</code></td>
+            <td></td>
+            <td>X</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><code></code></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><code>Subscription.parameter.name</code></td>
+            <td>X</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><code></code></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><code>Subscription.parameter.value</code></td>
+            <td>X</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><code></code></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><code>Subscription.heartbeatPeriod</code></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><code></code></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><code>Subscription.timeout</code></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><code></code></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><code>Subscription.contentType</code></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><i>optional</i> - NO 'other' or 'unknown'</td>
+            <td><code></code></td>
+            <td>X</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><code>Subscription.content</code></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><i>optional</i> - NO 'other' or 'unknown'</td>
+            <td><code></code></td>
+            <td>X</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><code>Subscription.maxCount</code></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><code></code></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </tbody>
+</table>
+
+
+        <h3>Operations</h3>
+        <table>
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Publication Status</th>
+            <th>FMM</th>
+            <th>Standards Status</th>
+            <th>IsExperimental</th>
+            <th>Workgroup</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><code>Subscription-events</code></td>
+            <td><code>Events</code></td>
+            <td>Draft</td>
+            <td>0</td>
+            <td>trial-use</td>
+            <td>False</td>
+            <td>fhir</td>
+            <td>This operation is used to search for and return notifications that have been previously triggered by a topic-based Subscription.</td>
+        </tr>
+        <tr>
+            <td><code>Subscription-get-ws-binding-token</code></td>
+            <td><code>GetWsBindingToken</code></td>
+            <td>Draft</td>
+            <td>2</td>
+            <td>trial-use</td>
+            <td>False</td>
+            <td>fhir</td>
+            <td>This operation is used to get a token for a websocket client to use in order to bind to one or more subscriptions.</td>
+        </tr>
+        <tr>
+            <td><code>Subscription-status</code></td>
+            <td><code>Status</code></td>
+            <td>Draft</td>
+            <td>2</td>
+            <td>trial-use</td>
+            <td>False</td>
+            <td>fhir</td>
+            <td>This operation is used to return the current status information about one or more topic-based Subscriptions.</td>
+        </tr>
+    </tbody>
+</table>
+
+
+        <h3>Search Parameters</h3>
+        <table>
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Publication Status</th>
+            <th>FMM</th>
+            <th>Standards Status</th>
+            <th>IsExperimental</th>
+            <th>WorkGroup</th>
+            <th>Search Type</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><code>Subscription-contact</code></td>
+            <td><code>contact</code></td>
+            <td>Draft</td>
+            <td></td>
+            <td>trial-use</td>
+            <td>False</td>
+            <td>fhir</td>
+            <td>token</td>
+            <td>Contact details for the subscription</td>
+        </tr>
+        <tr>
+            <td><code>Subscription-content-level</code></td>
+            <td><code>content-level</code></td>
+            <td>Draft</td>
+            <td></td>
+            <td>trial-use</td>
+            <td>False</td>
+            <td>fhir</td>
+            <td>token</td>
+            <td>Content level included in notifications</td>
+        </tr>
+        <tr>
+            <td><code>Subscription-filter-event</code></td>
+            <td><code>filter-event</code></td>
+            <td>Draft</td>
+            <td></td>
+            <td>trial-use</td>
+            <td>False</td>
+            <td>fhir</td>
+            <td>token</td>
+            <td>Filter event used to narrow notifications</td>
+        </tr>
+        <tr>
+            <td><code>Subscription-filter-value</code></td>
+            <td><code>filter-value</code></td>
+            <td>Draft</td>
+            <td></td>
+            <td>trial-use</td>
+            <td>False</td>
+            <td>fhir</td>
+            <td>string</td>
+            <td>Filter value used to narrow notifications</td>
+        </tr>
+        <tr>
+            <td><code>Subscription-identifier</code></td>
+            <td><code>identifier</code></td>
+            <td>Draft</td>
+            <td></td>
+            <td>trial-use</td>
+            <td>False</td>
+            <td>fhir</td>
+            <td>token</td>
+            <td>A subscription identifier</td>
+        </tr>
+        <tr>
+            <td><code>Subscription-name</code></td>
+            <td><code>name</code></td>
+            <td>Draft</td>
+            <td></td>
+            <td>trial-use</td>
+            <td>False</td>
+            <td>fhir</td>
+            <td>string</td>
+            <td>A human-readable name</td>
+        </tr>
+        <tr>
+            <td><code>Subscription-owner</code></td>
+            <td><code>owner</code></td>
+            <td>Draft</td>
+            <td></td>
+            <td>trial-use</td>
+            <td>False</td>
+            <td>fhir</td>
+            <td>reference</td>
+            <td>The managing entity</td>
+        </tr>
+        <tr>
+            <td><code>Subscription-payload</code></td>
+            <td><code>payload</code></td>
+            <td>Active</td>
+            <td></td>
+            <td>trial-use</td>
+            <td>False</td>
+            <td>fhir</td>
+            <td>token</td>
+            <td>The mime-type of notifications</td>
+        </tr>
+        <tr>
+            <td><code>Subscription-status</code></td>
+            <td><code>status</code></td>
+            <td>Draft</td>
+            <td></td>
+            <td>trial-use</td>
+            <td>False</td>
+            <td>fhir</td>
+            <td>token</td>
+            <td>The current state of the subscription</td>
+        </tr>
+        <tr>
+            <td><code>Subscription-topic</code></td>
+            <td><code>topic</code></td>
+            <td>Draft</td>
+            <td></td>
+            <td>trial-use</td>
+            <td>False</td>
+            <td>fhir</td>
+            <td>uri</td>
+            <td>The canonical topic url that triggers notifications</td>
+        </tr>
+        <tr>
+            <td><code>Subscription-type</code></td>
+            <td><code>type</code></td>
+            <td>Draft</td>
+            <td></td>
+            <td>trial-use</td>
+            <td>False</td>
+            <td>fhir</td>
+            <td>token</td>
+            <td>The type of channel for the sent notifications</td>
+        </tr>
+        <tr>
+            <td><code>Subscription-url</code></td>
+            <td><code>url</code></td>
+            <td>Draft</td>
+            <td></td>
+            <td>trial-use</td>
+            <td>False</td>
+            <td>fhir</td>
+            <td>uri</td>
+            <td>The uri that will receive the notifications</td>
+        </tr>
+    </tbody>
+</table>
+
+    </ac:rich-text-body>
+</ac:structured-macro>
+</body></html>
