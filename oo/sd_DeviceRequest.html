@@ -26,6 +26,7 @@
             <li>Search Parameter: <code>DeviceRequest-group-identifier</code> (group-identifier) flagged as <code>trial-use</code></li>
             <li>Search Parameter: <code>DeviceRequest-insurance</code> (insurance) flagged as <code>trial-use</code></li>
             <li>Search Parameter: <code>DeviceRequest-intent</code> (intent) flagged as <code>trial-use</code></li>
+            <li>Search Parameter: <code>DeviceRequest-location-code</code> (location-code) flagged as <code>trial-use</code></li>
             <li>Search Parameter: <code>DeviceRequest-performer</code> (performer) flagged as <code>trial-use</code></li>
             <li>Search Parameter: <code>DeviceRequest-performer-code</code> (performer-code) flagged as <code>trial-use</code></li>
             <li>Search Parameter: <code>DeviceRequest-prior-request</code> (prior-request) flagged as <code>trial-use</code></li>
@@ -597,6 +598,18 @@
             <td></td>
         </tr>
         <tr>
+            <td><code>DeviceRequest.location</code></td>
+            <td></td>
+            <td>X</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><code></code></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
             <td><code>DeviceRequest.reason</code></td>
             <td></td>
             <td>X</td>
@@ -978,6 +991,17 @@
             <td>oo</td>
             <td>token</td>
             <td>proposal | plan | original-order |reflex-order</td>
+        </tr>
+        <tr>
+            <td><code>DeviceRequest-location-code</code></td>
+            <td><code>location-code</code></td>
+            <td>Draft</td>
+            <td></td>
+            <td>trial-use</td>
+            <td>False</td>
+            <td>oo</td>
+            <td>token</td>
+            <td>The preferred location specified in the DeviceRequest (coded)</td>
         </tr>
         <tr>
             <td><code>DeviceRequest-performer</code></td>

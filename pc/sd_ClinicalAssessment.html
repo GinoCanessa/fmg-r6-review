@@ -596,7 +596,155 @@
 
 
         <h3>Search Parameters</h3>
-        <p>No search parameters found.</p>
+        <table>
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Publication Status</th>
+            <th>FMM</th>
+            <th>Standards Status</th>
+            <th>IsExperimental</th>
+            <th>WorkGroup</th>
+            <th>Search Type</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><code>ClinicalAssessment-date</code></td>
+            <td><code>date</code></td>
+            <td>Draft</td>
+            <td></td>
+            <td>trial-use</td>
+            <td>False</td>
+            <td>pc</td>
+            <td>date</td>
+            <td>When the assessment was documented</td>
+        </tr>
+        <tr>
+            <td><code>ClinicalAssessment-encounter</code></td>
+            <td><code>encounter</code></td>
+            <td>Draft</td>
+            <td></td>
+            <td>trial-use</td>
+            <td>False</td>
+            <td>pc</td>
+            <td>reference</td>
+            <td>The Encounter during which this ClinicalAssessment was created</td>
+        </tr>
+        <tr>
+            <td><code>ClinicalAssessment-finding-code</code></td>
+            <td><code>finding-code</code></td>
+            <td>Draft</td>
+            <td></td>
+            <td>trial-use</td>
+            <td>False</td>
+            <td>pc</td>
+            <td>token</td>
+            <td>Reference to a concept (by class)</td>
+        </tr>
+        <tr>
+            <td><code>ClinicalAssessment-finding-ref</code></td>
+            <td><code>finding-ref</code></td>
+            <td>Draft</td>
+            <td></td>
+            <td>trial-use</td>
+            <td>False</td>
+            <td>pc</td>
+            <td>reference</td>
+            <td>Reference to a resource (by instance)</td>
+        </tr>
+        <tr>
+            <td><code>ClinicalAssessment-identifier</code></td>
+            <td><code>identifier</code></td>
+            <td>Draft</td>
+            <td></td>
+            <td>trial-use</td>
+            <td>False</td>
+            <td>pc</td>
+            <td>token</td>
+            <td>Business identifier</td>
+        </tr>
+        <tr>
+            <td><code>ClinicalAssessment-patient</code></td>
+            <td><code>patient</code></td>
+            <td>Draft</td>
+            <td></td>
+            <td>trial-use</td>
+            <td>False</td>
+            <td>pc</td>
+            <td>reference</td>
+            <td>Patient assessed</td>
+        </tr>
+        <tr>
+            <td><code>ClinicalAssessment-performer</code></td>
+            <td><code>performer</code></td>
+            <td>Draft</td>
+            <td></td>
+            <td>trial-use</td>
+            <td>False</td>
+            <td>pc</td>
+            <td>reference</td>
+            <td>The clinician performing the assessment</td>
+        </tr>
+        <tr>
+            <td><code>ClinicalAssessment-previous</code></td>
+            <td><code>previous</code></td>
+            <td>Draft</td>
+            <td></td>
+            <td>trial-use</td>
+            <td>False</td>
+            <td>pc</td>
+            <td>reference</td>
+            <td>Reference to last assessment</td>
+        </tr>
+        <tr>
+            <td><code>ClinicalAssessment-problem</code></td>
+            <td><code>problem</code></td>
+            <td>Draft</td>
+            <td></td>
+            <td>trial-use</td>
+            <td>False</td>
+            <td>pc</td>
+            <td>reference</td>
+            <td>Relevant impressions of patient state</td>
+        </tr>
+        <tr>
+            <td><code>ClinicalAssessment-status</code></td>
+            <td><code>status</code></td>
+            <td>Draft</td>
+            <td></td>
+            <td>trial-use</td>
+            <td>False</td>
+            <td>pc</td>
+            <td>token</td>
+            <td>preparation | in-progress | not-done | on-hold | stopped | completed | entered-in-error | unknown</td>
+        </tr>
+        <tr>
+            <td><code>ClinicalAssessment-subject</code></td>
+            <td><code>subject</code></td>
+            <td>Draft</td>
+            <td></td>
+            <td>trial-use</td>
+            <td>False</td>
+            <td>pc</td>
+            <td>reference</td>
+            <td>Patient or group assessed</td>
+        </tr>
+        <tr>
+            <td><code>ClinicalAssessment-supporting-info</code></td>
+            <td><code>supporting-info</code></td>
+            <td>Draft</td>
+            <td></td>
+            <td>trial-use</td>
+            <td>False</td>
+            <td>pc</td>
+            <td>reference</td>
+            <td>Information supporting the clinical impression</td>
+        </tr>
+    </tbody>
+</table>
 
     </ac:rich-text-body>
 </ac:structured-macro>

@@ -12,10 +12,12 @@
             <li>ValueSet: <code>claim-type</code> (ClaimTypeCodes) bound to element <code>ExplanationOfBenefit.type</code> is flagged as <code>trial-use</code></li>
             <li>ValueSet: <code>claim-use</code> (Use) bound to element <code>ExplanationOfBenefit.use</code> is flagged as <code>trial-use</code></li>
             <li>CodeSystem: <code>claim-use</code> (Use) referenced by ValueSet <code>claim-use</code> bound to element <code>ExplanationOfBenefit.use</code> is flagged as <code>trial-use</code></li>
+            <li>ValueSet: <code>process-priority</code> (ProcessPriorityCodes) bound to element <code>ExplanationOfBenefit.priority</code> is flagged as <code>trial-use</code></li>
             <li>ValueSet: <code>fundsreserve</code> (FundsReservationCodes) bound to element <code>ExplanationOfBenefit.fundsReserveRequested</code> is flagged as <code>experimental</code></li>
             <li>ValueSet: <code>fundsreserve</code> (FundsReservationCodes) bound to element <code>ExplanationOfBenefit.fundsReserve</code> is flagged as <code>experimental</code></li>
             <li>ValueSet: <code>payeetype</code> (ClaimPayeeTypeCodes) bound to element <code>ExplanationOfBenefit.payee.type</code> is flagged as <code>experimental</code></li>
             <li>ValueSet: <code>claim-outcome</code> (ClaimProcessingCodes) bound to element <code>ExplanationOfBenefit.outcome</code> is flagged as <code>trial-use</code></li>
+            <li>ValueSet: <code>claim-informationcategory</code> (ClaimInformationCategoryCodes) bound to element <code>ExplanationOfBenefit.supportingInfo.category</code> is flagged as <code>trial-use</code></li>
             <li>ValueSet: <code>forms</code> (FormCodes) bound to element <code>ExplanationOfBenefit.formCode</code> is flagged as <code>experimental</code></li>
             <li>ValueSet: <code>note-type</code> (NoteType) bound to element <code>ExplanationOfBenefit.processNote.type</code> is flagged as <code>trial-use</code></li>
             <li>CodeSystem: <code>note-type</code> (NoteType) referenced by ValueSet <code>note-type</code> bound to element <code>ExplanationOfBenefit.processNote.type</code> is flagged as <code>trial-use</code></li>
@@ -423,6 +425,18 @@
             <td><code></code></td>
             <td></td>
             <td>X</td>
+        </tr>
+        <tr>
+            <td><code>ExplanationOfBenefit.statusReason</code></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><code></code></td>
+            <td></td>
+            <td></td>
         </tr>
         <tr>
             <td><code>ExplanationOfBenefit.type</code></td>
@@ -2249,6 +2263,18 @@
             <td></td>
         </tr>
         <tr>
+            <td><code>ExplanationOfBenefit.addItem.category</code></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><code></code></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
             <td><code>ExplanationOfBenefit.addItem.productOrService</code></td>
             <td></td>
             <td></td>
@@ -2996,6 +3022,18 @@
             <td><code>ExplanationOfBenefit.processNote</code></td>
             <td></td>
             <td>X</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><code></code></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><code>ExplanationOfBenefit.processNote.class</code></td>
+            <td></td>
+            <td></td>
             <td></td>
             <td></td>
             <td></td>

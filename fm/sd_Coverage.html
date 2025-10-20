@@ -22,6 +22,7 @@
             <li>Search Parameter: <code>Coverage-dependent</code> (dependent) flagged as <code>trial-use</code></li>
             <li>Search Parameter: <code>Coverage-insurer</code> (insurer) flagged as <code>trial-use</code></li>
             <li>Search Parameter: <code>Coverage-paymentby-party</code> (paymentby-party) flagged as <code>trial-use</code></li>
+            <li>Search Parameter: <code>Coverage-period</code> (period) flagged as <code>trial-use</code></li>
             <li>Search Parameter: <code>Coverage-policy-holder</code> (policy-holder) flagged as <code>trial-use</code></li>
             <li>Search Parameter: <code>Coverage-status</code> (status) flagged as <code>trial-use</code></li>
             <li>Search Parameter: <code>Coverage-subscriber</code> (subscriber) flagged as <code>trial-use</code></li>
@@ -386,6 +387,18 @@
             <td><code></code></td>
             <td></td>
             <td>X</td>
+        </tr>
+        <tr>
+            <td><code>Coverage.statusReason</code></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><code></code></td>
+            <td></td>
+            <td></td>
         </tr>
         <tr>
             <td><code>Coverage.kind</code></td>
@@ -1040,6 +1053,17 @@
             <td>fm</td>
             <td>reference</td>
             <td>Parties who will pay for services</td>
+        </tr>
+        <tr>
+            <td><code>Coverage-period</code></td>
+            <td><code>period</code></td>
+            <td>Draft</td>
+            <td></td>
+            <td>trial-use</td>
+            <td>False</td>
+            <td>fm</td>
+            <td>date</td>
+            <td>Dates that the Coverage is active</td>
         </tr>
         <tr>
             <td><code>Coverage-policy-holder</code></td>

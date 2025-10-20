@@ -11,8 +11,10 @@
             <li>ValueSet: <code>claim-type</code> (ClaimTypeCodes) bound to element <code>Claim.type</code> is flagged as <code>trial-use</code></li>
             <li>ValueSet: <code>claim-use</code> (Use) bound to element <code>Claim.use</code> is flagged as <code>trial-use</code></li>
             <li>CodeSystem: <code>claim-use</code> (Use) referenced by ValueSet <code>claim-use</code> bound to element <code>Claim.use</code> is flagged as <code>trial-use</code></li>
+            <li>ValueSet: <code>process-priority</code> (ProcessPriorityCodes) bound to element <code>Claim.priority</code> is flagged as <code>trial-use</code></li>
             <li>ValueSet: <code>fundsreserve</code> (FundsReservationCodes) bound to element <code>Claim.fundsReserve</code> is flagged as <code>experimental</code></li>
             <li>ValueSet: <code>payeetype</code> (ClaimPayeeTypeCodes) bound to element <code>Claim.payee.type</code> is flagged as <code>experimental</code></li>
+            <li>ValueSet: <code>claim-informationcategory</code> (ClaimInformationCategoryCodes) bound to element <code>Claim.supportingInfo.category</code> is flagged as <code>trial-use</code></li>
             <li>Operation: <code>Claim-submit</code> (Submit) flagged as <code>trial-use</code></li>
             <li>Search Parameter: <code>clinical-identifier</code> (identifier) flagged as <code>trial-use</code></li>
             <li>Search Parameter: <code>clinical-patient</code> (patient) flagged as <code>trial-use</code></li>
@@ -409,6 +411,18 @@
             <td><code></code></td>
             <td></td>
             <td>X</td>
+        </tr>
+        <tr>
+            <td><code>Claim.statusReason</code></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><code></code></td>
+            <td></td>
+            <td></td>
         </tr>
         <tr>
             <td><code>Claim.type</code></td>
@@ -833,6 +847,18 @@
         <tr>
             <td><code>Claim.supportingInfo.category</code></td>
             <td>X</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><code></code></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><code>Claim.supportingInfo.subCategory</code></td>
+            <td></td>
             <td></td>
             <td></td>
             <td></td>
@@ -2209,7 +2235,7 @@
             <td>False</td>
             <td>fm</td>
             <td>reference</td>
-            <td>The target payor/insurer for the Claim</td>
+            <td>The target payer/insurer for the Claim</td>
         </tr>
         <tr>
             <td><code>Claim-item-udi</code></td>

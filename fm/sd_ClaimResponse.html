@@ -13,6 +13,7 @@
             <li>CodeSystem: <code>claim-use</code> (Use) referenced by ValueSet <code>claim-use</code> bound to element <code>ClaimResponse.use</code> is flagged as <code>trial-use</code></li>
             <li>ValueSet: <code>claim-outcome</code> (ClaimProcessingCodes) bound to element <code>ClaimResponse.outcome</code> is flagged as <code>trial-use</code></li>
             <li>ValueSet: <code>payeetype</code> (ClaimPayeeTypeCodes) bound to element <code>ClaimResponse.payeeType</code> is flagged as <code>experimental</code></li>
+            <li>ValueSet: <code>claim-informationcategory</code> (ClaimInformationCategoryCodes) bound to element <code>ClaimResponse.supportingInfo.category</code> is flagged as <code>trial-use</code></li>
             <li>ValueSet: <code>fundsreserve</code> (FundsReservationCodes) bound to element <code>ClaimResponse.fundsReserve</code> is flagged as <code>experimental</code></li>
             <li>ValueSet: <code>forms</code> (FormCodes) bound to element <code>ClaimResponse.formCode</code> is flagged as <code>experimental</code></li>
             <li>ValueSet: <code>note-type</code> (NoteType) bound to element <code>ClaimResponse.processNote.type</code> is flagged as <code>trial-use</code></li>
@@ -418,6 +419,18 @@
             <td>X</td>
         </tr>
         <tr>
+            <td><code>ClaimResponse.statusReason</code></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><code></code></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
             <td><code>ClaimResponse.type</code></td>
             <td>X</td>
             <td></td>
@@ -646,6 +659,90 @@
             <td></td>
         </tr>
         <tr>
+            <td><code>ClaimResponse.supportingInfo</code></td>
+            <td></td>
+            <td>X</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><code></code></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><code>ClaimResponse.supportingInfo.sequence</code></td>
+            <td>X</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><code></code></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><code>ClaimResponse.supportingInfo.category</code></td>
+            <td>X</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><code></code></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><code>ClaimResponse.supportingInfo.code</code></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><code></code></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><code>ClaimResponse.supportingInfo.timing[x]</code></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><code></code></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><code>ClaimResponse.supportingInfo.value[x]</code></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><code></code></td>
+            <td>X</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><code>ClaimResponse.supportingInfo.reason</code></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><code></code></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
             <td><code>ClaimResponse.item</code></td>
             <td></td>
             <td>X</td>
@@ -671,6 +768,18 @@
         </tr>
         <tr>
             <td><code>ClaimResponse.item.traceNumber</code></td>
+            <td></td>
+            <td>X</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><code></code></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><code>ClaimResponse.item.informationSequence</code></td>
             <td></td>
             <td>X</td>
             <td></td>
@@ -1018,6 +1127,18 @@
             <td></td>
         </tr>
         <tr>
+            <td><code>ClaimResponse.addItem.informationSequence</code></td>
+            <td></td>
+            <td>X</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><code></code></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
             <td><code>ClaimResponse.addItem.provider</code></td>
             <td></td>
             <td>X</td>
@@ -1031,6 +1152,18 @@
         </tr>
         <tr>
             <td><code>ClaimResponse.addItem.revenue</code></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><code></code></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><code>ClaimResponse.addItem.category</code></td>
             <td></td>
             <td></td>
             <td></td>
@@ -1765,6 +1898,18 @@
             <td><code>ClaimResponse.processNote</code></td>
             <td></td>
             <td>X</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><code></code></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><code>ClaimResponse.processNote.class</code></td>
+            <td></td>
+            <td></td>
             <td></td>
             <td></td>
             <td></td>
