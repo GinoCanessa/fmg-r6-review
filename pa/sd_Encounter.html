@@ -7,45 +7,91 @@
         <h3>Urgent Item Checklist</h3>
                 <ul>
             <li>Confirm workgroup disposition vote has been recorded and sent to FMG!</li>
-            <li>ValueSet: <code>encounter-status</code> (EncounterStatus) bound to element <code>Encounter.status</code> is flagged as <code>trial-use</code></li>
-            <li>CodeSystem: <code>encounter-status</code> (EncounterStatus) referenced by ValueSet <code>encounter-status</code> bound to element <code>Encounter.status</code> is flagged as <code>trial-use</code></li>
-            <li>ValueSet: <code>encounter-participant-type</code> (ParticipantType) bound to element <code>Encounter.participant.type</code> is flagged as <code>trial-use</code></li>
-            <li>ValueSet: <code>encounter-reason-use</code> (EncounterReasonUse) bound to element <code>Encounter.reason.use</code> is flagged as <code>trial-use</code></li>
-            <li>CodeSystem: <code>encounter-reason-use</code> (EncounterReasonUse) referenced by ValueSet <code>encounter-reason-use</code> bound to element <code>Encounter.reason.use</code> is flagged as <code>trial-use</code></li>
-            <li>ValueSet: <code>encounter-diagnosis-use</code> (EncounterDiagnosisUse) bound to element <code>Encounter.diagnosis.use</code> is flagged as <code>trial-use</code></li>
-            <li>CodeSystem: <code>encounter-diagnosis-use</code> (EncounterDiagnosisUse) referenced by ValueSet <code>encounter-diagnosis-use</code> bound to element <code>Encounter.diagnosis.use</code> is flagged as <code>trial-use</code></li>
-            <li>ValueSet: <code>encounter-location-status</code> (EncounterLocationStatus) bound to element <code>Encounter.location.status</code> is flagged as <code>trial-use</code></li>
-            <li>CodeSystem: <code>encounter-location-status</code> (EncounterLocationStatus) referenced by ValueSet <code>encounter-location-status</code> bound to element <code>Encounter.location.status</code> is flagged as <code>trial-use</code></li>
-            <li>Operation: <code>Encounter-everything</code> (Everything) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>clinical-identifier</code> (identifier) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>clinical-patient</code> (patient) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>clinical-type</code> (type) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>clinical-date</code> (date) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>Encounter-account</code> (account) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>Encounter-appointment</code> (appointment) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>Encounter-based-on</code> (based-on) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>Encounter-careteam</code> (careteam) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>Encounter-class</code> (class) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>Encounter-date-start</code> (date-start) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>Encounter-diagnosis-code</code> (diagnosis-code) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>Encounter-diagnosis-reference</code> (diagnosis-reference) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>Encounter-end-date</code> (end-date) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>Encounter-episode-of-care</code> (episode-of-care) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>Encounter-length</code> (length) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>Encounter-location</code> (location) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>Encounter-location-period</code> (location-period) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>Encounter-part-of</code> (part-of) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>Encounter-participant</code> (participant) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>Encounter-participant-type</code> (participant-type) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>Encounter-practitioner</code> (practitioner) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>Encounter-reason-code</code> (reason-code) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>Encounter-reason-reference</code> (reason-reference) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>Encounter-service-provider</code> (service-provider) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>Encounter-special-arrangement</code> (special-arrangement) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>Encounter-status</code> (status) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>Encounter-subject</code> (subject) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>Encounter-subject-status</code> (subject-status) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>Encounter-location-value-period</code> (location-value-period) flagged as <code>trial-use</code></li>
+            <li>ValueSet: <code>encounter-status</code> (EncounterStatus) bound to element <code>Encounter.status</code> (<code>Required</code>) has status <code>Draft</code></li>
+            <li>ValueSet: <code>encounter-status</code> (EncounterStatus) bound to element <code>Encounter.status</code> (<code>Required</code>) has standard status <code>trial-use</code></li>
+            <li>CodeSystem: <code>encounter-status</code> (EncounterStatus) referenced by ValueSet <code>encounter-status</code> bound to element <code>Encounter.status</code> (<code>Required</code>) has standard status <code>trial-use</code></li>
+            <li>ValueSet: <code>encounter-type</code> (EncounterType) bound to element <code>Encounter.type</code> (<code>Example</code>) has status <code>Draft</code></li>
+            <li>ValueSet: <code>service-type</code> (ServiceType) bound to element <code>Encounter.serviceType</code> (<code>Example</code>) has status <code>Draft</code></li>
+            <li>ValueSet: <code>encounter-subject-status</code> (EncounterSubjectStatus) bound to element <code>Encounter.subjectStatus</code> (<code>Example</code>) has status <code>Draft</code></li>
+            <li>ValueSet: <code>encounter-participant-type</code> (ParticipantType) bound to element <code>Encounter.participant.type</code> (<code>Extensible</code>) has status <code>Draft</code></li>
+            <li>ValueSet: <code>encounter-participant-type</code> (ParticipantType) bound to element <code>Encounter.participant.type</code> (<code>Extensible</code>) has standard status <code>trial-use</code></li>
+            <li>ValueSet: <code>encounter-reason-use</code> (EncounterReasonUse) bound to element <code>Encounter.reason.use</code> (<code>Example</code>) has status <code>Draft</code></li>
+            <li>ValueSet: <code>encounter-reason-use</code> (EncounterReasonUse) bound to element <code>Encounter.reason.use</code> (<code>Example</code>) has standard status <code>trial-use</code></li>
+            <li>CodeSystem: <code>encounter-reason-use</code> (EncounterReasonUse) referenced by ValueSet <code>encounter-reason-use</code> bound to element <code>Encounter.reason.use</code> (<code>Example</code>) has standard status <code>trial-use</code></li>
+            <li>ValueSet: <code>encounter-reason</code> (EncounterReasonCodes) bound to element <code>Encounter.reason.value</code> (<code>Preferred</code>) has status <code>Draft</code></li>
+            <li>ValueSet: <code>condition-code</code> (ConditionProblemDiagnosisCodes) bound to element <code>Encounter.diagnosis.condition</code> (<code>Example</code>) has status <code>Draft</code></li>
+            <li>ValueSet: <code>encounter-diagnosis-use</code> (EncounterDiagnosisUse) bound to element <code>Encounter.diagnosis.use</code> (<code>Preferred</code>) has status <code>Draft</code></li>
+            <li>ValueSet: <code>encounter-diagnosis-use</code> (EncounterDiagnosisUse) bound to element <code>Encounter.diagnosis.use</code> (<code>Preferred</code>) has standard status <code>trial-use</code></li>
+            <li>CodeSystem: <code>encounter-diagnosis-use</code> (EncounterDiagnosisUse) referenced by ValueSet <code>encounter-diagnosis-use</code> bound to element <code>Encounter.diagnosis.use</code> (<code>Preferred</code>) has standard status <code>trial-use</code></li>
+            <li>ValueSet: <code>encounter-diet</code> (EncounterDiet) bound to element <code>Encounter.dietPreference</code> (<code>Example</code>) has status <code>Draft</code></li>
+            <li>ValueSet: <code>encounter-special-arrangements</code> (SpecialArrangements) bound to element <code>Encounter.specialArrangement</code> (<code>Preferred</code>) has status <code>Draft</code></li>
+            <li>ValueSet: <code>encounter-special-courtesy</code> (SpecialCourtesy) bound to element <code>Encounter.specialCourtesy</code> (<code>Preferred</code>) has status <code>Draft</code></li>
+            <li>ValueSet: <code>encounter-admit-source</code> (AdmitSource) bound to element <code>Encounter.admission.admitSource</code> (<code>Preferred</code>) has status <code>Draft</code></li>
+            <li>ValueSet: <code>encounter-discharge-disposition</code> (DischargeDisposition) bound to element <code>Encounter.admission.dischargeDisposition</code> (<code>Example</code>) has status <code>Draft</code></li>
+            <li>ValueSet: <code>encounter-location-status</code> (EncounterLocationStatus) bound to element <code>Encounter.location.status</code> (<code>Required</code>) has status <code>Draft</code></li>
+            <li>ValueSet: <code>encounter-location-status</code> (EncounterLocationStatus) bound to element <code>Encounter.location.status</code> (<code>Required</code>) has standard status <code>trial-use</code></li>
+            <li>CodeSystem: <code>encounter-location-status</code> (EncounterLocationStatus) referenced by ValueSet <code>encounter-location-status</code> bound to element <code>Encounter.location.status</code> (<code>Required</code>) has standard status <code>trial-use</code></li>
+            <li>ValueSet: <code>location-form</code> (LocationForm) bound to element <code>Encounter.location.form</code> (<code>Example</code>) has status <code>Draft</code></li>
+            <li>Operation: <code>Encounter-everything</code> (Everything) has status of <code>Draft</code></li>
+            <li>Operation: <code>Encounter-everything</code> (Everything) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>Encounter-account</code> (account) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>Encounter-appointment</code> (appointment) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>Encounter-based-on</code> (based-on) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>Encounter-careteam</code> (careteam) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>Encounter-class</code> (class) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>Encounter-date-start</code> (date-start) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>Encounter-diagnosis-code</code> (diagnosis-code) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>Encounter-diagnosis-reference</code> (diagnosis-reference) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>Encounter-end-date</code> (end-date) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>Encounter-episode-of-care</code> (episode-of-care) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>Encounter-length</code> (length) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>Encounter-location</code> (location) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>Encounter-location-period</code> (location-period) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>Encounter-location-value-period</code> (location-value-period) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>Encounter-part-of</code> (part-of) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>Encounter-participant</code> (participant) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>Encounter-participant-type</code> (participant-type) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>Encounter-practitioner</code> (practitioner) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>Encounter-reason-code</code> (reason-code) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>Encounter-reason-reference</code> (reason-reference) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>Encounter-service-provider</code> (service-provider) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>Encounter-special-arrangement</code> (special-arrangement) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>Encounter-status</code> (status) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>Encounter-subject</code> (subject) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>Encounter-subject-status</code> (subject-status) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>clinical-date</code> (date) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>clinical-identifier</code> (identifier) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>clinical-patient</code> (patient) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>clinical-type</code> (type) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>Encounter-account</code> (account) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>Encounter-appointment</code> (appointment) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>Encounter-based-on</code> (based-on) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>Encounter-careteam</code> (careteam) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>Encounter-class</code> (class) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>Encounter-date-start</code> (date-start) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>Encounter-diagnosis-code</code> (diagnosis-code) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>Encounter-diagnosis-reference</code> (diagnosis-reference) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>Encounter-end-date</code> (end-date) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>Encounter-episode-of-care</code> (episode-of-care) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>Encounter-length</code> (length) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>Encounter-location</code> (location) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>Encounter-location-period</code> (location-period) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>Encounter-location-value-period</code> (location-value-period) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>Encounter-part-of</code> (part-of) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>Encounter-participant</code> (participant) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>Encounter-participant-type</code> (participant-type) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>Encounter-practitioner</code> (practitioner) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>Encounter-reason-code</code> (reason-code) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>Encounter-reason-reference</code> (reason-reference) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>Encounter-service-provider</code> (service-provider) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>Encounter-special-arrangement</code> (special-arrangement) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>Encounter-status</code> (status) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>Encounter-subject</code> (subject) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>Encounter-subject-status</code> (subject-status) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>clinical-date</code> (date) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>clinical-identifier</code> (identifier) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>clinical-patient</code> (patient) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>clinical-type</code> (type) has standards status <code>trial-use</code></li>
         </ul>
 
 
@@ -174,14 +220,14 @@
                 </tr>
             </thead>
             <tbody>
-                <tr><td><code>partOf<code></td><td>No</td></tr>
-            <tr><td><code>subjectStatus<code></td><td>No</td></tr>
-            <tr><td><code>triaged<code></td><td>No</td></tr>
-            <tr><td><code>statusHistory<code></td><td>No</td></tr>
-            <tr><td><code>classHistory<code></td><td>No</td></tr>
+                <tr><td><code>classHistory<code></td><td>No</td></tr>
+            <tr><td><code>doesn't<code></td><td>Yes</td></tr>
+            <tr><td><code>partOf<code></td><td>No</td></tr>
             <tr><td><code>remediates<code></td><td>No</td></tr>
             <tr><td><code>status/subjectStatus<code></td><td>No</td></tr>
-            <tr><td><code>doesn't<code></td><td>Yes</td></tr>
+            <tr><td><code>statusHistory<code></td><td>No</td></tr>
+            <tr><td><code>subjectStatus<code></td><td>No</td></tr>
+            <tr><td><code>triaged<code></td><td>No</td></tr>
             </tbody>
         </table>
 
@@ -978,6 +1024,319 @@
     </thead>
     <tbody>
         <tr>
+            <td><code>Encounter-account</code></td>
+            <td><code>account</code></td>
+            <td>Draft</td>
+            <td></td>
+            <td>trial-use</td>
+            <td>False</td>
+            <td>pa</td>
+            <td>reference</td>
+            <td>The set of accounts that may be used for billing for this Encounter</td>
+        </tr>
+        <tr>
+            <td><code>Encounter-appointment</code></td>
+            <td><code>appointment</code></td>
+            <td>Draft</td>
+            <td></td>
+            <td>trial-use</td>
+            <td>False</td>
+            <td>pa</td>
+            <td>reference</td>
+            <td>The appointment that scheduled this encounter</td>
+        </tr>
+        <tr>
+            <td><code>Encounter-based-on</code></td>
+            <td><code>based-on</code></td>
+            <td>Draft</td>
+            <td></td>
+            <td>trial-use</td>
+            <td>False</td>
+            <td>pa</td>
+            <td>reference</td>
+            <td>The ServiceRequest that initiated this encounter</td>
+        </tr>
+        <tr>
+            <td><code>Encounter-careteam</code></td>
+            <td><code>careteam</code></td>
+            <td>Draft</td>
+            <td></td>
+            <td>trial-use</td>
+            <td>False</td>
+            <td>pa</td>
+            <td>reference</td>
+            <td>Careteam allocated to participate in the encounter</td>
+        </tr>
+        <tr>
+            <td><code>Encounter-class</code></td>
+            <td><code>class</code></td>
+            <td>Draft</td>
+            <td></td>
+            <td>trial-use</td>
+            <td>False</td>
+            <td>pa</td>
+            <td>token</td>
+            <td>Classification of patient encounter</td>
+        </tr>
+        <tr>
+            <td><code>Encounter-date-start</code></td>
+            <td><code>date-start</code></td>
+            <td>Draft</td>
+            <td></td>
+            <td>trial-use</td>
+            <td>False</td>
+            <td>pa</td>
+            <td>date</td>
+            <td>The actual start date of the Encounter</td>
+        </tr>
+        <tr>
+            <td><code>Encounter-diagnosis-code</code></td>
+            <td><code>diagnosis-code</code></td>
+            <td>Draft</td>
+            <td></td>
+            <td>trial-use</td>
+            <td>False</td>
+            <td>pa</td>
+            <td>token</td>
+            <td>The diagnosis or procedure relevant to the encounter (coded)</td>
+        </tr>
+        <tr>
+            <td><code>Encounter-diagnosis-reference</code></td>
+            <td><code>diagnosis-reference</code></td>
+            <td>Draft</td>
+            <td></td>
+            <td>trial-use</td>
+            <td>False</td>
+            <td>pa</td>
+            <td>reference</td>
+            <td>The diagnosis or procedure relevant to the encounter (resource reference)</td>
+        </tr>
+        <tr>
+            <td><code>Encounter-end-date</code></td>
+            <td><code>end-date</code></td>
+            <td>Draft</td>
+            <td></td>
+            <td>trial-use</td>
+            <td>False</td>
+            <td>pa</td>
+            <td>date</td>
+            <td>The actual end date of the Encounter</td>
+        </tr>
+        <tr>
+            <td><code>Encounter-episode-of-care</code></td>
+            <td><code>episode-of-care</code></td>
+            <td>Draft</td>
+            <td></td>
+            <td>trial-use</td>
+            <td>False</td>
+            <td>pa</td>
+            <td>reference</td>
+            <td>Episode(s) of care that this encounter should be recorded against</td>
+        </tr>
+        <tr>
+            <td><code>Encounter-length</code></td>
+            <td><code>length</code></td>
+            <td>Draft</td>
+            <td></td>
+            <td>trial-use</td>
+            <td>False</td>
+            <td>pa</td>
+            <td>quantity</td>
+            <td>Length of encounter in days</td>
+        </tr>
+        <tr>
+            <td><code>Encounter-location</code></td>
+            <td><code>location</code></td>
+            <td>Draft</td>
+            <td></td>
+            <td>trial-use</td>
+            <td>False</td>
+            <td>pa</td>
+            <td>reference</td>
+            <td>Location the encounter takes place</td>
+        </tr>
+        <tr>
+            <td><code>Encounter-location-period</code></td>
+            <td><code>location-period</code></td>
+            <td>Draft</td>
+            <td></td>
+            <td>trial-use</td>
+            <td>False</td>
+            <td>pa</td>
+            <td>date</td>
+            <td>Time period during which the patient was present at a location (generally used via composite location-period)</td>
+        </tr>
+        <tr>
+            <td><code>Encounter-location-value-period</code></td>
+            <td><code>location-value-period</code></td>
+            <td>Draft</td>
+            <td></td>
+            <td>trial-use</td>
+            <td>False</td>
+            <td>pa</td>
+            <td>composite</td>
+            <td>Time period during which the patient was present at the location</td>
+        </tr>
+        <tr>
+            <td><code>Encounter-part-of</code></td>
+            <td><code>part-of</code></td>
+            <td>Draft</td>
+            <td></td>
+            <td>trial-use</td>
+            <td>False</td>
+            <td>pa</td>
+            <td>reference</td>
+            <td>Another Encounter this encounter is part of</td>
+        </tr>
+        <tr>
+            <td><code>Encounter-participant</code></td>
+            <td><code>participant</code></td>
+            <td>Draft</td>
+            <td></td>
+            <td>trial-use</td>
+            <td>False</td>
+            <td>pa</td>
+            <td>reference</td>
+            <td>Persons involved in the encounter other than the patient</td>
+        </tr>
+        <tr>
+            <td><code>Encounter-participant-type</code></td>
+            <td><code>participant-type</code></td>
+            <td>Draft</td>
+            <td></td>
+            <td>trial-use</td>
+            <td>False</td>
+            <td>pa</td>
+            <td>token</td>
+            <td>Role of participant in encounter</td>
+        </tr>
+        <tr>
+            <td><code>Encounter-practitioner</code></td>
+            <td><code>practitioner</code></td>
+            <td>Draft</td>
+            <td></td>
+            <td>trial-use</td>
+            <td>False</td>
+            <td>pa</td>
+            <td>reference</td>
+            <td>Persons involved in the encounter other than the patient</td>
+        </tr>
+        <tr>
+            <td><code>Encounter-reason-code</code></td>
+            <td><code>reason-code</code></td>
+            <td>Draft</td>
+            <td></td>
+            <td>trial-use</td>
+            <td>False</td>
+            <td>pa</td>
+            <td>token</td>
+            <td>Reference to a concept (coded)</td>
+        </tr>
+        <tr>
+            <td><code>Encounter-reason-reference</code></td>
+            <td><code>reason-reference</code></td>
+            <td>Draft</td>
+            <td></td>
+            <td>trial-use</td>
+            <td>False</td>
+            <td>pa</td>
+            <td>reference</td>
+            <td>Reference to a resource (resource reference)</td>
+        </tr>
+        <tr>
+            <td><code>Encounter-service-provider</code></td>
+            <td><code>service-provider</code></td>
+            <td>Draft</td>
+            <td></td>
+            <td>trial-use</td>
+            <td>False</td>
+            <td>pa</td>
+            <td>reference</td>
+            <td>The organization (facility) responsible for this encounter</td>
+        </tr>
+        <tr>
+            <td><code>Encounter-special-arrangement</code></td>
+            <td><code>special-arrangement</code></td>
+            <td>Draft</td>
+            <td></td>
+            <td>trial-use</td>
+            <td>False</td>
+            <td>pa</td>
+            <td>token</td>
+            <td>Wheelchair, translator, stretcher, etc.</td>
+        </tr>
+        <tr>
+            <td><code>Encounter-status</code></td>
+            <td><code>status</code></td>
+            <td>Draft</td>
+            <td></td>
+            <td>trial-use</td>
+            <td>False</td>
+            <td>pa</td>
+            <td>token</td>
+            <td>planned | in-progress | on-hold | completed | cancelled | entered-in-error | unknown</td>
+        </tr>
+        <tr>
+            <td><code>Encounter-subject</code></td>
+            <td><code>subject</code></td>
+            <td>Draft</td>
+            <td></td>
+            <td>trial-use</td>
+            <td>False</td>
+            <td>pa</td>
+            <td>reference</td>
+            <td>The patient or group present at the encounter</td>
+        </tr>
+        <tr>
+            <td><code>Encounter-subject-status</code></td>
+            <td><code>subject-status</code></td>
+            <td>Draft</td>
+            <td></td>
+            <td>trial-use</td>
+            <td>False</td>
+            <td>pa</td>
+            <td>token</td>
+            <td>The current status of the subject in relation to the Encounter</td>
+        </tr>
+        <tr>
+            <td><code>clinical-date</code></td>
+            <td><code>date</code></td>
+            <td>Draft</td>
+            <td></td>
+            <td>trial-use</td>
+            <td>False</td>
+            <td>pc</td>
+            <td>date</td>
+            <td>Multiple Resources: 
+
+* [AllergyIntolerance](http://hl7.org/fhir/R6/allergyintolerance.html): Date first version of the resource instance was recorded
+* [Appointment](http://hl7.org/fhir/R6/appointment.html): Appointment date/time.
+* [AuditEvent](http://hl7.org/fhir/R6/auditevent.html): Time when the event was recorded
+* [CarePlan](http://hl7.org/fhir/R6/careplan.html): Time period plan covers
+* [CareTeam](http://hl7.org/fhir/R6/careteam.html): A date within the coverage time period.
+* [Composition](http://hl7.org/fhir/R6/composition.html): Composition editing time
+* [Consent](http://hl7.org/fhir/R6/consent.html): When consent was agreed to
+* [DiagnosticReport](http://hl7.org/fhir/R6/diagnosticreport.html): The clinically relevant time of the report
+* [DocumentReference](http://hl7.org/fhir/R6/documentreference.html): When this document reference was created
+* [Encounter](http://hl7.org/fhir/R6/encounter.html): A date within the actualPeriod the Encounter lasted
+* [EpisodeOfCare](http://hl7.org/fhir/R6/episodeofcare.html): The provided date search value falls within the episode of care's period
+* [FamilyMemberHistory](http://hl7.org/fhir/R6/familymemberhistory.html): When history was recorded or last updated
+* [Flag](http://hl7.org/fhir/R6/flag.html): Time period when flag is active
+* [Immunization](http://hl7.org/fhir/R6/immunization.html): Vaccination  (non)-Administration Date
+* [ImmunizationEvaluation](http://hl7.org/fhir/R6/immunizationevaluation.html): Date the evaluation was generated
+* [ImmunizationRecommendation](http://hl7.org/fhir/R6/immunizationrecommendation.html): Date recommendation(s) created
+* [Invoice](http://hl7.org/fhir/R6/invoice.html): Invoice date / posting date
+* [List](http://hl7.org/fhir/R6/list.html): When the list was prepared
+* [MeasureReport](http://hl7.org/fhir/R6/measurereport.html): The date of the measure report
+* [NutritionIntake](http://hl7.org/fhir/R6/nutritionintake.html): Date when patient was taking (or not taking) the medication
+* [Observation](http://hl7.org/fhir/R6/observation.html): Clinically relevant time/time-period for observation
+* [Procedure](http://hl7.org/fhir/R6/procedure.html): When the procedure occurred or is occurring
+* [ResearchSubject](http://hl7.org/fhir/R6/researchsubject.html): Start and end of participation
+* [RiskAssessment](http://hl7.org/fhir/R6/riskassessment.html): When was assessment made?
+* [SupplyRequest](http://hl7.org/fhir/R6/supplyrequest.html): When the request was made
+</td>
+        </tr>
+        <tr>
             <td><code>clinical-identifier</code></td>
             <td><code>identifier</code></td>
             <td>Draft</td>
@@ -1156,319 +1515,6 @@
 * [MedicationDispense](http://hl7.org/fhir/R6/medicationdispense.html): Returns dispenses of a specific type
 * [Specimen](http://hl7.org/fhir/R6/specimen.html): The specimen type
 </td>
-        </tr>
-        <tr>
-            <td><code>clinical-date</code></td>
-            <td><code>date</code></td>
-            <td>Draft</td>
-            <td></td>
-            <td>trial-use</td>
-            <td>False</td>
-            <td>pc</td>
-            <td>date</td>
-            <td>Multiple Resources: 
-
-* [AllergyIntolerance](http://hl7.org/fhir/R6/allergyintolerance.html): Date first version of the resource instance was recorded
-* [Appointment](http://hl7.org/fhir/R6/appointment.html): Appointment date/time.
-* [AuditEvent](http://hl7.org/fhir/R6/auditevent.html): Time when the event was recorded
-* [CarePlan](http://hl7.org/fhir/R6/careplan.html): Time period plan covers
-* [CareTeam](http://hl7.org/fhir/R6/careteam.html): A date within the coverage time period.
-* [Composition](http://hl7.org/fhir/R6/composition.html): Composition editing time
-* [Consent](http://hl7.org/fhir/R6/consent.html): When consent was agreed to
-* [DiagnosticReport](http://hl7.org/fhir/R6/diagnosticreport.html): The clinically relevant time of the report
-* [DocumentReference](http://hl7.org/fhir/R6/documentreference.html): When this document reference was created
-* [Encounter](http://hl7.org/fhir/R6/encounter.html): A date within the actualPeriod the Encounter lasted
-* [EpisodeOfCare](http://hl7.org/fhir/R6/episodeofcare.html): The provided date search value falls within the episode of care's period
-* [FamilyMemberHistory](http://hl7.org/fhir/R6/familymemberhistory.html): When history was recorded or last updated
-* [Flag](http://hl7.org/fhir/R6/flag.html): Time period when flag is active
-* [Immunization](http://hl7.org/fhir/R6/immunization.html): Vaccination  (non)-Administration Date
-* [ImmunizationEvaluation](http://hl7.org/fhir/R6/immunizationevaluation.html): Date the evaluation was generated
-* [ImmunizationRecommendation](http://hl7.org/fhir/R6/immunizationrecommendation.html): Date recommendation(s) created
-* [Invoice](http://hl7.org/fhir/R6/invoice.html): Invoice date / posting date
-* [List](http://hl7.org/fhir/R6/list.html): When the list was prepared
-* [MeasureReport](http://hl7.org/fhir/R6/measurereport.html): The date of the measure report
-* [NutritionIntake](http://hl7.org/fhir/R6/nutritionintake.html): Date when patient was taking (or not taking) the medication
-* [Observation](http://hl7.org/fhir/R6/observation.html): Clinically relevant time/time-period for observation
-* [Procedure](http://hl7.org/fhir/R6/procedure.html): When the procedure occurred or is occurring
-* [ResearchSubject](http://hl7.org/fhir/R6/researchsubject.html): Start and end of participation
-* [RiskAssessment](http://hl7.org/fhir/R6/riskassessment.html): When was assessment made?
-* [SupplyRequest](http://hl7.org/fhir/R6/supplyrequest.html): When the request was made
-</td>
-        </tr>
-        <tr>
-            <td><code>Encounter-account</code></td>
-            <td><code>account</code></td>
-            <td>Draft</td>
-            <td></td>
-            <td>trial-use</td>
-            <td>False</td>
-            <td>pa</td>
-            <td>reference</td>
-            <td>The set of accounts that may be used for billing for this Encounter</td>
-        </tr>
-        <tr>
-            <td><code>Encounter-appointment</code></td>
-            <td><code>appointment</code></td>
-            <td>Draft</td>
-            <td></td>
-            <td>trial-use</td>
-            <td>False</td>
-            <td>pa</td>
-            <td>reference</td>
-            <td>The appointment that scheduled this encounter</td>
-        </tr>
-        <tr>
-            <td><code>Encounter-based-on</code></td>
-            <td><code>based-on</code></td>
-            <td>Draft</td>
-            <td></td>
-            <td>trial-use</td>
-            <td>False</td>
-            <td>pa</td>
-            <td>reference</td>
-            <td>The ServiceRequest that initiated this encounter</td>
-        </tr>
-        <tr>
-            <td><code>Encounter-careteam</code></td>
-            <td><code>careteam</code></td>
-            <td>Draft</td>
-            <td></td>
-            <td>trial-use</td>
-            <td>False</td>
-            <td>pa</td>
-            <td>reference</td>
-            <td>Careteam allocated to participate in the encounter</td>
-        </tr>
-        <tr>
-            <td><code>Encounter-class</code></td>
-            <td><code>class</code></td>
-            <td>Draft</td>
-            <td></td>
-            <td>trial-use</td>
-            <td>False</td>
-            <td>pa</td>
-            <td>token</td>
-            <td>Classification of patient encounter</td>
-        </tr>
-        <tr>
-            <td><code>Encounter-date-start</code></td>
-            <td><code>date-start</code></td>
-            <td>Draft</td>
-            <td></td>
-            <td>trial-use</td>
-            <td>False</td>
-            <td>pa</td>
-            <td>date</td>
-            <td>The actual start date of the Encounter</td>
-        </tr>
-        <tr>
-            <td><code>Encounter-diagnosis-code</code></td>
-            <td><code>diagnosis-code</code></td>
-            <td>Draft</td>
-            <td></td>
-            <td>trial-use</td>
-            <td>False</td>
-            <td>pa</td>
-            <td>token</td>
-            <td>The diagnosis or procedure relevant to the encounter (coded)</td>
-        </tr>
-        <tr>
-            <td><code>Encounter-diagnosis-reference</code></td>
-            <td><code>diagnosis-reference</code></td>
-            <td>Draft</td>
-            <td></td>
-            <td>trial-use</td>
-            <td>False</td>
-            <td>pa</td>
-            <td>reference</td>
-            <td>The diagnosis or procedure relevant to the encounter (resource reference)</td>
-        </tr>
-        <tr>
-            <td><code>Encounter-end-date</code></td>
-            <td><code>end-date</code></td>
-            <td>Draft</td>
-            <td></td>
-            <td>trial-use</td>
-            <td>False</td>
-            <td>pa</td>
-            <td>date</td>
-            <td>The actual end date of the Encounter</td>
-        </tr>
-        <tr>
-            <td><code>Encounter-episode-of-care</code></td>
-            <td><code>episode-of-care</code></td>
-            <td>Draft</td>
-            <td></td>
-            <td>trial-use</td>
-            <td>False</td>
-            <td>pa</td>
-            <td>reference</td>
-            <td>Episode(s) of care that this encounter should be recorded against</td>
-        </tr>
-        <tr>
-            <td><code>Encounter-length</code></td>
-            <td><code>length</code></td>
-            <td>Draft</td>
-            <td></td>
-            <td>trial-use</td>
-            <td>False</td>
-            <td>pa</td>
-            <td>quantity</td>
-            <td>Length of encounter in days</td>
-        </tr>
-        <tr>
-            <td><code>Encounter-location</code></td>
-            <td><code>location</code></td>
-            <td>Draft</td>
-            <td></td>
-            <td>trial-use</td>
-            <td>False</td>
-            <td>pa</td>
-            <td>reference</td>
-            <td>Location the encounter takes place</td>
-        </tr>
-        <tr>
-            <td><code>Encounter-location-period</code></td>
-            <td><code>location-period</code></td>
-            <td>Draft</td>
-            <td></td>
-            <td>trial-use</td>
-            <td>False</td>
-            <td>pa</td>
-            <td>date</td>
-            <td>Time period during which the patient was present at a location (generally used via composite location-period)</td>
-        </tr>
-        <tr>
-            <td><code>Encounter-part-of</code></td>
-            <td><code>part-of</code></td>
-            <td>Draft</td>
-            <td></td>
-            <td>trial-use</td>
-            <td>False</td>
-            <td>pa</td>
-            <td>reference</td>
-            <td>Another Encounter this encounter is part of</td>
-        </tr>
-        <tr>
-            <td><code>Encounter-participant</code></td>
-            <td><code>participant</code></td>
-            <td>Draft</td>
-            <td></td>
-            <td>trial-use</td>
-            <td>False</td>
-            <td>pa</td>
-            <td>reference</td>
-            <td>Persons involved in the encounter other than the patient</td>
-        </tr>
-        <tr>
-            <td><code>Encounter-participant-type</code></td>
-            <td><code>participant-type</code></td>
-            <td>Draft</td>
-            <td></td>
-            <td>trial-use</td>
-            <td>False</td>
-            <td>pa</td>
-            <td>token</td>
-            <td>Role of participant in encounter</td>
-        </tr>
-        <tr>
-            <td><code>Encounter-practitioner</code></td>
-            <td><code>practitioner</code></td>
-            <td>Draft</td>
-            <td></td>
-            <td>trial-use</td>
-            <td>False</td>
-            <td>pa</td>
-            <td>reference</td>
-            <td>Persons involved in the encounter other than the patient</td>
-        </tr>
-        <tr>
-            <td><code>Encounter-reason-code</code></td>
-            <td><code>reason-code</code></td>
-            <td>Draft</td>
-            <td></td>
-            <td>trial-use</td>
-            <td>False</td>
-            <td>pa</td>
-            <td>token</td>
-            <td>Reference to a concept (coded)</td>
-        </tr>
-        <tr>
-            <td><code>Encounter-reason-reference</code></td>
-            <td><code>reason-reference</code></td>
-            <td>Draft</td>
-            <td></td>
-            <td>trial-use</td>
-            <td>False</td>
-            <td>pa</td>
-            <td>reference</td>
-            <td>Reference to a resource (resource reference)</td>
-        </tr>
-        <tr>
-            <td><code>Encounter-service-provider</code></td>
-            <td><code>service-provider</code></td>
-            <td>Draft</td>
-            <td></td>
-            <td>trial-use</td>
-            <td>False</td>
-            <td>pa</td>
-            <td>reference</td>
-            <td>The organization (facility) responsible for this encounter</td>
-        </tr>
-        <tr>
-            <td><code>Encounter-special-arrangement</code></td>
-            <td><code>special-arrangement</code></td>
-            <td>Draft</td>
-            <td></td>
-            <td>trial-use</td>
-            <td>False</td>
-            <td>pa</td>
-            <td>token</td>
-            <td>Wheelchair, translator, stretcher, etc.</td>
-        </tr>
-        <tr>
-            <td><code>Encounter-status</code></td>
-            <td><code>status</code></td>
-            <td>Draft</td>
-            <td></td>
-            <td>trial-use</td>
-            <td>False</td>
-            <td>pa</td>
-            <td>token</td>
-            <td>planned | in-progress | on-hold | completed | cancelled | entered-in-error | unknown</td>
-        </tr>
-        <tr>
-            <td><code>Encounter-subject</code></td>
-            <td><code>subject</code></td>
-            <td>Draft</td>
-            <td></td>
-            <td>trial-use</td>
-            <td>False</td>
-            <td>pa</td>
-            <td>reference</td>
-            <td>The patient or group present at the encounter</td>
-        </tr>
-        <tr>
-            <td><code>Encounter-subject-status</code></td>
-            <td><code>subject-status</code></td>
-            <td>Draft</td>
-            <td></td>
-            <td>trial-use</td>
-            <td>False</td>
-            <td>pa</td>
-            <td>token</td>
-            <td>The current status of the subject in relation to the Encounter</td>
-        </tr>
-        <tr>
-            <td><code>Encounter-location-value-period</code></td>
-            <td><code>location-value-period</code></td>
-            <td>Draft</td>
-            <td></td>
-            <td>trial-use</td>
-            <td>False</td>
-            <td>pa</td>
-            <td>composite</td>
-            <td>Time period during which the patient was present at the location</td>
         </tr>
     </tbody>
 </table>

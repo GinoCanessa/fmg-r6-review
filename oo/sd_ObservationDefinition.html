@@ -7,23 +7,44 @@
         <h3>Urgent Item Checklist</h3>
                 <ul>
             <li>Confirm workgroup disposition vote has been recorded and sent to FMG!</li>
-            <li>ValueSet: <code>version-algorithm</code> (VersionAlgorithm) bound to element <code>ObservationDefinition.versionAlgorithm[x]</code> is flagged as <code>trial-use</code></li>
-            <li>CodeSystem: <code>version-algorithm</code> (VersionAlgorithm) referenced by ValueSet <code>version-algorithm</code> bound to element <code>ObservationDefinition.versionAlgorithm[x]</code> is flagged as <code>trial-use</code></li>
-            <li>ValueSet: <code>permitted-data-type</code> (ObservationDataType) bound to element <code>ObservationDefinition.permittedDataType</code> is flagged as <code>trial-use</code></li>
-            <li>CodeSystem: <code>permitted-data-type</code> (ObservationDataType) referenced by ValueSet <code>permitted-data-type</code> bound to element <code>ObservationDefinition.permittedDataType</code> is flagged as <code>trial-use</code></li>
-            <li>ValueSet: <code>referencerange-meaning</code> (ObservationReferenceRangeMeaningCodes) bound to element <code>ObservationDefinition.qualifiedValue.context</code> is flagged as <code>trial-use</code></li>
-            <li>ValueSet: <code>observation-range-category</code> (ObservationRangeCategory) bound to element <code>ObservationDefinition.qualifiedValue.rangeCategory</code> is flagged as <code>trial-use</code></li>
-            <li>CodeSystem: <code>observation-range-category</code> (ObservationRangeCategory) referenced by ValueSet <code>observation-range-category</code> bound to element <code>ObservationDefinition.qualifiedValue.rangeCategory</code> is flagged as <code>trial-use</code></li>
-            <li>ValueSet: <code>permitted-data-type</code> (ObservationDataType) bound to element <code>ObservationDefinition.component.permittedDataType</code> is flagged as <code>trial-use</code></li>
-            <li>CodeSystem: <code>permitted-data-type</code> (ObservationDataType) referenced by ValueSet <code>permitted-data-type</code> bound to element <code>ObservationDefinition.component.permittedDataType</code> is flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>CanonicalResource-identifier</code> (identifier) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>CanonicalResource-status</code> (status) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>CanonicalResource-title</code> (title) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>CanonicalResource-url</code> (url) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>ObservationDefinition-category</code> (category) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>ObservationDefinition-code</code> (code) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>ObservationDefinition-experimental</code> (experimental) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>ObservationDefinition-method</code> (method) flagged as <code>trial-use</code></li>
+            <li>ValueSet: <code>version-algorithm</code> (VersionAlgorithm) bound to element <code>ObservationDefinition.versionAlgorithm[x]</code> (<code>Extensible</code>) has status <code>Draft</code></li>
+            <li>ValueSet: <code>version-algorithm</code> (VersionAlgorithm) bound to element <code>ObservationDefinition.versionAlgorithm[x]</code> (<code>Extensible</code>) has standard status <code>trial-use</code></li>
+            <li>CodeSystem: <code>version-algorithm</code> (VersionAlgorithm) referenced by ValueSet <code>version-algorithm</code> bound to element <code>ObservationDefinition.versionAlgorithm[x]</code> (<code>Extensible</code>) has standard status <code>trial-use</code></li>
+            <li>ValueSet: <code>observation-category</code> (ObservationCategoryCodes) bound to element <code>ObservationDefinition.category</code> (<code>Example</code>) has status <code>Draft</code></li>
+            <li>ValueSet: <code>observation-codes</code> (LOINCCodes) bound to element <code>ObservationDefinition.code</code> (<code>Example</code>) has status <code>Draft</code></li>
+            <li>ValueSet: <code>permitted-data-type</code> (ObservationDataType) bound to element <code>ObservationDefinition.permittedDataType</code> (<code>Required</code>) has status <code>Draft</code></li>
+            <li>ValueSet: <code>permitted-data-type</code> (ObservationDataType) bound to element <code>ObservationDefinition.permittedDataType</code> (<code>Required</code>) has standard status <code>trial-use</code></li>
+            <li>CodeSystem: <code>permitted-data-type</code> (ObservationDataType) referenced by ValueSet <code>permitted-data-type</code> bound to element <code>ObservationDefinition.permittedDataType</code> (<code>Required</code>) has standard status <code>trial-use</code></li>
+            <li>ValueSet: <code>body-site</code> (SNOMEDCTBodyStructures) bound to element <code>ObservationDefinition.bodySite</code> (<code>Example</code>) has status <code>Draft</code></li>
+            <li>ValueSet: <code>observation-methods</code> (ObservationMethods) bound to element <code>ObservationDefinition.method</code> (<code>Example</code>) has status <code>Draft</code></li>
+            <li>ValueSet: <code>ucum-units</code> (UCUMCodes) bound to element <code>ObservationDefinition.permittedUnit</code> (<code>Preferred</code>) has status <code>Draft</code></li>
+            <li>ValueSet: <code>referencerange-meaning</code> (ObservationReferenceRangeMeaningCodes) bound to element <code>ObservationDefinition.qualifiedValue.context</code> (<code>Extensible</code>) has status <code>Draft</code></li>
+            <li>ValueSet: <code>referencerange-meaning</code> (ObservationReferenceRangeMeaningCodes) bound to element <code>ObservationDefinition.qualifiedValue.context</code> (<code>Extensible</code>) has standard status <code>trial-use</code></li>
+            <li>ValueSet: <code>referencerange-appliesto</code> (ObservationReferenceRangeAppliesToCodes) bound to element <code>ObservationDefinition.qualifiedValue.appliesTo</code> (<code>Example</code>) has status <code>Draft</code></li>
+            <li>ValueSet: <code>observation-range-category</code> (ObservationRangeCategory) bound to element <code>ObservationDefinition.qualifiedValue.rangeCategory</code> (<code>Required</code>) has status <code>Draft</code></li>
+            <li>ValueSet: <code>observation-range-category</code> (ObservationRangeCategory) bound to element <code>ObservationDefinition.qualifiedValue.rangeCategory</code> (<code>Required</code>) has standard status <code>trial-use</code></li>
+            <li>CodeSystem: <code>observation-range-category</code> (ObservationRangeCategory) referenced by ValueSet <code>observation-range-category</code> bound to element <code>ObservationDefinition.qualifiedValue.rangeCategory</code> (<code>Required</code>) has standard status <code>trial-use</code></li>
+            <li>ValueSet: <code>observation-codes</code> (LOINCCodes) bound to element <code>ObservationDefinition.component.code</code> (<code>Example</code>) has status <code>Draft</code></li>
+            <li>ValueSet: <code>permitted-data-type</code> (ObservationDataType) bound to element <code>ObservationDefinition.component.permittedDataType</code> (<code>Required</code>) has status <code>Draft</code></li>
+            <li>ValueSet: <code>permitted-data-type</code> (ObservationDataType) bound to element <code>ObservationDefinition.component.permittedDataType</code> (<code>Required</code>) has standard status <code>trial-use</code></li>
+            <li>CodeSystem: <code>permitted-data-type</code> (ObservationDataType) referenced by ValueSet <code>permitted-data-type</code> bound to element <code>ObservationDefinition.component.permittedDataType</code> (<code>Required</code>) has standard status <code>trial-use</code></li>
+            <li>ValueSet: <code>ucum-units</code> (UCUMCodes) bound to element <code>ObservationDefinition.component.permittedUnit</code> (<code>Preferred</code>) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>CanonicalResource-identifier</code> (identifier) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>CanonicalResource-status</code> (status) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>CanonicalResource-title</code> (title) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>CanonicalResource-url</code> (url) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>ObservationDefinition-category</code> (category) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>ObservationDefinition-code</code> (code) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>ObservationDefinition-experimental</code> (experimental) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>ObservationDefinition-method</code> (method) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>CanonicalResource-identifier</code> (identifier) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>CanonicalResource-status</code> (status) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>CanonicalResource-title</code> (title) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>CanonicalResource-url</code> (url) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>ObservationDefinition-category</code> (category) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>ObservationDefinition-code</code> (code) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>ObservationDefinition-experimental</code> (experimental) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>ObservationDefinition-method</code> (method) has standards status <code>trial-use</code></li>
         </ul>
 
 
@@ -152,8 +173,8 @@
                 </tr>
             </thead>
             <tbody>
-                <tr><td><code>referenceRange<code></td><td>No</td></tr>
-            <tr><td><code>qualifiedValue<code></td><td>No</td></tr>
+                <tr><td><code>qualifiedValue<code></td><td>No</td></tr>
+            <tr><td><code>referenceRange<code></td><td>No</td></tr>
             <tr><td><code>subjectCodeableConcept<code></td><td>No</td></tr>
             </tbody>
         </table>

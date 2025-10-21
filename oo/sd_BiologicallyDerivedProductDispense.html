@@ -106,7 +106,7 @@
                 <tr>
                     <td><b>MAY</b></td>
                     <td>0</td>
-                    <td>3</td>
+                    <td>4</td>
                 </tr>
                 <tr>
                     <td><b>MAY NOT</b></td>
@@ -138,7 +138,8 @@
                 </tr>
             </thead>
             <tbody>
-                <tr><td><code>crossmatched<code></td><td>No</td></tr>
+                <tr><td><code>Storyboards<code></td><td>No</td></tr>
+            <tr><td><code>crossmatched<code></td><td>No</td></tr>
             </tbody>
         </table>
 
@@ -586,6 +587,72 @@
     </thead>
     <tbody>
         <tr>
+            <td><code>BiologicallyDerivedProductDispense-based-on</code></td>
+            <td><code>based-on</code></td>
+            <td>Draft</td>
+            <td></td>
+            <td>trial-use</td>
+            <td>False</td>
+            <td>oo</td>
+            <td>reference</td>
+            <td>The order or request that this dispense is fulfilling</td>
+        </tr>
+        <tr>
+            <td><code>BiologicallyDerivedProductDispense-part-of</code></td>
+            <td><code>part-of</code></td>
+            <td>Draft</td>
+            <td></td>
+            <td>trial-use</td>
+            <td>False</td>
+            <td>oo</td>
+            <td>reference</td>
+            <td>Part of referenced event</td>
+        </tr>
+        <tr>
+            <td><code>BiologicallyDerivedProductDispense-performer</code></td>
+            <td><code>performer</code></td>
+            <td>Draft</td>
+            <td></td>
+            <td>trial-use</td>
+            <td>False</td>
+            <td>oo</td>
+            <td>reference</td>
+            <td>Who performed the action</td>
+        </tr>
+        <tr>
+            <td><code>BiologicallyDerivedProductDispense-product</code></td>
+            <td><code>product</code></td>
+            <td>Draft</td>
+            <td></td>
+            <td>trial-use</td>
+            <td>False</td>
+            <td>oo</td>
+            <td>reference</td>
+            <td>Search for products that match this code</td>
+        </tr>
+        <tr>
+            <td><code>BiologicallyDerivedProductDispense-status</code></td>
+            <td><code>status</code></td>
+            <td>Draft</td>
+            <td></td>
+            <td>trial-use</td>
+            <td>False</td>
+            <td>oo</td>
+            <td>token</td>
+            <td>The status of the dispense</td>
+        </tr>
+        <tr>
+            <td><code>BiologicallyDerivedProductDispense-subject</code></td>
+            <td><code>subject</code></td>
+            <td>Draft</td>
+            <td></td>
+            <td>trial-use</td>
+            <td>False</td>
+            <td>oo</td>
+            <td>reference</td>
+            <td>The intended recipient(s) of the dispensed product</td>
+        </tr>
+        <tr>
             <td><code>clinical-identifier</code></td>
             <td><code>identifier</code></td>
             <td>Draft</td>
@@ -741,72 +808,6 @@
 * [Task](http://hl7.org/fhir/R6/task.html): Search by patient
 * [VisionPrescription](http://hl7.org/fhir/R6/visionprescription.html): The identity of a patient to list dispenses for
 </td>
-        </tr>
-        <tr>
-            <td><code>BiologicallyDerivedProductDispense-based-on</code></td>
-            <td><code>based-on</code></td>
-            <td>Draft</td>
-            <td></td>
-            <td>trial-use</td>
-            <td>False</td>
-            <td>oo</td>
-            <td>reference</td>
-            <td>The order or request that this dispense is fulfilling</td>
-        </tr>
-        <tr>
-            <td><code>BiologicallyDerivedProductDispense-part-of</code></td>
-            <td><code>part-of</code></td>
-            <td>Draft</td>
-            <td></td>
-            <td>trial-use</td>
-            <td>False</td>
-            <td>oo</td>
-            <td>reference</td>
-            <td>Part of referenced event</td>
-        </tr>
-        <tr>
-            <td><code>BiologicallyDerivedProductDispense-performer</code></td>
-            <td><code>performer</code></td>
-            <td>Draft</td>
-            <td></td>
-            <td>trial-use</td>
-            <td>False</td>
-            <td>oo</td>
-            <td>reference</td>
-            <td>Who performed the action</td>
-        </tr>
-        <tr>
-            <td><code>BiologicallyDerivedProductDispense-product</code></td>
-            <td><code>product</code></td>
-            <td>Draft</td>
-            <td></td>
-            <td>trial-use</td>
-            <td>False</td>
-            <td>oo</td>
-            <td>reference</td>
-            <td>Search for products that match this code</td>
-        </tr>
-        <tr>
-            <td><code>BiologicallyDerivedProductDispense-status</code></td>
-            <td><code>status</code></td>
-            <td>Draft</td>
-            <td></td>
-            <td>trial-use</td>
-            <td>False</td>
-            <td>oo</td>
-            <td>token</td>
-            <td>The status of the dispense</td>
-        </tr>
-        <tr>
-            <td><code>BiologicallyDerivedProductDispense-subject</code></td>
-            <td><code>subject</code></td>
-            <td>Draft</td>
-            <td></td>
-            <td>trial-use</td>
-            <td>False</td>
-            <td>oo</td>
-            <td>reference</td>
-            <td>The intended recipient(s) of the dispensed product</td>
         </tr>
     </tbody>
 </table>

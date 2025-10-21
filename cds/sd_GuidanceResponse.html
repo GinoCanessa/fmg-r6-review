@@ -7,16 +7,23 @@
         <h3>Urgent Item Checklist</h3>
                 <ul>
             <li>Confirm workgroup disposition vote has been recorded and sent to FMG!</li>
-            <li>ValueSet: <code>guidance-module-code</code> (GuidanceModuleCode) bound to element <code>GuidanceResponse.module[x]</code> is flagged as <code>trial-use</code></li>
-            <li>CodeSystem: <code>guidance-module-code</code> (GuidanceModuleCode) referenced by ValueSet <code>guidance-module-code</code> bound to element <code>GuidanceResponse.module[x]</code> is flagged as <code>trial-use</code></li>
-            <li>CodeSystem: <code>guidance-module-code</code> (GuidanceModuleCode) referenced by ValueSet <code>guidance-module-code</code> bound to element <code>GuidanceResponse.module[x]</code> is flagged as <code>experimental</code></li>
-            <li>ValueSet: <code>guidance-response-status</code> (GuidanceResponseStatus) bound to element <code>GuidanceResponse.status</code> is flagged as <code>trial-use</code></li>
-            <li>CodeSystem: <code>guidance-response-status</code> (GuidanceResponseStatus) referenced by ValueSet <code>guidance-response-status</code> bound to element <code>GuidanceResponse.status</code> is flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>clinical-identifier</code> (identifier) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>clinical-patient</code> (patient) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>GuidanceResponse-request</code> (request) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>GuidanceResponse-status</code> (status) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>GuidanceResponse-subject</code> (subject) flagged as <code>trial-use</code></li>
+            <li>ValueSet: <code>guidance-module-code</code> (GuidanceModuleCode) bound to element <code>GuidanceResponse.module[x]</code> (<code>Example</code>) has status <code>Draft</code></li>
+            <li>ValueSet: <code>guidance-module-code</code> (GuidanceModuleCode) bound to element <code>GuidanceResponse.module[x]</code> (<code>Example</code>) has standard status <code>trial-use</code></li>
+            <li>CodeSystem: <code>guidance-module-code</code> (GuidanceModuleCode) referenced by ValueSet <code>guidance-module-code</code> bound to element <code>GuidanceResponse.module[x]</code> (<code>Example</code>) has standard status <code>trial-use</code></li>
+            <li>CodeSystem: <code>guidance-module-code</code> (GuidanceModuleCode) referenced by ValueSet <code>guidance-module-code</code> bound to element <code>GuidanceResponse.module[x]</code> (<code>Example</code>) is flagged as <code>experimental</code></li>
+            <li>ValueSet: <code>guidance-response-status</code> (GuidanceResponseStatus) bound to element <code>GuidanceResponse.status</code> (<code>Required</code>) has status <code>Draft</code></li>
+            <li>ValueSet: <code>guidance-response-status</code> (GuidanceResponseStatus) bound to element <code>GuidanceResponse.status</code> (<code>Required</code>) has standard status <code>trial-use</code></li>
+            <li>CodeSystem: <code>guidance-response-status</code> (GuidanceResponseStatus) referenced by ValueSet <code>guidance-response-status</code> bound to element <code>GuidanceResponse.status</code> (<code>Required</code>) has standard status <code>trial-use</code></li>
+            <li>Search Parameter: <code>GuidanceResponse-request</code> (request) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>GuidanceResponse-status</code> (status) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>GuidanceResponse-subject</code> (subject) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>clinical-identifier</code> (identifier) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>clinical-patient</code> (patient) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>GuidanceResponse-request</code> (request) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>GuidanceResponse-status</code> (status) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>GuidanceResponse-subject</code> (subject) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>clinical-identifier</code> (identifier) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>clinical-patient</code> (patient) has standards status <code>trial-use</code></li>
         </ul>
 
 
@@ -545,6 +552,39 @@
     </thead>
     <tbody>
         <tr>
+            <td><code>GuidanceResponse-request</code></td>
+            <td><code>request</code></td>
+            <td>Draft</td>
+            <td></td>
+            <td>trial-use</td>
+            <td>False</td>
+            <td>cds</td>
+            <td>token</td>
+            <td>The identifier of the request associated with the response</td>
+        </tr>
+        <tr>
+            <td><code>GuidanceResponse-status</code></td>
+            <td><code>status</code></td>
+            <td>Draft</td>
+            <td></td>
+            <td>trial-use</td>
+            <td>False</td>
+            <td>cds</td>
+            <td>token</td>
+            <td>The status of the guidance response</td>
+        </tr>
+        <tr>
+            <td><code>GuidanceResponse-subject</code></td>
+            <td><code>subject</code></td>
+            <td>Draft</td>
+            <td></td>
+            <td>trial-use</td>
+            <td>False</td>
+            <td>cds</td>
+            <td>reference</td>
+            <td>The subject that the guidance response is about</td>
+        </tr>
+        <tr>
             <td><code>clinical-identifier</code></td>
             <td><code>identifier</code></td>
             <td>Draft</td>
@@ -700,39 +740,6 @@
 * [Task](http://hl7.org/fhir/R6/task.html): Search by patient
 * [VisionPrescription](http://hl7.org/fhir/R6/visionprescription.html): The identity of a patient to list dispenses for
 </td>
-        </tr>
-        <tr>
-            <td><code>GuidanceResponse-request</code></td>
-            <td><code>request</code></td>
-            <td>Draft</td>
-            <td></td>
-            <td>trial-use</td>
-            <td>False</td>
-            <td>cds</td>
-            <td>token</td>
-            <td>The identifier of the request associated with the response</td>
-        </tr>
-        <tr>
-            <td><code>GuidanceResponse-status</code></td>
-            <td><code>status</code></td>
-            <td>Draft</td>
-            <td></td>
-            <td>trial-use</td>
-            <td>False</td>
-            <td>cds</td>
-            <td>token</td>
-            <td>The status of the guidance response</td>
-        </tr>
-        <tr>
-            <td><code>GuidanceResponse-subject</code></td>
-            <td><code>subject</code></td>
-            <td>Draft</td>
-            <td></td>
-            <td>trial-use</td>
-            <td>False</td>
-            <td>cds</td>
-            <td>reference</td>
-            <td>The subject that the guidance response is about</td>
         </tr>
     </tbody>
 </table>

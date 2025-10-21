@@ -7,18 +7,34 @@
         <h3>Urgent Item Checklist</h3>
                 <ul>
             <li>Confirm workgroup disposition vote has been recorded and sent to FMG!</li>
-            <li>ValueSet: <code>fm-status</code> (FinancialResourceStatusCodes) bound to element <code>CoverageEligibilityRequest.status</code> is flagged as <code>trial-use</code></li>
-            <li>ValueSet: <code>process-priority</code> (ProcessPriorityCodes) bound to element <code>CoverageEligibilityRequest.priority</code> is flagged as <code>trial-use</code></li>
-            <li>ValueSet: <code>eligibilityrequest-purpose</code> (EligibilityRequestPurpose) bound to element <code>CoverageEligibilityRequest.purpose</code> is flagged as <code>trial-use</code></li>
-            <li>CodeSystem: <code>eligibilityrequest-purpose</code> (EligibilityRequestPurpose) referenced by ValueSet <code>eligibilityrequest-purpose</code> bound to element <code>CoverageEligibilityRequest.purpose</code> is flagged as <code>trial-use</code></li>
-            <li>Operation: <code>CoverageEligibilityRequest-submit</code> (Submit) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>clinical-identifier</code> (identifier) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>clinical-patient</code> (patient) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>CoverageEligibilityRequest-created</code> (created) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>CoverageEligibilityRequest-enterer</code> (enterer) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>CoverageEligibilityRequest-facility</code> (facility) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>CoverageEligibilityRequest-provider</code> (provider) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>CoverageEligibilityRequest-status</code> (status) flagged as <code>trial-use</code></li>
+            <li>ValueSet: <code>fm-status</code> (FinancialResourceStatusCodes) bound to element <code>CoverageEligibilityRequest.status</code> (<code>Required</code>) has status <code>Draft</code></li>
+            <li>ValueSet: <code>fm-status</code> (FinancialResourceStatusCodes) bound to element <code>CoverageEligibilityRequest.status</code> (<code>Required</code>) has standard status <code>trial-use</code></li>
+            <li>ValueSet: <code>process-priority</code> (ProcessPriorityCodes) bound to element <code>CoverageEligibilityRequest.priority</code> (<code>Example</code>) has status <code>Draft</code></li>
+            <li>ValueSet: <code>process-priority</code> (ProcessPriorityCodes) bound to element <code>CoverageEligibilityRequest.priority</code> (<code>Example</code>) has standard status <code>trial-use</code></li>
+            <li>ValueSet: <code>eligibilityrequest-purpose</code> (EligibilityRequestPurpose) bound to element <code>CoverageEligibilityRequest.purpose</code> (<code>Required</code>) has status <code>Draft</code></li>
+            <li>ValueSet: <code>eligibilityrequest-purpose</code> (EligibilityRequestPurpose) bound to element <code>CoverageEligibilityRequest.purpose</code> (<code>Required</code>) has standard status <code>trial-use</code></li>
+            <li>CodeSystem: <code>eligibilityrequest-purpose</code> (EligibilityRequestPurpose) referenced by ValueSet <code>eligibilityrequest-purpose</code> bound to element <code>CoverageEligibilityRequest.purpose</code> (<code>Required</code>) has standard status <code>trial-use</code></li>
+            <li>ValueSet: <code>datestype</code> (DatesTypeCodes) bound to element <code>CoverageEligibilityRequest.event.type</code> (<code>Example</code>) has status <code>Draft</code></li>
+            <li>ValueSet: <code>ex-benefitcategory</code> (BenefitCategoryCodes) bound to element <code>CoverageEligibilityRequest.item.category</code> (<code>Example</code>) has status <code>Draft</code></li>
+            <li>ValueSet: <code>service-uscls</code> (USCLSCodes) bound to element <code>CoverageEligibilityRequest.item.productOrService</code> (<code>Example</code>) has status <code>Draft</code></li>
+            <li>ValueSet: <code>claim-modifiers</code> (ModifierTypeCodes) bound to element <code>CoverageEligibilityRequest.item.modifier</code> (<code>Example</code>) has status <code>Draft</code></li>
+            <li>ValueSet: <code>icd-10</code> (ICD10Codes) bound to element <code>CoverageEligibilityRequest.item.diagnosis.diagnosis[x]</code> (<code>Example</code>) has status <code>Draft</code></li>
+            <li>Operation: <code>CoverageEligibilityRequest-submit</code> (Submit) has status of <code>Draft</code></li>
+            <li>Operation: <code>CoverageEligibilityRequest-submit</code> (Submit) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>CoverageEligibilityRequest-created</code> (created) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>CoverageEligibilityRequest-enterer</code> (enterer) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>CoverageEligibilityRequest-facility</code> (facility) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>CoverageEligibilityRequest-provider</code> (provider) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>CoverageEligibilityRequest-status</code> (status) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>clinical-identifier</code> (identifier) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>clinical-patient</code> (patient) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>CoverageEligibilityRequest-created</code> (created) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>CoverageEligibilityRequest-enterer</code> (enterer) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>CoverageEligibilityRequest-facility</code> (facility) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>CoverageEligibilityRequest-provider</code> (provider) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>CoverageEligibilityRequest-status</code> (status) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>clinical-identifier</code> (identifier) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>clinical-patient</code> (patient) has standards status <code>trial-use</code></li>
         </ul>
 
 
@@ -147,9 +163,7 @@
                 </tr>
             </thead>
             <tbody>
-                <tr><td><code>preauthorization<code></td><td>No</td></tr>
-            <tr><td><code>preauthorization,<code></td><td>No</td></tr>
-            <tr><td><code>inforce,<code></td><td>No</td></tr>
+                <tr><td><code>inforce,<code></td><td>No</td></tr>
             </tbody>
         </table>
 
@@ -826,6 +840,61 @@
     </thead>
     <tbody>
         <tr>
+            <td><code>CoverageEligibilityRequest-created</code></td>
+            <td><code>created</code></td>
+            <td>Draft</td>
+            <td></td>
+            <td>trial-use</td>
+            <td>False</td>
+            <td>fm</td>
+            <td>date</td>
+            <td>The creation date for the EOB</td>
+        </tr>
+        <tr>
+            <td><code>CoverageEligibilityRequest-enterer</code></td>
+            <td><code>enterer</code></td>
+            <td>Draft</td>
+            <td></td>
+            <td>trial-use</td>
+            <td>False</td>
+            <td>fm</td>
+            <td>reference</td>
+            <td>The party who is responsible for the request</td>
+        </tr>
+        <tr>
+            <td><code>CoverageEligibilityRequest-facility</code></td>
+            <td><code>facility</code></td>
+            <td>Draft</td>
+            <td></td>
+            <td>trial-use</td>
+            <td>False</td>
+            <td>fm</td>
+            <td>reference</td>
+            <td>Facility responsible for the goods and services</td>
+        </tr>
+        <tr>
+            <td><code>CoverageEligibilityRequest-provider</code></td>
+            <td><code>provider</code></td>
+            <td>Draft</td>
+            <td></td>
+            <td>trial-use</td>
+            <td>False</td>
+            <td>fm</td>
+            <td>reference</td>
+            <td>The reference to the provider</td>
+        </tr>
+        <tr>
+            <td><code>CoverageEligibilityRequest-status</code></td>
+            <td><code>status</code></td>
+            <td>Draft</td>
+            <td></td>
+            <td>trial-use</td>
+            <td>False</td>
+            <td>fm</td>
+            <td>token</td>
+            <td>The status of the EligibilityRequest</td>
+        </tr>
+        <tr>
             <td><code>clinical-identifier</code></td>
             <td><code>identifier</code></td>
             <td>Draft</td>
@@ -981,61 +1050,6 @@
 * [Task](http://hl7.org/fhir/R6/task.html): Search by patient
 * [VisionPrescription](http://hl7.org/fhir/R6/visionprescription.html): The identity of a patient to list dispenses for
 </td>
-        </tr>
-        <tr>
-            <td><code>CoverageEligibilityRequest-created</code></td>
-            <td><code>created</code></td>
-            <td>Draft</td>
-            <td></td>
-            <td>trial-use</td>
-            <td>False</td>
-            <td>fm</td>
-            <td>date</td>
-            <td>The creation date for the EOB</td>
-        </tr>
-        <tr>
-            <td><code>CoverageEligibilityRequest-enterer</code></td>
-            <td><code>enterer</code></td>
-            <td>Draft</td>
-            <td></td>
-            <td>trial-use</td>
-            <td>False</td>
-            <td>fm</td>
-            <td>reference</td>
-            <td>The party who is responsible for the request</td>
-        </tr>
-        <tr>
-            <td><code>CoverageEligibilityRequest-facility</code></td>
-            <td><code>facility</code></td>
-            <td>Draft</td>
-            <td></td>
-            <td>trial-use</td>
-            <td>False</td>
-            <td>fm</td>
-            <td>reference</td>
-            <td>Facility responsible for the goods and services</td>
-        </tr>
-        <tr>
-            <td><code>CoverageEligibilityRequest-provider</code></td>
-            <td><code>provider</code></td>
-            <td>Draft</td>
-            <td></td>
-            <td>trial-use</td>
-            <td>False</td>
-            <td>fm</td>
-            <td>reference</td>
-            <td>The reference to the provider</td>
-        </tr>
-        <tr>
-            <td><code>CoverageEligibilityRequest-status</code></td>
-            <td><code>status</code></td>
-            <td>Draft</td>
-            <td></td>
-            <td>trial-use</td>
-            <td>False</td>
-            <td>fm</td>
-            <td>token</td>
-            <td>The status of the EligibilityRequest</td>
         </tr>
     </tbody>
 </table>

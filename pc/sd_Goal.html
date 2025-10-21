@@ -7,21 +7,41 @@
         <h3>Urgent Item Checklist</h3>
                 <ul>
             <li>Confirm workgroup disposition vote has been recorded and sent to FMG!</li>
-            <li>ValueSet: <code>goal-status</code> (GoalLifecycleStatus) bound to element <code>Goal.lifecycleStatus</code> is flagged as <code>trial-use</code></li>
-            <li>CodeSystem: <code>goal-status</code> (GoalLifecycleStatus) referenced by ValueSet <code>goal-status</code> bound to element <code>Goal.lifecycleStatus</code> is flagged as <code>trial-use</code></li>
-            <li>ValueSet: <code>goal-accept-status</code> (GoalAcceptStatus) bound to element <code>Goal.acceptance.status</code> is flagged as <code>trial-use</code></li>
-            <li>CodeSystem: <code>goal-accept-status</code> (GoalAcceptStatus) referenced by ValueSet <code>goal-accept-status</code> bound to element <code>Goal.acceptance.status</code> is flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>clinical-identifier</code> (identifier) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>clinical-patient</code> (patient) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>Goal-achievement-status</code> (achievement-status) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>Goal-addresses</code> (addresses) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>Goal-category</code> (category) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>Goal-description</code> (description) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>Goal-lifecycle-status</code> (lifecycle-status) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>Goal-start-date</code> (start-date) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>Goal-subject</code> (subject) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>Goal-target-date</code> (target-date) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>Goal-target-measure</code> (target-measure) flagged as <code>trial-use</code></li>
+            <li>ValueSet: <code>goal-status</code> (GoalLifecycleStatus) bound to element <code>Goal.lifecycleStatus</code> (<code>Required</code>) has status <code>Draft</code></li>
+            <li>ValueSet: <code>goal-status</code> (GoalLifecycleStatus) bound to element <code>Goal.lifecycleStatus</code> (<code>Required</code>) has standard status <code>trial-use</code></li>
+            <li>CodeSystem: <code>goal-status</code> (GoalLifecycleStatus) referenced by ValueSet <code>goal-status</code> bound to element <code>Goal.lifecycleStatus</code> (<code>Required</code>) has standard status <code>trial-use</code></li>
+            <li>ValueSet: <code>goal-achievement</code> (GoalAchievementStatus) bound to element <code>Goal.achievementStatus</code> (<code>Preferred</code>) has status <code>Draft</code></li>
+            <li>ValueSet: <code>goal-category</code> (GoalCategory) bound to element <code>Goal.category</code> (<code>Example</code>) has status <code>Draft</code></li>
+            <li>ValueSet: <code>goal-priority</code> (GoalPriority) bound to element <code>Goal.priority</code> (<code>Preferred</code>) has status <code>Draft</code></li>
+            <li>ValueSet: <code>goal-description</code> (GoalDescription) bound to element <code>Goal.description</code> (<code>Example</code>) has status <code>Draft</code></li>
+            <li>ValueSet: <code>goal-start-event</code> (GoalStartEvent) bound to element <code>Goal.start[x]</code> (<code>Example</code>) has status <code>Draft</code></li>
+            <li>ValueSet: <code>goal-accept-status</code> (GoalAcceptStatus) bound to element <code>Goal.acceptance.status</code> (<code>Required</code>) has standard status <code>trial-use</code></li>
+            <li>CodeSystem: <code>goal-accept-status</code> (GoalAcceptStatus) referenced by ValueSet <code>goal-accept-status</code> bound to element <code>Goal.acceptance.status</code> (<code>Required</code>) has standard status <code>trial-use</code></li>
+            <li>ValueSet: <code>goal-priority</code> (GoalPriority) bound to element <code>Goal.acceptance.priority</code> (<code>Example</code>) has status <code>Draft</code></li>
+            <li>ValueSet: <code>observation-codes</code> (LOINCCodes) bound to element <code>Goal.target.measure</code> (<code>Example</code>) has status <code>Draft</code></li>
+            <li>ValueSet: <code>goal-status-reason</code> (GoalStatusReason) bound to element <code>Goal.statusReason</code> (<code>Example</code>) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>Goal-achievement-status</code> (achievement-status) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>Goal-addresses</code> (addresses) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>Goal-category</code> (category) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>Goal-description</code> (description) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>Goal-lifecycle-status</code> (lifecycle-status) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>Goal-start-date</code> (start-date) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>Goal-subject</code> (subject) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>Goal-target-date</code> (target-date) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>Goal-target-measure</code> (target-measure) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>clinical-identifier</code> (identifier) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>clinical-patient</code> (patient) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>Goal-achievement-status</code> (achievement-status) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>Goal-addresses</code> (addresses) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>Goal-category</code> (category) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>Goal-description</code> (description) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>Goal-lifecycle-status</code> (lifecycle-status) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>Goal-start-date</code> (start-date) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>Goal-subject</code> (subject) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>Goal-target-date</code> (target-date) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>Goal-target-measure</code> (target-measure) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>clinical-identifier</code> (identifier) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>clinical-patient</code> (patient) has standards status <code>trial-use</code></li>
         </ul>
 
 
@@ -118,7 +138,7 @@
                 <tr>
                     <td><b>MAY</b></td>
                     <td>0</td>
-                    <td>7</td>
+                    <td>8</td>
                 </tr>
                 <tr>
                     <td><b>MAY NOT</b></td>
@@ -151,6 +171,7 @@
             </thead>
             <tbody>
                 <tr><td><code>HgbA1c<code></td><td>No</td></tr>
+            <tr><td><code>Storyboards<code></td><td>No</td></tr>
             </tbody>
         </table>
 
@@ -658,6 +679,105 @@
     </thead>
     <tbody>
         <tr>
+            <td><code>Goal-achievement-status</code></td>
+            <td><code>achievement-status</code></td>
+            <td>Draft</td>
+            <td></td>
+            <td>trial-use</td>
+            <td>False</td>
+            <td>pc</td>
+            <td>token</td>
+            <td>in-progress | improving | worsening | no-change | achieved | sustaining | not-achieved | no-progress | not-attainable</td>
+        </tr>
+        <tr>
+            <td><code>Goal-addresses</code></td>
+            <td><code>addresses</code></td>
+            <td>Draft</td>
+            <td></td>
+            <td>trial-use</td>
+            <td>False</td>
+            <td>pc</td>
+            <td>reference</td>
+            <td>Issues addressed by this goal</td>
+        </tr>
+        <tr>
+            <td><code>Goal-category</code></td>
+            <td><code>category</code></td>
+            <td>Draft</td>
+            <td></td>
+            <td>trial-use</td>
+            <td>False</td>
+            <td>pc</td>
+            <td>token</td>
+            <td>E.g. Treatment, dietary, behavioral, etc.</td>
+        </tr>
+        <tr>
+            <td><code>Goal-description</code></td>
+            <td><code>description</code></td>
+            <td>Draft</td>
+            <td></td>
+            <td>trial-use</td>
+            <td>False</td>
+            <td>pc</td>
+            <td>token</td>
+            <td>Code or text describing goal</td>
+        </tr>
+        <tr>
+            <td><code>Goal-lifecycle-status</code></td>
+            <td><code>lifecycle-status</code></td>
+            <td>Draft</td>
+            <td></td>
+            <td>trial-use</td>
+            <td>False</td>
+            <td>pc</td>
+            <td>token</td>
+            <td>proposed | planned | accepted | active | on-hold | completed | cancelled | entered-in-error | rejected</td>
+        </tr>
+        <tr>
+            <td><code>Goal-start-date</code></td>
+            <td><code>start-date</code></td>
+            <td>Draft</td>
+            <td></td>
+            <td>trial-use</td>
+            <td>False</td>
+            <td>pc</td>
+            <td>date</td>
+            <td>When goal pursuit begins</td>
+        </tr>
+        <tr>
+            <td><code>Goal-subject</code></td>
+            <td><code>subject</code></td>
+            <td>Draft</td>
+            <td></td>
+            <td>trial-use</td>
+            <td>False</td>
+            <td>pc</td>
+            <td>reference</td>
+            <td>Who this goal is intended for</td>
+        </tr>
+        <tr>
+            <td><code>Goal-target-date</code></td>
+            <td><code>target-date</code></td>
+            <td>Draft</td>
+            <td></td>
+            <td>trial-use</td>
+            <td>False</td>
+            <td>pc</td>
+            <td>date</td>
+            <td>Reach goal on or before</td>
+        </tr>
+        <tr>
+            <td><code>Goal-target-measure</code></td>
+            <td><code>target-measure</code></td>
+            <td>Draft</td>
+            <td></td>
+            <td>trial-use</td>
+            <td>False</td>
+            <td>pc</td>
+            <td>token</td>
+            <td>The parameter whose value is being tracked</td>
+        </tr>
+        <tr>
             <td><code>clinical-identifier</code></td>
             <td><code>identifier</code></td>
             <td>Draft</td>
@@ -813,105 +933,6 @@
 * [Task](http://hl7.org/fhir/R6/task.html): Search by patient
 * [VisionPrescription](http://hl7.org/fhir/R6/visionprescription.html): The identity of a patient to list dispenses for
 </td>
-        </tr>
-        <tr>
-            <td><code>Goal-achievement-status</code></td>
-            <td><code>achievement-status</code></td>
-            <td>Draft</td>
-            <td></td>
-            <td>trial-use</td>
-            <td>False</td>
-            <td>pc</td>
-            <td>token</td>
-            <td>in-progress | improving | worsening | no-change | achieved | sustaining | not-achieved | no-progress | not-attainable</td>
-        </tr>
-        <tr>
-            <td><code>Goal-addresses</code></td>
-            <td><code>addresses</code></td>
-            <td>Draft</td>
-            <td></td>
-            <td>trial-use</td>
-            <td>False</td>
-            <td>pc</td>
-            <td>reference</td>
-            <td>Issues addressed by this goal</td>
-        </tr>
-        <tr>
-            <td><code>Goal-category</code></td>
-            <td><code>category</code></td>
-            <td>Draft</td>
-            <td></td>
-            <td>trial-use</td>
-            <td>False</td>
-            <td>pc</td>
-            <td>token</td>
-            <td>E.g. Treatment, dietary, behavioral, etc.</td>
-        </tr>
-        <tr>
-            <td><code>Goal-description</code></td>
-            <td><code>description</code></td>
-            <td>Draft</td>
-            <td></td>
-            <td>trial-use</td>
-            <td>False</td>
-            <td>pc</td>
-            <td>token</td>
-            <td>Code or text describing goal</td>
-        </tr>
-        <tr>
-            <td><code>Goal-lifecycle-status</code></td>
-            <td><code>lifecycle-status</code></td>
-            <td>Draft</td>
-            <td></td>
-            <td>trial-use</td>
-            <td>False</td>
-            <td>pc</td>
-            <td>token</td>
-            <td>proposed | planned | accepted | active | on-hold | completed | cancelled | entered-in-error | rejected</td>
-        </tr>
-        <tr>
-            <td><code>Goal-start-date</code></td>
-            <td><code>start-date</code></td>
-            <td>Draft</td>
-            <td></td>
-            <td>trial-use</td>
-            <td>False</td>
-            <td>pc</td>
-            <td>date</td>
-            <td>When goal pursuit begins</td>
-        </tr>
-        <tr>
-            <td><code>Goal-subject</code></td>
-            <td><code>subject</code></td>
-            <td>Draft</td>
-            <td></td>
-            <td>trial-use</td>
-            <td>False</td>
-            <td>pc</td>
-            <td>reference</td>
-            <td>Who this goal is intended for</td>
-        </tr>
-        <tr>
-            <td><code>Goal-target-date</code></td>
-            <td><code>target-date</code></td>
-            <td>Draft</td>
-            <td></td>
-            <td>trial-use</td>
-            <td>False</td>
-            <td>pc</td>
-            <td>date</td>
-            <td>Reach goal on or before</td>
-        </tr>
-        <tr>
-            <td><code>Goal-target-measure</code></td>
-            <td><code>target-measure</code></td>
-            <td>Draft</td>
-            <td></td>
-            <td>trial-use</td>
-            <td>False</td>
-            <td>pc</td>
-            <td>token</td>
-            <td>The parameter whose value is being tracked</td>
         </tr>
     </tbody>
 </table>

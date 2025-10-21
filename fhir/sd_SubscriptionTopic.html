@@ -7,29 +7,45 @@
         <h3>Urgent Item Checklist</h3>
                 <ul>
             <li>Confirm workgroup disposition vote has been recorded and sent to FMG!</li>
-            <li>ValueSet: <code>version-algorithm</code> (VersionAlgorithm) bound to element <code>SubscriptionTopic.versionAlgorithm[x]</code> is flagged as <code>trial-use</code></li>
-            <li>CodeSystem: <code>version-algorithm</code> (VersionAlgorithm) referenced by ValueSet <code>version-algorithm</code> bound to element <code>SubscriptionTopic.versionAlgorithm[x]</code> is flagged as <code>trial-use</code></li>
-            <li>ValueSet: <code>interaction-trigger</code> (InteractionTrigger) bound to element <code>SubscriptionTopic.trigger.supportedInteraction</code> is flagged as <code>trial-use</code></li>
-            <li>CodeSystem: <code>restful-interaction</code> (FHIRRestfulInteractions) referenced by ValueSet <code>interaction-trigger</code> bound to element <code>SubscriptionTopic.trigger.supportedInteraction</code> is flagged as <code>experimental</code></li>
-            <li>ValueSet: <code>subscriptiontopic-cr-behavior</code> (CriteriaNotExistsBehavior) bound to element <code>SubscriptionTopic.trigger.queryCriteria.resultForCreate</code> is flagged as <code>trial-use</code></li>
-            <li>CodeSystem: <code>subscriptiontopic-cr-behavior</code> (CriteriaNotExistsBehavior) referenced by ValueSet <code>subscriptiontopic-cr-behavior</code> bound to element <code>SubscriptionTopic.trigger.queryCriteria.resultForCreate</code> is flagged as <code>trial-use</code></li>
-            <li>ValueSet: <code>subscriptiontopic-cr-behavior</code> (CriteriaNotExistsBehavior) bound to element <code>SubscriptionTopic.trigger.queryCriteria.resultForDelete</code> is flagged as <code>trial-use</code></li>
-            <li>CodeSystem: <code>subscriptiontopic-cr-behavior</code> (CriteriaNotExistsBehavior) referenced by ValueSet <code>subscriptiontopic-cr-behavior</code> bound to element <code>SubscriptionTopic.trigger.queryCriteria.resultForDelete</code> is flagged as <code>trial-use</code></li>
-            <li>ValueSet: <code>search-comparator</code> (SearchComparator) bound to element <code>SubscriptionTopic.trigger.canFilterBy.comparator</code> is flagged as <code>trial-use</code></li>
-            <li>CodeSystem: <code>search-comparator</code> (SearchComparator) referenced by ValueSet <code>search-comparator</code> bound to element <code>SubscriptionTopic.trigger.canFilterBy.comparator</code> is flagged as <code>trial-use</code></li>
-            <li>ValueSet: <code>search-modifier-code</code> (SearchModifierCode) bound to element <code>SubscriptionTopic.trigger.canFilterBy.modifier</code> is flagged as <code>trial-use</code></li>
-            <li>CodeSystem: <code>search-modifier-code</code> (SearchModifierCode) referenced by ValueSet <code>search-modifier-code</code> bound to element <code>SubscriptionTopic.trigger.canFilterBy.modifier</code> is flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>CanonicalResource-date</code> (date) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>CanonicalResource-identifier</code> (identifier) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>CanonicalResource-status</code> (status) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>CanonicalResource-title</code> (title) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>CanonicalResource-url</code> (url) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>CanonicalResource-version</code> (version) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>SubscriptionTopic-derived-or-self</code> (derived-or-self) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>SubscriptionTopic-effective</code> (effective) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>SubscriptionTopic-event</code> (event) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>SubscriptionTopic-resource</code> (resource) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>SubscriptionTopic-trigger-description</code> (trigger-description) flagged as <code>trial-use</code></li>
+            <li>ValueSet: <code>version-algorithm</code> (VersionAlgorithm) bound to element <code>SubscriptionTopic.versionAlgorithm[x]</code> (<code>Extensible</code>) has status <code>Draft</code></li>
+            <li>ValueSet: <code>version-algorithm</code> (VersionAlgorithm) bound to element <code>SubscriptionTopic.versionAlgorithm[x]</code> (<code>Extensible</code>) has standard status <code>trial-use</code></li>
+            <li>CodeSystem: <code>version-algorithm</code> (VersionAlgorithm) referenced by ValueSet <code>version-algorithm</code> bound to element <code>SubscriptionTopic.versionAlgorithm[x]</code> (<code>Extensible</code>) has standard status <code>trial-use</code></li>
+            <li>ValueSet: <code>interaction-trigger</code> (InteractionTrigger) bound to element <code>SubscriptionTopic.trigger.supportedInteraction</code> (<code>Required</code>) has standard status <code>trial-use</code></li>
+            <li>CodeSystem: <code>restful-interaction</code> (FHIRRestfulInteractions) referenced by ValueSet <code>interaction-trigger</code> bound to element <code>SubscriptionTopic.trigger.supportedInteraction</code> (<code>Required</code>) is flagged as <code>experimental</code></li>
+            <li>ValueSet: <code>subscriptiontopic-cr-behavior</code> (CriteriaNotExistsBehavior) bound to element <code>SubscriptionTopic.trigger.queryCriteria.resultForCreate</code> (<code>Required</code>) has status <code>Draft</code></li>
+            <li>ValueSet: <code>subscriptiontopic-cr-behavior</code> (CriteriaNotExistsBehavior) bound to element <code>SubscriptionTopic.trigger.queryCriteria.resultForCreate</code> (<code>Required</code>) has standard status <code>trial-use</code></li>
+            <li>CodeSystem: <code>subscriptiontopic-cr-behavior</code> (CriteriaNotExistsBehavior) referenced by ValueSet <code>subscriptiontopic-cr-behavior</code> bound to element <code>SubscriptionTopic.trigger.queryCriteria.resultForCreate</code> (<code>Required</code>) has standard status <code>trial-use</code></li>
+            <li>ValueSet: <code>subscriptiontopic-cr-behavior</code> (CriteriaNotExistsBehavior) bound to element <code>SubscriptionTopic.trigger.queryCriteria.resultForDelete</code> (<code>Required</code>) has status <code>Draft</code></li>
+            <li>ValueSet: <code>subscriptiontopic-cr-behavior</code> (CriteriaNotExistsBehavior) bound to element <code>SubscriptionTopic.trigger.queryCriteria.resultForDelete</code> (<code>Required</code>) has standard status <code>trial-use</code></li>
+            <li>CodeSystem: <code>subscriptiontopic-cr-behavior</code> (CriteriaNotExistsBehavior) referenced by ValueSet <code>subscriptiontopic-cr-behavior</code> bound to element <code>SubscriptionTopic.trigger.queryCriteria.resultForDelete</code> (<code>Required</code>) has standard status <code>trial-use</code></li>
+            <li>ValueSet: <code>search-comparator</code> (SearchComparator) bound to element <code>SubscriptionTopic.trigger.canFilterBy.comparator</code> (<code>Required</code>) has status <code>Draft</code></li>
+            <li>ValueSet: <code>search-comparator</code> (SearchComparator) bound to element <code>SubscriptionTopic.trigger.canFilterBy.comparator</code> (<code>Required</code>) has standard status <code>trial-use</code></li>
+            <li>CodeSystem: <code>search-comparator</code> (SearchComparator) referenced by ValueSet <code>search-comparator</code> bound to element <code>SubscriptionTopic.trigger.canFilterBy.comparator</code> (<code>Required</code>) has standard status <code>trial-use</code></li>
+            <li>ValueSet: <code>search-modifier-code</code> (SearchModifierCode) bound to element <code>SubscriptionTopic.trigger.canFilterBy.modifier</code> (<code>Required</code>) has status <code>Draft</code></li>
+            <li>ValueSet: <code>search-modifier-code</code> (SearchModifierCode) bound to element <code>SubscriptionTopic.trigger.canFilterBy.modifier</code> (<code>Required</code>) has standard status <code>trial-use</code></li>
+            <li>CodeSystem: <code>search-modifier-code</code> (SearchModifierCode) referenced by ValueSet <code>search-modifier-code</code> bound to element <code>SubscriptionTopic.trigger.canFilterBy.modifier</code> (<code>Required</code>) has standard status <code>trial-use</code></li>
+            <li>Search Parameter: <code>CanonicalResource-date</code> (date) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>CanonicalResource-identifier</code> (identifier) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>CanonicalResource-status</code> (status) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>CanonicalResource-title</code> (title) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>CanonicalResource-url</code> (url) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>CanonicalResource-version</code> (version) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>SubscriptionTopic-derived-or-self</code> (derived-or-self) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>SubscriptionTopic-effective</code> (effective) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>SubscriptionTopic-event</code> (event) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>SubscriptionTopic-resource</code> (resource) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>SubscriptionTopic-trigger-description</code> (trigger-description) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>CanonicalResource-date</code> (date) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>CanonicalResource-identifier</code> (identifier) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>CanonicalResource-status</code> (status) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>CanonicalResource-title</code> (title) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>CanonicalResource-url</code> (url) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>CanonicalResource-version</code> (version) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>SubscriptionTopic-derived-or-self</code> (derived-or-self) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>SubscriptionTopic-effective</code> (effective) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>SubscriptionTopic-event</code> (event) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>SubscriptionTopic-resource</code> (resource) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>SubscriptionTopic-trigger-description</code> (trigger-description) has standards status <code>trial-use</code></li>
         </ul>
 
 
@@ -158,8 +174,8 @@
                 </tr>
             </thead>
             <tbody>
-                <tr><td><code>canFilterBy.<code></td><td>No</td></tr>
-            <tr><td><code>notificationShape.<code></td><td>No</td></tr>
+                <tr><td><code>canFilterBy<code></td><td>No</td></tr>
+            <tr><td><code>notificationShape<code></td><td>No</td></tr>
             </tbody>
         </table>
 
@@ -309,33 +325,31 @@
                 </tr>
             </thead>
             <tbody>
-                <tr><td><code>canFilterBy.resource<code></td><td>No</td></tr>
-            <tr><td><code>trigger.canFilterBy).<code></td><td>No</td></tr>
-            <tr><td><code>supportedInteraction<code></td><td>No</td></tr>
-            <tr><td><code>queryCriteria<code></td><td>No</td></tr>
-            <tr><td><code>fhirPathCriteria.<code></td><td>No</td></tr>
-            <tr><td><code>resultForCreate<code></td><td>No</td></tr>
-            <tr><td><code>requireBoth<code></td><td>No</td></tr>
-            <tr><td><code>fhirPathCriteria<code></td><td>No</td></tr>
-            <tr><td><code>resultForDelete<code></td><td>No</td></tr>
-            <tr><td><code>HL7v2).<code></td><td>No</td></tr>
-            <tr><td><code>HL7v2<code></td><td>No</td></tr>
+                <tr><td><code>(B2B)<code></td><td>No</td></tr>
             <tr><td><code>ADT^A01<code></td><td>No</td></tr>
             <tr><td><code>FHIRcast<code></td><td>No</td></tr>
-            <tr><td><code>canFilterBy.filterParameter<code></td><td>No</td></tr>
-            <tr><td><code>canFilterBy.filterDefinition<code></td><td>No</td></tr>
-            <tr><td><code>filterDefinition<code></td><td>No</td></tr>
-            <tr><td><code>(filterParameter)<code></td><td>No</td></tr>
-            <tr><td><code>notificationShape.<code></td><td>No</td></tr>
-            <tr><td><code>trigger.notificationShape.resource<code></td><td>No</td></tr>
-            <tr><td><code>notificationShape<code></td><td>No</td></tr>
-            <tr><td><code>(B2B)<code></td><td>No</td></tr>
-            <tr><td><code>notificationShape.resource<code></td><td>No</td></tr>
-            <tr><td><code>notificationShape.include<code></td><td>No</td></tr>
-            <tr><td><code>notificationShape.revInclude,<code></td><td>No</td></tr>
-            <tr><td><code>notificationShape.relatedQuery<code></td><td>No</td></tr>
-            <tr><td><code>derivedFrom<code></td><td>No</td></tr>
+            <tr><td><code>HL7v2<code></td><td>No</td></tr>
+            <tr><td><code>HL7v2).<code></td><td>No</td></tr>
             <tr><td><code>canFilterBy<code></td><td>No</td></tr>
+            <tr><td><code>canFilterBy.filterDefinition<code></td><td>No</td></tr>
+            <tr><td><code>canFilterBy.filterParameter<code></td><td>No</td></tr>
+            <tr><td><code>canFilterBy.resource<code></td><td>No</td></tr>
+            <tr><td><code>derivedFrom<code></td><td>No</td></tr>
+            <tr><td><code>fhirPathCriteria<code></td><td>No</td></tr>
+            <tr><td><code>filterDefinition<code></td><td>No</td></tr>
+            <tr><td><code>filterParameter<code></td><td>No</td></tr>
+            <tr><td><code>notificationShape<code></td><td>No</td></tr>
+            <tr><td><code>notificationShape.include<code></td><td>No</td></tr>
+            <tr><td><code>notificationShape.relatedQuery<code></td><td>No</td></tr>
+            <tr><td><code>notificationShape.resource<code></td><td>No</td></tr>
+            <tr><td><code>notificationShape.revInclude<code></td><td>No</td></tr>
+            <tr><td><code>queryCriteria<code></td><td>No</td></tr>
+            <tr><td><code>requireBoth<code></td><td>No</td></tr>
+            <tr><td><code>resultForCreate<code></td><td>No</td></tr>
+            <tr><td><code>resultForDelete<code></td><td>No</td></tr>
+            <tr><td><code>supportedInteraction<code></td><td>No</td></tr>
+            <tr><td><code>trigger.canFilterBy<code></td><td>No</td></tr>
+            <tr><td><code>trigger.notificationShape.resource<code></td><td>No</td></tr>
             </tbody>
         </table>
 

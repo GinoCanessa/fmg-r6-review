@@ -138,33 +138,16 @@
                 </tr>
             </thead>
             <tbody>
-                <tr><td><code>subjectState<code></td><td>No</td></tr>
-            <tr><td><code>(StateChangeReason)<code></td><td>No</td></tr>
-            <tr><td><code>deidentified<code></td><td>No</td></tr>
-            <tr><td><code>timepoints<code></td><td>No</td></tr>
-            <tr><td><code>ConditionPre-ScreeningScreeningConsent<code></td><td>No</td></tr>
-            <tr><td><code>PurposeInitial<code></td><td>No</td></tr>
-            <tr><td><code>SourceRoutine<code></td><td>No</td></tr>
-            <tr><td><code>InvolvementPassive<code></td><td>No</td></tr>
-            <tr><td><code>ProceduresNon-invasive;<code></td><td>No</td></tr>
-            <tr><td><code>SensitivityTypically<code></td><td>No</td></tr>
-            <tr><td><code>ImplicationsMinimal<code></td><td>No</td></tr>
-            <tr><td><code>PointNo<code></td><td>No</td></tr>
-            <tr><td><code>SamplesUse<code></td><td>No</td></tr>
-            <tr><td><code>biobanks.Collection<code></td><td>No</td></tr>
-            <tr><td><code>RequirementsGoverned<code></td><td>No</td></tr>
-            <tr><td><code>TimingBefore<code></td><td>No</td></tr>
-            <tr><td><code>biomarkers.<code></td><td>No</td></tr>
-            <tr><td><code>In-prescreening:<code></td><td>No</td></tr>
-            <tr><td><code>biomarkers<code></td><td>No</td></tr>
-            <tr><td><code>biomarker<code></td><td>No</td></tr>
+                <tr><td><code>(StateChangeReason)<code></td><td>No</td></tr>
             <tr><td><code>In-prescreening<code></td><td>No</td></tr>
-            <tr><td><code>CaseWhen<code></td><td>No</td></tr>
-            <tr><td><code>OccursKey<code></td><td>No</td></tr>
-            <tr><td><code>CharacteristicsExample<code></td><td>No</td></tr>
-            <tr><td><code>CaseAfter<code></td><td>No</td></tr>
-            <tr><td><code>ScreeningDuring<code></td><td>No</td></tr>
-            <tr><td><code>EligibilityDirectly<code></td><td>No</td></tr>
+            <tr><td><code>In-prescreening:<code></td><td>No</td></tr>
+            <tr><td><code>biobanks.<code></td><td>No</td></tr>
+            <tr><td><code>biomarker<code></td><td>No</td></tr>
+            <tr><td><code>biomarkers<code></td><td>No</td></tr>
+            <tr><td><code>biomarkers.<code></td><td>No</td></tr>
+            <tr><td><code>deidentified<code></td><td>No</td></tr>
+            <tr><td><code>subjectState<code></td><td>No</td></tr>
+            <tr><td><code>timepoints<code></td><td>No</td></tr>
             </tbody>
         </table>
 
@@ -600,6 +583,88 @@
     </thead>
     <tbody>
         <tr>
+            <td><code>ResearchSubject-status</code></td>
+            <td><code>status</code></td>
+            <td>Draft</td>
+            <td></td>
+            <td>trial-use</td>
+            <td>False</td>
+            <td>brr</td>
+            <td>token</td>
+            <td>draft | active | retired | unknown</td>
+        </tr>
+        <tr>
+            <td><code>ResearchSubject-study</code></td>
+            <td><code>study</code></td>
+            <td>Draft</td>
+            <td></td>
+            <td>trial-use</td>
+            <td>False</td>
+            <td>brr</td>
+            <td>reference</td>
+            <td>Study subject is part of</td>
+        </tr>
+        <tr>
+            <td><code>ResearchSubject-subject</code></td>
+            <td><code>subject</code></td>
+            <td>Draft</td>
+            <td></td>
+            <td>trial-use</td>
+            <td>False</td>
+            <td>brr</td>
+            <td>reference</td>
+            <td>Who or what is part of study</td>
+        </tr>
+        <tr>
+            <td><code>ResearchSubject-subjectstate</code></td>
+            <td><code>subject_state</code></td>
+            <td>Draft</td>
+            <td></td>
+            <td>trial-use</td>
+            <td>False</td>
+            <td>brr</td>
+            <td>token</td>
+            <td>candidate | in-prescreening | in-screening | eligible | ineligible | on-study | on-study-intervention | in-follow-up | off-study</td>
+        </tr>
+        <tr>
+            <td><code>clinical-date</code></td>
+            <td><code>date</code></td>
+            <td>Draft</td>
+            <td></td>
+            <td>trial-use</td>
+            <td>False</td>
+            <td>pc</td>
+            <td>date</td>
+            <td>Multiple Resources: 
+
+* [AllergyIntolerance](http://hl7.org/fhir/R6/allergyintolerance.html): Date first version of the resource instance was recorded
+* [Appointment](http://hl7.org/fhir/R6/appointment.html): Appointment date/time.
+* [AuditEvent](http://hl7.org/fhir/R6/auditevent.html): Time when the event was recorded
+* [CarePlan](http://hl7.org/fhir/R6/careplan.html): Time period plan covers
+* [CareTeam](http://hl7.org/fhir/R6/careteam.html): A date within the coverage time period.
+* [Composition](http://hl7.org/fhir/R6/composition.html): Composition editing time
+* [Consent](http://hl7.org/fhir/R6/consent.html): When consent was agreed to
+* [DiagnosticReport](http://hl7.org/fhir/R6/diagnosticreport.html): The clinically relevant time of the report
+* [DocumentReference](http://hl7.org/fhir/R6/documentreference.html): When this document reference was created
+* [Encounter](http://hl7.org/fhir/R6/encounter.html): A date within the actualPeriod the Encounter lasted
+* [EpisodeOfCare](http://hl7.org/fhir/R6/episodeofcare.html): The provided date search value falls within the episode of care's period
+* [FamilyMemberHistory](http://hl7.org/fhir/R6/familymemberhistory.html): When history was recorded or last updated
+* [Flag](http://hl7.org/fhir/R6/flag.html): Time period when flag is active
+* [Immunization](http://hl7.org/fhir/R6/immunization.html): Vaccination  (non)-Administration Date
+* [ImmunizationEvaluation](http://hl7.org/fhir/R6/immunizationevaluation.html): Date the evaluation was generated
+* [ImmunizationRecommendation](http://hl7.org/fhir/R6/immunizationrecommendation.html): Date recommendation(s) created
+* [Invoice](http://hl7.org/fhir/R6/invoice.html): Invoice date / posting date
+* [List](http://hl7.org/fhir/R6/list.html): When the list was prepared
+* [MeasureReport](http://hl7.org/fhir/R6/measurereport.html): The date of the measure report
+* [NutritionIntake](http://hl7.org/fhir/R6/nutritionintake.html): Date when patient was taking (or not taking) the medication
+* [Observation](http://hl7.org/fhir/R6/observation.html): Clinically relevant time/time-period for observation
+* [Procedure](http://hl7.org/fhir/R6/procedure.html): When the procedure occurred or is occurring
+* [ResearchSubject](http://hl7.org/fhir/R6/researchsubject.html): Start and end of participation
+* [RiskAssessment](http://hl7.org/fhir/R6/riskassessment.html): When was assessment made?
+* [SupplyRequest](http://hl7.org/fhir/R6/supplyrequest.html): When the request was made
+</td>
+        </tr>
+        <tr>
             <td><code>clinical-identifier</code></td>
             <td><code>identifier</code></td>
             <td>Draft</td>
@@ -755,88 +820,6 @@
 * [Task](http://hl7.org/fhir/R6/task.html): Search by patient
 * [VisionPrescription](http://hl7.org/fhir/R6/visionprescription.html): The identity of a patient to list dispenses for
 </td>
-        </tr>
-        <tr>
-            <td><code>clinical-date</code></td>
-            <td><code>date</code></td>
-            <td>Draft</td>
-            <td></td>
-            <td>trial-use</td>
-            <td>False</td>
-            <td>pc</td>
-            <td>date</td>
-            <td>Multiple Resources: 
-
-* [AllergyIntolerance](http://hl7.org/fhir/R6/allergyintolerance.html): Date first version of the resource instance was recorded
-* [Appointment](http://hl7.org/fhir/R6/appointment.html): Appointment date/time.
-* [AuditEvent](http://hl7.org/fhir/R6/auditevent.html): Time when the event was recorded
-* [CarePlan](http://hl7.org/fhir/R6/careplan.html): Time period plan covers
-* [CareTeam](http://hl7.org/fhir/R6/careteam.html): A date within the coverage time period.
-* [Composition](http://hl7.org/fhir/R6/composition.html): Composition editing time
-* [Consent](http://hl7.org/fhir/R6/consent.html): When consent was agreed to
-* [DiagnosticReport](http://hl7.org/fhir/R6/diagnosticreport.html): The clinically relevant time of the report
-* [DocumentReference](http://hl7.org/fhir/R6/documentreference.html): When this document reference was created
-* [Encounter](http://hl7.org/fhir/R6/encounter.html): A date within the actualPeriod the Encounter lasted
-* [EpisodeOfCare](http://hl7.org/fhir/R6/episodeofcare.html): The provided date search value falls within the episode of care's period
-* [FamilyMemberHistory](http://hl7.org/fhir/R6/familymemberhistory.html): When history was recorded or last updated
-* [Flag](http://hl7.org/fhir/R6/flag.html): Time period when flag is active
-* [Immunization](http://hl7.org/fhir/R6/immunization.html): Vaccination  (non)-Administration Date
-* [ImmunizationEvaluation](http://hl7.org/fhir/R6/immunizationevaluation.html): Date the evaluation was generated
-* [ImmunizationRecommendation](http://hl7.org/fhir/R6/immunizationrecommendation.html): Date recommendation(s) created
-* [Invoice](http://hl7.org/fhir/R6/invoice.html): Invoice date / posting date
-* [List](http://hl7.org/fhir/R6/list.html): When the list was prepared
-* [MeasureReport](http://hl7.org/fhir/R6/measurereport.html): The date of the measure report
-* [NutritionIntake](http://hl7.org/fhir/R6/nutritionintake.html): Date when patient was taking (or not taking) the medication
-* [Observation](http://hl7.org/fhir/R6/observation.html): Clinically relevant time/time-period for observation
-* [Procedure](http://hl7.org/fhir/R6/procedure.html): When the procedure occurred or is occurring
-* [ResearchSubject](http://hl7.org/fhir/R6/researchsubject.html): Start and end of participation
-* [RiskAssessment](http://hl7.org/fhir/R6/riskassessment.html): When was assessment made?
-* [SupplyRequest](http://hl7.org/fhir/R6/supplyrequest.html): When the request was made
-</td>
-        </tr>
-        <tr>
-            <td><code>ResearchSubject-status</code></td>
-            <td><code>status</code></td>
-            <td>Draft</td>
-            <td></td>
-            <td>trial-use</td>
-            <td>False</td>
-            <td>brr</td>
-            <td>token</td>
-            <td>draft | active | retired | unknown</td>
-        </tr>
-        <tr>
-            <td><code>ResearchSubject-study</code></td>
-            <td><code>study</code></td>
-            <td>Draft</td>
-            <td></td>
-            <td>trial-use</td>
-            <td>False</td>
-            <td>brr</td>
-            <td>reference</td>
-            <td>Study subject is part of</td>
-        </tr>
-        <tr>
-            <td><code>ResearchSubject-subject</code></td>
-            <td><code>subject</code></td>
-            <td>Draft</td>
-            <td></td>
-            <td>trial-use</td>
-            <td>False</td>
-            <td>brr</td>
-            <td>reference</td>
-            <td>Who or what is part of study</td>
-        </tr>
-        <tr>
-            <td><code>ResearchSubject-subjectstate</code></td>
-            <td><code>subject_state</code></td>
-            <td>Draft</td>
-            <td></td>
-            <td>trial-use</td>
-            <td>False</td>
-            <td>brr</td>
-            <td>token</td>
-            <td>candidate | in-prescreening | in-screening | eligible | ineligible | on-study | on-study-intervention | in-follow-up | off-study</td>
         </tr>
     </tbody>
 </table>

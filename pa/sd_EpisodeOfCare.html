@@ -7,28 +7,49 @@
         <h3>Urgent Item Checklist</h3>
                 <ul>
             <li>Confirm workgroup disposition vote has been recorded and sent to FMG!</li>
-            <li>ValueSet: <code>episode-of-care-status</code> (EpisodeOfCareStatus) bound to element <code>EpisodeOfCare.status</code> is flagged as <code>trial-use</code></li>
-            <li>CodeSystem: <code>episode-of-care-status</code> (EpisodeOfCareStatus) referenced by ValueSet <code>episode-of-care-status</code> bound to element <code>EpisodeOfCare.status</code> is flagged as <code>trial-use</code></li>
-            <li>ValueSet: <code>episode-of-care-status</code> (EpisodeOfCareStatus) bound to element <code>EpisodeOfCare.statusHistory.status</code> is flagged as <code>trial-use</code></li>
-            <li>CodeSystem: <code>episode-of-care-status</code> (EpisodeOfCareStatus) referenced by ValueSet <code>episode-of-care-status</code> bound to element <code>EpisodeOfCare.statusHistory.status</code> is flagged as <code>trial-use</code></li>
-            <li>ValueSet: <code>encounter-reason-use</code> (EncounterReasonUse) bound to element <code>EpisodeOfCare.reason.use</code> is flagged as <code>trial-use</code></li>
-            <li>CodeSystem: <code>encounter-reason-use</code> (EncounterReasonUse) referenced by ValueSet <code>encounter-reason-use</code> bound to element <code>EpisodeOfCare.reason.use</code> is flagged as <code>trial-use</code></li>
-            <li>ValueSet: <code>encounter-diagnosis-use</code> (EncounterDiagnosisUse) bound to element <code>EpisodeOfCare.diagnosis.use</code> is flagged as <code>trial-use</code></li>
-            <li>CodeSystem: <code>encounter-diagnosis-use</code> (EncounterDiagnosisUse) referenced by ValueSet <code>encounter-diagnosis-use</code> bound to element <code>EpisodeOfCare.diagnosis.use</code> is flagged as <code>trial-use</code></li>
-            <li>Operation: <code>EpisodeOfCare-everything</code> (Everything) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>clinical-identifier</code> (identifier) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>clinical-patient</code> (patient) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>clinical-type</code> (type) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>clinical-date</code> (date) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>EpisodeOfCare-care-manager</code> (care-manager) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>EpisodeOfCare-diagnosis-code</code> (diagnosis-code) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>EpisodeOfCare-diagnosis-reference</code> (diagnosis-reference) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>EpisodeOfCare-incoming-referral</code> (incoming-referral) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>EpisodeOfCare-organization</code> (organization) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>EpisodeOfCare-reason-code</code> (reason-code) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>EpisodeOfCare-reason-reference</code> (reason-reference) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>EpisodeOfCare-status</code> (status) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>EpisodeOfCare-subject</code> (subject) flagged as <code>trial-use</code></li>
+            <li>ValueSet: <code>episode-of-care-status</code> (EpisodeOfCareStatus) bound to element <code>EpisodeOfCare.status</code> (<code>Required</code>) has status <code>Draft</code></li>
+            <li>ValueSet: <code>episode-of-care-status</code> (EpisodeOfCareStatus) bound to element <code>EpisodeOfCare.status</code> (<code>Required</code>) has standard status <code>trial-use</code></li>
+            <li>CodeSystem: <code>episode-of-care-status</code> (EpisodeOfCareStatus) referenced by ValueSet <code>episode-of-care-status</code> bound to element <code>EpisodeOfCare.status</code> (<code>Required</code>) has standard status <code>trial-use</code></li>
+            <li>ValueSet: <code>episode-of-care-status</code> (EpisodeOfCareStatus) bound to element <code>EpisodeOfCare.statusHistory.status</code> (<code>Required</code>) has status <code>Draft</code></li>
+            <li>ValueSet: <code>episode-of-care-status</code> (EpisodeOfCareStatus) bound to element <code>EpisodeOfCare.statusHistory.status</code> (<code>Required</code>) has standard status <code>trial-use</code></li>
+            <li>CodeSystem: <code>episode-of-care-status</code> (EpisodeOfCareStatus) referenced by ValueSet <code>episode-of-care-status</code> bound to element <code>EpisodeOfCare.statusHistory.status</code> (<code>Required</code>) has standard status <code>trial-use</code></li>
+            <li>ValueSet: <code>episodeofcare-type</code> (EpisodeOfCareType) bound to element <code>EpisodeOfCare.type</code> (<code>Example</code>) has status <code>Draft</code></li>
+            <li>ValueSet: <code>encounter-reason-use</code> (EncounterReasonUse) bound to element <code>EpisodeOfCare.reason.use</code> (<code>Example</code>) has status <code>Draft</code></li>
+            <li>ValueSet: <code>encounter-reason-use</code> (EncounterReasonUse) bound to element <code>EpisodeOfCare.reason.use</code> (<code>Example</code>) has standard status <code>trial-use</code></li>
+            <li>CodeSystem: <code>encounter-reason-use</code> (EncounterReasonUse) referenced by ValueSet <code>encounter-reason-use</code> bound to element <code>EpisodeOfCare.reason.use</code> (<code>Example</code>) has standard status <code>trial-use</code></li>
+            <li>ValueSet: <code>encounter-reason</code> (EncounterReasonCodes) bound to element <code>EpisodeOfCare.reason.value</code> (<code>Example</code>) has status <code>Draft</code></li>
+            <li>ValueSet: <code>condition-code</code> (ConditionProblemDiagnosisCodes) bound to element <code>EpisodeOfCare.diagnosis.condition</code> (<code>Example</code>) has status <code>Draft</code></li>
+            <li>ValueSet: <code>encounter-diagnosis-use</code> (EncounterDiagnosisUse) bound to element <code>EpisodeOfCare.diagnosis.use</code> (<code>Preferred</code>) has status <code>Draft</code></li>
+            <li>ValueSet: <code>encounter-diagnosis-use</code> (EncounterDiagnosisUse) bound to element <code>EpisodeOfCare.diagnosis.use</code> (<code>Preferred</code>) has standard status <code>trial-use</code></li>
+            <li>CodeSystem: <code>encounter-diagnosis-use</code> (EncounterDiagnosisUse) referenced by ValueSet <code>encounter-diagnosis-use</code> bound to element <code>EpisodeOfCare.diagnosis.use</code> (<code>Preferred</code>) has standard status <code>trial-use</code></li>
+            <li>Operation: <code>EpisodeOfCare-everything</code> (Everything) has status of <code>Draft</code></li>
+            <li>Operation: <code>EpisodeOfCare-everything</code> (Everything) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>EpisodeOfCare-care-manager</code> (care-manager) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>EpisodeOfCare-diagnosis-code</code> (diagnosis-code) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>EpisodeOfCare-diagnosis-reference</code> (diagnosis-reference) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>EpisodeOfCare-incoming-referral</code> (incoming-referral) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>EpisodeOfCare-organization</code> (organization) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>EpisodeOfCare-reason-code</code> (reason-code) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>EpisodeOfCare-reason-reference</code> (reason-reference) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>EpisodeOfCare-status</code> (status) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>EpisodeOfCare-subject</code> (subject) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>clinical-date</code> (date) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>clinical-identifier</code> (identifier) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>clinical-patient</code> (patient) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>clinical-type</code> (type) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>EpisodeOfCare-care-manager</code> (care-manager) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>EpisodeOfCare-diagnosis-code</code> (diagnosis-code) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>EpisodeOfCare-diagnosis-reference</code> (diagnosis-reference) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>EpisodeOfCare-incoming-referral</code> (incoming-referral) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>EpisodeOfCare-organization</code> (organization) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>EpisodeOfCare-reason-code</code> (reason-code) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>EpisodeOfCare-reason-reference</code> (reason-reference) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>EpisodeOfCare-status</code> (status) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>EpisodeOfCare-subject</code> (subject) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>clinical-date</code> (date) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>clinical-identifier</code> (identifier) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>clinical-patient</code> (patient) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>clinical-type</code> (type) has standards status <code>trial-use</code></li>
         </ul>
 
 
@@ -643,6 +664,143 @@
     </thead>
     <tbody>
         <tr>
+            <td><code>EpisodeOfCare-care-manager</code></td>
+            <td><code>care-manager</code></td>
+            <td>Draft</td>
+            <td></td>
+            <td>trial-use</td>
+            <td>False</td>
+            <td>pa</td>
+            <td>reference</td>
+            <td>Care manager/care coordinator for the episodeOfCare</td>
+        </tr>
+        <tr>
+            <td><code>EpisodeOfCare-diagnosis-code</code></td>
+            <td><code>diagnosis-code</code></td>
+            <td>Draft</td>
+            <td></td>
+            <td>trial-use</td>
+            <td>False</td>
+            <td>pa</td>
+            <td>token</td>
+            <td>Conditions/problems/diagnoses this episode of care is for (coded)</td>
+        </tr>
+        <tr>
+            <td><code>EpisodeOfCare-diagnosis-reference</code></td>
+            <td><code>diagnosis-reference</code></td>
+            <td>Draft</td>
+            <td></td>
+            <td>trial-use</td>
+            <td>False</td>
+            <td>pa</td>
+            <td>reference</td>
+            <td>Conditions/problems/diagnoses this episode of care is for (resource reference)</td>
+        </tr>
+        <tr>
+            <td><code>EpisodeOfCare-incoming-referral</code></td>
+            <td><code>incoming-referral</code></td>
+            <td>Draft</td>
+            <td></td>
+            <td>trial-use</td>
+            <td>False</td>
+            <td>pa</td>
+            <td>reference</td>
+            <td>Incoming Referral Request</td>
+        </tr>
+        <tr>
+            <td><code>EpisodeOfCare-organization</code></td>
+            <td><code>organization</code></td>
+            <td>Draft</td>
+            <td></td>
+            <td>trial-use</td>
+            <td>False</td>
+            <td>pa</td>
+            <td>reference</td>
+            <td>The organization that has assumed the specific responsibilities of this EpisodeOfCare</td>
+        </tr>
+        <tr>
+            <td><code>EpisodeOfCare-reason-code</code></td>
+            <td><code>reason-code</code></td>
+            <td>Draft</td>
+            <td></td>
+            <td>trial-use</td>
+            <td>False</td>
+            <td>pa</td>
+            <td>token</td>
+            <td>Reference to a concept (coded)</td>
+        </tr>
+        <tr>
+            <td><code>EpisodeOfCare-reason-reference</code></td>
+            <td><code>reason-reference</code></td>
+            <td>Draft</td>
+            <td></td>
+            <td>trial-use</td>
+            <td>False</td>
+            <td>pa</td>
+            <td>reference</td>
+            <td>Reference to a resource (resource reference)</td>
+        </tr>
+        <tr>
+            <td><code>EpisodeOfCare-status</code></td>
+            <td><code>status</code></td>
+            <td>Draft</td>
+            <td></td>
+            <td>trial-use</td>
+            <td>False</td>
+            <td>pa</td>
+            <td>token</td>
+            <td>The current status of the Episode of Care as provided (does not check the status history collection)</td>
+        </tr>
+        <tr>
+            <td><code>EpisodeOfCare-subject</code></td>
+            <td><code>subject</code></td>
+            <td>Draft</td>
+            <td></td>
+            <td>trial-use</td>
+            <td>False</td>
+            <td>pa</td>
+            <td>reference</td>
+            <td>The patient/group who is the focus of this episode of care</td>
+        </tr>
+        <tr>
+            <td><code>clinical-date</code></td>
+            <td><code>date</code></td>
+            <td>Draft</td>
+            <td></td>
+            <td>trial-use</td>
+            <td>False</td>
+            <td>pc</td>
+            <td>date</td>
+            <td>Multiple Resources: 
+
+* [AllergyIntolerance](http://hl7.org/fhir/R6/allergyintolerance.html): Date first version of the resource instance was recorded
+* [Appointment](http://hl7.org/fhir/R6/appointment.html): Appointment date/time.
+* [AuditEvent](http://hl7.org/fhir/R6/auditevent.html): Time when the event was recorded
+* [CarePlan](http://hl7.org/fhir/R6/careplan.html): Time period plan covers
+* [CareTeam](http://hl7.org/fhir/R6/careteam.html): A date within the coverage time period.
+* [Composition](http://hl7.org/fhir/R6/composition.html): Composition editing time
+* [Consent](http://hl7.org/fhir/R6/consent.html): When consent was agreed to
+* [DiagnosticReport](http://hl7.org/fhir/R6/diagnosticreport.html): The clinically relevant time of the report
+* [DocumentReference](http://hl7.org/fhir/R6/documentreference.html): When this document reference was created
+* [Encounter](http://hl7.org/fhir/R6/encounter.html): A date within the actualPeriod the Encounter lasted
+* [EpisodeOfCare](http://hl7.org/fhir/R6/episodeofcare.html): The provided date search value falls within the episode of care's period
+* [FamilyMemberHistory](http://hl7.org/fhir/R6/familymemberhistory.html): When history was recorded or last updated
+* [Flag](http://hl7.org/fhir/R6/flag.html): Time period when flag is active
+* [Immunization](http://hl7.org/fhir/R6/immunization.html): Vaccination  (non)-Administration Date
+* [ImmunizationEvaluation](http://hl7.org/fhir/R6/immunizationevaluation.html): Date the evaluation was generated
+* [ImmunizationRecommendation](http://hl7.org/fhir/R6/immunizationrecommendation.html): Date recommendation(s) created
+* [Invoice](http://hl7.org/fhir/R6/invoice.html): Invoice date / posting date
+* [List](http://hl7.org/fhir/R6/list.html): When the list was prepared
+* [MeasureReport](http://hl7.org/fhir/R6/measurereport.html): The date of the measure report
+* [NutritionIntake](http://hl7.org/fhir/R6/nutritionintake.html): Date when patient was taking (or not taking) the medication
+* [Observation](http://hl7.org/fhir/R6/observation.html): Clinically relevant time/time-period for observation
+* [Procedure](http://hl7.org/fhir/R6/procedure.html): When the procedure occurred or is occurring
+* [ResearchSubject](http://hl7.org/fhir/R6/researchsubject.html): Start and end of participation
+* [RiskAssessment](http://hl7.org/fhir/R6/riskassessment.html): When was assessment made?
+* [SupplyRequest](http://hl7.org/fhir/R6/supplyrequest.html): When the request was made
+</td>
+        </tr>
+        <tr>
             <td><code>clinical-identifier</code></td>
             <td><code>identifier</code></td>
             <td>Draft</td>
@@ -821,143 +979,6 @@
 * [MedicationDispense](http://hl7.org/fhir/R6/medicationdispense.html): Returns dispenses of a specific type
 * [Specimen](http://hl7.org/fhir/R6/specimen.html): The specimen type
 </td>
-        </tr>
-        <tr>
-            <td><code>clinical-date</code></td>
-            <td><code>date</code></td>
-            <td>Draft</td>
-            <td></td>
-            <td>trial-use</td>
-            <td>False</td>
-            <td>pc</td>
-            <td>date</td>
-            <td>Multiple Resources: 
-
-* [AllergyIntolerance](http://hl7.org/fhir/R6/allergyintolerance.html): Date first version of the resource instance was recorded
-* [Appointment](http://hl7.org/fhir/R6/appointment.html): Appointment date/time.
-* [AuditEvent](http://hl7.org/fhir/R6/auditevent.html): Time when the event was recorded
-* [CarePlan](http://hl7.org/fhir/R6/careplan.html): Time period plan covers
-* [CareTeam](http://hl7.org/fhir/R6/careteam.html): A date within the coverage time period.
-* [Composition](http://hl7.org/fhir/R6/composition.html): Composition editing time
-* [Consent](http://hl7.org/fhir/R6/consent.html): When consent was agreed to
-* [DiagnosticReport](http://hl7.org/fhir/R6/diagnosticreport.html): The clinically relevant time of the report
-* [DocumentReference](http://hl7.org/fhir/R6/documentreference.html): When this document reference was created
-* [Encounter](http://hl7.org/fhir/R6/encounter.html): A date within the actualPeriod the Encounter lasted
-* [EpisodeOfCare](http://hl7.org/fhir/R6/episodeofcare.html): The provided date search value falls within the episode of care's period
-* [FamilyMemberHistory](http://hl7.org/fhir/R6/familymemberhistory.html): When history was recorded or last updated
-* [Flag](http://hl7.org/fhir/R6/flag.html): Time period when flag is active
-* [Immunization](http://hl7.org/fhir/R6/immunization.html): Vaccination  (non)-Administration Date
-* [ImmunizationEvaluation](http://hl7.org/fhir/R6/immunizationevaluation.html): Date the evaluation was generated
-* [ImmunizationRecommendation](http://hl7.org/fhir/R6/immunizationrecommendation.html): Date recommendation(s) created
-* [Invoice](http://hl7.org/fhir/R6/invoice.html): Invoice date / posting date
-* [List](http://hl7.org/fhir/R6/list.html): When the list was prepared
-* [MeasureReport](http://hl7.org/fhir/R6/measurereport.html): The date of the measure report
-* [NutritionIntake](http://hl7.org/fhir/R6/nutritionintake.html): Date when patient was taking (or not taking) the medication
-* [Observation](http://hl7.org/fhir/R6/observation.html): Clinically relevant time/time-period for observation
-* [Procedure](http://hl7.org/fhir/R6/procedure.html): When the procedure occurred or is occurring
-* [ResearchSubject](http://hl7.org/fhir/R6/researchsubject.html): Start and end of participation
-* [RiskAssessment](http://hl7.org/fhir/R6/riskassessment.html): When was assessment made?
-* [SupplyRequest](http://hl7.org/fhir/R6/supplyrequest.html): When the request was made
-</td>
-        </tr>
-        <tr>
-            <td><code>EpisodeOfCare-care-manager</code></td>
-            <td><code>care-manager</code></td>
-            <td>Draft</td>
-            <td></td>
-            <td>trial-use</td>
-            <td>False</td>
-            <td>pa</td>
-            <td>reference</td>
-            <td>Care manager/care coordinator for the episodeOfCare</td>
-        </tr>
-        <tr>
-            <td><code>EpisodeOfCare-diagnosis-code</code></td>
-            <td><code>diagnosis-code</code></td>
-            <td>Draft</td>
-            <td></td>
-            <td>trial-use</td>
-            <td>False</td>
-            <td>pa</td>
-            <td>token</td>
-            <td>Conditions/problems/diagnoses this episode of care is for (coded)</td>
-        </tr>
-        <tr>
-            <td><code>EpisodeOfCare-diagnosis-reference</code></td>
-            <td><code>diagnosis-reference</code></td>
-            <td>Draft</td>
-            <td></td>
-            <td>trial-use</td>
-            <td>False</td>
-            <td>pa</td>
-            <td>reference</td>
-            <td>Conditions/problems/diagnoses this episode of care is for (resource reference)</td>
-        </tr>
-        <tr>
-            <td><code>EpisodeOfCare-incoming-referral</code></td>
-            <td><code>incoming-referral</code></td>
-            <td>Draft</td>
-            <td></td>
-            <td>trial-use</td>
-            <td>False</td>
-            <td>pa</td>
-            <td>reference</td>
-            <td>Incoming Referral Request</td>
-        </tr>
-        <tr>
-            <td><code>EpisodeOfCare-organization</code></td>
-            <td><code>organization</code></td>
-            <td>Draft</td>
-            <td></td>
-            <td>trial-use</td>
-            <td>False</td>
-            <td>pa</td>
-            <td>reference</td>
-            <td>The organization that has assumed the specific responsibilities of this EpisodeOfCare</td>
-        </tr>
-        <tr>
-            <td><code>EpisodeOfCare-reason-code</code></td>
-            <td><code>reason-code</code></td>
-            <td>Draft</td>
-            <td></td>
-            <td>trial-use</td>
-            <td>False</td>
-            <td>pa</td>
-            <td>token</td>
-            <td>Reference to a concept (coded)</td>
-        </tr>
-        <tr>
-            <td><code>EpisodeOfCare-reason-reference</code></td>
-            <td><code>reason-reference</code></td>
-            <td>Draft</td>
-            <td></td>
-            <td>trial-use</td>
-            <td>False</td>
-            <td>pa</td>
-            <td>reference</td>
-            <td>Reference to a resource (resource reference)</td>
-        </tr>
-        <tr>
-            <td><code>EpisodeOfCare-status</code></td>
-            <td><code>status</code></td>
-            <td>Draft</td>
-            <td></td>
-            <td>trial-use</td>
-            <td>False</td>
-            <td>pa</td>
-            <td>token</td>
-            <td>The current status of the Episode of Care as provided (does not check the status history collection)</td>
-        </tr>
-        <tr>
-            <td><code>EpisodeOfCare-subject</code></td>
-            <td><code>subject</code></td>
-            <td>Draft</td>
-            <td></td>
-            <td>trial-use</td>
-            <td>False</td>
-            <td>pa</td>
-            <td>reference</td>
-            <td>The patient/group who is the focus of this episode of care</td>
         </tr>
     </tbody>
 </table>

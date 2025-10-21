@@ -7,28 +7,47 @@
         <h3>Urgent Item Checklist</h3>
                 <ul>
             <li>Confirm workgroup disposition vote has been recorded and sent to FMG!</li>
-            <li>ValueSet: <code>payment-type</code> (PaymentTypeCodes) bound to element <code>PaymentReconciliation.type</code> is flagged as <code>trial-use</code></li>
-            <li>ValueSet: <code>fm-status</code> (FinancialResourceStatusCodes) bound to element <code>PaymentReconciliation.status</code> is flagged as <code>trial-use</code></li>
-            <li>ValueSet: <code>payment-kind</code> (PaymentKind) bound to element <code>PaymentReconciliation.kind</code> is flagged as <code>trial-use</code></li>
-            <li>CodeSystem: <code>payment-kind</code> (PaymentKindCodes) referenced by ValueSet <code>payment-kind</code> bound to element <code>PaymentReconciliation.kind</code> is flagged as <code>trial-use</code></li>
-            <li>ValueSet: <code>payment-issuertype</code> (PaymentIssuerType) bound to element <code>PaymentReconciliation.issuerType</code> is flagged as <code>trial-use</code></li>
-            <li>CodeSystem: <code>payment-issuertype</code> (PaymentIssuerTypeCodes) referenced by ValueSet <code>payment-issuertype</code> bound to element <code>PaymentReconciliation.issuerType</code> is flagged as <code>trial-use</code></li>
-            <li>ValueSet: <code>payment-outcome</code> (PaymentOutcome) bound to element <code>PaymentReconciliation.outcome</code> is flagged as <code>trial-use</code></li>
-            <li>CodeSystem: <code>payment-outcome</code> (ClaimProcessingCodes) referenced by ValueSet <code>payment-outcome</code> bound to element <code>PaymentReconciliation.outcome</code> is flagged as <code>trial-use</code></li>
-            <li>ValueSet: <code>payment-type</code> (PaymentTypeCodes) bound to element <code>PaymentReconciliation.allocation.type</code> is flagged as <code>trial-use</code></li>
-            <li>ValueSet: <code>forms</code> (FormCodes) bound to element <code>PaymentReconciliation.formCode</code> is flagged as <code>experimental</code></li>
-            <li>ValueSet: <code>note-type</code> (NoteType) bound to element <code>PaymentReconciliation.processNote.type</code> is flagged as <code>trial-use</code></li>
-            <li>CodeSystem: <code>note-type</code> (NoteType) referenced by ValueSet <code>note-type</code> bound to element <code>PaymentReconciliation.processNote.type</code> is flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>PaymentReconciliation-allocation-account</code> (allocation-account) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>PaymentReconciliation-allocation-encounter</code> (allocation-encounter) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>PaymentReconciliation-created</code> (created) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>PaymentReconciliation-disposition</code> (disposition) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>PaymentReconciliation-identifier</code> (identifier) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>PaymentReconciliation-outcome</code> (outcome) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>PaymentReconciliation-payment-issuer</code> (payment-issuer) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>PaymentReconciliation-request</code> (request) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>PaymentReconciliation-requestor</code> (requestor) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>PaymentReconciliation-status</code> (status) flagged as <code>trial-use</code></li>
+            <li>ValueSet: <code>payment-type</code> (PaymentTypeCodes) bound to element <code>PaymentReconciliation.type</code> (<code>Extensible</code>) has status <code>Draft</code></li>
+            <li>ValueSet: <code>payment-type</code> (PaymentTypeCodes) bound to element <code>PaymentReconciliation.type</code> (<code>Extensible</code>) has standard status <code>trial-use</code></li>
+            <li>ValueSet: <code>fm-status</code> (FinancialResourceStatusCodes) bound to element <code>PaymentReconciliation.status</code> (<code>Required</code>) has status <code>Draft</code></li>
+            <li>ValueSet: <code>fm-status</code> (FinancialResourceStatusCodes) bound to element <code>PaymentReconciliation.status</code> (<code>Required</code>) has standard status <code>trial-use</code></li>
+            <li>ValueSet: <code>payment-kind</code> (PaymentKind) bound to element <code>PaymentReconciliation.kind</code> (<code>Extensible</code>) has status <code>Draft</code></li>
+            <li>ValueSet: <code>payment-kind</code> (PaymentKind) bound to element <code>PaymentReconciliation.kind</code> (<code>Extensible</code>) has standard status <code>trial-use</code></li>
+            <li>CodeSystem: <code>payment-kind</code> (PaymentKindCodes) referenced by ValueSet <code>payment-kind</code> bound to element <code>PaymentReconciliation.kind</code> (<code>Extensible</code>) has standard status <code>trial-use</code></li>
+            <li>ValueSet: <code>payment-issuertype</code> (PaymentIssuerType) bound to element <code>PaymentReconciliation.issuerType</code> (<code>Extensible</code>) has status <code>Draft</code></li>
+            <li>ValueSet: <code>payment-issuertype</code> (PaymentIssuerType) bound to element <code>PaymentReconciliation.issuerType</code> (<code>Extensible</code>) has standard status <code>trial-use</code></li>
+            <li>CodeSystem: <code>payment-issuertype</code> (PaymentIssuerTypeCodes) referenced by ValueSet <code>payment-issuertype</code> bound to element <code>PaymentReconciliation.issuerType</code> (<code>Extensible</code>) has standard status <code>trial-use</code></li>
+            <li>ValueSet: <code>payment-outcome</code> (PaymentOutcome) bound to element <code>PaymentReconciliation.outcome</code> (<code>Required</code>) has status <code>Draft</code></li>
+            <li>ValueSet: <code>payment-outcome</code> (PaymentOutcome) bound to element <code>PaymentReconciliation.outcome</code> (<code>Required</code>) has standard status <code>trial-use</code></li>
+            <li>CodeSystem: <code>payment-outcome</code> (ClaimProcessingCodes) referenced by ValueSet <code>payment-outcome</code> bound to element <code>PaymentReconciliation.outcome</code> (<code>Required</code>) has standard status <code>trial-use</code></li>
+            <li>ValueSet: <code>payment-type</code> (PaymentTypeCodes) bound to element <code>PaymentReconciliation.allocation.type</code> (<code>Extensible</code>) has status <code>Draft</code></li>
+            <li>ValueSet: <code>payment-type</code> (PaymentTypeCodes) bound to element <code>PaymentReconciliation.allocation.type</code> (<code>Extensible</code>) has standard status <code>trial-use</code></li>
+            <li>ValueSet: <code>forms</code> (FormCodes) bound to element <code>PaymentReconciliation.formCode</code> (<code>Example</code>) has status <code>Draft</code></li>
+            <li>ValueSet: <code>forms</code> (FormCodes) bound to element <code>PaymentReconciliation.formCode</code> (<code>Example</code>) is flagged as <code>experimental</code></li>
+            <li>ValueSet: <code>note-type</code> (NoteType) bound to element <code>PaymentReconciliation.processNote.type</code> (<code>Required</code>) has status <code>Draft</code></li>
+            <li>ValueSet: <code>note-type</code> (NoteType) bound to element <code>PaymentReconciliation.processNote.type</code> (<code>Required</code>) has standard status <code>trial-use</code></li>
+            <li>CodeSystem: <code>note-type</code> (NoteType) referenced by ValueSet <code>note-type</code> bound to element <code>PaymentReconciliation.processNote.type</code> (<code>Required</code>) has status <code>Draft</code></li>
+            <li>CodeSystem: <code>note-type</code> (NoteType) referenced by ValueSet <code>note-type</code> bound to element <code>PaymentReconciliation.processNote.type</code> (<code>Required</code>) has standard status <code>trial-use</code></li>
+            <li>Search Parameter: <code>PaymentReconciliation-allocation-account</code> (allocation-account) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>PaymentReconciliation-allocation-encounter</code> (allocation-encounter) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>PaymentReconciliation-created</code> (created) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>PaymentReconciliation-disposition</code> (disposition) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>PaymentReconciliation-identifier</code> (identifier) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>PaymentReconciliation-outcome</code> (outcome) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>PaymentReconciliation-payment-issuer</code> (payment-issuer) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>PaymentReconciliation-request</code> (request) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>PaymentReconciliation-requestor</code> (requestor) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>PaymentReconciliation-status</code> (status) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>PaymentReconciliation-allocation-account</code> (allocation-account) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>PaymentReconciliation-allocation-encounter</code> (allocation-encounter) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>PaymentReconciliation-created</code> (created) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>PaymentReconciliation-disposition</code> (disposition) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>PaymentReconciliation-identifier</code> (identifier) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>PaymentReconciliation-outcome</code> (outcome) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>PaymentReconciliation-payment-issuer</code> (payment-issuer) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>PaymentReconciliation-request</code> (request) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>PaymentReconciliation-requestor</code> (requestor) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>PaymentReconciliation-status</code> (status) has standards status <code>trial-use</code></li>
         </ul>
 
 
@@ -125,7 +144,7 @@
                 <tr>
                     <td><b>MAY</b></td>
                     <td>0</td>
-                    <td>2</td>
+                    <td>3</td>
                 </tr>
                 <tr>
                     <td><b>MAY NOT</b></td>
@@ -157,9 +176,10 @@
                 </tr>
             </thead>
             <tbody>
-                <tr><td><code>occurences<code></td><td>Yes</td></tr>
-            <tr><td><code>occured.<code></td><td>Yes</td></tr>
+                <tr><td><code>Storyboards<code></td><td>No</td></tr>
             <tr><td><code>occured,<code></td><td>Yes</td></tr>
+            <tr><td><code>occured.<code></td><td>Yes</td></tr>
+            <tr><td><code>occurences<code></td><td>Yes</td></tr>
             </tbody>
         </table>
 

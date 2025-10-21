@@ -7,15 +7,29 @@
         <h3>Urgent Item Checklist</h3>
                 <ul>
             <li>Confirm workgroup disposition vote has been recorded and sent to FMG!</li>
-            <li>ValueSet: <code>history-status</code> (FamilyHistoryStatus) bound to element <code>FamilyMemberHistory.status</code> is flagged as <code>trial-use</code></li>
-            <li>CodeSystem: <code>history-status</code> (FamilyHistoryStatus) referenced by ValueSet <code>history-status</code> bound to element <code>FamilyMemberHistory.status</code> is flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>clinical-identifier</code> (identifier) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>clinical-patient</code> (patient) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>clinical-code</code> (code) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>clinical-date</code> (date) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>FamilyMemberHistory-relationship</code> (relationship) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>FamilyMemberHistory-sex</code> (sex) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>FamilyMemberHistory-status</code> (status) flagged as <code>trial-use</code></li>
+            <li>ValueSet: <code>history-status</code> (FamilyHistoryStatus) bound to element <code>FamilyMemberHistory.status</code> (<code>Required</code>) has status <code>Draft</code></li>
+            <li>ValueSet: <code>history-status</code> (FamilyHistoryStatus) bound to element <code>FamilyMemberHistory.status</code> (<code>Required</code>) has standard status <code>trial-use</code></li>
+            <li>CodeSystem: <code>history-status</code> (FamilyHistoryStatus) referenced by ValueSet <code>history-status</code> bound to element <code>FamilyMemberHistory.status</code> (<code>Required</code>) has standard status <code>trial-use</code></li>
+            <li>ValueSet: <code>history-absent-reason</code> (FamilyHistoryAbsentReason) bound to element <code>FamilyMemberHistory.dataAbsentReason</code> (<code>Example</code>) has status <code>Draft</code></li>
+            <li>ValueSet: <code>clinical-findings</code> (SNOMEDCTClinicalFindings) bound to element <code>FamilyMemberHistory.reason</code> (<code>Example</code>) has status <code>Draft</code></li>
+            <li>ValueSet: <code>condition-code</code> (ConditionProblemDiagnosisCodes) bound to element <code>FamilyMemberHistory.condition.code</code> (<code>Example</code>) has status <code>Draft</code></li>
+            <li>ValueSet: <code>condition-outcome</code> (ConditionOutcomeCodes) bound to element <code>FamilyMemberHistory.condition.outcome</code> (<code>Example</code>) has status <code>Draft</code></li>
+            <li>ValueSet: <code>procedure-code</code> (ProcedureCodesSNOMEDCT) bound to element <code>FamilyMemberHistory.procedure.code</code> (<code>Example</code>) has status <code>Draft</code></li>
+            <li>ValueSet: <code>clinical-findings</code> (SNOMEDCTClinicalFindings) bound to element <code>FamilyMemberHistory.procedure.outcome</code> (<code>Example</code>) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>FamilyMemberHistory-relationship</code> (relationship) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>FamilyMemberHistory-sex</code> (sex) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>FamilyMemberHistory-status</code> (status) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>clinical-code</code> (code) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>clinical-date</code> (date) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>clinical-identifier</code> (identifier) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>clinical-patient</code> (patient) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>FamilyMemberHistory-relationship</code> (relationship) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>FamilyMemberHistory-sex</code> (sex) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>FamilyMemberHistory-status</code> (status) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>clinical-code</code> (code) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>clinical-date</code> (date) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>clinical-identifier</code> (identifier) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>clinical-patient</code> (patient) has standards status <code>trial-use</code></li>
         </ul>
 
 
@@ -294,8 +308,8 @@
                 </tr>
             </thead>
             <tbody>
-                <tr><td><code>notasked<code></td><td>No</td></tr>
-            <tr><td><code>nilknown<code></td><td>No</td></tr>
+                <tr><td><code>nilknown<code></td><td>No</td></tr>
+            <tr><td><code>notasked<code></td><td>No</td></tr>
             </tbody>
         </table>
 
@@ -713,6 +727,110 @@
     </thead>
     <tbody>
         <tr>
+            <td><code>FamilyMemberHistory-relationship</code></td>
+            <td><code>relationship</code></td>
+            <td>Draft</td>
+            <td></td>
+            <td>trial-use</td>
+            <td>False</td>
+            <td>pc</td>
+            <td>token</td>
+            <td>A search by a relationship type</td>
+        </tr>
+        <tr>
+            <td><code>FamilyMemberHistory-sex</code></td>
+            <td><code>sex</code></td>
+            <td>Draft</td>
+            <td></td>
+            <td>trial-use</td>
+            <td>False</td>
+            <td>pc</td>
+            <td>token</td>
+            <td>A search by a sex code of a family member</td>
+        </tr>
+        <tr>
+            <td><code>FamilyMemberHistory-status</code></td>
+            <td><code>status</code></td>
+            <td>Draft</td>
+            <td></td>
+            <td>trial-use</td>
+            <td>False</td>
+            <td>pc</td>
+            <td>token</td>
+            <td>partial | completed | entered-in-error | health-unknown</td>
+        </tr>
+        <tr>
+            <td><code>clinical-code</code></td>
+            <td><code>code</code></td>
+            <td>Draft</td>
+            <td></td>
+            <td>trial-use</td>
+            <td>False</td>
+            <td>pc</td>
+            <td>token</td>
+            <td>Multiple Resources: 
+
+* [AdverseEvent](http://hl7.org/fhir/R6/adverseevent.html): Event or incident that occurred or was averted
+* [AllergyIntolerance](http://hl7.org/fhir/R6/allergyintolerance.html): Code that identifies the allergy or intolerance
+* [Basic](http://hl7.org/fhir/R6/basic.html): Kind of Resource
+* [ChargeItem](http://hl7.org/fhir/R6/chargeitem.html): A code that identifies the charge, like a billing code
+* [Condition](http://hl7.org/fhir/R6/condition.html): Code for the condition
+* [DetectedIssue](http://hl7.org/fhir/R6/detectedissue.html): Issue Type, e.g. drug-drug, duplicate therapy, etc.
+* [DiagnosticReport](http://hl7.org/fhir/R6/diagnosticreport.html): The code for the report, as opposed to codes for the atomic results, which are the names on the observation resource referred to from the result
+* [FamilyMemberHistory](http://hl7.org/fhir/R6/familymemberhistory.html): A search by a condition code
+* [ImagingSelection](http://hl7.org/fhir/R6/imagingselection.html): The imaging selection description text or code
+* [List](http://hl7.org/fhir/R6/list.html): What the purpose of this list is
+* [Medication](http://hl7.org/fhir/R6/medication.html): Returns medications for a specific code
+* [MedicationAdministration](http://hl7.org/fhir/R6/medicationadministration.html): Return administrations of this medication code
+* [MedicationDispense](http://hl7.org/fhir/R6/medicationdispense.html): Returns dispenses of this medicine code
+* [MedicationRequest](http://hl7.org/fhir/R6/medicationrequest.html): Return prescriptions of this medication code
+* [MedicationStatement](http://hl7.org/fhir/R6/medicationstatement.html): Return statements of this medication code
+* [NutritionIntake](http://hl7.org/fhir/R6/nutritionintake.html): Returns statements of this code of NutritionIntake
+* [Observation](http://hl7.org/fhir/R6/observation.html): The code of the observation type
+* [Procedure](http://hl7.org/fhir/R6/procedure.html): A code to identify a  procedure
+* [RequestOrchestration](http://hl7.org/fhir/R6/requestorchestration.html): The code of the request orchestration
+* [Task](http://hl7.org/fhir/R6/task.html): Search by task code
+</td>
+        </tr>
+        <tr>
+            <td><code>clinical-date</code></td>
+            <td><code>date</code></td>
+            <td>Draft</td>
+            <td></td>
+            <td>trial-use</td>
+            <td>False</td>
+            <td>pc</td>
+            <td>date</td>
+            <td>Multiple Resources: 
+
+* [AllergyIntolerance](http://hl7.org/fhir/R6/allergyintolerance.html): Date first version of the resource instance was recorded
+* [Appointment](http://hl7.org/fhir/R6/appointment.html): Appointment date/time.
+* [AuditEvent](http://hl7.org/fhir/R6/auditevent.html): Time when the event was recorded
+* [CarePlan](http://hl7.org/fhir/R6/careplan.html): Time period plan covers
+* [CareTeam](http://hl7.org/fhir/R6/careteam.html): A date within the coverage time period.
+* [Composition](http://hl7.org/fhir/R6/composition.html): Composition editing time
+* [Consent](http://hl7.org/fhir/R6/consent.html): When consent was agreed to
+* [DiagnosticReport](http://hl7.org/fhir/R6/diagnosticreport.html): The clinically relevant time of the report
+* [DocumentReference](http://hl7.org/fhir/R6/documentreference.html): When this document reference was created
+* [Encounter](http://hl7.org/fhir/R6/encounter.html): A date within the actualPeriod the Encounter lasted
+* [EpisodeOfCare](http://hl7.org/fhir/R6/episodeofcare.html): The provided date search value falls within the episode of care's period
+* [FamilyMemberHistory](http://hl7.org/fhir/R6/familymemberhistory.html): When history was recorded or last updated
+* [Flag](http://hl7.org/fhir/R6/flag.html): Time period when flag is active
+* [Immunization](http://hl7.org/fhir/R6/immunization.html): Vaccination  (non)-Administration Date
+* [ImmunizationEvaluation](http://hl7.org/fhir/R6/immunizationevaluation.html): Date the evaluation was generated
+* [ImmunizationRecommendation](http://hl7.org/fhir/R6/immunizationrecommendation.html): Date recommendation(s) created
+* [Invoice](http://hl7.org/fhir/R6/invoice.html): Invoice date / posting date
+* [List](http://hl7.org/fhir/R6/list.html): When the list was prepared
+* [MeasureReport](http://hl7.org/fhir/R6/measurereport.html): The date of the measure report
+* [NutritionIntake](http://hl7.org/fhir/R6/nutritionintake.html): Date when patient was taking (or not taking) the medication
+* [Observation](http://hl7.org/fhir/R6/observation.html): Clinically relevant time/time-period for observation
+* [Procedure](http://hl7.org/fhir/R6/procedure.html): When the procedure occurred or is occurring
+* [ResearchSubject](http://hl7.org/fhir/R6/researchsubject.html): Start and end of participation
+* [RiskAssessment](http://hl7.org/fhir/R6/riskassessment.html): When was assessment made?
+* [SupplyRequest](http://hl7.org/fhir/R6/supplyrequest.html): When the request was made
+</td>
+        </tr>
+        <tr>
             <td><code>clinical-identifier</code></td>
             <td><code>identifier</code></td>
             <td>Draft</td>
@@ -868,110 +986,6 @@
 * [Task](http://hl7.org/fhir/R6/task.html): Search by patient
 * [VisionPrescription](http://hl7.org/fhir/R6/visionprescription.html): The identity of a patient to list dispenses for
 </td>
-        </tr>
-        <tr>
-            <td><code>clinical-code</code></td>
-            <td><code>code</code></td>
-            <td>Draft</td>
-            <td></td>
-            <td>trial-use</td>
-            <td>False</td>
-            <td>pc</td>
-            <td>token</td>
-            <td>Multiple Resources: 
-
-* [AdverseEvent](http://hl7.org/fhir/R6/adverseevent.html): Event or incident that occurred or was averted
-* [AllergyIntolerance](http://hl7.org/fhir/R6/allergyintolerance.html): Code that identifies the allergy or intolerance
-* [Basic](http://hl7.org/fhir/R6/basic.html): Kind of Resource
-* [ChargeItem](http://hl7.org/fhir/R6/chargeitem.html): A code that identifies the charge, like a billing code
-* [Condition](http://hl7.org/fhir/R6/condition.html): Code for the condition
-* [DetectedIssue](http://hl7.org/fhir/R6/detectedissue.html): Issue Type, e.g. drug-drug, duplicate therapy, etc.
-* [DiagnosticReport](http://hl7.org/fhir/R6/diagnosticreport.html): The code for the report, as opposed to codes for the atomic results, which are the names on the observation resource referred to from the result
-* [FamilyMemberHistory](http://hl7.org/fhir/R6/familymemberhistory.html): A search by a condition code
-* [ImagingSelection](http://hl7.org/fhir/R6/imagingselection.html): The imaging selection description text or code
-* [List](http://hl7.org/fhir/R6/list.html): What the purpose of this list is
-* [Medication](http://hl7.org/fhir/R6/medication.html): Returns medications for a specific code
-* [MedicationAdministration](http://hl7.org/fhir/R6/medicationadministration.html): Return administrations of this medication code
-* [MedicationDispense](http://hl7.org/fhir/R6/medicationdispense.html): Returns dispenses of this medicine code
-* [MedicationRequest](http://hl7.org/fhir/R6/medicationrequest.html): Return prescriptions of this medication code
-* [MedicationStatement](http://hl7.org/fhir/R6/medicationstatement.html): Return statements of this medication code
-* [NutritionIntake](http://hl7.org/fhir/R6/nutritionintake.html): Returns statements of this code of NutritionIntake
-* [Observation](http://hl7.org/fhir/R6/observation.html): The code of the observation type
-* [Procedure](http://hl7.org/fhir/R6/procedure.html): A code to identify a  procedure
-* [RequestOrchestration](http://hl7.org/fhir/R6/requestorchestration.html): The code of the request orchestration
-* [Task](http://hl7.org/fhir/R6/task.html): Search by task code
-</td>
-        </tr>
-        <tr>
-            <td><code>clinical-date</code></td>
-            <td><code>date</code></td>
-            <td>Draft</td>
-            <td></td>
-            <td>trial-use</td>
-            <td>False</td>
-            <td>pc</td>
-            <td>date</td>
-            <td>Multiple Resources: 
-
-* [AllergyIntolerance](http://hl7.org/fhir/R6/allergyintolerance.html): Date first version of the resource instance was recorded
-* [Appointment](http://hl7.org/fhir/R6/appointment.html): Appointment date/time.
-* [AuditEvent](http://hl7.org/fhir/R6/auditevent.html): Time when the event was recorded
-* [CarePlan](http://hl7.org/fhir/R6/careplan.html): Time period plan covers
-* [CareTeam](http://hl7.org/fhir/R6/careteam.html): A date within the coverage time period.
-* [Composition](http://hl7.org/fhir/R6/composition.html): Composition editing time
-* [Consent](http://hl7.org/fhir/R6/consent.html): When consent was agreed to
-* [DiagnosticReport](http://hl7.org/fhir/R6/diagnosticreport.html): The clinically relevant time of the report
-* [DocumentReference](http://hl7.org/fhir/R6/documentreference.html): When this document reference was created
-* [Encounter](http://hl7.org/fhir/R6/encounter.html): A date within the actualPeriod the Encounter lasted
-* [EpisodeOfCare](http://hl7.org/fhir/R6/episodeofcare.html): The provided date search value falls within the episode of care's period
-* [FamilyMemberHistory](http://hl7.org/fhir/R6/familymemberhistory.html): When history was recorded or last updated
-* [Flag](http://hl7.org/fhir/R6/flag.html): Time period when flag is active
-* [Immunization](http://hl7.org/fhir/R6/immunization.html): Vaccination  (non)-Administration Date
-* [ImmunizationEvaluation](http://hl7.org/fhir/R6/immunizationevaluation.html): Date the evaluation was generated
-* [ImmunizationRecommendation](http://hl7.org/fhir/R6/immunizationrecommendation.html): Date recommendation(s) created
-* [Invoice](http://hl7.org/fhir/R6/invoice.html): Invoice date / posting date
-* [List](http://hl7.org/fhir/R6/list.html): When the list was prepared
-* [MeasureReport](http://hl7.org/fhir/R6/measurereport.html): The date of the measure report
-* [NutritionIntake](http://hl7.org/fhir/R6/nutritionintake.html): Date when patient was taking (or not taking) the medication
-* [Observation](http://hl7.org/fhir/R6/observation.html): Clinically relevant time/time-period for observation
-* [Procedure](http://hl7.org/fhir/R6/procedure.html): When the procedure occurred or is occurring
-* [ResearchSubject](http://hl7.org/fhir/R6/researchsubject.html): Start and end of participation
-* [RiskAssessment](http://hl7.org/fhir/R6/riskassessment.html): When was assessment made?
-* [SupplyRequest](http://hl7.org/fhir/R6/supplyrequest.html): When the request was made
-</td>
-        </tr>
-        <tr>
-            <td><code>FamilyMemberHistory-relationship</code></td>
-            <td><code>relationship</code></td>
-            <td>Draft</td>
-            <td></td>
-            <td>trial-use</td>
-            <td>False</td>
-            <td>pc</td>
-            <td>token</td>
-            <td>A search by a relationship type</td>
-        </tr>
-        <tr>
-            <td><code>FamilyMemberHistory-sex</code></td>
-            <td><code>sex</code></td>
-            <td>Draft</td>
-            <td></td>
-            <td>trial-use</td>
-            <td>False</td>
-            <td>pc</td>
-            <td>token</td>
-            <td>A search by a sex code of a family member</td>
-        </tr>
-        <tr>
-            <td><code>FamilyMemberHistory-status</code></td>
-            <td><code>status</code></td>
-            <td>Draft</td>
-            <td></td>
-            <td>trial-use</td>
-            <td>False</td>
-            <td>pc</td>
-            <td>token</td>
-            <td>partial | completed | entered-in-error | health-unknown</td>
         </tr>
     </tbody>
 </table>

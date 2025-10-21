@@ -7,16 +7,26 @@
         <h3>Urgent Item Checklist</h3>
                 <ul>
             <li>Confirm workgroup disposition vote has been recorded and sent to FMG!</li>
-            <li>ValueSet: <code>endpoint-status</code> (EndpointStatus) bound to element <code>Endpoint.status</code> is flagged as <code>trial-use</code></li>
-            <li>CodeSystem: <code>endpoint-status</code> (EndpointStatus) referenced by ValueSet <code>endpoint-status</code> bound to element <code>Endpoint.status</code> is flagged as <code>trial-use</code></li>
-            <li>ValueSet: <code>endpoint-environment</code> (EndpointEnvironment) bound to element <code>Endpoint.environmentType</code> is flagged as <code>trial-use</code></li>
-            <li>CodeSystem: <code>endpoint-environment</code> (EndpointEnvironment) referenced by ValueSet <code>endpoint-environment</code> bound to element <code>Endpoint.environmentType</code> is flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>Endpoint-connection-type</code> (connection-type) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>Endpoint-identifier</code> (identifier) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>Endpoint-name</code> (name) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>Endpoint-organization</code> (organization) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>Endpoint-payload-type</code> (payload-type) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>Endpoint-status</code> (status) flagged as <code>trial-use</code></li>
+            <li>ValueSet: <code>endpoint-status</code> (EndpointStatus) bound to element <code>Endpoint.status</code> (<code>Required</code>) has status <code>Draft</code></li>
+            <li>ValueSet: <code>endpoint-status</code> (EndpointStatus) bound to element <code>Endpoint.status</code> (<code>Required</code>) has standard status <code>trial-use</code></li>
+            <li>CodeSystem: <code>endpoint-status</code> (EndpointStatus) referenced by ValueSet <code>endpoint-status</code> bound to element <code>Endpoint.status</code> (<code>Required</code>) has standard status <code>trial-use</code></li>
+            <li>ValueSet: <code>endpoint-connection-type</code> (EndpointConnectionType) bound to element <code>Endpoint.connectionType</code> (<code>Example</code>) has status <code>Draft</code></li>
+            <li>ValueSet: <code>endpoint-environment</code> (EndpointEnvironment) bound to element <code>Endpoint.environmentType</code> (<code>Extensible</code>) has status <code>Draft</code></li>
+            <li>ValueSet: <code>endpoint-environment</code> (EndpointEnvironment) bound to element <code>Endpoint.environmentType</code> (<code>Extensible</code>) has standard status <code>trial-use</code></li>
+            <li>CodeSystem: <code>endpoint-environment</code> (EndpointEnvironment) referenced by ValueSet <code>endpoint-environment</code> bound to element <code>Endpoint.environmentType</code> (<code>Extensible</code>) has standard status <code>trial-use</code></li>
+            <li>ValueSet: <code>endpoint-payload-type</code> (EndpointPayloadType) bound to element <code>Endpoint.payload.type</code> (<code>Example</code>) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>Endpoint-connection-type</code> (connection-type) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>Endpoint-identifier</code> (identifier) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>Endpoint-name</code> (name) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>Endpoint-organization</code> (organization) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>Endpoint-payload-type</code> (payload-type) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>Endpoint-status</code> (status) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>Endpoint-connection-type</code> (connection-type) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>Endpoint-identifier</code> (identifier) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>Endpoint-name</code> (name) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>Endpoint-organization</code> (organization) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>Endpoint-payload-type</code> (payload-type) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>Endpoint-status</code> (status) has standards status <code>trial-use</code></li>
         </ul>
 
 
@@ -145,9 +155,7 @@
                 </tr>
             </thead>
             <tbody>
-                <tr><td><code>DICOM/imaging:<code></td><td>No</td></tr>
-            <tr><td><code>(QIDO-RS,<code></td><td>No</td></tr>
-            <tr><td><code>DICOM<code></td><td>No</td></tr>
+                <tr><td><code>(QIDO-RS,<code></td><td>No</td></tr>
             </tbody>
         </table>
 
@@ -297,9 +305,10 @@
                 </tr>
             </thead>
             <tbody>
-                <tr><td><code>IHE<code></td><td>No</td></tr>
+                <tr><td><code>Endpoint.profileCanonical<code></td><td>No</td></tr>
+            <tr><td><code>IHE<code></td><td>No</td></tr>
             <tr><td><code>connectionType<code></td><td>No</td></tr>
-            <tr><td><code>Endpoint.profileCanonical/profileUri<code></td><td>No</td></tr>
+            <tr><td><code>profileUri<code></td><td>No</td></tr>
             </tbody>
         </table>
 

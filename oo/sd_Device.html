@@ -7,40 +7,74 @@
         <h3>Urgent Item Checklist</h3>
                 <ul>
             <li>Confirm workgroup disposition vote has been recorded and sent to FMG!</li>
-            <li>ValueSet: <code>udi-entry-type</code> (UDIEntryType) bound to element <code>Device.udiCarrier.entryType</code> is flagged as <code>trial-use</code></li>
-            <li>CodeSystem: <code>udi-entry-type</code> (UDIEntryType) referenced by ValueSet <code>udi-entry-type</code> bound to element <code>Device.udiCarrier.entryType</code> is flagged as <code>trial-use</code></li>
-            <li>ValueSet: <code>device-status</code> (FHIRDeviceStatus) bound to element <code>Device.status</code> is flagged as <code>trial-use</code></li>
-            <li>CodeSystem: <code>device-status</code> (FHIRDeviceStatus) referenced by ValueSet <code>device-status</code> bound to element <code>Device.status</code> is flagged as <code>trial-use</code></li>
-            <li>ValueSet: <code>device-availability-status</code> (FHIRDeviceAvailabilityStatus) bound to element <code>Device.availabilityStatus</code> is flagged as <code>trial-use</code></li>
-            <li>CodeSystem: <code>device-availability-status</code> (FHIRDeviceAvailabilityStatus) referenced by ValueSet <code>device-availability-status</code> bound to element <code>Device.availabilityStatus</code> is flagged as <code>trial-use</code></li>
-            <li>ValueSet: <code>device-nametype</code> (DeviceNameType) bound to element <code>Device.name.type</code> is flagged as <code>trial-use</code></li>
-            <li>CodeSystem: <code>device-nametype</code> (DeviceNameType) referenced by ValueSet <code>device-nametype</code> bound to element <code>Device.name.type</code> is flagged as <code>trial-use</code></li>
-            <li>ValueSet: <code>device-category</code> (FHIRDeviceCategory) bound to element <code>Device.category</code> is flagged as <code>trial-use</code></li>
-            <li>CodeSystem: <code>device-category</code> (FHIRDeviceCategory) referenced by ValueSet <code>device-category</code> bound to element <code>Device.category</code> is flagged as <code>trial-use</code></li>
-            <li>ValueSet: <code>device-specification-category</code> (DeviceSpecificationCategory) bound to element <code>Device.conformsTo.category</code> is flagged as <code>trial-use</code></li>
-            <li>CodeSystem: <code>device-specification-category</code> (FHIRDeviceSpecializationCategory) referenced by ValueSet <code>device-specification-category</code> bound to element <code>Device.conformsTo.category</code> is flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>Device-biological-source-event</code> (biological-source-event) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>Device-code</code> (code) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>Device-definition</code> (definition) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>Device-device-name</code> (device-name) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>Device-expiration-date</code> (expiration-date) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>Device-identifier</code> (identifier) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>Device-location</code> (location) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>Device-lot-number</code> (lot-number) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>Device-manufacture-date</code> (manufacture-date) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>Device-manufacturer</code> (manufacturer) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>Device-model</code> (model) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>Device-parent</code> (parent) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>Device-serial-number</code> (serial-number) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>Device-specification</code> (specification) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>Device-status</code> (status) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>Device-type</code> (type) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>Device-udi-carrier-hrf</code> (udi-carrier-hrf) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>Device-udi-di</code> (udi-di) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>Device-version</code> (version) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>Device-code-value-concept</code> (code-value-concept) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>Device-specification-version</code> (specification-version) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>Device-version-type</code> (version-type) flagged as <code>trial-use</code></li>
+            <li>ValueSet: <code>udi-entry-type</code> (UDIEntryType) bound to element <code>Device.udiCarrier.entryType</code> (<code>Required</code>) has status <code>Draft</code></li>
+            <li>ValueSet: <code>udi-entry-type</code> (UDIEntryType) bound to element <code>Device.udiCarrier.entryType</code> (<code>Required</code>) has standard status <code>trial-use</code></li>
+            <li>CodeSystem: <code>udi-entry-type</code> (UDIEntryType) referenced by ValueSet <code>udi-entry-type</code> bound to element <code>Device.udiCarrier.entryType</code> (<code>Required</code>) has standard status <code>trial-use</code></li>
+            <li>ValueSet: <code>device-status</code> (FHIRDeviceStatus) bound to element <code>Device.status</code> (<code>Required</code>) has status <code>Draft</code></li>
+            <li>ValueSet: <code>device-status</code> (FHIRDeviceStatus) bound to element <code>Device.status</code> (<code>Required</code>) has standard status <code>trial-use</code></li>
+            <li>CodeSystem: <code>device-status</code> (FHIRDeviceStatus) referenced by ValueSet <code>device-status</code> bound to element <code>Device.status</code> (<code>Required</code>) has standard status <code>trial-use</code></li>
+            <li>ValueSet: <code>device-availability-status</code> (FHIRDeviceAvailabilityStatus) bound to element <code>Device.availabilityStatus</code> (<code>Extensible</code>) has status <code>Draft</code></li>
+            <li>ValueSet: <code>device-availability-status</code> (FHIRDeviceAvailabilityStatus) bound to element <code>Device.availabilityStatus</code> (<code>Extensible</code>) has standard status <code>trial-use</code></li>
+            <li>CodeSystem: <code>device-availability-status</code> (FHIRDeviceAvailabilityStatus) referenced by ValueSet <code>device-availability-status</code> bound to element <code>Device.availabilityStatus</code> (<code>Extensible</code>) has standard status <code>trial-use</code></li>
+            <li>ValueSet: <code>device-nametype</code> (DeviceNameType) bound to element <code>Device.name.type</code> (<code>Extensible</code>) has status <code>Draft</code></li>
+            <li>ValueSet: <code>device-nametype</code> (DeviceNameType) bound to element <code>Device.name.type</code> (<code>Extensible</code>) has standard status <code>trial-use</code></li>
+            <li>CodeSystem: <code>device-nametype</code> (DeviceNameType) referenced by ValueSet <code>device-nametype</code> bound to element <code>Device.name.type</code> (<code>Extensible</code>) has standard status <code>trial-use</code></li>
+            <li>ValueSet: <code>device-category</code> (FHIRDeviceCategory) bound to element <code>Device.category</code> (<code>Example</code>) has status <code>Draft</code></li>
+            <li>ValueSet: <code>device-category</code> (FHIRDeviceCategory) bound to element <code>Device.category</code> (<code>Example</code>) has standard status <code>trial-use</code></li>
+            <li>CodeSystem: <code>device-category</code> (FHIRDeviceCategory) referenced by ValueSet <code>device-category</code> bound to element <code>Device.category</code> (<code>Example</code>) has standard status <code>trial-use</code></li>
+            <li>ValueSet: <code>device-type</code> (DeviceType) bound to element <code>Device.type</code> (<code>Example</code>) has status <code>Draft</code></li>
+            <li>ValueSet: <code>device-versiontype</code> (DeviceVersionType) bound to element <code>Device.deviceVersion.type</code> (<code>Example</code>) has status <code>Draft</code></li>
+            <li>ValueSet: <code>device-specification-category</code> (DeviceSpecificationCategory) bound to element <code>Device.conformsTo.category</code> (<code>Example</code>) has status <code>Draft</code></li>
+            <li>ValueSet: <code>device-specification-category</code> (DeviceSpecificationCategory) bound to element <code>Device.conformsTo.category</code> (<code>Example</code>) has standard status <code>trial-use</code></li>
+            <li>CodeSystem: <code>device-specification-category</code> (FHIRDeviceSpecializationCategory) referenced by ValueSet <code>device-specification-category</code> bound to element <code>Device.conformsTo.category</code> (<code>Example</code>) has standard status <code>trial-use</code></li>
+            <li>ValueSet: <code>device-specification-type</code> (DeviceSpecificationType) bound to element <code>Device.conformsTo.specification</code> (<code>Example</code>) has status <code>Draft</code></li>
+            <li>ValueSet: <code>device-property-type</code> (DevicePropertyType) bound to element <code>Device.property.type</code> (<code>Example</code>) has status <code>Draft</code></li>
+            <li>ValueSet: <code>substance-code</code> (SubstanceCode) bound to element <code>Device.additive.type</code> (<code>Example</code>) has status <code>Draft</code></li>
+            <li>ValueSet: <code>device-safety</code> (DeviceSafety) bound to element <code>Device.safety</code> (<code>Example</code>) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>Device-biological-source-event</code> (biological-source-event) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>Device-code</code> (code) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>Device-code-value-concept</code> (code-value-concept) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>Device-definition</code> (definition) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>Device-device-name</code> (device-name) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>Device-expiration-date</code> (expiration-date) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>Device-identifier</code> (identifier) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>Device-location</code> (location) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>Device-lot-number</code> (lot-number) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>Device-manufacture-date</code> (manufacture-date) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>Device-manufacturer</code> (manufacturer) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>Device-model</code> (model) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>Device-parent</code> (parent) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>Device-serial-number</code> (serial-number) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>Device-specification</code> (specification) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>Device-specification-version</code> (specification-version) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>Device-status</code> (status) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>Device-type</code> (type) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>Device-udi-carrier-hrf</code> (udi-carrier-hrf) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>Device-udi-di</code> (udi-di) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>Device-version</code> (version) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>Device-version-type</code> (version-type) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>Device-biological-source-event</code> (biological-source-event) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>Device-code</code> (code) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>Device-code-value-concept</code> (code-value-concept) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>Device-definition</code> (definition) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>Device-device-name</code> (device-name) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>Device-expiration-date</code> (expiration-date) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>Device-identifier</code> (identifier) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>Device-location</code> (location) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>Device-lot-number</code> (lot-number) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>Device-manufacture-date</code> (manufacture-date) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>Device-manufacturer</code> (manufacturer) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>Device-model</code> (model) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>Device-parent</code> (parent) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>Device-serial-number</code> (serial-number) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>Device-specification</code> (specification) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>Device-specification-version</code> (specification-version) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>Device-status</code> (status) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>Device-type</code> (type) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>Device-udi-carrier-hrf</code> (udi-carrier-hrf) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>Device-udi-di</code> (udi-di) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>Device-version</code> (version) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>Device-version-type</code> (version-type) has standards status <code>trial-use</code></li>
         </ul>
 
 
@@ -156,11 +190,11 @@
                 </tr>
             </thead>
             <tbody>
-                <tr><td><code>device-cycle,<code></td><td>Element</td></tr>
-            <tr><td><code>device-duration,<code></td><td>Element</td></tr>
+                <tr><td><code>device-cycle<code></td><td>Element</td></tr>
+            <tr><td><code>device-duration<code></td><td>Element</td></tr>
             <tr><td><code>device-endpoint<code></td><td>Element</td></tr>
-            <tr><td><code>device-gateway,<code></td><td>Element</td></tr>
-            <tr><td><code>device-mode,<code></td><td>Element</td></tr>
+            <tr><td><code>device-gateway<code></td><td>Element</td></tr>
+            <tr><td><code>device-mode<code></td><td>Element</td></tr>
             </tbody>
         </table>
 
@@ -173,12 +207,11 @@
                 </tr>
             </thead>
             <tbody>
-                <tr><td><code>device-alertDetection<code></td><td>No</td></tr>
-            <tr><td><code>device-conformsTo-source<code></td><td>No</td></tr>
+                <tr><td><code>beyone<code></td><td>No</td></tr>
             <tr><td><code>cellphone,<code></td><td>No</td></tr>
+            <tr><td><code>device-alertDetection<code></td><td>No</td></tr>
+            <tr><td><code>device-conformsTo-source<code></td><td>No</td></tr>
             <tr><td><code>ownenship/custiodianship.<code></td><td>No</td></tr>
-            <tr><td><code>beyone<code></td><td>No</td></tr>
-            <tr><td><code>the Medication resource<code></td><td>No</td></tr>
             </tbody>
         </table>
 
@@ -330,14 +363,14 @@
                 </tr>
             </thead>
             <tbody>
-                <tr><td><code>barcodes<code></td><td>No</td></tr>
-            <tr><td><code>RFIDs.<code></td><td>No</td></tr>
-            <tr><td><code>GTIN<code></td><td>No</td></tr>
+                <tr><td><code>(AIDC)<code></td><td>No</td></tr>
             <tr><td><code>(GMDN®)<code></td><td>No</td></tr>
-            <tr><td><code>IMDRF<code></td><td>No</td></tr>
-            <tr><td><code>(AIDC)<code></td><td>No</td></tr>
+            <tr><td><code>(GUDID)<code></td><td>No</td></tr>
             <tr><td><code>GS1<code></td><td>No</td></tr>
-            <tr><td><code>(GUDID).<code></td><td>No</td></tr>
+            <tr><td><code>GTIN<code></td><td>No</td></tr>
+            <tr><td><code>IMDRF<code></td><td>No</td></tr>
+            <tr><td><code>RFIDs.<code></td><td>No</td></tr>
+            <tr><td><code>barcodes<code></td><td>No</td></tr>
             </tbody>
         </table>
 
@@ -993,6 +1026,17 @@
             <td>The definition / type of the device (code)</td>
         </tr>
         <tr>
+            <td><code>Device-code-value-concept</code></td>
+            <td><code>code-value-concept</code></td>
+            <td>Draft</td>
+            <td></td>
+            <td>trial-use</td>
+            <td>False</td>
+            <td>oo</td>
+            <td>composite</td>
+            <td>Code and value parameter pair</td>
+        </tr>
+        <tr>
             <td><code>Device-definition</code></td>
             <td><code>definition</code></td>
             <td>Draft</td>
@@ -1125,6 +1169,17 @@
             <td>The standards, specifications, or formal guidances.</td>
         </tr>
         <tr>
+            <td><code>Device-specification-version</code></td>
+            <td><code>specification-version</code></td>
+            <td>Draft</td>
+            <td></td>
+            <td>trial-use</td>
+            <td>False</td>
+            <td>oo</td>
+            <td>composite</td>
+            <td>A composite of both specification and version</td>
+        </tr>
+        <tr>
             <td><code>Device-status</code></td>
             <td><code>status</code></td>
             <td>Draft</td>
@@ -1180,28 +1235,6 @@
             <td>The specific version of the device</td>
         </tr>
         <tr>
-            <td><code>Device-code-value-concept</code></td>
-            <td><code>code-value-concept</code></td>
-            <td>Draft</td>
-            <td></td>
-            <td>trial-use</td>
-            <td>False</td>
-            <td>oo</td>
-            <td>composite</td>
-            <td>Code and value parameter pair</td>
-        </tr>
-        <tr>
-            <td><code>Device-specification-version</code></td>
-            <td><code>specification-version</code></td>
-            <td>Draft</td>
-            <td></td>
-            <td>trial-use</td>
-            <td>False</td>
-            <td>oo</td>
-            <td>composite</td>
-            <td>A composite of both specification and version</td>
-        </tr>
-        <tr>
             <td><code>Device-version-type</code></td>
             <td><code>version-type</code></td>
             <td>Draft</td>
@@ -1211,237 +1244,6 @@
             <td>oo</td>
             <td>composite</td>
             <td>Value and type of version</td>
-        </tr>
-        <tr>
-            <td><code>DeviceAlert-acknowledged</code></td>
-            <td><code>acknowledged</code></td>
-            <td>Draft</td>
-            <td></td>
-            <td>draft</td>
-            <td>False</td>
-            <td>dev</td>
-            <td>token</td>
-            <td>Whether the alert condition has been acknowledged</td>
-        </tr>
-        <tr>
-            <td><code>DeviceAlert-annunciator-concept</code></td>
-            <td><code>annunciator-concept</code></td>
-            <td>Draft</td>
-            <td></td>
-            <td>draft</td>
-            <td>False</td>
-            <td>dev</td>
-            <td>token</td>
-            <td>The whether the signalling device annunciating the condition is local or remote to the detecting device</td>
-        </tr>
-        <tr>
-            <td><code>DeviceAlert-annunciator-device</code></td>
-            <td><code>annunciator-device</code></td>
-            <td>Draft</td>
-            <td></td>
-            <td>draft</td>
-            <td>False</td>
-            <td>dev</td>
-            <td>reference</td>
-            <td>The signalling device annunciating the condition</td>
-        </tr>
-        <tr>
-            <td><code>DeviceAlert-category</code></td>
-            <td><code>category</code></td>
-            <td>Draft</td>
-            <td></td>
-            <td>draft</td>
-            <td>False</td>
-            <td>dev</td>
-            <td>token</td>
-            <td>Alert category</td>
-        </tr>
-        <tr>
-            <td><code>DeviceAlert-code</code></td>
-            <td><code>code</code></td>
-            <td>Draft</td>
-            <td></td>
-            <td>draft</td>
-            <td>False</td>
-            <td>dev</td>
-            <td>token</td>
-            <td>Alert condition code</td>
-        </tr>
-        <tr>
-            <td><code>DeviceAlert-derived-from</code></td>
-            <td><code>derived-from</code></td>
-            <td>Draft</td>
-            <td></td>
-            <td>draft</td>
-            <td>False</td>
-            <td>dev</td>
-            <td>reference</td>
-            <td>Whether the alert is currently occurring</td>
-        </tr>
-        <tr>
-            <td><code>DeviceAlert-device</code></td>
-            <td><code>device</code></td>
-            <td>Draft</td>
-            <td></td>
-            <td>draft</td>
-            <td>False</td>
-            <td>dev</td>
-            <td>reference</td>
-            <td>The device detecting the condition</td>
-        </tr>
-        <tr>
-            <td><code>DeviceAlert-encounter</code></td>
-            <td><code>encounter</code></td>
-            <td>Draft</td>
-            <td></td>
-            <td>draft</td>
-            <td>False</td>
-            <td>dev</td>
-            <td>reference</td>
-            <td>Encounter during which the alert occurred</td>
-        </tr>
-        <tr>
-            <td><code>DeviceAlert-identifier</code></td>
-            <td><code>identifier</code></td>
-            <td>Draft</td>
-            <td></td>
-            <td>draft</td>
-            <td>False</td>
-            <td>dev</td>
-            <td>token</td>
-            <td>The identifier of the alert</td>
-        </tr>
-        <tr>
-            <td><code>DeviceAlert-indication</code></td>
-            <td><code>indication</code></td>
-            <td>Draft</td>
-            <td></td>
-            <td>draft</td>
-            <td>False</td>
-            <td>dev</td>
-            <td>date</td>
-            <td>When the signal was being annunciated</td>
-        </tr>
-        <tr>
-            <td><code>DeviceAlert-location</code></td>
-            <td><code>location</code></td>
-            <td>Draft</td>
-            <td></td>
-            <td>draft</td>
-            <td>False</td>
-            <td>dev</td>
-            <td>reference</td>
-            <td>Location of the subject at time of alert</td>
-        </tr>
-        <tr>
-            <td><code>DeviceAlert-manifestation</code></td>
-            <td><code>manifestation</code></td>
-            <td>Draft</td>
-            <td></td>
-            <td>draft</td>
-            <td>False</td>
-            <td>dev</td>
-            <td>token</td>
-            <td>How the alert signal is manifested</td>
-        </tr>
-        <tr>
-            <td><code>DeviceAlert-patient</code></td>
-            <td><code>patient</code></td>
-            <td>Draft</td>
-            <td></td>
-            <td>draft</td>
-            <td>False</td>
-            <td>dev</td>
-            <td>reference</td>
-            <td>The patient subject of the alert</td>
-        </tr>
-        <tr>
-            <td><code>DeviceAlert-period</code></td>
-            <td><code>period</code></td>
-            <td>Draft</td>
-            <td></td>
-            <td>draft</td>
-            <td>False</td>
-            <td>dev</td>
-            <td>date</td>
-            <td>When the alert condition occurred</td>
-        </tr>
-        <tr>
-            <td><code>DeviceAlert-presence</code></td>
-            <td><code>presence</code></td>
-            <td>Draft</td>
-            <td></td>
-            <td>draft</td>
-            <td>False</td>
-            <td>dev</td>
-            <td>token</td>
-            <td>Whether the alert condition is currently occurring</td>
-        </tr>
-        <tr>
-            <td><code>DeviceAlert-priority</code></td>
-            <td><code>priority</code></td>
-            <td>Draft</td>
-            <td></td>
-            <td>draft</td>
-            <td>False</td>
-            <td>dev</td>
-            <td>token</td>
-            <td>Priority of the alert condition</td>
-        </tr>
-        <tr>
-            <td><code>DeviceAlert-procedure</code></td>
-            <td><code>procedure</code></td>
-            <td>Draft</td>
-            <td></td>
-            <td>draft</td>
-            <td>False</td>
-            <td>dev</td>
-            <td>reference</td>
-            <td>Procedure during which the alert occurred</td>
-        </tr>
-        <tr>
-            <td><code>DeviceAlert-signal-presence</code></td>
-            <td><code>signal-presence</code></td>
-            <td>Draft</td>
-            <td></td>
-            <td>draft</td>
-            <td>False</td>
-            <td>dev</td>
-            <td>token</td>
-            <td>Whether the alert is currently occurring</td>
-        </tr>
-        <tr>
-            <td><code>DeviceAlert-status</code></td>
-            <td><code>status</code></td>
-            <td>Draft</td>
-            <td></td>
-            <td>draft</td>
-            <td>False</td>
-            <td>dev</td>
-            <td>token</td>
-            <td>Status of the alert</td>
-        </tr>
-        <tr>
-            <td><code>DeviceAlert-subject</code></td>
-            <td><code>subject</code></td>
-            <td>Draft</td>
-            <td></td>
-            <td>draft</td>
-            <td>False</td>
-            <td>dev</td>
-            <td>reference</td>
-            <td>Subject of the alert</td>
-        </tr>
-        <tr>
-            <td><code>DeviceAlert-type</code></td>
-            <td><code>type</code></td>
-            <td>Draft</td>
-            <td></td>
-            <td>draft</td>
-            <td>False</td>
-            <td>dev</td>
-            <td>token</td>
-            <td>Whether the alert is physiological or technical</td>
         </tr>
     </tbody>
 </table>

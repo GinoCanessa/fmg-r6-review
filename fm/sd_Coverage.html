@@ -7,26 +7,51 @@
         <h3>Urgent Item Checklist</h3>
                 <ul>
             <li>Confirm workgroup disposition vote has been recorded and sent to FMG!</li>
-            <li>ValueSet: <code>fm-status</code> (FinancialResourceStatusCodes) bound to element <code>Coverage.status</code> is flagged as <code>trial-use</code></li>
-            <li>ValueSet: <code>coverage-kind</code> (Kind) bound to element <code>Coverage.kind</code> is flagged as <code>trial-use</code></li>
-            <li>CodeSystem: <code>coverage-kind</code> (Kind) referenced by ValueSet <code>coverage-kind</code> bound to element <code>Coverage.kind</code> is flagged as <code>trial-use</code></li>
-            <li>ValueSet: <code>subscriber-relationship</code> (SubscriberRelationshipCodes) bound to element <code>Coverage.relationship</code> is flagged as <code>trial-use</code></li>
-            <li>ValueSet: <code>coverage-class</code> (CoverageClassCodes) bound to element <code>Coverage.class.type</code> is flagged as <code>trial-use</code></li>
-            <li>ValueSet: <code>coverage-copay-type</code> (CoverageCopayTypeCodes) bound to element <code>Coverage.costToBeneficiary.type</code> is flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>clinical-identifier</code> (identifier) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>clinical-patient</code> (patient) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>clinical-type</code> (type) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>Coverage-beneficiary</code> (beneficiary) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>Coverage-class-type</code> (class-type) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>Coverage-class-value</code> (class-value) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>Coverage-dependent</code> (dependent) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>Coverage-insurer</code> (insurer) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>Coverage-paymentby-party</code> (paymentby-party) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>Coverage-period</code> (period) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>Coverage-policy-holder</code> (policy-holder) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>Coverage-status</code> (status) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>Coverage-subscriber</code> (subscriber) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>Coverage-subscriberid</code> (subscriberid) flagged as <code>trial-use</code></li>
+            <li>ValueSet: <code>fm-status</code> (FinancialResourceStatusCodes) bound to element <code>Coverage.status</code> (<code>Required</code>) has status <code>Draft</code></li>
+            <li>ValueSet: <code>fm-status</code> (FinancialResourceStatusCodes) bound to element <code>Coverage.status</code> (<code>Required</code>) has standard status <code>trial-use</code></li>
+            <li>ValueSet: <code>coverage-kind</code> (Kind) bound to element <code>Coverage.kind</code> (<code>Required</code>) has status <code>Draft</code></li>
+            <li>ValueSet: <code>coverage-kind</code> (Kind) bound to element <code>Coverage.kind</code> (<code>Required</code>) has standard status <code>trial-use</code></li>
+            <li>CodeSystem: <code>coverage-kind</code> (Kind) referenced by ValueSet <code>coverage-kind</code> bound to element <code>Coverage.kind</code> (<code>Required</code>) has standard status <code>trial-use</code></li>
+            <li>ValueSet: <code>coverage-type</code> (CoverageTypeAndSelfPayCodes) bound to element <code>Coverage.type</code> (<code>Preferred</code>) has status <code>Draft</code></li>
+            <li>ValueSet: <code>subscriber-relationship</code> (SubscriberRelationshipCodes) bound to element <code>Coverage.relationship</code> (<code>Extensible</code>) has status <code>Draft</code></li>
+            <li>ValueSet: <code>subscriber-relationship</code> (SubscriberRelationshipCodes) bound to element <code>Coverage.relationship</code> (<code>Extensible</code>) has standard status <code>trial-use</code></li>
+            <li>ValueSet: <code>coverage-class</code> (CoverageClassCodes) bound to element <code>Coverage.class.type</code> (<code>Extensible</code>) has status <code>Draft</code></li>
+            <li>ValueSet: <code>coverage-class</code> (CoverageClassCodes) bound to element <code>Coverage.class.type</code> (<code>Extensible</code>) has standard status <code>trial-use</code></li>
+            <li>ValueSet: <code>coverage-copay-type</code> (CoverageCopayTypeCodes) bound to element <code>Coverage.costToBeneficiary.type</code> (<code>Extensible</code>) has status <code>Draft</code></li>
+            <li>ValueSet: <code>coverage-copay-type</code> (CoverageCopayTypeCodes) bound to element <code>Coverage.costToBeneficiary.type</code> (<code>Extensible</code>) has standard status <code>trial-use</code></li>
+            <li>ValueSet: <code>ex-benefitcategory</code> (BenefitCategoryCodes) bound to element <code>Coverage.costToBeneficiary.category</code> (<code>Example</code>) has status <code>Draft</code></li>
+            <li>ValueSet: <code>benefit-network</code> (NetworkTypeCodes) bound to element <code>Coverage.costToBeneficiary.network</code> (<code>Example</code>) has status <code>Draft</code></li>
+            <li>ValueSet: <code>benefit-unit</code> (UnitTypeCodes) bound to element <code>Coverage.costToBeneficiary.unit</code> (<code>Example</code>) has status <code>Draft</code></li>
+            <li>ValueSet: <code>benefit-term</code> (BenefitTermCodes) bound to element <code>Coverage.costToBeneficiary.term</code> (<code>Example</code>) has status <code>Draft</code></li>
+            <li>ValueSet: <code>coverage-financial-exception</code> (ExampleCoverageFinancialExceptionCodes) bound to element <code>Coverage.costToBeneficiary.exception.type</code> (<code>Example</code>) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>Coverage-beneficiary</code> (beneficiary) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>Coverage-class-type</code> (class-type) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>Coverage-class-value</code> (class-value) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>Coverage-dependent</code> (dependent) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>Coverage-insurer</code> (insurer) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>Coverage-paymentby-party</code> (paymentby-party) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>Coverage-period</code> (period) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>Coverage-policy-holder</code> (policy-holder) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>Coverage-status</code> (status) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>Coverage-subscriber</code> (subscriber) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>Coverage-subscriberid</code> (subscriberid) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>clinical-identifier</code> (identifier) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>clinical-patient</code> (patient) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>clinical-type</code> (type) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>Coverage-beneficiary</code> (beneficiary) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>Coverage-class-type</code> (class-type) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>Coverage-class-value</code> (class-value) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>Coverage-dependent</code> (dependent) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>Coverage-insurer</code> (insurer) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>Coverage-paymentby-party</code> (paymentby-party) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>Coverage-period</code> (period) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>Coverage-policy-holder</code> (policy-holder) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>Coverage-status</code> (status) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>Coverage-subscriber</code> (subscriber) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>Coverage-subscriberid</code> (subscriberid) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>clinical-identifier</code> (identifier) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>clinical-patient</code> (patient) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>clinical-type</code> (type) has standards status <code>trial-use</code></li>
         </ul>
 
 
@@ -809,6 +834,127 @@
     </thead>
     <tbody>
         <tr>
+            <td><code>Coverage-beneficiary</code></td>
+            <td><code>beneficiary</code></td>
+            <td>Draft</td>
+            <td></td>
+            <td>trial-use</td>
+            <td>False</td>
+            <td>fm</td>
+            <td>reference</td>
+            <td>Covered party</td>
+        </tr>
+        <tr>
+            <td><code>Coverage-class-type</code></td>
+            <td><code>class-type</code></td>
+            <td>Draft</td>
+            <td></td>
+            <td>trial-use</td>
+            <td>False</td>
+            <td>fm</td>
+            <td>token</td>
+            <td>Coverage class (e.g. plan, group)</td>
+        </tr>
+        <tr>
+            <td><code>Coverage-class-value</code></td>
+            <td><code>class-value</code></td>
+            <td>Draft</td>
+            <td></td>
+            <td>trial-use</td>
+            <td>False</td>
+            <td>fm</td>
+            <td>token</td>
+            <td>Value of the class (e.g. Plan number, group number)</td>
+        </tr>
+        <tr>
+            <td><code>Coverage-dependent</code></td>
+            <td><code>dependent</code></td>
+            <td>Draft</td>
+            <td></td>
+            <td>trial-use</td>
+            <td>False</td>
+            <td>fm</td>
+            <td>string</td>
+            <td>Dependent number</td>
+        </tr>
+        <tr>
+            <td><code>Coverage-insurer</code></td>
+            <td><code>insurer</code></td>
+            <td>Draft</td>
+            <td></td>
+            <td>trial-use</td>
+            <td>False</td>
+            <td>fm</td>
+            <td>reference</td>
+            <td>The identity of the insurer</td>
+        </tr>
+        <tr>
+            <td><code>Coverage-paymentby-party</code></td>
+            <td><code>paymentby-party</code></td>
+            <td>Draft</td>
+            <td></td>
+            <td>trial-use</td>
+            <td>False</td>
+            <td>fm</td>
+            <td>reference</td>
+            <td>Parties who will pay for services</td>
+        </tr>
+        <tr>
+            <td><code>Coverage-period</code></td>
+            <td><code>period</code></td>
+            <td>Draft</td>
+            <td></td>
+            <td>trial-use</td>
+            <td>False</td>
+            <td>fm</td>
+            <td>date</td>
+            <td>Dates that the Coverage is active</td>
+        </tr>
+        <tr>
+            <td><code>Coverage-policy-holder</code></td>
+            <td><code>policy-holder</code></td>
+            <td>Draft</td>
+            <td></td>
+            <td>trial-use</td>
+            <td>False</td>
+            <td>fm</td>
+            <td>reference</td>
+            <td>Reference to the policyholder</td>
+        </tr>
+        <tr>
+            <td><code>Coverage-status</code></td>
+            <td><code>status</code></td>
+            <td>Draft</td>
+            <td></td>
+            <td>trial-use</td>
+            <td>False</td>
+            <td>fm</td>
+            <td>token</td>
+            <td>The status of the Coverage</td>
+        </tr>
+        <tr>
+            <td><code>Coverage-subscriber</code></td>
+            <td><code>subscriber</code></td>
+            <td>Draft</td>
+            <td></td>
+            <td>trial-use</td>
+            <td>False</td>
+            <td>fm</td>
+            <td>reference</td>
+            <td>Reference to the subscriber</td>
+        </tr>
+        <tr>
+            <td><code>Coverage-subscriberid</code></td>
+            <td><code>subscriberid</code></td>
+            <td>Draft</td>
+            <td></td>
+            <td>trial-use</td>
+            <td>False</td>
+            <td>fm</td>
+            <td>token</td>
+            <td>Identifier of the subscriber</td>
+        </tr>
+        <tr>
             <td><code>clinical-identifier</code></td>
             <td><code>identifier</code></td>
             <td>Draft</td>
@@ -987,127 +1133,6 @@
 * [MedicationDispense](http://hl7.org/fhir/R6/medicationdispense.html): Returns dispenses of a specific type
 * [Specimen](http://hl7.org/fhir/R6/specimen.html): The specimen type
 </td>
-        </tr>
-        <tr>
-            <td><code>Coverage-beneficiary</code></td>
-            <td><code>beneficiary</code></td>
-            <td>Draft</td>
-            <td></td>
-            <td>trial-use</td>
-            <td>False</td>
-            <td>fm</td>
-            <td>reference</td>
-            <td>Covered party</td>
-        </tr>
-        <tr>
-            <td><code>Coverage-class-type</code></td>
-            <td><code>class-type</code></td>
-            <td>Draft</td>
-            <td></td>
-            <td>trial-use</td>
-            <td>False</td>
-            <td>fm</td>
-            <td>token</td>
-            <td>Coverage class (e.g. plan, group)</td>
-        </tr>
-        <tr>
-            <td><code>Coverage-class-value</code></td>
-            <td><code>class-value</code></td>
-            <td>Draft</td>
-            <td></td>
-            <td>trial-use</td>
-            <td>False</td>
-            <td>fm</td>
-            <td>token</td>
-            <td>Value of the class (e.g. Plan number, group number)</td>
-        </tr>
-        <tr>
-            <td><code>Coverage-dependent</code></td>
-            <td><code>dependent</code></td>
-            <td>Draft</td>
-            <td></td>
-            <td>trial-use</td>
-            <td>False</td>
-            <td>fm</td>
-            <td>string</td>
-            <td>Dependent number</td>
-        </tr>
-        <tr>
-            <td><code>Coverage-insurer</code></td>
-            <td><code>insurer</code></td>
-            <td>Draft</td>
-            <td></td>
-            <td>trial-use</td>
-            <td>False</td>
-            <td>fm</td>
-            <td>reference</td>
-            <td>The identity of the insurer</td>
-        </tr>
-        <tr>
-            <td><code>Coverage-paymentby-party</code></td>
-            <td><code>paymentby-party</code></td>
-            <td>Draft</td>
-            <td></td>
-            <td>trial-use</td>
-            <td>False</td>
-            <td>fm</td>
-            <td>reference</td>
-            <td>Parties who will pay for services</td>
-        </tr>
-        <tr>
-            <td><code>Coverage-period</code></td>
-            <td><code>period</code></td>
-            <td>Draft</td>
-            <td></td>
-            <td>trial-use</td>
-            <td>False</td>
-            <td>fm</td>
-            <td>date</td>
-            <td>Dates that the Coverage is active</td>
-        </tr>
-        <tr>
-            <td><code>Coverage-policy-holder</code></td>
-            <td><code>policy-holder</code></td>
-            <td>Draft</td>
-            <td></td>
-            <td>trial-use</td>
-            <td>False</td>
-            <td>fm</td>
-            <td>reference</td>
-            <td>Reference to the policyholder</td>
-        </tr>
-        <tr>
-            <td><code>Coverage-status</code></td>
-            <td><code>status</code></td>
-            <td>Draft</td>
-            <td></td>
-            <td>trial-use</td>
-            <td>False</td>
-            <td>fm</td>
-            <td>token</td>
-            <td>The status of the Coverage</td>
-        </tr>
-        <tr>
-            <td><code>Coverage-subscriber</code></td>
-            <td><code>subscriber</code></td>
-            <td>Draft</td>
-            <td></td>
-            <td>trial-use</td>
-            <td>False</td>
-            <td>fm</td>
-            <td>reference</td>
-            <td>Reference to the subscriber</td>
-        </tr>
-        <tr>
-            <td><code>Coverage-subscriberid</code></td>
-            <td><code>subscriberid</code></td>
-            <td>Draft</td>
-            <td></td>
-            <td>trial-use</td>
-            <td>False</td>
-            <td>fm</td>
-            <td>token</td>
-            <td>Identifier of the subscriber</td>
         </tr>
     </tbody>
 </table>

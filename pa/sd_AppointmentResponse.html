@@ -7,18 +7,28 @@
         <h3>Urgent Item Checklist</h3>
                 <ul>
             <li>Confirm workgroup disposition vote has been recorded and sent to FMG!</li>
-            <li>ValueSet: <code>encounter-participant-type</code> (ParticipantType) bound to element <code>AppointmentResponse.participantType</code> is flagged as <code>trial-use</code></li>
-            <li>ValueSet: <code>appointmentresponse-status</code> (AppointmentResponseStatus) bound to element <code>AppointmentResponse.participantStatus</code> is flagged as <code>trial-use</code></li>
-            <li>CodeSystem: <code>participationstatus</code> (ParticipationStatus) referenced by ValueSet <code>appointmentresponse-status</code> bound to element <code>AppointmentResponse.participantStatus</code> is flagged as <code>trial-use</code></li>
-            <li>CodeSystem: <code>appointmentstatus</code> (AppointmentStatus) referenced by ValueSet <code>appointmentresponse-status</code> bound to element <code>AppointmentResponse.participantStatus</code> is flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>clinical-identifier</code> (identifier) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>clinical-patient</code> (patient) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>AppointmentResponse-actor</code> (actor) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>AppointmentResponse-appointment</code> (appointment) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>AppointmentResponse-group</code> (group) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>AppointmentResponse-location</code> (location) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>AppointmentResponse-part-status</code> (part-status) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>AppointmentResponse-practitioner</code> (practitioner) flagged as <code>trial-use</code></li>
+            <li>ValueSet: <code>encounter-participant-type</code> (ParticipantType) bound to element <code>AppointmentResponse.participantType</code> (<code>Extensible</code>) has status <code>Draft</code></li>
+            <li>ValueSet: <code>encounter-participant-type</code> (ParticipantType) bound to element <code>AppointmentResponse.participantType</code> (<code>Extensible</code>) has standard status <code>trial-use</code></li>
+            <li>ValueSet: <code>appointmentresponse-status</code> (AppointmentResponseStatus) bound to element <code>AppointmentResponse.participantStatus</code> (<code>Required</code>) has status <code>Draft</code></li>
+            <li>ValueSet: <code>appointmentresponse-status</code> (AppointmentResponseStatus) bound to element <code>AppointmentResponse.participantStatus</code> (<code>Required</code>) has standard status <code>trial-use</code></li>
+            <li>CodeSystem: <code>participationstatus</code> (ParticipationStatus) referenced by ValueSet <code>appointmentresponse-status</code> bound to element <code>AppointmentResponse.participantStatus</code> (<code>Required</code>) has standard status <code>trial-use</code></li>
+            <li>CodeSystem: <code>appointmentstatus</code> (AppointmentStatus) referenced by ValueSet <code>appointmentresponse-status</code> bound to element <code>AppointmentResponse.participantStatus</code> (<code>Required</code>) has standard status <code>trial-use</code></li>
+            <li>Search Parameter: <code>AppointmentResponse-actor</code> (actor) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>AppointmentResponse-appointment</code> (appointment) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>AppointmentResponse-group</code> (group) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>AppointmentResponse-location</code> (location) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>AppointmentResponse-part-status</code> (part-status) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>AppointmentResponse-practitioner</code> (practitioner) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>clinical-identifier</code> (identifier) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>clinical-patient</code> (patient) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>AppointmentResponse-actor</code> (actor) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>AppointmentResponse-appointment</code> (appointment) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>AppointmentResponse-group</code> (group) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>AppointmentResponse-location</code> (location) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>AppointmentResponse-part-status</code> (part-status) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>AppointmentResponse-practitioner</code> (practitioner) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>clinical-identifier</code> (identifier) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>clinical-patient</code> (patient) has standards status <code>trial-use</code></li>
         </ul>
 
 
@@ -297,10 +307,10 @@
                 </tr>
             </thead>
             <tbody>
-                <tr><td><code>Timezones<code></td><td>No</td></tr>
-            <tr><td><code>timezone<code></td><td>No</td></tr>
-            <tr><td><code>9:00:00Z+10<code></td><td>No</td></tr>
+                <tr><td><code>9:00:00Z<code></td><td>No</td></tr>
             <tr><td><code>9am<code></td><td>No</td></tr>
+            <tr><td><code>Timezones<code></td><td>No</td></tr>
+            <tr><td><code>timezone<code></td><td>No</td></tr>
             </tbody>
         </table>
 
@@ -526,6 +536,72 @@
     </thead>
     <tbody>
         <tr>
+            <td><code>AppointmentResponse-actor</code></td>
+            <td><code>actor</code></td>
+            <td>Draft</td>
+            <td></td>
+            <td>trial-use</td>
+            <td>False</td>
+            <td>pa</td>
+            <td>reference</td>
+            <td>The Person, Location/HealthcareService or Device that this appointment response replies for</td>
+        </tr>
+        <tr>
+            <td><code>AppointmentResponse-appointment</code></td>
+            <td><code>appointment</code></td>
+            <td>Draft</td>
+            <td></td>
+            <td>trial-use</td>
+            <td>False</td>
+            <td>pa</td>
+            <td>reference</td>
+            <td>The appointment that the response is attached to</td>
+        </tr>
+        <tr>
+            <td><code>AppointmentResponse-group</code></td>
+            <td><code>group</code></td>
+            <td>Draft</td>
+            <td></td>
+            <td>trial-use</td>
+            <td>False</td>
+            <td>pa</td>
+            <td>reference</td>
+            <td>This Response is for this Group</td>
+        </tr>
+        <tr>
+            <td><code>AppointmentResponse-location</code></td>
+            <td><code>location</code></td>
+            <td>Draft</td>
+            <td></td>
+            <td>trial-use</td>
+            <td>False</td>
+            <td>pa</td>
+            <td>reference</td>
+            <td>This Response is for this Location</td>
+        </tr>
+        <tr>
+            <td><code>AppointmentResponse-part-status</code></td>
+            <td><code>part-status</code></td>
+            <td>Draft</td>
+            <td></td>
+            <td>trial-use</td>
+            <td>False</td>
+            <td>pa</td>
+            <td>token</td>
+            <td>The participants acceptance status for this appointment</td>
+        </tr>
+        <tr>
+            <td><code>AppointmentResponse-practitioner</code></td>
+            <td><code>practitioner</code></td>
+            <td>Draft</td>
+            <td></td>
+            <td>trial-use</td>
+            <td>False</td>
+            <td>pa</td>
+            <td>reference</td>
+            <td>This Response is for this Practitioner</td>
+        </tr>
+        <tr>
             <td><code>clinical-identifier</code></td>
             <td><code>identifier</code></td>
             <td>Draft</td>
@@ -681,72 +757,6 @@
 * [Task](http://hl7.org/fhir/R6/task.html): Search by patient
 * [VisionPrescription](http://hl7.org/fhir/R6/visionprescription.html): The identity of a patient to list dispenses for
 </td>
-        </tr>
-        <tr>
-            <td><code>AppointmentResponse-actor</code></td>
-            <td><code>actor</code></td>
-            <td>Draft</td>
-            <td></td>
-            <td>trial-use</td>
-            <td>False</td>
-            <td>pa</td>
-            <td>reference</td>
-            <td>The Person, Location/HealthcareService or Device that this appointment response replies for</td>
-        </tr>
-        <tr>
-            <td><code>AppointmentResponse-appointment</code></td>
-            <td><code>appointment</code></td>
-            <td>Draft</td>
-            <td></td>
-            <td>trial-use</td>
-            <td>False</td>
-            <td>pa</td>
-            <td>reference</td>
-            <td>The appointment that the response is attached to</td>
-        </tr>
-        <tr>
-            <td><code>AppointmentResponse-group</code></td>
-            <td><code>group</code></td>
-            <td>Draft</td>
-            <td></td>
-            <td>trial-use</td>
-            <td>False</td>
-            <td>pa</td>
-            <td>reference</td>
-            <td>This Response is for this Group</td>
-        </tr>
-        <tr>
-            <td><code>AppointmentResponse-location</code></td>
-            <td><code>location</code></td>
-            <td>Draft</td>
-            <td></td>
-            <td>trial-use</td>
-            <td>False</td>
-            <td>pa</td>
-            <td>reference</td>
-            <td>This Response is for this Location</td>
-        </tr>
-        <tr>
-            <td><code>AppointmentResponse-part-status</code></td>
-            <td><code>part-status</code></td>
-            <td>Draft</td>
-            <td></td>
-            <td>trial-use</td>
-            <td>False</td>
-            <td>pa</td>
-            <td>token</td>
-            <td>The participants acceptance status for this appointment</td>
-        </tr>
-        <tr>
-            <td><code>AppointmentResponse-practitioner</code></td>
-            <td><code>practitioner</code></td>
-            <td>Draft</td>
-            <td></td>
-            <td>trial-use</td>
-            <td>False</td>
-            <td>pa</td>
-            <td>reference</td>
-            <td>This Response is for this Practitioner</td>
         </tr>
     </tbody>
 </table>

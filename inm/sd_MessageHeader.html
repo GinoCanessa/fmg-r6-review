@@ -6,17 +6,28 @@
 
         <h3>Urgent Item Checklist</h3>
                 <ul>
-            <li>ValueSet: <code>response-code</code> (ResponseType) bound to element <code>MessageHeader.response.code</code> is flagged as <code>trial-use</code></li>
-            <li>CodeSystem: <code>response-code</code> (ResponseType) referenced by ValueSet <code>response-code</code> bound to element <code>MessageHeader.response.code</code> is flagged as <code>trial-use</code></li>
-            <li>Operation: <code>MessageHeader-process-message</code> (ProcessMessage) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>MessageHeader-code</code> (code) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>MessageHeader-destination</code> (destination) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>MessageHeader-event</code> (event) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>MessageHeader-focus</code> (focus) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>MessageHeader-receiver</code> (receiver) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>MessageHeader-response-id</code> (response-id) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>MessageHeader-sender</code> (sender) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>MessageHeader-source</code> (source) flagged as <code>trial-use</code></li>
+            <li>ValueSet: <code>message-reason-encounter</code> (ExampleMessageReasonCodes) bound to element <code>MessageHeader.reason</code> (<code>Example</code>) has status <code>Draft</code></li>
+            <li>ValueSet: <code>response-code</code> (ResponseType) bound to element <code>MessageHeader.response.code</code> (<code>Required</code>) has status <code>Draft</code></li>
+            <li>ValueSet: <code>response-code</code> (ResponseType) bound to element <code>MessageHeader.response.code</code> (<code>Required</code>) has standard status <code>trial-use</code></li>
+            <li>CodeSystem: <code>response-code</code> (ResponseType) referenced by ValueSet <code>response-code</code> bound to element <code>MessageHeader.response.code</code> (<code>Required</code>) has standard status <code>trial-use</code></li>
+            <li>Operation: <code>MessageHeader-process-message</code> (ProcessMessage) has status of <code>Draft</code></li>
+            <li>Operation: <code>MessageHeader-process-message</code> (ProcessMessage) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>MessageHeader-code</code> (code) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>MessageHeader-destination</code> (destination) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>MessageHeader-event</code> (event) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>MessageHeader-focus</code> (focus) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>MessageHeader-receiver</code> (receiver) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>MessageHeader-response-id</code> (response-id) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>MessageHeader-sender</code> (sender) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>MessageHeader-source</code> (source) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>MessageHeader-code</code> (code) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>MessageHeader-destination</code> (destination) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>MessageHeader-event</code> (event) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>MessageHeader-focus</code> (focus) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>MessageHeader-receiver</code> (receiver) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>MessageHeader-response-id</code> (response-id) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>MessageHeader-sender</code> (sender) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>MessageHeader-source</code> (source) has standards status <code>trial-use</code></li>
         </ul>
 
 
@@ -282,7 +293,7 @@
                 </tr>
             </thead>
             <tbody>
-                <tr><td><code>MessageHeader.destination.endpoint,<code></td><td>Element</td></tr>
+                <tr><td><code>MessageHeader.destination.endpoint<code></td><td>Element</td></tr>
             <tr><td><code>MessageHeader.source.endpoint<code></td><td>Element</td></tr>
             </tbody>
         </table>
@@ -296,8 +307,8 @@
                 </tr>
             </thead>
             <tbody>
-                <tr><td><code>non-dereferenceable),<code></td><td>No</td></tr>
-            <tr><td><code>MessageEvent<code></td><td>No</td></tr>
+                <tr><td><code>MessageEvent<code></td><td>No</td></tr>
+            <tr><td><code>non-dereferenceable),<code></td><td>No</td></tr>
             </tbody>
         </table>
 

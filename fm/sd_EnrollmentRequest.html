@@ -106,7 +106,7 @@
                 <tr>
                     <td><b>MAY</b></td>
                     <td>0</td>
-                    <td>0</td>
+                    <td>1</td>
                 </tr>
                 <tr>
                     <td><b>MAY NOT</b></td>
@@ -138,7 +138,7 @@
                 </tr>
             </thead>
             <tbody>
-                
+                <tr><td><code>Storyboards<code></td><td>No</td></tr>
             </tbody>
         </table>
 
@@ -454,6 +454,28 @@
     </thead>
     <tbody>
         <tr>
+            <td><code>EnrollmentRequest-status</code></td>
+            <td><code>status</code></td>
+            <td>Draft</td>
+            <td></td>
+            <td>trial-use</td>
+            <td>False</td>
+            <td>fm</td>
+            <td>token</td>
+            <td>The status of the enrollment</td>
+        </tr>
+        <tr>
+            <td><code>EnrollmentRequest-subject</code></td>
+            <td><code>subject</code></td>
+            <td>Draft</td>
+            <td></td>
+            <td>trial-use</td>
+            <td>False</td>
+            <td>fm</td>
+            <td>reference</td>
+            <td>The party to be enrolled</td>
+        </tr>
+        <tr>
             <td><code>clinical-identifier</code></td>
             <td><code>identifier</code></td>
             <td>Draft</td>
@@ -609,28 +631,6 @@
 * [Task](http://hl7.org/fhir/R6/task.html): Search by patient
 * [VisionPrescription](http://hl7.org/fhir/R6/visionprescription.html): The identity of a patient to list dispenses for
 </td>
-        </tr>
-        <tr>
-            <td><code>EnrollmentRequest-status</code></td>
-            <td><code>status</code></td>
-            <td>Draft</td>
-            <td></td>
-            <td>trial-use</td>
-            <td>False</td>
-            <td>fm</td>
-            <td>token</td>
-            <td>The status of the enrollment</td>
-        </tr>
-        <tr>
-            <td><code>EnrollmentRequest-subject</code></td>
-            <td><code>subject</code></td>
-            <td>Draft</td>
-            <td></td>
-            <td>trial-use</td>
-            <td>False</td>
-            <td>fm</td>
-            <td>reference</td>
-            <td>The party to be enrolled</td>
         </tr>
     </tbody>
 </table>

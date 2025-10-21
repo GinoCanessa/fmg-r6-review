@@ -7,17 +7,26 @@
         <h3>Urgent Item Checklist</h3>
                 <ul>
             <li>Confirm workgroup disposition vote has been recorded and sent to FMG!</li>
-            <li>ValueSet: <code>qualification-status</code> (QualificationStatus) bound to element <code>Practitioner.qualification.status</code> is flagged as <code>trial-use</code></li>
-            <li>CodeSystem: <code>qualification-status</code> (QualificationStatus) referenced by ValueSet <code>qualification-status</code> bound to element <code>Practitioner.qualification.status</code> is flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>Practitioner-active</code> (active) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>Practitioner-communication</code> (communication) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>Practitioner-death-date</code> (death-date) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>Practitioner-deceased</code> (deceased) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>Practitioner-identifier</code> (identifier) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>Practitioner-name</code> (name) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>Practitioner-qualification-code</code> (qualification-code) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>Practitioner-qualification-period</code> (qualification-period) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>Practitioner-qual-code-period</code> (qual-code-period) flagged as <code>trial-use</code></li>
+            <li>ValueSet: <code>qualification-status</code> (QualificationStatus) bound to element <code>Practitioner.qualification.status</code> (<code>Preferred</code>) has standard status <code>trial-use</code></li>
+            <li>CodeSystem: <code>qualification-status</code> (QualificationStatus) referenced by ValueSet <code>qualification-status</code> bound to element <code>Practitioner.qualification.status</code> (<code>Preferred</code>) has standard status <code>trial-use</code></li>
+            <li>Search Parameter: <code>Practitioner-active</code> (active) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>Practitioner-communication</code> (communication) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>Practitioner-death-date</code> (death-date) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>Practitioner-deceased</code> (deceased) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>Practitioner-identifier</code> (identifier) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>Practitioner-name</code> (name) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>Practitioner-qual-code-period</code> (qual-code-period) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>Practitioner-qualification-code</code> (qualification-code) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>Practitioner-qualification-period</code> (qualification-period) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>Practitioner-active</code> (active) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>Practitioner-communication</code> (communication) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>Practitioner-death-date</code> (death-date) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>Practitioner-deceased</code> (deceased) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>Practitioner-identifier</code> (identifier) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>Practitioner-name</code> (name) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>Practitioner-qual-code-period</code> (qual-code-period) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>Practitioner-qualification-code</code> (qualification-code) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>Practitioner-qualification-period</code> (qualification-period) has standards status <code>trial-use</code></li>
         </ul>
 
 
@@ -146,9 +155,9 @@
                 </tr>
             </thead>
             <tbody>
-                <tr><td><code>radiographers<code></td><td>No</td></tr>
+                <tr><td><code>animalSpecies<code></td><td>No</td></tr>
             <tr><td><code>homecare<code></td><td>No</td></tr>
-            <tr><td><code>animalSpecies<code></td><td>No</td></tr>
+            <tr><td><code>radiographers<code></td><td>No</td></tr>
             </tbody>
         </table>
 
@@ -298,8 +307,8 @@
                 </tr>
             </thead>
             <tbody>
-                <tr><td><code>idenfitiers<code></td><td>No</td></tr>
-            <tr><td><code>doesn't<code></td><td>Yes</td></tr>
+                <tr><td><code>doesn't<code></td><td>Yes</td></tr>
+            <tr><td><code>idenfitiers<code></td><td>No</td></tr>
             </tbody>
         </table>
 
@@ -597,6 +606,105 @@
     </thead>
     <tbody>
         <tr>
+            <td><code>Practitioner-active</code></td>
+            <td><code>active</code></td>
+            <td>Draft</td>
+            <td></td>
+            <td>trial-use</td>
+            <td>False</td>
+            <td>pa</td>
+            <td>token</td>
+            <td>Whether the practitioner record is active</td>
+        </tr>
+        <tr>
+            <td><code>Practitioner-communication</code></td>
+            <td><code>communication</code></td>
+            <td>Draft</td>
+            <td></td>
+            <td>trial-use</td>
+            <td>False</td>
+            <td>pa</td>
+            <td>token</td>
+            <td>A language to communicate with the practitioner</td>
+        </tr>
+        <tr>
+            <td><code>Practitioner-death-date</code></td>
+            <td><code>death-date</code></td>
+            <td>Draft</td>
+            <td></td>
+            <td>trial-use</td>
+            <td>False</td>
+            <td>pa</td>
+            <td>date</td>
+            <td>The date of death has been provided and satisfies this search value</td>
+        </tr>
+        <tr>
+            <td><code>Practitioner-deceased</code></td>
+            <td><code>deceased</code></td>
+            <td>Draft</td>
+            <td></td>
+            <td>trial-use</td>
+            <td>False</td>
+            <td>pa</td>
+            <td>token</td>
+            <td>This Practitioner has been marked as deceased, or has a death date entered</td>
+        </tr>
+        <tr>
+            <td><code>Practitioner-identifier</code></td>
+            <td><code>identifier</code></td>
+            <td>Draft</td>
+            <td></td>
+            <td>trial-use</td>
+            <td>False</td>
+            <td>pa</td>
+            <td>token</td>
+            <td>A practitioner's Identifier</td>
+        </tr>
+        <tr>
+            <td><code>Practitioner-name</code></td>
+            <td><code>name</code></td>
+            <td>Draft</td>
+            <td></td>
+            <td>trial-use</td>
+            <td>False</td>
+            <td>pa</td>
+            <td>string</td>
+            <td>A server defined search that may match any of the string fields in the HumanName, including family, give, prefix, suffix, suffix, and/or text</td>
+        </tr>
+        <tr>
+            <td><code>Practitioner-qual-code-period</code></td>
+            <td><code>qual-code-period</code></td>
+            <td>Draft</td>
+            <td></td>
+            <td>trial-use</td>
+            <td>False</td>
+            <td>pa</td>
+            <td>composite</td>
+            <td>The practitioner has a qualification during a specific period</td>
+        </tr>
+        <tr>
+            <td><code>Practitioner-qualification-code</code></td>
+            <td><code>qualification-code</code></td>
+            <td>Draft</td>
+            <td></td>
+            <td>trial-use</td>
+            <td>False</td>
+            <td>pa</td>
+            <td>token</td>
+            <td>The type of qualification</td>
+        </tr>
+        <tr>
+            <td><code>Practitioner-qualification-period</code></td>
+            <td><code>qualification-period</code></td>
+            <td>Draft</td>
+            <td></td>
+            <td>trial-use</td>
+            <td>False</td>
+            <td>pa</td>
+            <td>date</td>
+            <td>The date(s) a qualification is valid for</td>
+        </tr>
+        <tr>
             <td><code>individual-address</code></td>
             <td><code>address</code></td>
             <td>Active</td>
@@ -815,105 +923,6 @@
 * [PractitionerRole](http://hl7.org/fhir/R6/practitionerrole.html): The value in any kind of contact
 * [RelatedPerson](http://hl7.org/fhir/R6/relatedperson.html): The value in any kind of contact
 </td>
-        </tr>
-        <tr>
-            <td><code>Practitioner-active</code></td>
-            <td><code>active</code></td>
-            <td>Draft</td>
-            <td></td>
-            <td>trial-use</td>
-            <td>False</td>
-            <td>pa</td>
-            <td>token</td>
-            <td>Whether the practitioner record is active</td>
-        </tr>
-        <tr>
-            <td><code>Practitioner-communication</code></td>
-            <td><code>communication</code></td>
-            <td>Draft</td>
-            <td></td>
-            <td>trial-use</td>
-            <td>False</td>
-            <td>pa</td>
-            <td>token</td>
-            <td>A language to communicate with the practitioner</td>
-        </tr>
-        <tr>
-            <td><code>Practitioner-death-date</code></td>
-            <td><code>death-date</code></td>
-            <td>Draft</td>
-            <td></td>
-            <td>trial-use</td>
-            <td>False</td>
-            <td>pa</td>
-            <td>date</td>
-            <td>The date of death has been provided and satisfies this search value</td>
-        </tr>
-        <tr>
-            <td><code>Practitioner-deceased</code></td>
-            <td><code>deceased</code></td>
-            <td>Draft</td>
-            <td></td>
-            <td>trial-use</td>
-            <td>False</td>
-            <td>pa</td>
-            <td>token</td>
-            <td>This Practitioner has been marked as deceased, or has a death date entered</td>
-        </tr>
-        <tr>
-            <td><code>Practitioner-identifier</code></td>
-            <td><code>identifier</code></td>
-            <td>Draft</td>
-            <td></td>
-            <td>trial-use</td>
-            <td>False</td>
-            <td>pa</td>
-            <td>token</td>
-            <td>A practitioner's Identifier</td>
-        </tr>
-        <tr>
-            <td><code>Practitioner-name</code></td>
-            <td><code>name</code></td>
-            <td>Draft</td>
-            <td></td>
-            <td>trial-use</td>
-            <td>False</td>
-            <td>pa</td>
-            <td>string</td>
-            <td>A server defined search that may match any of the string fields in the HumanName, including family, give, prefix, suffix, suffix, and/or text</td>
-        </tr>
-        <tr>
-            <td><code>Practitioner-qualification-code</code></td>
-            <td><code>qualification-code</code></td>
-            <td>Draft</td>
-            <td></td>
-            <td>trial-use</td>
-            <td>False</td>
-            <td>pa</td>
-            <td>token</td>
-            <td>The type of qualification</td>
-        </tr>
-        <tr>
-            <td><code>Practitioner-qualification-period</code></td>
-            <td><code>qualification-period</code></td>
-            <td>Draft</td>
-            <td></td>
-            <td>trial-use</td>
-            <td>False</td>
-            <td>pa</td>
-            <td>date</td>
-            <td>The date(s) a qualification is valid for</td>
-        </tr>
-        <tr>
-            <td><code>Practitioner-qual-code-period</code></td>
-            <td><code>qual-code-period</code></td>
-            <td>Draft</td>
-            <td></td>
-            <td>trial-use</td>
-            <td>False</td>
-            <td>pa</td>
-            <td>composite</td>
-            <td>The practitioner has a qualification during a specific period</td>
         </tr>
     </tbody>
 </table>

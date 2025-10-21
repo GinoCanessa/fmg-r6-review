@@ -7,26 +7,57 @@
         <h3>Urgent Item Checklist</h3>
                 <ul>
             <li>Confirm workgroup disposition vote has been recorded and sent to FMG!</li>
-            <li>ValueSet: <code>adverse-event-status</code> (AdverseEventStatus) bound to element <code>AdverseEvent.status</code> is flagged as <code>trial-use</code></li>
-            <li>CodeSystem: <code>event-status</code> (EventStatus) referenced by ValueSet <code>adverse-event-status</code> bound to element <code>AdverseEvent.status</code> is flagged as <code>trial-use</code></li>
-            <li>ValueSet: <code>adverse-event-actuality</code> (AdverseEventActuality) bound to element <code>AdverseEvent.actuality</code> is flagged as <code>trial-use</code></li>
-            <li>CodeSystem: <code>adverse-event-actuality</code> (AdverseEventActuality) referenced by ValueSet <code>adverse-event-actuality</code> bound to element <code>AdverseEvent.actuality</code> is flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>clinical-identifier</code> (identifier) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>clinical-patient</code> (patient) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>AdverseEvent-actuality</code> (actuality) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>AdverseEvent-category</code> (category) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>clinical-code</code> (code) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>AdverseEvent-effect</code> (effect) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>AdverseEvent-location</code> (location) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>AdverseEvent-occurrence</code> (occurrence) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>AdverseEvent-recorder</code> (recorder) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>AdverseEvent-resultingeffect-code</code> (resultingeffect-code) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>AdverseEvent-resultingeffect-reference</code> (resultingeffect-reference) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>AdverseEvent-seriousness</code> (seriousness) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>AdverseEvent-status</code> (status) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>AdverseEvent-study</code> (study) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>AdverseEvent-subject</code> (subject) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>AdverseEvent-substance</code> (substance) flagged as <code>trial-use</code></li>
+            <li>ValueSet: <code>adverse-event-status</code> (AdverseEventStatus) bound to element <code>AdverseEvent.status</code> (<code>Required</code>) has status <code>Draft</code></li>
+            <li>ValueSet: <code>adverse-event-status</code> (AdverseEventStatus) bound to element <code>AdverseEvent.status</code> (<code>Required</code>) has standard status <code>trial-use</code></li>
+            <li>CodeSystem: <code>event-status</code> (EventStatus) referenced by ValueSet <code>adverse-event-status</code> bound to element <code>AdverseEvent.status</code> (<code>Required</code>) has status <code>Draft</code></li>
+            <li>CodeSystem: <code>event-status</code> (EventStatus) referenced by ValueSet <code>adverse-event-status</code> bound to element <code>AdverseEvent.status</code> (<code>Required</code>) has standard status <code>trial-use</code></li>
+            <li>ValueSet: <code>adverse-event-actuality</code> (AdverseEventActuality) bound to element <code>AdverseEvent.actuality</code> (<code>Required</code>) has status <code>Draft</code></li>
+            <li>ValueSet: <code>adverse-event-actuality</code> (AdverseEventActuality) bound to element <code>AdverseEvent.actuality</code> (<code>Required</code>) has standard status <code>trial-use</code></li>
+            <li>CodeSystem: <code>adverse-event-actuality</code> (AdverseEventActuality) referenced by ValueSet <code>adverse-event-actuality</code> bound to element <code>AdverseEvent.actuality</code> (<code>Required</code>) has standard status <code>trial-use</code></li>
+            <li>ValueSet: <code>adverse-event-category</code> (AdverseEventCategory) bound to element <code>AdverseEvent.category</code> (<code>Example</code>) has status <code>Draft</code></li>
+            <li>ValueSet: <code>adverse-event-type</code> (AdverseEventType) bound to element <code>AdverseEvent.code</code> (<code>Example</code>) has status <code>Draft</code></li>
+            <li>ValueSet: <code>clinical-findings</code> (SNOMEDCTClinicalFindings) bound to element <code>AdverseEvent.resultingEffect</code> (<code>Example</code>) has status <code>Draft</code></li>
+            <li>ValueSet: <code>adverse-event-seriousness</code> (AdverseEventSeriousness) bound to element <code>AdverseEvent.seriousness</code> (<code>Example</code>) has status <code>Draft</code></li>
+            <li>ValueSet: <code>adverse-event-outcome</code> (AdverseEventOutcome) bound to element <code>AdverseEvent.outcome</code> (<code>Example</code>) has status <code>Draft</code></li>
+            <li>ValueSet: <code>adverse-event-participant-function</code> (AdverseEventParticipantFunction) bound to element <code>AdverseEvent.participant.function</code> (<code>Example</code>) has status <code>Draft</code></li>
+            <li>ValueSet: <code>adverse-event-causality-method</code> (AdverseEventCausalityMethod) bound to element <code>AdverseEvent.suspectEntity.causality.assessmentMethod</code> (<code>Example</code>) has status <code>Draft</code></li>
+            <li>ValueSet: <code>adverse-event-causality-assess</code> (AdverseEventCausalityAssessment) bound to element <code>AdverseEvent.suspectEntity.causality.entityRelatedness</code> (<code>Example</code>) has status <code>Draft</code></li>
+            <li>ValueSet: <code>adverse-event-contributing-factor</code> (AdverseEventContributingFactor) bound to element <code>AdverseEvent.contributingFactor</code> (<code>Example</code>) has status <code>Draft</code></li>
+            <li>ValueSet: <code>adverse-event-preventive-action</code> (AdverseEventPreventiveAction) bound to element <code>AdverseEvent.preventiveAction</code> (<code>Example</code>) has status <code>Draft</code></li>
+            <li>ValueSet: <code>adverse-event-mitigating-action</code> (AdverseEventMitigatingAction) bound to element <code>AdverseEvent.mitigatingAction</code> (<code>Example</code>) has status <code>Draft</code></li>
+            <li>ValueSet: <code>adverse-event-supporting-info</code> (AdverseEventSupportingInforation) bound to element <code>AdverseEvent.supportingInfo</code> (<code>Example</code>) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>AdverseEvent-actuality</code> (actuality) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>AdverseEvent-category</code> (category) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>AdverseEvent-effect</code> (effect) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>AdverseEvent-location</code> (location) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>AdverseEvent-occurrence</code> (occurrence) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>AdverseEvent-recorder</code> (recorder) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>AdverseEvent-resultingeffect-code</code> (resultingeffect-code) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>AdverseEvent-resultingeffect-reference</code> (resultingeffect-reference) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>AdverseEvent-seriousness</code> (seriousness) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>AdverseEvent-status</code> (status) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>AdverseEvent-study</code> (study) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>AdverseEvent-subject</code> (subject) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>AdverseEvent-substance</code> (substance) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>clinical-code</code> (code) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>clinical-identifier</code> (identifier) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>clinical-patient</code> (patient) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>AdverseEvent-actuality</code> (actuality) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>AdverseEvent-category</code> (category) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>AdverseEvent-effect</code> (effect) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>AdverseEvent-location</code> (location) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>AdverseEvent-occurrence</code> (occurrence) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>AdverseEvent-recorder</code> (recorder) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>AdverseEvent-resultingeffect-code</code> (resultingeffect-code) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>AdverseEvent-resultingeffect-reference</code> (resultingeffect-reference) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>AdverseEvent-seriousness</code> (seriousness) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>AdverseEvent-status</code> (status) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>AdverseEvent-study</code> (study) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>AdverseEvent-subject</code> (subject) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>AdverseEvent-substance</code> (substance) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>clinical-code</code> (code) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>clinical-identifier</code> (identifier) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>clinical-patient</code> (patient) has standards status <code>trial-use</code></li>
         </ul>
 
 
@@ -771,6 +802,182 @@
     </thead>
     <tbody>
         <tr>
+            <td><code>AdverseEvent-actuality</code></td>
+            <td><code>actuality</code></td>
+            <td>Draft</td>
+            <td></td>
+            <td>trial-use</td>
+            <td>False</td>
+            <td>pc</td>
+            <td>token</td>
+            <td>actual | potential</td>
+        </tr>
+        <tr>
+            <td><code>AdverseEvent-category</code></td>
+            <td><code>category</code></td>
+            <td>Draft</td>
+            <td></td>
+            <td>trial-use</td>
+            <td>False</td>
+            <td>pc</td>
+            <td>token</td>
+            <td>wrong-patient | procedure-mishap | medication-mishap | device | unsafe-physical-environment | hospital-aquired-infection | wrong-body-site</td>
+        </tr>
+        <tr>
+            <td><code>AdverseEvent-effect</code></td>
+            <td><code>effect</code></td>
+            <td>Draft</td>
+            <td></td>
+            <td>trial-use</td>
+            <td>False</td>
+            <td>pc</td>
+            <td>date</td>
+            <td>When the effect of the event occurred</td>
+        </tr>
+        <tr>
+            <td><code>AdverseEvent-location</code></td>
+            <td><code>location</code></td>
+            <td>Draft</td>
+            <td></td>
+            <td>trial-use</td>
+            <td>False</td>
+            <td>pc</td>
+            <td>reference</td>
+            <td>Location where adverse event occurred</td>
+        </tr>
+        <tr>
+            <td><code>AdverseEvent-occurrence</code></td>
+            <td><code>occurrence</code></td>
+            <td>Draft</td>
+            <td></td>
+            <td>trial-use</td>
+            <td>False</td>
+            <td>pc</td>
+            <td>date</td>
+            <td>When the suspect entity occurred</td>
+        </tr>
+        <tr>
+            <td><code>AdverseEvent-recorder</code></td>
+            <td><code>recorder</code></td>
+            <td>Draft</td>
+            <td></td>
+            <td>trial-use</td>
+            <td>False</td>
+            <td>pc</td>
+            <td>reference</td>
+            <td>Who recorded the adverse event</td>
+        </tr>
+        <tr>
+            <td><code>AdverseEvent-resultingeffect-code</code></td>
+            <td><code>resultingeffect-code</code></td>
+            <td>Draft</td>
+            <td></td>
+            <td>trial-use</td>
+            <td>False</td>
+            <td>pc</td>
+            <td>token</td>
+            <td>Effect on the subject due to this event</td>
+        </tr>
+        <tr>
+            <td><code>AdverseEvent-resultingeffect-reference</code></td>
+            <td><code>resultingeffect-reference</code></td>
+            <td>Draft</td>
+            <td></td>
+            <td>trial-use</td>
+            <td>False</td>
+            <td>pc</td>
+            <td>reference</td>
+            <td>Effect on the subject due to this event</td>
+        </tr>
+        <tr>
+            <td><code>AdverseEvent-seriousness</code></td>
+            <td><code>seriousness</code></td>
+            <td>Draft</td>
+            <td></td>
+            <td>trial-use</td>
+            <td>False</td>
+            <td>pc</td>
+            <td>token</td>
+            <td>Seriousness or gravity of the event</td>
+        </tr>
+        <tr>
+            <td><code>AdverseEvent-status</code></td>
+            <td><code>status</code></td>
+            <td>Draft</td>
+            <td></td>
+            <td>trial-use</td>
+            <td>False</td>
+            <td>pc</td>
+            <td>token</td>
+            <td>in-progress | completed | entered-in-error | unknown</td>
+        </tr>
+        <tr>
+            <td><code>AdverseEvent-study</code></td>
+            <td><code>study</code></td>
+            <td>Draft</td>
+            <td></td>
+            <td>trial-use</td>
+            <td>False</td>
+            <td>pc</td>
+            <td>reference</td>
+            <td>Research study that the subject is enrolled in</td>
+        </tr>
+        <tr>
+            <td><code>AdverseEvent-subject</code></td>
+            <td><code>subject</code></td>
+            <td>Draft</td>
+            <td></td>
+            <td>trial-use</td>
+            <td>False</td>
+            <td>pc</td>
+            <td>reference</td>
+            <td>Subject impacted by event</td>
+        </tr>
+        <tr>
+            <td><code>AdverseEvent-substance</code></td>
+            <td><code>substance</code></td>
+            <td>Draft</td>
+            <td></td>
+            <td>trial-use</td>
+            <td>False</td>
+            <td>pc</td>
+            <td>reference</td>
+            <td>Refers to the specific entity that caused the adverse event</td>
+        </tr>
+        <tr>
+            <td><code>clinical-code</code></td>
+            <td><code>code</code></td>
+            <td>Draft</td>
+            <td></td>
+            <td>trial-use</td>
+            <td>False</td>
+            <td>pc</td>
+            <td>token</td>
+            <td>Multiple Resources: 
+
+* [AdverseEvent](http://hl7.org/fhir/R6/adverseevent.html): Event or incident that occurred or was averted
+* [AllergyIntolerance](http://hl7.org/fhir/R6/allergyintolerance.html): Code that identifies the allergy or intolerance
+* [Basic](http://hl7.org/fhir/R6/basic.html): Kind of Resource
+* [ChargeItem](http://hl7.org/fhir/R6/chargeitem.html): A code that identifies the charge, like a billing code
+* [Condition](http://hl7.org/fhir/R6/condition.html): Code for the condition
+* [DetectedIssue](http://hl7.org/fhir/R6/detectedissue.html): Issue Type, e.g. drug-drug, duplicate therapy, etc.
+* [DiagnosticReport](http://hl7.org/fhir/R6/diagnosticreport.html): The code for the report, as opposed to codes for the atomic results, which are the names on the observation resource referred to from the result
+* [FamilyMemberHistory](http://hl7.org/fhir/R6/familymemberhistory.html): A search by a condition code
+* [ImagingSelection](http://hl7.org/fhir/R6/imagingselection.html): The imaging selection description text or code
+* [List](http://hl7.org/fhir/R6/list.html): What the purpose of this list is
+* [Medication](http://hl7.org/fhir/R6/medication.html): Returns medications for a specific code
+* [MedicationAdministration](http://hl7.org/fhir/R6/medicationadministration.html): Return administrations of this medication code
+* [MedicationDispense](http://hl7.org/fhir/R6/medicationdispense.html): Returns dispenses of this medicine code
+* [MedicationRequest](http://hl7.org/fhir/R6/medicationrequest.html): Return prescriptions of this medication code
+* [MedicationStatement](http://hl7.org/fhir/R6/medicationstatement.html): Return statements of this medication code
+* [NutritionIntake](http://hl7.org/fhir/R6/nutritionintake.html): Returns statements of this code of NutritionIntake
+* [Observation](http://hl7.org/fhir/R6/observation.html): The code of the observation type
+* [Procedure](http://hl7.org/fhir/R6/procedure.html): A code to identify a  procedure
+* [RequestOrchestration](http://hl7.org/fhir/R6/requestorchestration.html): The code of the request orchestration
+* [Task](http://hl7.org/fhir/R6/task.html): Search by task code
+</td>
+        </tr>
+        <tr>
             <td><code>clinical-identifier</code></td>
             <td><code>identifier</code></td>
             <td>Draft</td>
@@ -926,182 +1133,6 @@
 * [Task](http://hl7.org/fhir/R6/task.html): Search by patient
 * [VisionPrescription](http://hl7.org/fhir/R6/visionprescription.html): The identity of a patient to list dispenses for
 </td>
-        </tr>
-        <tr>
-            <td><code>AdverseEvent-actuality</code></td>
-            <td><code>actuality</code></td>
-            <td>Draft</td>
-            <td></td>
-            <td>trial-use</td>
-            <td>False</td>
-            <td>pc</td>
-            <td>token</td>
-            <td>actual | potential</td>
-        </tr>
-        <tr>
-            <td><code>AdverseEvent-category</code></td>
-            <td><code>category</code></td>
-            <td>Draft</td>
-            <td></td>
-            <td>trial-use</td>
-            <td>False</td>
-            <td>pc</td>
-            <td>token</td>
-            <td>wrong-patient | procedure-mishap | medication-mishap | device | unsafe-physical-environment | hospital-aquired-infection | wrong-body-site</td>
-        </tr>
-        <tr>
-            <td><code>clinical-code</code></td>
-            <td><code>code</code></td>
-            <td>Draft</td>
-            <td></td>
-            <td>trial-use</td>
-            <td>False</td>
-            <td>pc</td>
-            <td>token</td>
-            <td>Multiple Resources: 
-
-* [AdverseEvent](http://hl7.org/fhir/R6/adverseevent.html): Event or incident that occurred or was averted
-* [AllergyIntolerance](http://hl7.org/fhir/R6/allergyintolerance.html): Code that identifies the allergy or intolerance
-* [Basic](http://hl7.org/fhir/R6/basic.html): Kind of Resource
-* [ChargeItem](http://hl7.org/fhir/R6/chargeitem.html): A code that identifies the charge, like a billing code
-* [Condition](http://hl7.org/fhir/R6/condition.html): Code for the condition
-* [DetectedIssue](http://hl7.org/fhir/R6/detectedissue.html): Issue Type, e.g. drug-drug, duplicate therapy, etc.
-* [DiagnosticReport](http://hl7.org/fhir/R6/diagnosticreport.html): The code for the report, as opposed to codes for the atomic results, which are the names on the observation resource referred to from the result
-* [FamilyMemberHistory](http://hl7.org/fhir/R6/familymemberhistory.html): A search by a condition code
-* [ImagingSelection](http://hl7.org/fhir/R6/imagingselection.html): The imaging selection description text or code
-* [List](http://hl7.org/fhir/R6/list.html): What the purpose of this list is
-* [Medication](http://hl7.org/fhir/R6/medication.html): Returns medications for a specific code
-* [MedicationAdministration](http://hl7.org/fhir/R6/medicationadministration.html): Return administrations of this medication code
-* [MedicationDispense](http://hl7.org/fhir/R6/medicationdispense.html): Returns dispenses of this medicine code
-* [MedicationRequest](http://hl7.org/fhir/R6/medicationrequest.html): Return prescriptions of this medication code
-* [MedicationStatement](http://hl7.org/fhir/R6/medicationstatement.html): Return statements of this medication code
-* [NutritionIntake](http://hl7.org/fhir/R6/nutritionintake.html): Returns statements of this code of NutritionIntake
-* [Observation](http://hl7.org/fhir/R6/observation.html): The code of the observation type
-* [Procedure](http://hl7.org/fhir/R6/procedure.html): A code to identify a  procedure
-* [RequestOrchestration](http://hl7.org/fhir/R6/requestorchestration.html): The code of the request orchestration
-* [Task](http://hl7.org/fhir/R6/task.html): Search by task code
-</td>
-        </tr>
-        <tr>
-            <td><code>AdverseEvent-effect</code></td>
-            <td><code>effect</code></td>
-            <td>Draft</td>
-            <td></td>
-            <td>trial-use</td>
-            <td>False</td>
-            <td>pc</td>
-            <td>date</td>
-            <td>When the effect of the event occurred</td>
-        </tr>
-        <tr>
-            <td><code>AdverseEvent-location</code></td>
-            <td><code>location</code></td>
-            <td>Draft</td>
-            <td></td>
-            <td>trial-use</td>
-            <td>False</td>
-            <td>pc</td>
-            <td>reference</td>
-            <td>Location where adverse event occurred</td>
-        </tr>
-        <tr>
-            <td><code>AdverseEvent-occurrence</code></td>
-            <td><code>occurrence</code></td>
-            <td>Draft</td>
-            <td></td>
-            <td>trial-use</td>
-            <td>False</td>
-            <td>pc</td>
-            <td>date</td>
-            <td>When the suspect entity occurred</td>
-        </tr>
-        <tr>
-            <td><code>AdverseEvent-recorder</code></td>
-            <td><code>recorder</code></td>
-            <td>Draft</td>
-            <td></td>
-            <td>trial-use</td>
-            <td>False</td>
-            <td>pc</td>
-            <td>reference</td>
-            <td>Who recorded the adverse event</td>
-        </tr>
-        <tr>
-            <td><code>AdverseEvent-resultingeffect-code</code></td>
-            <td><code>resultingeffect-code</code></td>
-            <td>Draft</td>
-            <td></td>
-            <td>trial-use</td>
-            <td>False</td>
-            <td>pc</td>
-            <td>token</td>
-            <td>Effect on the subject due to this event</td>
-        </tr>
-        <tr>
-            <td><code>AdverseEvent-resultingeffect-reference</code></td>
-            <td><code>resultingeffect-reference</code></td>
-            <td>Draft</td>
-            <td></td>
-            <td>trial-use</td>
-            <td>False</td>
-            <td>pc</td>
-            <td>reference</td>
-            <td>Effect on the subject due to this event</td>
-        </tr>
-        <tr>
-            <td><code>AdverseEvent-seriousness</code></td>
-            <td><code>seriousness</code></td>
-            <td>Draft</td>
-            <td></td>
-            <td>trial-use</td>
-            <td>False</td>
-            <td>pc</td>
-            <td>token</td>
-            <td>Seriousness or gravity of the event</td>
-        </tr>
-        <tr>
-            <td><code>AdverseEvent-status</code></td>
-            <td><code>status</code></td>
-            <td>Draft</td>
-            <td></td>
-            <td>trial-use</td>
-            <td>False</td>
-            <td>pc</td>
-            <td>token</td>
-            <td>in-progress | completed | entered-in-error | unknown</td>
-        </tr>
-        <tr>
-            <td><code>AdverseEvent-study</code></td>
-            <td><code>study</code></td>
-            <td>Draft</td>
-            <td></td>
-            <td>trial-use</td>
-            <td>False</td>
-            <td>pc</td>
-            <td>reference</td>
-            <td>Research study that the subject is enrolled in</td>
-        </tr>
-        <tr>
-            <td><code>AdverseEvent-subject</code></td>
-            <td><code>subject</code></td>
-            <td>Draft</td>
-            <td></td>
-            <td>trial-use</td>
-            <td>False</td>
-            <td>pc</td>
-            <td>reference</td>
-            <td>Subject impacted by event</td>
-        </tr>
-        <tr>
-            <td><code>AdverseEvent-substance</code></td>
-            <td><code>substance</code></td>
-            <td>Draft</td>
-            <td></td>
-            <td>trial-use</td>
-            <td>False</td>
-            <td>pc</td>
-            <td>reference</td>
-            <td>Refers to the specific entity that caused the adverse event</td>
         </tr>
     </tbody>
 </table>

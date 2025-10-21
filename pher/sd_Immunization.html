@@ -6,26 +6,56 @@
 
         <h3>Urgent Item Checklist</h3>
                 <ul>
-            <li>ValueSet: <code>immunization-status</code> (ImmunizationStatusCodes) bound to element <code>Immunization.status</code> is flagged as <code>trial-use</code></li>
-            <li>CodeSystem: <code>event-status</code> (EventStatus) referenced by ValueSet <code>immunization-status</code> bound to element <code>Immunization.status</code> is flagged as <code>trial-use</code></li>
-            <li>ValueSet: <code>immunization-function</code> (ImmunizationFunctionCodes) bound to element <code>Immunization.performer.function</code> is flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>clinical-identifier</code> (identifier) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>clinical-patient</code> (patient) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>clinical-date</code> (date) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>Immunization-encounter</code> (encounter) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>Immunization-location</code> (location) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>Immunization-lot-number</code> (lot-number) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>Immunization-manufacturer</code> (manufacturer) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>Immunization-performer</code> (performer) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>Immunization-reaction</code> (reaction) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>Immunization-reaction-date</code> (reaction-date) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>Immunization-reason-code</code> (reason-code) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>Immunization-reason-reference</code> (reason-reference) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>Immunization-series</code> (series) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>Immunization-status</code> (status) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>Immunization-status-reason</code> (status-reason) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>Immunization-target-disease</code> (target-disease) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>Immunization-vaccine-code</code> (vaccine-code) flagged as <code>trial-use</code></li>
+            <li>ValueSet: <code>immunization-status</code> (ImmunizationStatusCodes) bound to element <code>Immunization.status</code> (<code>Required</code>) has status <code>Draft</code></li>
+            <li>ValueSet: <code>immunization-status</code> (ImmunizationStatusCodes) bound to element <code>Immunization.status</code> (<code>Required</code>) has standard status <code>trial-use</code></li>
+            <li>CodeSystem: <code>event-status</code> (EventStatus) referenced by ValueSet <code>immunization-status</code> bound to element <code>Immunization.status</code> (<code>Required</code>) has status <code>Draft</code></li>
+            <li>CodeSystem: <code>event-status</code> (EventStatus) referenced by ValueSet <code>immunization-status</code> bound to element <code>Immunization.status</code> (<code>Required</code>) has standard status <code>trial-use</code></li>
+            <li>ValueSet: <code>immunization-status-reason</code> (ImmunizationStatusReasonCodes) bound to element <code>Immunization.statusReason</code> (<code>Example</code>) has status <code>Draft</code></li>
+            <li>ValueSet: <code>immunization-origin</code> (ImmunizationOriginCodes) bound to element <code>Immunization.informationSource</code> (<code>Example</code>) has status <code>Draft</code></li>
+            <li>ValueSet: <code>immunization-site</code> (CodesForImmunizationSiteOfAdministration) bound to element <code>Immunization.site</code> (<code>Example</code>) has status <code>Draft</code></li>
+            <li>ValueSet: <code>immunization-route</code> (ImmunizationRouteCodes) bound to element <code>Immunization.route</code> (<code>Example</code>) has status <code>Draft</code></li>
+            <li>ValueSet: <code>immunization-function</code> (ImmunizationFunctionCodes) bound to element <code>Immunization.performer.function</code> (<code>Extensible</code>) has status <code>Draft</code></li>
+            <li>ValueSet: <code>immunization-function</code> (ImmunizationFunctionCodes) bound to element <code>Immunization.performer.function</code> (<code>Extensible</code>) has standard status <code>trial-use</code></li>
+            <li>ValueSet: <code>immunization-reason</code> (ImmunizationReasonCodes) bound to element <code>Immunization.reason</code> (<code>Example</code>) has status <code>Draft</code></li>
+            <li>ValueSet: <code>immunization-subpotent-reason</code> (ImmunizationSubpotentReason) bound to element <code>Immunization.subpotentReason</code> (<code>Example</code>) has status <code>Draft</code></li>
+            <li>ValueSet: <code>immunization-vaccine-funding-program</code> (CodesForVaccineFundingPrograms) bound to element <code>Immunization.programEligibility.program</code> (<code>Example</code>) has status <code>Draft</code></li>
+            <li>ValueSet: <code>immunization-program-eligibility</code> (ImmunizationProgramEligibility) bound to element <code>Immunization.programEligibility.programStatus</code> (<code>Example</code>) has status <code>Draft</code></li>
+            <li>ValueSet: <code>immunization-funding-source</code> (ImmunizationFundingSource) bound to element <code>Immunization.fundingSource</code> (<code>Example</code>) has status <code>Draft</code></li>
+            <li>ValueSet: <code>immunization-target-disease</code> (ImmunizationTargetDiseaseCodes) bound to element <code>Immunization.protocolApplied.targetDisease</code> (<code>Example</code>) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>Immunization-encounter</code> (encounter) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>Immunization-location</code> (location) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>Immunization-lot-number</code> (lot-number) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>Immunization-manufacturer</code> (manufacturer) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>Immunization-performer</code> (performer) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>Immunization-reaction</code> (reaction) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>Immunization-reaction-date</code> (reaction-date) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>Immunization-reason-code</code> (reason-code) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>Immunization-reason-reference</code> (reason-reference) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>Immunization-series</code> (series) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>Immunization-status</code> (status) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>Immunization-status-reason</code> (status-reason) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>Immunization-target-disease</code> (target-disease) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>Immunization-vaccine-code</code> (vaccine-code) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>clinical-date</code> (date) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>clinical-identifier</code> (identifier) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>clinical-patient</code> (patient) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>Immunization-encounter</code> (encounter) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>Immunization-location</code> (location) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>Immunization-lot-number</code> (lot-number) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>Immunization-manufacturer</code> (manufacturer) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>Immunization-performer</code> (performer) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>Immunization-reaction</code> (reaction) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>Immunization-reaction-date</code> (reaction-date) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>Immunization-reason-code</code> (reason-code) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>Immunization-reason-reference</code> (reason-reference) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>Immunization-series</code> (series) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>Immunization-status</code> (status) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>Immunization-status-reason</code> (status-reason) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>Immunization-target-disease</code> (target-disease) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>Immunization-vaccine-code</code> (vaccine-code) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>clinical-date</code> (date) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>clinical-identifier</code> (identifier) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>clinical-patient</code> (patient) has standards status <code>trial-use</code></li>
         </ul>
 
 
@@ -180,7 +210,7 @@
 
         <h3>Reader Review Notes Found on Page</h3>
         <ul>
-            <li>Feedback</li>
+            
         </ul>
 
         <h3>Notes Page</h3>
@@ -867,6 +897,198 @@
     </thead>
     <tbody>
         <tr>
+            <td><code>Immunization-encounter</code></td>
+            <td><code>encounter</code></td>
+            <td>Draft</td>
+            <td></td>
+            <td>trial-use</td>
+            <td>False</td>
+            <td>pher</td>
+            <td>reference</td>
+            <td>The Encounter this Immunization was part of</td>
+        </tr>
+        <tr>
+            <td><code>Immunization-location</code></td>
+            <td><code>location</code></td>
+            <td>Draft</td>
+            <td></td>
+            <td>trial-use</td>
+            <td>False</td>
+            <td>pher</td>
+            <td>reference</td>
+            <td>The service delivery location or facility in which the vaccine was / was to be administered</td>
+        </tr>
+        <tr>
+            <td><code>Immunization-lot-number</code></td>
+            <td><code>lot-number</code></td>
+            <td>Draft</td>
+            <td></td>
+            <td>trial-use</td>
+            <td>False</td>
+            <td>pher</td>
+            <td>string</td>
+            <td>Vaccine Lot Number</td>
+        </tr>
+        <tr>
+            <td><code>Immunization-manufacturer</code></td>
+            <td><code>manufacturer</code></td>
+            <td>Draft</td>
+            <td></td>
+            <td>trial-use</td>
+            <td>False</td>
+            <td>pher</td>
+            <td>reference</td>
+            <td>Vaccine Manufacturer</td>
+        </tr>
+        <tr>
+            <td><code>Immunization-performer</code></td>
+            <td><code>performer</code></td>
+            <td>Draft</td>
+            <td></td>
+            <td>trial-use</td>
+            <td>False</td>
+            <td>pher</td>
+            <td>reference</td>
+            <td>The practitioner, individual or organization who played a role in the vaccination</td>
+        </tr>
+        <tr>
+            <td><code>Immunization-reaction</code></td>
+            <td><code>reaction</code></td>
+            <td>Draft</td>
+            <td></td>
+            <td>trial-use</td>
+            <td>False</td>
+            <td>pher</td>
+            <td>reference</td>
+            <td>Additional information on reaction</td>
+        </tr>
+        <tr>
+            <td><code>Immunization-reaction-date</code></td>
+            <td><code>reaction-date</code></td>
+            <td>Draft</td>
+            <td></td>
+            <td>trial-use</td>
+            <td>False</td>
+            <td>pher</td>
+            <td>date</td>
+            <td>When reaction started</td>
+        </tr>
+        <tr>
+            <td><code>Immunization-reason-code</code></td>
+            <td><code>reason-code</code></td>
+            <td>Draft</td>
+            <td></td>
+            <td>trial-use</td>
+            <td>False</td>
+            <td>pher</td>
+            <td>token</td>
+            <td>Reason why the vaccine was administered</td>
+        </tr>
+        <tr>
+            <td><code>Immunization-reason-reference</code></td>
+            <td><code>reason-reference</code></td>
+            <td>Draft</td>
+            <td></td>
+            <td>trial-use</td>
+            <td>False</td>
+            <td>pher</td>
+            <td>reference</td>
+            <td>Reference to a resource (by instance)</td>
+        </tr>
+        <tr>
+            <td><code>Immunization-series</code></td>
+            <td><code>series</code></td>
+            <td>Draft</td>
+            <td></td>
+            <td>trial-use</td>
+            <td>False</td>
+            <td>pher</td>
+            <td>string</td>
+            <td>The series being followed by the provider</td>
+        </tr>
+        <tr>
+            <td><code>Immunization-status</code></td>
+            <td><code>status</code></td>
+            <td>Draft</td>
+            <td></td>
+            <td>trial-use</td>
+            <td>False</td>
+            <td>pher</td>
+            <td>token</td>
+            <td>Immunization event status</td>
+        </tr>
+        <tr>
+            <td><code>Immunization-status-reason</code></td>
+            <td><code>status-reason</code></td>
+            <td>Draft</td>
+            <td></td>
+            <td>trial-use</td>
+            <td>False</td>
+            <td>pher</td>
+            <td>token</td>
+            <td>Reason why the vaccine was not administered</td>
+        </tr>
+        <tr>
+            <td><code>Immunization-target-disease</code></td>
+            <td><code>target-disease</code></td>
+            <td>Draft</td>
+            <td></td>
+            <td>trial-use</td>
+            <td>False</td>
+            <td>pher</td>
+            <td>token</td>
+            <td>The target disease the dose is being administered against</td>
+        </tr>
+        <tr>
+            <td><code>Immunization-vaccine-code</code></td>
+            <td><code>vaccine-code</code></td>
+            <td>Draft</td>
+            <td></td>
+            <td>trial-use</td>
+            <td>False</td>
+            <td>pher</td>
+            <td>token</td>
+            <td>Vaccine Product Administered</td>
+        </tr>
+        <tr>
+            <td><code>clinical-date</code></td>
+            <td><code>date</code></td>
+            <td>Draft</td>
+            <td></td>
+            <td>trial-use</td>
+            <td>False</td>
+            <td>pc</td>
+            <td>date</td>
+            <td>Multiple Resources: 
+
+* [AllergyIntolerance](http://hl7.org/fhir/R6/allergyintolerance.html): Date first version of the resource instance was recorded
+* [Appointment](http://hl7.org/fhir/R6/appointment.html): Appointment date/time.
+* [AuditEvent](http://hl7.org/fhir/R6/auditevent.html): Time when the event was recorded
+* [CarePlan](http://hl7.org/fhir/R6/careplan.html): Time period plan covers
+* [CareTeam](http://hl7.org/fhir/R6/careteam.html): A date within the coverage time period.
+* [Composition](http://hl7.org/fhir/R6/composition.html): Composition editing time
+* [Consent](http://hl7.org/fhir/R6/consent.html): When consent was agreed to
+* [DiagnosticReport](http://hl7.org/fhir/R6/diagnosticreport.html): The clinically relevant time of the report
+* [DocumentReference](http://hl7.org/fhir/R6/documentreference.html): When this document reference was created
+* [Encounter](http://hl7.org/fhir/R6/encounter.html): A date within the actualPeriod the Encounter lasted
+* [EpisodeOfCare](http://hl7.org/fhir/R6/episodeofcare.html): The provided date search value falls within the episode of care's period
+* [FamilyMemberHistory](http://hl7.org/fhir/R6/familymemberhistory.html): When history was recorded or last updated
+* [Flag](http://hl7.org/fhir/R6/flag.html): Time period when flag is active
+* [Immunization](http://hl7.org/fhir/R6/immunization.html): Vaccination  (non)-Administration Date
+* [ImmunizationEvaluation](http://hl7.org/fhir/R6/immunizationevaluation.html): Date the evaluation was generated
+* [ImmunizationRecommendation](http://hl7.org/fhir/R6/immunizationrecommendation.html): Date recommendation(s) created
+* [Invoice](http://hl7.org/fhir/R6/invoice.html): Invoice date / posting date
+* [List](http://hl7.org/fhir/R6/list.html): When the list was prepared
+* [MeasureReport](http://hl7.org/fhir/R6/measurereport.html): The date of the measure report
+* [NutritionIntake](http://hl7.org/fhir/R6/nutritionintake.html): Date when patient was taking (or not taking) the medication
+* [Observation](http://hl7.org/fhir/R6/observation.html): Clinically relevant time/time-period for observation
+* [Procedure](http://hl7.org/fhir/R6/procedure.html): When the procedure occurred or is occurring
+* [ResearchSubject](http://hl7.org/fhir/R6/researchsubject.html): Start and end of participation
+* [RiskAssessment](http://hl7.org/fhir/R6/riskassessment.html): When was assessment made?
+* [SupplyRequest](http://hl7.org/fhir/R6/supplyrequest.html): When the request was made
+</td>
+        </tr>
+        <tr>
             <td><code>clinical-identifier</code></td>
             <td><code>identifier</code></td>
             <td>Draft</td>
@@ -1022,198 +1244,6 @@
 * [Task](http://hl7.org/fhir/R6/task.html): Search by patient
 * [VisionPrescription](http://hl7.org/fhir/R6/visionprescription.html): The identity of a patient to list dispenses for
 </td>
-        </tr>
-        <tr>
-            <td><code>clinical-date</code></td>
-            <td><code>date</code></td>
-            <td>Draft</td>
-            <td></td>
-            <td>trial-use</td>
-            <td>False</td>
-            <td>pc</td>
-            <td>date</td>
-            <td>Multiple Resources: 
-
-* [AllergyIntolerance](http://hl7.org/fhir/R6/allergyintolerance.html): Date first version of the resource instance was recorded
-* [Appointment](http://hl7.org/fhir/R6/appointment.html): Appointment date/time.
-* [AuditEvent](http://hl7.org/fhir/R6/auditevent.html): Time when the event was recorded
-* [CarePlan](http://hl7.org/fhir/R6/careplan.html): Time period plan covers
-* [CareTeam](http://hl7.org/fhir/R6/careteam.html): A date within the coverage time period.
-* [Composition](http://hl7.org/fhir/R6/composition.html): Composition editing time
-* [Consent](http://hl7.org/fhir/R6/consent.html): When consent was agreed to
-* [DiagnosticReport](http://hl7.org/fhir/R6/diagnosticreport.html): The clinically relevant time of the report
-* [DocumentReference](http://hl7.org/fhir/R6/documentreference.html): When this document reference was created
-* [Encounter](http://hl7.org/fhir/R6/encounter.html): A date within the actualPeriod the Encounter lasted
-* [EpisodeOfCare](http://hl7.org/fhir/R6/episodeofcare.html): The provided date search value falls within the episode of care's period
-* [FamilyMemberHistory](http://hl7.org/fhir/R6/familymemberhistory.html): When history was recorded or last updated
-* [Flag](http://hl7.org/fhir/R6/flag.html): Time period when flag is active
-* [Immunization](http://hl7.org/fhir/R6/immunization.html): Vaccination  (non)-Administration Date
-* [ImmunizationEvaluation](http://hl7.org/fhir/R6/immunizationevaluation.html): Date the evaluation was generated
-* [ImmunizationRecommendation](http://hl7.org/fhir/R6/immunizationrecommendation.html): Date recommendation(s) created
-* [Invoice](http://hl7.org/fhir/R6/invoice.html): Invoice date / posting date
-* [List](http://hl7.org/fhir/R6/list.html): When the list was prepared
-* [MeasureReport](http://hl7.org/fhir/R6/measurereport.html): The date of the measure report
-* [NutritionIntake](http://hl7.org/fhir/R6/nutritionintake.html): Date when patient was taking (or not taking) the medication
-* [Observation](http://hl7.org/fhir/R6/observation.html): Clinically relevant time/time-period for observation
-* [Procedure](http://hl7.org/fhir/R6/procedure.html): When the procedure occurred or is occurring
-* [ResearchSubject](http://hl7.org/fhir/R6/researchsubject.html): Start and end of participation
-* [RiskAssessment](http://hl7.org/fhir/R6/riskassessment.html): When was assessment made?
-* [SupplyRequest](http://hl7.org/fhir/R6/supplyrequest.html): When the request was made
-</td>
-        </tr>
-        <tr>
-            <td><code>Immunization-encounter</code></td>
-            <td><code>encounter</code></td>
-            <td>Draft</td>
-            <td></td>
-            <td>trial-use</td>
-            <td>False</td>
-            <td>pher</td>
-            <td>reference</td>
-            <td>The Encounter this Immunization was part of</td>
-        </tr>
-        <tr>
-            <td><code>Immunization-location</code></td>
-            <td><code>location</code></td>
-            <td>Draft</td>
-            <td></td>
-            <td>trial-use</td>
-            <td>False</td>
-            <td>pher</td>
-            <td>reference</td>
-            <td>The service delivery location or facility in which the vaccine was / was to be administered</td>
-        </tr>
-        <tr>
-            <td><code>Immunization-lot-number</code></td>
-            <td><code>lot-number</code></td>
-            <td>Draft</td>
-            <td></td>
-            <td>trial-use</td>
-            <td>False</td>
-            <td>pher</td>
-            <td>string</td>
-            <td>Vaccine Lot Number</td>
-        </tr>
-        <tr>
-            <td><code>Immunization-manufacturer</code></td>
-            <td><code>manufacturer</code></td>
-            <td>Draft</td>
-            <td></td>
-            <td>trial-use</td>
-            <td>False</td>
-            <td>pher</td>
-            <td>reference</td>
-            <td>Vaccine Manufacturer</td>
-        </tr>
-        <tr>
-            <td><code>Immunization-performer</code></td>
-            <td><code>performer</code></td>
-            <td>Draft</td>
-            <td></td>
-            <td>trial-use</td>
-            <td>False</td>
-            <td>pher</td>
-            <td>reference</td>
-            <td>The practitioner, individual or organization who played a role in the vaccination</td>
-        </tr>
-        <tr>
-            <td><code>Immunization-reaction</code></td>
-            <td><code>reaction</code></td>
-            <td>Draft</td>
-            <td></td>
-            <td>trial-use</td>
-            <td>False</td>
-            <td>pher</td>
-            <td>reference</td>
-            <td>Additional information on reaction</td>
-        </tr>
-        <tr>
-            <td><code>Immunization-reaction-date</code></td>
-            <td><code>reaction-date</code></td>
-            <td>Draft</td>
-            <td></td>
-            <td>trial-use</td>
-            <td>False</td>
-            <td>pher</td>
-            <td>date</td>
-            <td>When reaction started</td>
-        </tr>
-        <tr>
-            <td><code>Immunization-reason-code</code></td>
-            <td><code>reason-code</code></td>
-            <td>Draft</td>
-            <td></td>
-            <td>trial-use</td>
-            <td>False</td>
-            <td>pher</td>
-            <td>token</td>
-            <td>Reason why the vaccine was administered</td>
-        </tr>
-        <tr>
-            <td><code>Immunization-reason-reference</code></td>
-            <td><code>reason-reference</code></td>
-            <td>Draft</td>
-            <td></td>
-            <td>trial-use</td>
-            <td>False</td>
-            <td>pher</td>
-            <td>reference</td>
-            <td>Reference to a resource (by instance)</td>
-        </tr>
-        <tr>
-            <td><code>Immunization-series</code></td>
-            <td><code>series</code></td>
-            <td>Draft</td>
-            <td></td>
-            <td>trial-use</td>
-            <td>False</td>
-            <td>pher</td>
-            <td>string</td>
-            <td>The series being followed by the provider</td>
-        </tr>
-        <tr>
-            <td><code>Immunization-status</code></td>
-            <td><code>status</code></td>
-            <td>Draft</td>
-            <td></td>
-            <td>trial-use</td>
-            <td>False</td>
-            <td>pher</td>
-            <td>token</td>
-            <td>Immunization event status</td>
-        </tr>
-        <tr>
-            <td><code>Immunization-status-reason</code></td>
-            <td><code>status-reason</code></td>
-            <td>Draft</td>
-            <td></td>
-            <td>trial-use</td>
-            <td>False</td>
-            <td>pher</td>
-            <td>token</td>
-            <td>Reason why the vaccine was not administered</td>
-        </tr>
-        <tr>
-            <td><code>Immunization-target-disease</code></td>
-            <td><code>target-disease</code></td>
-            <td>Draft</td>
-            <td></td>
-            <td>trial-use</td>
-            <td>False</td>
-            <td>pher</td>
-            <td>token</td>
-            <td>The target disease the dose is being administered against</td>
-        </tr>
-        <tr>
-            <td><code>Immunization-vaccine-code</code></td>
-            <td><code>vaccine-code</code></td>
-            <td>Draft</td>
-            <td></td>
-            <td>trial-use</td>
-            <td>False</td>
-            <td>pher</td>
-            <td>token</td>
-            <td>Vaccine Product Administered</td>
         </tr>
     </tbody>
 </table>

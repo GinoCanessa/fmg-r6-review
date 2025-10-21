@@ -9,27 +9,45 @@
             <li>Confirm workgroup disposition vote has been recorded and sent to FMG!</li>
             <li>Element: <code>Account.diagnosis</code> flagged as <code>trial-use</code></li>
             <li>Element: <code>Account.procedure</code> flagged as <code>trial-use</code></li>
-            <li>ValueSet: <code>account-status</code> (AccountStatus) bound to element <code>Account.status</code> is flagged as <code>trial-use</code></li>
-            <li>CodeSystem: <code>account-status</code> (AccountStatus) referenced by ValueSet <code>account-status</code> bound to element <code>Account.status</code> is flagged as <code>trial-use</code></li>
-            <li>ValueSet: <code>account-billing-status</code> (AccountBillingStatus) bound to element <code>Account.billingStatus</code> is flagged as <code>trial-use</code></li>
-            <li>CodeSystem: <code>account-billing-status</code> (AccountBillingStatus) referenced by ValueSet <code>account-billing-status</code> bound to element <code>Account.billingStatus</code> is flagged as <code>trial-use</code></li>
-            <li>CodeSystem: <code>account-billing-status</code> (AccountBillingStatus) referenced by ValueSet <code>account-billing-status</code> bound to element <code>Account.billingStatus</code> is flagged as <code>experimental</code></li>
-            <li>ValueSet: <code>encounter-diagnosis-use</code> (EncounterDiagnosisUse) bound to element <code>Account.diagnosis.type</code> is flagged as <code>trial-use</code></li>
-            <li>CodeSystem: <code>encounter-diagnosis-use</code> (EncounterDiagnosisUse) referenced by ValueSet <code>encounter-diagnosis-use</code> bound to element <code>Account.diagnosis.type</code> is flagged as <code>trial-use</code></li>
-            <li>ValueSet: <code>account-aggregate</code> (AccountAggregate) bound to element <code>Account.balance.aggregate</code> is flagged as <code>trial-use</code></li>
-            <li>CodeSystem: <code>account-aggregate</code> (AccountAggregate) referenced by ValueSet <code>account-aggregate</code> bound to element <code>Account.balance.aggregate</code> is flagged as <code>trial-use</code></li>
-            <li>ValueSet: <code>account-balance-term</code> (AccountBalanceTerm) bound to element <code>Account.balance.term</code> is flagged as <code>trial-use</code></li>
-            <li>CodeSystem: <code>account-balance-term</code> (AccountBalanceTerm) referenced by ValueSet <code>account-balance-term</code> bound to element <code>Account.balance.term</code> is flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>Account-guarantor</code> (guarantor) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>Account-guarantor-account</code> (guarantor-account) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>clinical-identifier</code> (identifier) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>Account-name</code> (name) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>Account-owner</code> (owner) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>clinical-patient</code> (patient) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>Account-period</code> (period) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>Account-status</code> (status) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>Account-subject</code> (subject) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>clinical-type</code> (type) flagged as <code>trial-use</code></li>
+            <li>ValueSet: <code>account-status</code> (AccountStatus) bound to element <code>Account.status</code> (<code>Required</code>) has status <code>Draft</code></li>
+            <li>ValueSet: <code>account-status</code> (AccountStatus) bound to element <code>Account.status</code> (<code>Required</code>) has standard status <code>trial-use</code></li>
+            <li>CodeSystem: <code>account-status</code> (AccountStatus) referenced by ValueSet <code>account-status</code> bound to element <code>Account.status</code> (<code>Required</code>) has standard status <code>trial-use</code></li>
+            <li>ValueSet: <code>account-billing-status</code> (AccountBillingStatus) bound to element <code>Account.billingStatus</code> (<code>Example</code>) has status <code>Draft</code></li>
+            <li>ValueSet: <code>account-billing-status</code> (AccountBillingStatus) bound to element <code>Account.billingStatus</code> (<code>Example</code>) has standard status <code>trial-use</code></li>
+            <li>CodeSystem: <code>account-billing-status</code> (AccountBillingStatus) referenced by ValueSet <code>account-billing-status</code> bound to element <code>Account.billingStatus</code> (<code>Example</code>) has standard status <code>trial-use</code></li>
+            <li>CodeSystem: <code>account-billing-status</code> (AccountBillingStatus) referenced by ValueSet <code>account-billing-status</code> bound to element <code>Account.billingStatus</code> (<code>Example</code>) is flagged as <code>experimental</code></li>
+            <li>ValueSet: <code>account-type</code> (AccountTypes) bound to element <code>Account.type</code> (<code>Example</code>) has status <code>Draft</code></li>
+            <li>ValueSet: <code>condition-code</code> (ConditionProblemDiagnosisCodes) bound to element <code>Account.diagnosis.condition</code> (<code>Example</code>) has status <code>Draft</code></li>
+            <li>ValueSet: <code>encounter-diagnosis-use</code> (EncounterDiagnosisUse) bound to element <code>Account.diagnosis.type</code> (<code>Preferred</code>) has status <code>Draft</code></li>
+            <li>ValueSet: <code>encounter-diagnosis-use</code> (EncounterDiagnosisUse) bound to element <code>Account.diagnosis.type</code> (<code>Preferred</code>) has standard status <code>trial-use</code></li>
+            <li>CodeSystem: <code>encounter-diagnosis-use</code> (EncounterDiagnosisUse) referenced by ValueSet <code>encounter-diagnosis-use</code> bound to element <code>Account.diagnosis.type</code> (<code>Preferred</code>) has standard status <code>trial-use</code></li>
+            <li>ValueSet: <code>procedure-code</code> (ProcedureCodesSNOMEDCT) bound to element <code>Account.procedure.code</code> (<code>Example</code>) has status <code>Draft</code></li>
+            <li>ValueSet: <code>account-aggregate</code> (AccountAggregate) bound to element <code>Account.balance.aggregate</code> (<code>Extensible</code>) has status <code>Draft</code></li>
+            <li>ValueSet: <code>account-aggregate</code> (AccountAggregate) bound to element <code>Account.balance.aggregate</code> (<code>Extensible</code>) has standard status <code>trial-use</code></li>
+            <li>CodeSystem: <code>account-aggregate</code> (AccountAggregate) referenced by ValueSet <code>account-aggregate</code> bound to element <code>Account.balance.aggregate</code> (<code>Extensible</code>) has standard status <code>trial-use</code></li>
+            <li>ValueSet: <code>account-balance-term</code> (AccountBalanceTerm) bound to element <code>Account.balance.term</code> (<code>Extensible</code>) has status <code>Draft</code></li>
+            <li>ValueSet: <code>account-balance-term</code> (AccountBalanceTerm) bound to element <code>Account.balance.term</code> (<code>Extensible</code>) has standard status <code>trial-use</code></li>
+            <li>CodeSystem: <code>account-balance-term</code> (AccountBalanceTerm) referenced by ValueSet <code>account-balance-term</code> bound to element <code>Account.balance.term</code> (<code>Extensible</code>) has standard status <code>trial-use</code></li>
+            <li>Search Parameter: <code>Account-guarantor</code> (guarantor) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>Account-guarantor-account</code> (guarantor-account) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>Account-name</code> (name) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>Account-owner</code> (owner) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>Account-period</code> (period) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>Account-status</code> (status) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>Account-subject</code> (subject) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>clinical-identifier</code> (identifier) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>clinical-patient</code> (patient) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>clinical-type</code> (type) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>Account-guarantor</code> (guarantor) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>Account-guarantor-account</code> (guarantor-account) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>Account-name</code> (name) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>Account-owner</code> (owner) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>Account-period</code> (period) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>Account-status</code> (status) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>Account-subject</code> (subject) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>clinical-identifier</code> (identifier) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>clinical-patient</code> (patient) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>clinical-type</code> (type) has standards status <code>trial-use</code></li>
         </ul>
 
 
@@ -928,6 +946,61 @@
             <td>Account to use for the guarantor</td>
         </tr>
         <tr>
+            <td><code>Account-name</code></td>
+            <td><code>name</code></td>
+            <td>Draft</td>
+            <td></td>
+            <td>trial-use</td>
+            <td>False</td>
+            <td>pa</td>
+            <td>string</td>
+            <td>Human-readable label</td>
+        </tr>
+        <tr>
+            <td><code>Account-owner</code></td>
+            <td><code>owner</code></td>
+            <td>Draft</td>
+            <td></td>
+            <td>trial-use</td>
+            <td>False</td>
+            <td>pa</td>
+            <td>reference</td>
+            <td>Entity managing the Account</td>
+        </tr>
+        <tr>
+            <td><code>Account-period</code></td>
+            <td><code>period</code></td>
+            <td>Draft</td>
+            <td></td>
+            <td>trial-use</td>
+            <td>False</td>
+            <td>pa</td>
+            <td>date</td>
+            <td>Transaction window</td>
+        </tr>
+        <tr>
+            <td><code>Account-status</code></td>
+            <td><code>status</code></td>
+            <td>Draft</td>
+            <td></td>
+            <td>trial-use</td>
+            <td>False</td>
+            <td>pa</td>
+            <td>token</td>
+            <td>active | inactive | entered-in-error | on-hold | unknown</td>
+        </tr>
+        <tr>
+            <td><code>Account-subject</code></td>
+            <td><code>subject</code></td>
+            <td>Draft</td>
+            <td></td>
+            <td>trial-use</td>
+            <td>False</td>
+            <td>pa</td>
+            <td>reference</td>
+            <td>The entity that caused the expenses</td>
+        </tr>
+        <tr>
             <td><code>clinical-identifier</code></td>
             <td><code>identifier</code></td>
             <td>Draft</td>
@@ -1004,28 +1077,6 @@
 * [Task](http://hl7.org/fhir/R6/task.html): Search for a task instance by its business identifier
 * [VisionPrescription](http://hl7.org/fhir/R6/visionprescription.html): Return prescriptions with this external identifier
 </td>
-        </tr>
-        <tr>
-            <td><code>Account-name</code></td>
-            <td><code>name</code></td>
-            <td>Draft</td>
-            <td></td>
-            <td>trial-use</td>
-            <td>False</td>
-            <td>pa</td>
-            <td>string</td>
-            <td>Human-readable label</td>
-        </tr>
-        <tr>
-            <td><code>Account-owner</code></td>
-            <td><code>owner</code></td>
-            <td>Draft</td>
-            <td></td>
-            <td>trial-use</td>
-            <td>False</td>
-            <td>pa</td>
-            <td>reference</td>
-            <td>Entity managing the Account</td>
         </tr>
         <tr>
             <td><code>clinical-patient</code></td>
@@ -1105,39 +1156,6 @@
 * [Task](http://hl7.org/fhir/R6/task.html): Search by patient
 * [VisionPrescription](http://hl7.org/fhir/R6/visionprescription.html): The identity of a patient to list dispenses for
 </td>
-        </tr>
-        <tr>
-            <td><code>Account-period</code></td>
-            <td><code>period</code></td>
-            <td>Draft</td>
-            <td></td>
-            <td>trial-use</td>
-            <td>False</td>
-            <td>pa</td>
-            <td>date</td>
-            <td>Transaction window</td>
-        </tr>
-        <tr>
-            <td><code>Account-status</code></td>
-            <td><code>status</code></td>
-            <td>Draft</td>
-            <td></td>
-            <td>trial-use</td>
-            <td>False</td>
-            <td>pa</td>
-            <td>token</td>
-            <td>active | inactive | entered-in-error | on-hold | unknown</td>
-        </tr>
-        <tr>
-            <td><code>Account-subject</code></td>
-            <td><code>subject</code></td>
-            <td>Draft</td>
-            <td></td>
-            <td>trial-use</td>
-            <td>False</td>
-            <td>pa</td>
-            <td>reference</td>
-            <td>The entity that caused the expenses</td>
         </tr>
         <tr>
             <td><code>clinical-type</code></td>

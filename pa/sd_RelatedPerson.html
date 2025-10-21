@@ -7,14 +7,23 @@
         <h3>Urgent Item Checklist</h3>
                 <ul>
             <li>Confirm workgroup disposition vote has been recorded and sent to FMG!</li>
-            <li>Search Parameter: <code>clinical-identifier</code> (identifier) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>clinical-patient</code> (patient) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>RelatedPerson-active</code> (active) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>RelatedPerson-family</code> (family) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>RelatedPerson-given</code> (given) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>RelatedPerson-name</code> (name) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>RelatedPerson-relationship</code> (relationship) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>RelatedPerson-role</code> (role) flagged as <code>trial-use</code></li>
+            <li>ValueSet: <code>relatedperson-relationshiptype</code> (PatientRelationshipType) bound to element <code>RelatedPerson.role</code> (<code>Preferred</code>) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>RelatedPerson-active</code> (active) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>RelatedPerson-family</code> (family) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>RelatedPerson-given</code> (given) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>RelatedPerson-name</code> (name) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>RelatedPerson-relationship</code> (relationship) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>RelatedPerson-role</code> (role) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>clinical-identifier</code> (identifier) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>clinical-patient</code> (patient) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>RelatedPerson-active</code> (active) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>RelatedPerson-family</code> (family) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>RelatedPerson-given</code> (given) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>RelatedPerson-name</code> (name) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>RelatedPerson-relationship</code> (relationship) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>RelatedPerson-role</code> (role) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>clinical-identifier</code> (identifier) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>clinical-patient</code> (patient) has standards status <code>trial-use</code></li>
         </ul>
 
 
@@ -555,6 +564,72 @@
     </thead>
     <tbody>
         <tr>
+            <td><code>RelatedPerson-active</code></td>
+            <td><code>active</code></td>
+            <td>Draft</td>
+            <td></td>
+            <td>trial-use</td>
+            <td>False</td>
+            <td>pa</td>
+            <td>token</td>
+            <td>Indicates if the related person record is active</td>
+        </tr>
+        <tr>
+            <td><code>RelatedPerson-family</code></td>
+            <td><code>family</code></td>
+            <td>Draft</td>
+            <td></td>
+            <td>trial-use</td>
+            <td>False</td>
+            <td>pa</td>
+            <td>string</td>
+            <td>A portion of the family name of the related person</td>
+        </tr>
+        <tr>
+            <td><code>RelatedPerson-given</code></td>
+            <td><code>given</code></td>
+            <td>Draft</td>
+            <td></td>
+            <td>trial-use</td>
+            <td>False</td>
+            <td>pa</td>
+            <td>string</td>
+            <td>A portion of the given name of the related person</td>
+        </tr>
+        <tr>
+            <td><code>RelatedPerson-name</code></td>
+            <td><code>name</code></td>
+            <td>Draft</td>
+            <td></td>
+            <td>trial-use</td>
+            <td>False</td>
+            <td>pa</td>
+            <td>string</td>
+            <td>A server defined search that may match any of the string fields in the HumanName, including family, give, prefix, suffix, suffix, and/or text</td>
+        </tr>
+        <tr>
+            <td><code>RelatedPerson-relationship</code></td>
+            <td><code>relationship</code></td>
+            <td>Draft</td>
+            <td></td>
+            <td>trial-use</td>
+            <td>False</td>
+            <td>pa</td>
+            <td>token</td>
+            <td>The personal relationship between the patient and the relatedperson</td>
+        </tr>
+        <tr>
+            <td><code>RelatedPerson-role</code></td>
+            <td><code>role</code></td>
+            <td>Draft</td>
+            <td></td>
+            <td>trial-use</td>
+            <td>False</td>
+            <td>pa</td>
+            <td>token</td>
+            <td>The functional relationship between the patient and the relatedperson</td>
+        </tr>
+        <tr>
             <td><code>clinical-identifier</code></td>
             <td><code>identifier</code></td>
             <td>Draft</td>
@@ -916,72 +991,6 @@
 * [PractitionerRole](http://hl7.org/fhir/R6/practitionerrole.html): The value in any kind of contact
 * [RelatedPerson](http://hl7.org/fhir/R6/relatedperson.html): The value in any kind of contact
 </td>
-        </tr>
-        <tr>
-            <td><code>RelatedPerson-active</code></td>
-            <td><code>active</code></td>
-            <td>Draft</td>
-            <td></td>
-            <td>trial-use</td>
-            <td>False</td>
-            <td>pa</td>
-            <td>token</td>
-            <td>Indicates if the related person record is active</td>
-        </tr>
-        <tr>
-            <td><code>RelatedPerson-family</code></td>
-            <td><code>family</code></td>
-            <td>Draft</td>
-            <td></td>
-            <td>trial-use</td>
-            <td>False</td>
-            <td>pa</td>
-            <td>string</td>
-            <td>A portion of the family name of the related person</td>
-        </tr>
-        <tr>
-            <td><code>RelatedPerson-given</code></td>
-            <td><code>given</code></td>
-            <td>Draft</td>
-            <td></td>
-            <td>trial-use</td>
-            <td>False</td>
-            <td>pa</td>
-            <td>string</td>
-            <td>A portion of the given name of the related person</td>
-        </tr>
-        <tr>
-            <td><code>RelatedPerson-name</code></td>
-            <td><code>name</code></td>
-            <td>Draft</td>
-            <td></td>
-            <td>trial-use</td>
-            <td>False</td>
-            <td>pa</td>
-            <td>string</td>
-            <td>A server defined search that may match any of the string fields in the HumanName, including family, give, prefix, suffix, suffix, and/or text</td>
-        </tr>
-        <tr>
-            <td><code>RelatedPerson-relationship</code></td>
-            <td><code>relationship</code></td>
-            <td>Draft</td>
-            <td></td>
-            <td>trial-use</td>
-            <td>False</td>
-            <td>pa</td>
-            <td>token</td>
-            <td>The personal relationship between the patient and the relatedperson</td>
-        </tr>
-        <tr>
-            <td><code>RelatedPerson-role</code></td>
-            <td><code>role</code></td>
-            <td>Draft</td>
-            <td></td>
-            <td>trial-use</td>
-            <td>False</td>
-            <td>pa</td>
-            <td>token</td>
-            <td>The functional relationship between the patient and the relatedperson</td>
         </tr>
     </tbody>
 </table>

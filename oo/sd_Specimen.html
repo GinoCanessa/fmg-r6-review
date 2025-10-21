@@ -8,27 +8,50 @@
                 <ul>
             <li>Confirm workgroup disposition vote has been recorded and sent to FMG!</li>
             <li>Element: <code>Specimen.accessionIdentifier</code> flagged as <code>trial-use</code></li>
-            <li>ValueSet: <code>specimen-status</code> (SpecimenStatus) bound to element <code>Specimen.status</code> is flagged as <code>trial-use</code></li>
-            <li>CodeSystem: <code>specimen-status</code> (SpecimenStatus) referenced by ValueSet <code>specimen-status</code> bound to element <code>Specimen.status</code> is flagged as <code>trial-use</code></li>
-            <li>ValueSet: <code>specimen-combined</code> (SpecimenCombined) bound to element <code>Specimen.combined</code> is flagged as <code>trial-use</code></li>
-            <li>CodeSystem: <code>specimen-combined</code> (SpecimenCombined) referenced by ValueSet <code>specimen-combined</code> bound to element <code>Specimen.combined</code> is flagged as <code>trial-use</code></li>
-            <li>ValueSet: <code>specimen-role</code> (SpecimenRole) bound to element <code>Specimen.role</code> is flagged as <code>trial-use</code></li>
-            <li>CodeSystem: <code>specimen-role</code> (SpecimenRole) referenced by ValueSet <code>specimen-role</code> bound to element <code>Specimen.role</code> is flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>clinical-identifier</code> (identifier) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>clinical-patient</code> (patient) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>clinical-type</code> (type) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>Specimen-accession</code> (accession) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>Specimen-bodysite</code> (bodysite) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>Specimen-collected</code> (collected) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>Specimen-collection-device-code</code> (collection-device-code) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>Specimen-collector</code> (collector) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>Specimen-container-device-code</code> (container-device-code) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>Specimen-parent</code> (parent) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>Specimen-procedure</code> (procedure) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>Specimen-processing-device-code</code> (processing-device-code) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>Specimen-request</code> (request) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>Specimen-status</code> (status) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>Specimen-subject</code> (subject) flagged as <code>trial-use</code></li>
+            <li>ValueSet: <code>specimen-status</code> (SpecimenStatus) bound to element <code>Specimen.status</code> (<code>Required</code>) has status <code>Draft</code></li>
+            <li>ValueSet: <code>specimen-status</code> (SpecimenStatus) bound to element <code>Specimen.status</code> (<code>Required</code>) has standard status <code>trial-use</code></li>
+            <li>CodeSystem: <code>specimen-status</code> (SpecimenStatus) referenced by ValueSet <code>specimen-status</code> bound to element <code>Specimen.status</code> (<code>Required</code>) has standard status <code>trial-use</code></li>
+            <li>ValueSet: <code>specimen-combined</code> (SpecimenCombined) bound to element <code>Specimen.combined</code> (<code>Required</code>) has status <code>Draft</code></li>
+            <li>ValueSet: <code>specimen-combined</code> (SpecimenCombined) bound to element <code>Specimen.combined</code> (<code>Required</code>) has standard status <code>trial-use</code></li>
+            <li>CodeSystem: <code>specimen-combined</code> (SpecimenCombined) referenced by ValueSet <code>specimen-combined</code> bound to element <code>Specimen.combined</code> (<code>Required</code>) has standard status <code>trial-use</code></li>
+            <li>ValueSet: <code>specimen-role</code> (SpecimenRole) bound to element <code>Specimen.role</code> (<code>Preferred</code>) has status <code>Draft</code></li>
+            <li>ValueSet: <code>specimen-role</code> (SpecimenRole) bound to element <code>Specimen.role</code> (<code>Preferred</code>) has standard status <code>trial-use</code></li>
+            <li>CodeSystem: <code>specimen-role</code> (SpecimenRole) referenced by ValueSet <code>specimen-role</code> bound to element <code>Specimen.role</code> (<code>Preferred</code>) has standard status <code>trial-use</code></li>
+            <li>ValueSet: <code>body-site</code> (SNOMEDCTBodyStructures) bound to element <code>Specimen.feature.type</code> (<code>Example</code>) has status <code>Draft</code></li>
+            <li>ValueSet: <code>specimen-collection-method</code> (FHIRSpecimenCollectionMethod) bound to element <code>Specimen.collection.method</code> (<code>Example</code>) has status <code>Draft</code></li>
+            <li>ValueSet: <code>specimen-container-type</code> (SpecimenContainer) bound to element <code>Specimen.collection.device</code> (<code>Example</code>) has status <code>Draft</code></li>
+            <li>ValueSet: <code>body-site</code> (SNOMEDCTBodyStructures) bound to element <code>Specimen.collection.bodySite</code> (<code>Example</code>) has status <code>Draft</code></li>
+            <li>ValueSet: <code>specimen-processing-method</code> (SpecimenProcessingMethod) bound to element <code>Specimen.processing.method</code> (<code>Example</code>) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>Specimen-accession</code> (accession) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>Specimen-bodysite</code> (bodysite) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>Specimen-collected</code> (collected) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>Specimen-collection-device-code</code> (collection-device-code) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>Specimen-collector</code> (collector) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>Specimen-container-device-code</code> (container-device-code) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>Specimen-parent</code> (parent) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>Specimen-procedure</code> (procedure) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>Specimen-processing-device-code</code> (processing-device-code) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>Specimen-request</code> (request) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>Specimen-status</code> (status) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>Specimen-subject</code> (subject) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>clinical-identifier</code> (identifier) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>clinical-patient</code> (patient) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>clinical-type</code> (type) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>Specimen-accession</code> (accession) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>Specimen-bodysite</code> (bodysite) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>Specimen-collected</code> (collected) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>Specimen-collection-device-code</code> (collection-device-code) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>Specimen-collector</code> (collector) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>Specimen-container-device-code</code> (container-device-code) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>Specimen-parent</code> (parent) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>Specimen-procedure</code> (procedure) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>Specimen-processing-device-code</code> (processing-device-code) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>Specimen-request</code> (request) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>Specimen-status</code> (status) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>Specimen-subject</code> (subject) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>clinical-identifier</code> (identifier) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>clinical-patient</code> (patient) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>clinical-type</code> (type) has standards status <code>trial-use</code></li>
         </ul>
 
 
@@ -809,6 +832,138 @@
     </thead>
     <tbody>
         <tr>
+            <td><code>Specimen-accession</code></td>
+            <td><code>accession</code></td>
+            <td>Draft</td>
+            <td></td>
+            <td>trial-use</td>
+            <td>False</td>
+            <td>oo</td>
+            <td>token</td>
+            <td>The accession number associated with the specimen</td>
+        </tr>
+        <tr>
+            <td><code>Specimen-bodysite</code></td>
+            <td><code>bodysite</code></td>
+            <td>Draft</td>
+            <td></td>
+            <td>trial-use</td>
+            <td>False</td>
+            <td>oo</td>
+            <td>reference</td>
+            <td>Reference to a resource (by instance)</td>
+        </tr>
+        <tr>
+            <td><code>Specimen-collected</code></td>
+            <td><code>collected</code></td>
+            <td>Draft</td>
+            <td></td>
+            <td>trial-use</td>
+            <td>False</td>
+            <td>oo</td>
+            <td>date</td>
+            <td>The date the specimen was collected</td>
+        </tr>
+        <tr>
+            <td><code>Specimen-collection-device-code</code></td>
+            <td><code>collection-device-code</code></td>
+            <td>Draft</td>
+            <td></td>
+            <td>trial-use</td>
+            <td>False</td>
+            <td>oo</td>
+            <td>token</td>
+            <td>The code associated with the collection device</td>
+        </tr>
+        <tr>
+            <td><code>Specimen-collector</code></td>
+            <td><code>collector</code></td>
+            <td>Draft</td>
+            <td></td>
+            <td>trial-use</td>
+            <td>False</td>
+            <td>oo</td>
+            <td>reference</td>
+            <td>Who collected the specimen</td>
+        </tr>
+        <tr>
+            <td><code>Specimen-container-device-code</code></td>
+            <td><code>container-device-code</code></td>
+            <td>Draft</td>
+            <td></td>
+            <td>trial-use</td>
+            <td>False</td>
+            <td>oo</td>
+            <td>token</td>
+            <td>The code associated with the specimen container</td>
+        </tr>
+        <tr>
+            <td><code>Specimen-parent</code></td>
+            <td><code>parent</code></td>
+            <td>Draft</td>
+            <td></td>
+            <td>trial-use</td>
+            <td>False</td>
+            <td>oo</td>
+            <td>reference</td>
+            <td>The parent of the specimen</td>
+        </tr>
+        <tr>
+            <td><code>Specimen-procedure</code></td>
+            <td><code>procedure</code></td>
+            <td>Draft</td>
+            <td></td>
+            <td>trial-use</td>
+            <td>False</td>
+            <td>oo</td>
+            <td>reference</td>
+            <td>The procedure that collected the specimen</td>
+        </tr>
+        <tr>
+            <td><code>Specimen-processing-device-code</code></td>
+            <td><code>processing-device-code</code></td>
+            <td>Draft</td>
+            <td></td>
+            <td>trial-use</td>
+            <td>False</td>
+            <td>oo</td>
+            <td>token</td>
+            <td>The code associated with the processing device</td>
+        </tr>
+        <tr>
+            <td><code>Specimen-request</code></td>
+            <td><code>request</code></td>
+            <td>Draft</td>
+            <td></td>
+            <td>trial-use</td>
+            <td>False</td>
+            <td>oo</td>
+            <td>reference</td>
+            <td>The request/order associated with the specimen</td>
+        </tr>
+        <tr>
+            <td><code>Specimen-status</code></td>
+            <td><code>status</code></td>
+            <td>Draft</td>
+            <td></td>
+            <td>trial-use</td>
+            <td>False</td>
+            <td>oo</td>
+            <td>token</td>
+            <td>available | unavailable | unsatisfactory | entered-in-error</td>
+        </tr>
+        <tr>
+            <td><code>Specimen-subject</code></td>
+            <td><code>subject</code></td>
+            <td>Draft</td>
+            <td></td>
+            <td>trial-use</td>
+            <td>False</td>
+            <td>oo</td>
+            <td>reference</td>
+            <td>The subject of the specimen</td>
+        </tr>
+        <tr>
             <td><code>clinical-identifier</code></td>
             <td><code>identifier</code></td>
             <td>Draft</td>
@@ -987,138 +1142,6 @@
 * [MedicationDispense](http://hl7.org/fhir/R6/medicationdispense.html): Returns dispenses of a specific type
 * [Specimen](http://hl7.org/fhir/R6/specimen.html): The specimen type
 </td>
-        </tr>
-        <tr>
-            <td><code>Specimen-accession</code></td>
-            <td><code>accession</code></td>
-            <td>Draft</td>
-            <td></td>
-            <td>trial-use</td>
-            <td>False</td>
-            <td>oo</td>
-            <td>token</td>
-            <td>The accession number associated with the specimen</td>
-        </tr>
-        <tr>
-            <td><code>Specimen-bodysite</code></td>
-            <td><code>bodysite</code></td>
-            <td>Draft</td>
-            <td></td>
-            <td>trial-use</td>
-            <td>False</td>
-            <td>oo</td>
-            <td>reference</td>
-            <td>Reference to a resource (by instance)</td>
-        </tr>
-        <tr>
-            <td><code>Specimen-collected</code></td>
-            <td><code>collected</code></td>
-            <td>Draft</td>
-            <td></td>
-            <td>trial-use</td>
-            <td>False</td>
-            <td>oo</td>
-            <td>date</td>
-            <td>The date the specimen was collected</td>
-        </tr>
-        <tr>
-            <td><code>Specimen-collection-device-code</code></td>
-            <td><code>collection-device-code</code></td>
-            <td>Draft</td>
-            <td></td>
-            <td>trial-use</td>
-            <td>False</td>
-            <td>oo</td>
-            <td>token</td>
-            <td>The code associated with the collection device</td>
-        </tr>
-        <tr>
-            <td><code>Specimen-collector</code></td>
-            <td><code>collector</code></td>
-            <td>Draft</td>
-            <td></td>
-            <td>trial-use</td>
-            <td>False</td>
-            <td>oo</td>
-            <td>reference</td>
-            <td>Who collected the specimen</td>
-        </tr>
-        <tr>
-            <td><code>Specimen-container-device-code</code></td>
-            <td><code>container-device-code</code></td>
-            <td>Draft</td>
-            <td></td>
-            <td>trial-use</td>
-            <td>False</td>
-            <td>oo</td>
-            <td>token</td>
-            <td>The code associated with the specimen container</td>
-        </tr>
-        <tr>
-            <td><code>Specimen-parent</code></td>
-            <td><code>parent</code></td>
-            <td>Draft</td>
-            <td></td>
-            <td>trial-use</td>
-            <td>False</td>
-            <td>oo</td>
-            <td>reference</td>
-            <td>The parent of the specimen</td>
-        </tr>
-        <tr>
-            <td><code>Specimen-procedure</code></td>
-            <td><code>procedure</code></td>
-            <td>Draft</td>
-            <td></td>
-            <td>trial-use</td>
-            <td>False</td>
-            <td>oo</td>
-            <td>reference</td>
-            <td>The procedure that collected the specimen</td>
-        </tr>
-        <tr>
-            <td><code>Specimen-processing-device-code</code></td>
-            <td><code>processing-device-code</code></td>
-            <td>Draft</td>
-            <td></td>
-            <td>trial-use</td>
-            <td>False</td>
-            <td>oo</td>
-            <td>token</td>
-            <td>The code associated with the processing device</td>
-        </tr>
-        <tr>
-            <td><code>Specimen-request</code></td>
-            <td><code>request</code></td>
-            <td>Draft</td>
-            <td></td>
-            <td>trial-use</td>
-            <td>False</td>
-            <td>oo</td>
-            <td>reference</td>
-            <td>The request/order associated with the specimen</td>
-        </tr>
-        <tr>
-            <td><code>Specimen-status</code></td>
-            <td><code>status</code></td>
-            <td>Draft</td>
-            <td></td>
-            <td>trial-use</td>
-            <td>False</td>
-            <td>oo</td>
-            <td>token</td>
-            <td>available | unavailable | unsatisfactory | entered-in-error</td>
-        </tr>
-        <tr>
-            <td><code>Specimen-subject</code></td>
-            <td><code>subject</code></td>
-            <td>Draft</td>
-            <td></td>
-            <td>trial-use</td>
-            <td>False</td>
-            <td>oo</td>
-            <td>reference</td>
-            <td>The subject of the specimen</td>
         </tr>
     </tbody>
 </table>

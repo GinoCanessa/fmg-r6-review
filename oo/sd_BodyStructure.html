@@ -7,11 +7,24 @@
         <h3>Urgent Item Checklist</h3>
                 <ul>
             <li>Confirm workgroup disposition vote has been recorded and sent to FMG!</li>
-            <li>Search Parameter: <code>clinical-identifier</code> (identifier) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>clinical-patient</code> (patient) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>BodyStructure-excludedstructure</code> (excluded_structure) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>BodyStructure-includedstructure</code> (included_structure) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>BodyStructure-morphology</code> (morphology) flagged as <code>trial-use</code></li>
+            <li>ValueSet: <code>body-site</code> (SNOMEDCTBodyStructures) bound to element <code>BodyStructure.includedStructure.structure</code> (<code>Example</code>) has status <code>Draft</code></li>
+            <li>ValueSet: <code>bodystructure-laterality</code> (BodystructureLaterality) bound to element <code>BodyStructure.includedStructure.laterality</code> (<code>Example</code>) has status <code>Draft</code></li>
+            <li>ValueSet: <code>body-site</code> (SNOMEDCTBodyStructures) bound to element <code>BodyStructure.includedStructure.bodyLandmarkOrientation.landmarkDescription</code> (<code>Example</code>) has status <code>Draft</code></li>
+            <li>ValueSet: <code>bodystructure-bodylandmarkorientation-clockface-position</code> (BodystructureBodyLandmarkClockFacePosition) bound to element <code>BodyStructure.includedStructure.bodyLandmarkOrientation.clockFacePosition</code> (<code>Example</code>) has status <code>Draft</code></li>
+            <li>ValueSet: <code>device-type</code> (DeviceType) bound to element <code>BodyStructure.includedStructure.bodyLandmarkOrientation.distanceFromLandmark.device</code> (<code>Example</code>) has status <code>Draft</code></li>
+            <li>ValueSet: <code>bodystructure-relative-location</code> (BodystructureLocationQualifier) bound to element <code>BodyStructure.includedStructure.bodyLandmarkOrientation.surfaceOrientation</code> (<code>Preferred</code>) has status <code>Draft</code></li>
+            <li>ValueSet: <code>bodystructure-relative-location</code> (BodystructureLocationQualifier) bound to element <code>BodyStructure.includedStructure.qualifier</code> (<code>Example</code>) has status <code>Draft</code></li>
+            <li>ValueSet: <code>bodystructure-code</code> (SNOMEDCTMorphologicAbnormalities) bound to element <code>BodyStructure.includedStructure.morphology</code> (<code>Example</code>) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>BodyStructure-excludedstructure</code> (excluded_structure) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>BodyStructure-includedstructure</code> (included_structure) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>BodyStructure-morphology</code> (morphology) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>clinical-identifier</code> (identifier) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>clinical-patient</code> (patient) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>BodyStructure-excludedstructure</code> (excluded_structure) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>BodyStructure-includedstructure</code> (included_structure) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>BodyStructure-morphology</code> (morphology) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>clinical-identifier</code> (identifier) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>clinical-patient</code> (patient) has standards status <code>trial-use</code></li>
         </ul>
 
 
@@ -140,8 +153,8 @@
                 </tr>
             </thead>
             <tbody>
-                <tr><td><code>includedStructure.structure<code></td><td>No</td></tr>
-            <tr><td><code>excludedStructure.structure).<code></td><td>No</td></tr>
+                <tr><td><code>excludedStructure.structure).<code></td><td>No</td></tr>
+            <tr><td><code>includedStructure.structure<code></td><td>No</td></tr>
             </tbody>
         </table>
 
@@ -601,6 +614,39 @@
     </thead>
     <tbody>
         <tr>
+            <td><code>BodyStructure-excludedstructure</code></td>
+            <td><code>excluded_structure</code></td>
+            <td>Draft</td>
+            <td></td>
+            <td>trial-use</td>
+            <td>False</td>
+            <td>oo</td>
+            <td>token</td>
+            <td>Body site excludedStructure structure</td>
+        </tr>
+        <tr>
+            <td><code>BodyStructure-includedstructure</code></td>
+            <td><code>included_structure</code></td>
+            <td>Draft</td>
+            <td></td>
+            <td>trial-use</td>
+            <td>False</td>
+            <td>oo</td>
+            <td>token</td>
+            <td>Body site includedStructure structure</td>
+        </tr>
+        <tr>
+            <td><code>BodyStructure-morphology</code></td>
+            <td><code>morphology</code></td>
+            <td>Draft</td>
+            <td></td>
+            <td>trial-use</td>
+            <td>False</td>
+            <td>oo</td>
+            <td>token</td>
+            <td>Kind of Structure</td>
+        </tr>
+        <tr>
             <td><code>clinical-identifier</code></td>
             <td><code>identifier</code></td>
             <td>Draft</td>
@@ -756,39 +802,6 @@
 * [Task](http://hl7.org/fhir/R6/task.html): Search by patient
 * [VisionPrescription](http://hl7.org/fhir/R6/visionprescription.html): The identity of a patient to list dispenses for
 </td>
-        </tr>
-        <tr>
-            <td><code>BodyStructure-excludedstructure</code></td>
-            <td><code>excluded_structure</code></td>
-            <td>Draft</td>
-            <td></td>
-            <td>trial-use</td>
-            <td>False</td>
-            <td>oo</td>
-            <td>token</td>
-            <td>Body site excludedStructure structure</td>
-        </tr>
-        <tr>
-            <td><code>BodyStructure-includedstructure</code></td>
-            <td><code>included_structure</code></td>
-            <td>Draft</td>
-            <td></td>
-            <td>trial-use</td>
-            <td>False</td>
-            <td>oo</td>
-            <td>token</td>
-            <td>Body site includedStructure structure</td>
-        </tr>
-        <tr>
-            <td><code>BodyStructure-morphology</code></td>
-            <td><code>morphology</code></td>
-            <td>Draft</td>
-            <td></td>
-            <td>trial-use</td>
-            <td>False</td>
-            <td>oo</td>
-            <td>token</td>
-            <td>Kind of Structure</td>
         </tr>
     </tbody>
 </table>

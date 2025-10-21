@@ -7,30 +7,42 @@
         <h3>Urgent Item Checklist</h3>
                 <ul>
             <li>Confirm workgroup disposition vote has been recorded and sent to FMG!</li>
-            <li>Element: <code>MeasureReport.group.population.countQuantity</code> flagged as <code>trial-use</code></li>
-            <li>Element: <code>MeasureReport.group.stratifier.stratum.population.countQuantity</code> flagged as <code>trial-use</code></li>
             <li>Element: <code>MeasureReport.scoring</code> flagged as <code>deprecated</code></li>
             <li>Element: <code>MeasureReport.improvementNotation</code> flagged as <code>deprecated</code></li>
-            <li>ValueSet: <code>measure-report-status</code> (MeasureReportStatus) bound to element <code>MeasureReport.status</code> is flagged as <code>trial-use</code></li>
-            <li>CodeSystem: <code>measure-report-status</code> (MeasureReportStatus) referenced by ValueSet <code>measure-report-status</code> bound to element <code>MeasureReport.status</code> is flagged as <code>trial-use</code></li>
-            <li>ValueSet: <code>measure-report-type</code> (MeasureReportType) bound to element <code>MeasureReport.type</code> is flagged as <code>trial-use</code></li>
-            <li>CodeSystem: <code>measure-report-type</code> (MeasureReportType) referenced by ValueSet <code>measure-report-type</code> bound to element <code>MeasureReport.type</code> is flagged as <code>trial-use</code></li>
-            <li>ValueSet: <code>submit-data-update-type</code> (SubmitDataUpdateType) bound to element <code>MeasureReport.dataUpdateType</code> is flagged as <code>trial-use</code></li>
-            <li>CodeSystem: <code>measure-group-example</code> (MeasureGroupExample) referenced by ValueSet <code>measure-group-example</code> bound to element <code>MeasureReport.group.code</code> is flagged as <code>experimental</code></li>
-            <li>CodeSystem: <code>measure-stratifier-example</code> (MeasureStratifierExample) referenced by ValueSet <code>measure-stratifier-example</code> bound to element <code>MeasureReport.group.stratifier.code</code> is flagged as <code>experimental</code></li>
-            <li>CodeSystem: <code>measurereport-stratifier-value-example</code> (MeasureReportStratifierValueExample) referenced by ValueSet <code>measurereport-stratifier-value-example</code> bound to element <code>MeasureReport.group.stratifier.stratum.value[x]</code> is flagged as <code>experimental</code></li>
-            <li>CodeSystem: <code>measure-stratifier-example</code> (MeasureStratifierExample) referenced by ValueSet <code>measure-stratifier-example</code> bound to element <code>MeasureReport.group.stratifier.stratum.component.code</code> is flagged as <code>experimental</code></li>
-            <li>CodeSystem: <code>measurereport-stratifier-value-example</code> (MeasureReportStratifierValueExample) referenced by ValueSet <code>measurereport-stratifier-value-example</code> bound to element <code>MeasureReport.group.stratifier.stratum.component.value[x]</code> is flagged as <code>experimental</code></li>
-            <li>Search Parameter: <code>clinical-identifier</code> (identifier) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>clinical-patient</code> (patient) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>clinical-date</code> (date) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>MeasureReport-evaluated-resource</code> (evaluated-resource) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>MeasureReport-location</code> (location) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>MeasureReport-measure</code> (measure) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>MeasureReport-period</code> (period) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>MeasureReport-reporter</code> (reporter) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>MeasureReport-status</code> (status) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>MeasureReport-subject</code> (subject) flagged as <code>trial-use</code></li>
+            <li>ValueSet: <code>measure-report-status</code> (MeasureReportStatus) bound to element <code>MeasureReport.status</code> (<code>Required</code>) has status <code>Draft</code></li>
+            <li>ValueSet: <code>measure-report-status</code> (MeasureReportStatus) bound to element <code>MeasureReport.status</code> (<code>Required</code>) has standard status <code>trial-use</code></li>
+            <li>CodeSystem: <code>measure-report-status</code> (MeasureReportStatus) referenced by ValueSet <code>measure-report-status</code> bound to element <code>MeasureReport.status</code> (<code>Required</code>) has standard status <code>trial-use</code></li>
+            <li>ValueSet: <code>measure-report-type</code> (MeasureReportType) bound to element <code>MeasureReport.type</code> (<code>Required</code>) has status <code>Draft</code></li>
+            <li>ValueSet: <code>measure-report-type</code> (MeasureReportType) bound to element <code>MeasureReport.type</code> (<code>Required</code>) has standard status <code>trial-use</code></li>
+            <li>CodeSystem: <code>measure-report-type</code> (MeasureReportType) referenced by ValueSet <code>measure-report-type</code> bound to element <code>MeasureReport.type</code> (<code>Required</code>) has standard status <code>trial-use</code></li>
+            <li>ValueSet: <code>submit-data-update-type</code> (SubmitDataUpdateType) bound to element <code>MeasureReport.dataUpdateType</code> (<code>Required</code>) has standard status <code>trial-use</code></li>
+            <li>CodeSystem: <code>measure-group-example</code> (MeasureGroupExample) referenced by ValueSet <code>measure-group-example</code> bound to element <code>MeasureReport.group.code</code> (<code>Example</code>) is flagged as <code>experimental</code></li>
+            <li>CodeSystem: <code>measure-stratifier-example</code> (MeasureStratifierExample) referenced by ValueSet <code>measure-stratifier-example</code> bound to element <code>MeasureReport.group.stratifier.code</code> (<code>Example</code>) is flagged as <code>experimental</code></li>
+            <li>ValueSet: <code>measurereport-stratifier-value-example</code> (MeasureReportStratifierValueExample) bound to element <code>MeasureReport.group.stratifier.stratum.value[x]</code> (<code>Example</code>) has status <code>Draft</code></li>
+            <li>CodeSystem: <code>measurereport-stratifier-value-example</code> (MeasureReportStratifierValueExample) referenced by ValueSet <code>measurereport-stratifier-value-example</code> bound to element <code>MeasureReport.group.stratifier.stratum.value[x]</code> (<code>Example</code>) is flagged as <code>experimental</code></li>
+            <li>CodeSystem: <code>measure-stratifier-example</code> (MeasureStratifierExample) referenced by ValueSet <code>measure-stratifier-example</code> bound to element <code>MeasureReport.group.stratifier.stratum.component.code</code> (<code>Example</code>) is flagged as <code>experimental</code></li>
+            <li>ValueSet: <code>measurereport-stratifier-value-example</code> (MeasureReportStratifierValueExample) bound to element <code>MeasureReport.group.stratifier.stratum.component.value[x]</code> (<code>Example</code>) has status <code>Draft</code></li>
+            <li>CodeSystem: <code>measurereport-stratifier-value-example</code> (MeasureReportStratifierValueExample) referenced by ValueSet <code>measurereport-stratifier-value-example</code> bound to element <code>MeasureReport.group.stratifier.stratum.component.value[x]</code> (<code>Example</code>) is flagged as <code>experimental</code></li>
+            <li>Search Parameter: <code>MeasureReport-evaluated-resource</code> (evaluated-resource) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>MeasureReport-location</code> (location) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>MeasureReport-measure</code> (measure) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>MeasureReport-period</code> (period) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>MeasureReport-reporter</code> (reporter) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>MeasureReport-status</code> (status) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>MeasureReport-subject</code> (subject) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>clinical-date</code> (date) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>clinical-identifier</code> (identifier) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>clinical-patient</code> (patient) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>MeasureReport-evaluated-resource</code> (evaluated-resource) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>MeasureReport-location</code> (location) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>MeasureReport-measure</code> (measure) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>MeasureReport-period</code> (period) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>MeasureReport-reporter</code> (reporter) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>MeasureReport-status</code> (status) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>MeasureReport-subject</code> (subject) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>clinical-date</code> (date) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>clinical-identifier</code> (identifier) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>clinical-patient</code> (patient) has standards status <code>trial-use</code></li>
         </ul>
 
 
@@ -161,8 +173,6 @@
             <tbody>
                 <tr><td><code>(QRDA<code></td><td>No</td></tr>
             <tr><td><code>STU5.3<code></td><td>No</td></tr>
-            <tr><td><code>countQuantity<code></td><td>No</td></tr>
-            <tr><td><code>CQI<code></td><td>No</td></tr>
             </tbody>
         </table>
 
@@ -187,8 +197,7 @@
 
         <h3>Reader Review Notes Found on Page</h3>
         <ul>
-            <li>Balloters</li>
-            <li>feedback</li>
+            
         </ul>
 
         <h3>Notes Page</h3>
@@ -557,8 +566,8 @@
             <td></td>
             <td></td>
             <td></td>
-            <td><i>optional</i> - X</td>
-            <td><code>http://terminology.hl7.org/ValueSet/measure-improvement-notation|1.0.1</code></td>
+            <td></td>
+            <td><code></code></td>
             <td></td>
             <td>X</td>
         </tr>
@@ -734,7 +743,7 @@
             <td><code>MeasureReport.group.population.countQuantity</code></td>
             <td></td>
             <td></td>
-            <td>X</td>
+            <td></td>
             <td></td>
             <td></td>
             <td></td>
@@ -974,7 +983,7 @@
             <td><code>MeasureReport.group.stratifier.stratum.population.countQuantity</code></td>
             <td></td>
             <td></td>
-            <td>X</td>
+            <td></td>
             <td></td>
             <td></td>
             <td></td>
@@ -1078,6 +1087,121 @@
         </tr>
     </thead>
     <tbody>
+        <tr>
+            <td><code>MeasureReport-evaluated-resource</code></td>
+            <td><code>evaluated-resource</code></td>
+            <td>Draft</td>
+            <td></td>
+            <td>trial-use</td>
+            <td>False</td>
+            <td>cqi</td>
+            <td>reference</td>
+            <td>An evaluated resource referenced by the measure report</td>
+        </tr>
+        <tr>
+            <td><code>MeasureReport-location</code></td>
+            <td><code>location</code></td>
+            <td>Draft</td>
+            <td></td>
+            <td>trial-use</td>
+            <td>False</td>
+            <td>cqi</td>
+            <td>reference</td>
+            <td>The location to return measure report results for</td>
+        </tr>
+        <tr>
+            <td><code>MeasureReport-measure</code></td>
+            <td><code>measure</code></td>
+            <td>Draft</td>
+            <td></td>
+            <td>trial-use</td>
+            <td>False</td>
+            <td>cqi</td>
+            <td>reference</td>
+            <td>The measure to return measure report results for</td>
+        </tr>
+        <tr>
+            <td><code>MeasureReport-period</code></td>
+            <td><code>period</code></td>
+            <td>Draft</td>
+            <td></td>
+            <td>trial-use</td>
+            <td>False</td>
+            <td>cqi</td>
+            <td>date</td>
+            <td>The period of the measure report</td>
+        </tr>
+        <tr>
+            <td><code>MeasureReport-reporter</code></td>
+            <td><code>reporter</code></td>
+            <td>Draft</td>
+            <td></td>
+            <td>trial-use</td>
+            <td>False</td>
+            <td>cqi</td>
+            <td>reference</td>
+            <td>The reporter to return measure report results for</td>
+        </tr>
+        <tr>
+            <td><code>MeasureReport-status</code></td>
+            <td><code>status</code></td>
+            <td>Draft</td>
+            <td></td>
+            <td>trial-use</td>
+            <td>False</td>
+            <td>cqi</td>
+            <td>token</td>
+            <td>The status of the measure report</td>
+        </tr>
+        <tr>
+            <td><code>MeasureReport-subject</code></td>
+            <td><code>subject</code></td>
+            <td>Draft</td>
+            <td></td>
+            <td>trial-use</td>
+            <td>False</td>
+            <td>cqi</td>
+            <td>reference</td>
+            <td>The identity of a subject to search for individual measure report results for</td>
+        </tr>
+        <tr>
+            <td><code>clinical-date</code></td>
+            <td><code>date</code></td>
+            <td>Draft</td>
+            <td></td>
+            <td>trial-use</td>
+            <td>False</td>
+            <td>pc</td>
+            <td>date</td>
+            <td>Multiple Resources: 
+
+* [AllergyIntolerance](http://hl7.org/fhir/R6/allergyintolerance.html): Date first version of the resource instance was recorded
+* [Appointment](http://hl7.org/fhir/R6/appointment.html): Appointment date/time.
+* [AuditEvent](http://hl7.org/fhir/R6/auditevent.html): Time when the event was recorded
+* [CarePlan](http://hl7.org/fhir/R6/careplan.html): Time period plan covers
+* [CareTeam](http://hl7.org/fhir/R6/careteam.html): A date within the coverage time period.
+* [Composition](http://hl7.org/fhir/R6/composition.html): Composition editing time
+* [Consent](http://hl7.org/fhir/R6/consent.html): When consent was agreed to
+* [DiagnosticReport](http://hl7.org/fhir/R6/diagnosticreport.html): The clinically relevant time of the report
+* [DocumentReference](http://hl7.org/fhir/R6/documentreference.html): When this document reference was created
+* [Encounter](http://hl7.org/fhir/R6/encounter.html): A date within the actualPeriod the Encounter lasted
+* [EpisodeOfCare](http://hl7.org/fhir/R6/episodeofcare.html): The provided date search value falls within the episode of care's period
+* [FamilyMemberHistory](http://hl7.org/fhir/R6/familymemberhistory.html): When history was recorded or last updated
+* [Flag](http://hl7.org/fhir/R6/flag.html): Time period when flag is active
+* [Immunization](http://hl7.org/fhir/R6/immunization.html): Vaccination  (non)-Administration Date
+* [ImmunizationEvaluation](http://hl7.org/fhir/R6/immunizationevaluation.html): Date the evaluation was generated
+* [ImmunizationRecommendation](http://hl7.org/fhir/R6/immunizationrecommendation.html): Date recommendation(s) created
+* [Invoice](http://hl7.org/fhir/R6/invoice.html): Invoice date / posting date
+* [List](http://hl7.org/fhir/R6/list.html): When the list was prepared
+* [MeasureReport](http://hl7.org/fhir/R6/measurereport.html): The date of the measure report
+* [NutritionIntake](http://hl7.org/fhir/R6/nutritionintake.html): Date when patient was taking (or not taking) the medication
+* [Observation](http://hl7.org/fhir/R6/observation.html): Clinically relevant time/time-period for observation
+* [Procedure](http://hl7.org/fhir/R6/procedure.html): When the procedure occurred or is occurring
+* [ResearchSubject](http://hl7.org/fhir/R6/researchsubject.html): Start and end of participation
+* [RiskAssessment](http://hl7.org/fhir/R6/riskassessment.html): When was assessment made?
+* [SupplyRequest](http://hl7.org/fhir/R6/supplyrequest.html): When the request was made
+</td>
+        </tr>
         <tr>
             <td><code>clinical-identifier</code></td>
             <td><code>identifier</code></td>
@@ -1234,121 +1358,6 @@
 * [Task](http://hl7.org/fhir/R6/task.html): Search by patient
 * [VisionPrescription](http://hl7.org/fhir/R6/visionprescription.html): The identity of a patient to list dispenses for
 </td>
-        </tr>
-        <tr>
-            <td><code>clinical-date</code></td>
-            <td><code>date</code></td>
-            <td>Draft</td>
-            <td></td>
-            <td>trial-use</td>
-            <td>False</td>
-            <td>pc</td>
-            <td>date</td>
-            <td>Multiple Resources: 
-
-* [AllergyIntolerance](http://hl7.org/fhir/R6/allergyintolerance.html): Date first version of the resource instance was recorded
-* [Appointment](http://hl7.org/fhir/R6/appointment.html): Appointment date/time.
-* [AuditEvent](http://hl7.org/fhir/R6/auditevent.html): Time when the event was recorded
-* [CarePlan](http://hl7.org/fhir/R6/careplan.html): Time period plan covers
-* [CareTeam](http://hl7.org/fhir/R6/careteam.html): A date within the coverage time period.
-* [Composition](http://hl7.org/fhir/R6/composition.html): Composition editing time
-* [Consent](http://hl7.org/fhir/R6/consent.html): When consent was agreed to
-* [DiagnosticReport](http://hl7.org/fhir/R6/diagnosticreport.html): The clinically relevant time of the report
-* [DocumentReference](http://hl7.org/fhir/R6/documentreference.html): When this document reference was created
-* [Encounter](http://hl7.org/fhir/R6/encounter.html): A date within the actualPeriod the Encounter lasted
-* [EpisodeOfCare](http://hl7.org/fhir/R6/episodeofcare.html): The provided date search value falls within the episode of care's period
-* [FamilyMemberHistory](http://hl7.org/fhir/R6/familymemberhistory.html): When history was recorded or last updated
-* [Flag](http://hl7.org/fhir/R6/flag.html): Time period when flag is active
-* [Immunization](http://hl7.org/fhir/R6/immunization.html): Vaccination  (non)-Administration Date
-* [ImmunizationEvaluation](http://hl7.org/fhir/R6/immunizationevaluation.html): Date the evaluation was generated
-* [ImmunizationRecommendation](http://hl7.org/fhir/R6/immunizationrecommendation.html): Date recommendation(s) created
-* [Invoice](http://hl7.org/fhir/R6/invoice.html): Invoice date / posting date
-* [List](http://hl7.org/fhir/R6/list.html): When the list was prepared
-* [MeasureReport](http://hl7.org/fhir/R6/measurereport.html): The date of the measure report
-* [NutritionIntake](http://hl7.org/fhir/R6/nutritionintake.html): Date when patient was taking (or not taking) the medication
-* [Observation](http://hl7.org/fhir/R6/observation.html): Clinically relevant time/time-period for observation
-* [Procedure](http://hl7.org/fhir/R6/procedure.html): When the procedure occurred or is occurring
-* [ResearchSubject](http://hl7.org/fhir/R6/researchsubject.html): Start and end of participation
-* [RiskAssessment](http://hl7.org/fhir/R6/riskassessment.html): When was assessment made?
-* [SupplyRequest](http://hl7.org/fhir/R6/supplyrequest.html): When the request was made
-</td>
-        </tr>
-        <tr>
-            <td><code>MeasureReport-evaluated-resource</code></td>
-            <td><code>evaluated-resource</code></td>
-            <td>Draft</td>
-            <td></td>
-            <td>trial-use</td>
-            <td>False</td>
-            <td>cqi</td>
-            <td>reference</td>
-            <td>An evaluated resource referenced by the measure report</td>
-        </tr>
-        <tr>
-            <td><code>MeasureReport-location</code></td>
-            <td><code>location</code></td>
-            <td>Draft</td>
-            <td></td>
-            <td>trial-use</td>
-            <td>False</td>
-            <td>cqi</td>
-            <td>reference</td>
-            <td>The location to return measure report results for</td>
-        </tr>
-        <tr>
-            <td><code>MeasureReport-measure</code></td>
-            <td><code>measure</code></td>
-            <td>Draft</td>
-            <td></td>
-            <td>trial-use</td>
-            <td>False</td>
-            <td>cqi</td>
-            <td>reference</td>
-            <td>The measure to return measure report results for</td>
-        </tr>
-        <tr>
-            <td><code>MeasureReport-period</code></td>
-            <td><code>period</code></td>
-            <td>Draft</td>
-            <td></td>
-            <td>trial-use</td>
-            <td>False</td>
-            <td>cqi</td>
-            <td>date</td>
-            <td>The period of the measure report</td>
-        </tr>
-        <tr>
-            <td><code>MeasureReport-reporter</code></td>
-            <td><code>reporter</code></td>
-            <td>Draft</td>
-            <td></td>
-            <td>trial-use</td>
-            <td>False</td>
-            <td>cqi</td>
-            <td>reference</td>
-            <td>The reporter to return measure report results for</td>
-        </tr>
-        <tr>
-            <td><code>MeasureReport-status</code></td>
-            <td><code>status</code></td>
-            <td>Draft</td>
-            <td></td>
-            <td>trial-use</td>
-            <td>False</td>
-            <td>cqi</td>
-            <td>token</td>
-            <td>The status of the measure report</td>
-        </tr>
-        <tr>
-            <td><code>MeasureReport-subject</code></td>
-            <td><code>subject</code></td>
-            <td>Draft</td>
-            <td></td>
-            <td>trial-use</td>
-            <td>False</td>
-            <td>cqi</td>
-            <td>reference</td>
-            <td>The identity of a subject to search for individual measure report results for</td>
         </tr>
     </tbody>
 </table>

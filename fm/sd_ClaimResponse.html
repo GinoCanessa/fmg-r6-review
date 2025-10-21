@@ -7,29 +7,81 @@
         <h3>Urgent Item Checklist</h3>
                 <ul>
             <li>Confirm workgroup disposition vote has been recorded and sent to FMG!</li>
-            <li>ValueSet: <code>fm-status</code> (FinancialResourceStatusCodes) bound to element <code>ClaimResponse.status</code> is flagged as <code>trial-use</code></li>
-            <li>ValueSet: <code>claim-type</code> (ClaimTypeCodes) bound to element <code>ClaimResponse.type</code> is flagged as <code>trial-use</code></li>
-            <li>ValueSet: <code>claim-use</code> (Use) bound to element <code>ClaimResponse.use</code> is flagged as <code>trial-use</code></li>
-            <li>CodeSystem: <code>claim-use</code> (Use) referenced by ValueSet <code>claim-use</code> bound to element <code>ClaimResponse.use</code> is flagged as <code>trial-use</code></li>
-            <li>ValueSet: <code>claim-outcome</code> (ClaimProcessingCodes) bound to element <code>ClaimResponse.outcome</code> is flagged as <code>trial-use</code></li>
-            <li>ValueSet: <code>payeetype</code> (ClaimPayeeTypeCodes) bound to element <code>ClaimResponse.payeeType</code> is flagged as <code>experimental</code></li>
-            <li>ValueSet: <code>claim-informationcategory</code> (ClaimInformationCategoryCodes) bound to element <code>ClaimResponse.supportingInfo.category</code> is flagged as <code>trial-use</code></li>
-            <li>ValueSet: <code>fundsreserve</code> (FundsReservationCodes) bound to element <code>ClaimResponse.fundsReserve</code> is flagged as <code>experimental</code></li>
-            <li>ValueSet: <code>forms</code> (FormCodes) bound to element <code>ClaimResponse.formCode</code> is flagged as <code>experimental</code></li>
-            <li>ValueSet: <code>note-type</code> (NoteType) bound to element <code>ClaimResponse.processNote.type</code> is flagged as <code>trial-use</code></li>
-            <li>CodeSystem: <code>note-type</code> (NoteType) referenced by ValueSet <code>note-type</code> bound to element <code>ClaimResponse.processNote.type</code> is flagged as <code>trial-use</code></li>
-            <li>ValueSet: <code>adjudication-error</code> (AdjudicationErrorCodes) bound to element <code>ClaimResponse.error.code</code> is flagged as <code>experimental</code></li>
-            <li>Search Parameter: <code>clinical-identifier</code> (identifier) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>clinical-patient</code> (patient) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>ClaimResponse-created</code> (created) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>ClaimResponse-disposition</code> (disposition) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>ClaimResponse-insurer</code> (insurer) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>ClaimResponse-outcome</code> (outcome) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>ClaimResponse-payment-date</code> (payment-date) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>ClaimResponse-request</code> (request) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>ClaimResponse-requestor</code> (requestor) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>ClaimResponse-status</code> (status) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>ClaimResponse-use</code> (use) flagged as <code>trial-use</code></li>
+            <li>ValueSet: <code>fm-status</code> (FinancialResourceStatusCodes) bound to element <code>ClaimResponse.status</code> (<code>Required</code>) has status <code>Draft</code></li>
+            <li>ValueSet: <code>fm-status</code> (FinancialResourceStatusCodes) bound to element <code>ClaimResponse.status</code> (<code>Required</code>) has standard status <code>trial-use</code></li>
+            <li>ValueSet: <code>claim-type</code> (ClaimTypeCodes) bound to element <code>ClaimResponse.type</code> (<code>Extensible</code>) has status <code>Draft</code></li>
+            <li>ValueSet: <code>claim-type</code> (ClaimTypeCodes) bound to element <code>ClaimResponse.type</code> (<code>Extensible</code>) has standard status <code>trial-use</code></li>
+            <li>ValueSet: <code>claim-subtype</code> (ExampleClaimSubTypeCodes) bound to element <code>ClaimResponse.subType</code> (<code>Example</code>) has status <code>Draft</code></li>
+            <li>ValueSet: <code>claim-use</code> (Use) bound to element <code>ClaimResponse.use</code> (<code>Required</code>) has status <code>Draft</code></li>
+            <li>ValueSet: <code>claim-use</code> (Use) bound to element <code>ClaimResponse.use</code> (<code>Required</code>) has standard status <code>trial-use</code></li>
+            <li>CodeSystem: <code>claim-use</code> (Use) referenced by ValueSet <code>claim-use</code> bound to element <code>ClaimResponse.use</code> (<code>Required</code>) has standard status <code>trial-use</code></li>
+            <li>ValueSet: <code>claim-outcome</code> (ClaimProcessingCodes) bound to element <code>ClaimResponse.outcome</code> (<code>Required</code>) has status <code>Draft</code></li>
+            <li>ValueSet: <code>claim-outcome</code> (ClaimProcessingCodes) bound to element <code>ClaimResponse.outcome</code> (<code>Required</code>) has standard status <code>trial-use</code></li>
+            <li>ValueSet: <code>claim-decision</code> (ClaimAdjudicationDecisionsCodes) bound to element <code>ClaimResponse.decision</code> (<code>Example</code>) has status <code>Draft</code></li>
+            <li>ValueSet: <code>datestype</code> (DatesTypeCodes) bound to element <code>ClaimResponse.event.type</code> (<code>Example</code>) has status <code>Draft</code></li>
+            <li>ValueSet: <code>payeetype</code> (ClaimPayeeTypeCodes) bound to element <code>ClaimResponse.payeeType</code> (<code>Example</code>) has status <code>Draft</code></li>
+            <li>ValueSet: <code>payeetype</code> (ClaimPayeeTypeCodes) bound to element <code>ClaimResponse.payeeType</code> (<code>Example</code>) is flagged as <code>experimental</code></li>
+            <li>ValueSet: <code>ex-diagnosisrelatedgroup</code> (ExampleDiagnosisRelatedGroupCodes) bound to element <code>ClaimResponse.diagnosisRelatedGroup</code> (<code>Example</code>) has status <code>Draft</code></li>
+            <li>ValueSet: <code>claim-informationcategory</code> (ClaimInformationCategoryCodes) bound to element <code>ClaimResponse.supportingInfo.category</code> (<code>Extensible</code>) has status <code>Draft</code></li>
+            <li>ValueSet: <code>claim-informationcategory</code> (ClaimInformationCategoryCodes) bound to element <code>ClaimResponse.supportingInfo.category</code> (<code>Extensible</code>) has standard status <code>trial-use</code></li>
+            <li>ValueSet: <code>claim-exception</code> (ExceptionCodes) bound to element <code>ClaimResponse.supportingInfo.code</code> (<code>Example</code>) has status <code>Draft</code></li>
+            <li>ValueSet: <code>missing-tooth-reason</code> (MissingToothReasonCodes) bound to element <code>ClaimResponse.supportingInfo.reason</code> (<code>Example</code>) has status <code>Draft</code></li>
+            <li>ValueSet: <code>claim-decision</code> (ClaimAdjudicationDecisionsCodes) bound to element <code>ClaimResponse.item.reviewOutcome.decision</code> (<code>Example</code>) has status <code>Draft</code></li>
+            <li>ValueSet: <code>claim-decision-reason</code> (ClaimAdjudicationDecisionReasonCodes) bound to element <code>ClaimResponse.item.reviewOutcome.reason</code> (<code>Example</code>) has status <code>Draft</code></li>
+            <li>ValueSet: <code>adjudication</code> (AdjudicationValueCodes) bound to element <code>ClaimResponse.item.adjudication.category</code> (<code>Example</code>) has status <code>Draft</code></li>
+            <li>ValueSet: <code>adjudication-reason</code> (AdjudicationReasonCodes) bound to element <code>ClaimResponse.item.adjudication.reason</code> (<code>Example</code>) has status <code>Draft</code></li>
+            <li>ValueSet: <code>ex-revenue-center</code> (ExampleRevenueCenterCodes) bound to element <code>ClaimResponse.addItem.revenue</code> (<code>Example</code>) has status <code>Draft</code></li>
+            <li>ValueSet: <code>ex-benefitcategory</code> (BenefitCategoryCodes) bound to element <code>ClaimResponse.addItem.category</code> (<code>Example</code>) has status <code>Draft</code></li>
+            <li>ValueSet: <code>service-uscls</code> (USCLSCodes) bound to element <code>ClaimResponse.addItem.productOrService</code> (<code>Example</code>) has status <code>Draft</code></li>
+            <li>ValueSet: <code>service-uscls</code> (USCLSCodes) bound to element <code>ClaimResponse.addItem.productOrServiceEnd</code> (<code>Example</code>) has status <code>Draft</code></li>
+            <li>ValueSet: <code>claim-modifiers</code> (ModifierTypeCodes) bound to element <code>ClaimResponse.addItem.modifier</code> (<code>Example</code>) has status <code>Draft</code></li>
+            <li>ValueSet: <code>ex-program-code</code> (ExampleProgramReasonCodes) bound to element <code>ClaimResponse.addItem.programCode</code> (<code>Example</code>) has status <code>Draft</code></li>
+            <li>ValueSet: <code>service-place</code> (ExampleServicePlaceCodes) bound to element <code>ClaimResponse.addItem.location[x]</code> (<code>Example</code>) has status <code>Draft</code></li>
+            <li>ValueSet: <code>tooth</code> (OralSiteCodes) bound to element <code>ClaimResponse.addItem.bodySite.site</code> (<code>Example</code>) has status <code>Draft</code></li>
+            <li>ValueSet: <code>surface</code> (SurfaceCodes) bound to element <code>ClaimResponse.addItem.bodySite.subSite</code> (<code>Example</code>) has status <code>Draft</code></li>
+            <li>ValueSet: <code>ex-revenue-center</code> (ExampleRevenueCenterCodes) bound to element <code>ClaimResponse.addItem.detail.revenue</code> (<code>Example</code>) has status <code>Draft</code></li>
+            <li>ValueSet: <code>service-uscls</code> (USCLSCodes) bound to element <code>ClaimResponse.addItem.detail.productOrService</code> (<code>Example</code>) has status <code>Draft</code></li>
+            <li>ValueSet: <code>service-uscls</code> (USCLSCodes) bound to element <code>ClaimResponse.addItem.detail.productOrServiceEnd</code> (<code>Example</code>) has status <code>Draft</code></li>
+            <li>ValueSet: <code>claim-modifiers</code> (ModifierTypeCodes) bound to element <code>ClaimResponse.addItem.detail.modifier</code> (<code>Example</code>) has status <code>Draft</code></li>
+            <li>ValueSet: <code>ex-revenue-center</code> (ExampleRevenueCenterCodes) bound to element <code>ClaimResponse.addItem.detail.subDetail.revenue</code> (<code>Example</code>) has status <code>Draft</code></li>
+            <li>ValueSet: <code>service-uscls</code> (USCLSCodes) bound to element <code>ClaimResponse.addItem.detail.subDetail.productOrService</code> (<code>Example</code>) has status <code>Draft</code></li>
+            <li>ValueSet: <code>service-uscls</code> (USCLSCodes) bound to element <code>ClaimResponse.addItem.detail.subDetail.productOrServiceEnd</code> (<code>Example</code>) has status <code>Draft</code></li>
+            <li>ValueSet: <code>claim-modifiers</code> (ModifierTypeCodes) bound to element <code>ClaimResponse.addItem.detail.subDetail.modifier</code> (<code>Example</code>) has status <code>Draft</code></li>
+            <li>ValueSet: <code>adjudication</code> (AdjudicationValueCodes) bound to element <code>ClaimResponse.total.category</code> (<code>Example</code>) has status <code>Draft</code></li>
+            <li>ValueSet: <code>ex-paymenttype</code> (ExamplePaymentTypeCodes) bound to element <code>ClaimResponse.payment.type</code> (<code>Example</code>) has status <code>Draft</code></li>
+            <li>ValueSet: <code>payment-adjustment-reason</code> (PaymentAdjustmentReasonCodes) bound to element <code>ClaimResponse.payment.adjustmentReason</code> (<code>Example</code>) has status <code>Draft</code></li>
+            <li>ValueSet: <code>fundsreserve</code> (FundsReservationCodes) bound to element <code>ClaimResponse.fundsReserve</code> (<code>Example</code>) has status <code>Draft</code></li>
+            <li>ValueSet: <code>fundsreserve</code> (FundsReservationCodes) bound to element <code>ClaimResponse.fundsReserve</code> (<code>Example</code>) is flagged as <code>experimental</code></li>
+            <li>ValueSet: <code>forms</code> (FormCodes) bound to element <code>ClaimResponse.formCode</code> (<code>Example</code>) has status <code>Draft</code></li>
+            <li>ValueSet: <code>forms</code> (FormCodes) bound to element <code>ClaimResponse.formCode</code> (<code>Example</code>) is flagged as <code>experimental</code></li>
+            <li>ValueSet: <code>note-type</code> (NoteType) bound to element <code>ClaimResponse.processNote.type</code> (<code>Extensible</code>) has status <code>Draft</code></li>
+            <li>ValueSet: <code>note-type</code> (NoteType) bound to element <code>ClaimResponse.processNote.type</code> (<code>Extensible</code>) has standard status <code>trial-use</code></li>
+            <li>CodeSystem: <code>note-type</code> (NoteType) referenced by ValueSet <code>note-type</code> bound to element <code>ClaimResponse.processNote.type</code> (<code>Extensible</code>) has status <code>Draft</code></li>
+            <li>CodeSystem: <code>note-type</code> (NoteType) referenced by ValueSet <code>note-type</code> bound to element <code>ClaimResponse.processNote.type</code> (<code>Extensible</code>) has standard status <code>trial-use</code></li>
+            <li>ValueSet: <code>adjudication-error</code> (AdjudicationErrorCodes) bound to element <code>ClaimResponse.error.code</code> (<code>Example</code>) has status <code>Draft</code></li>
+            <li>ValueSet: <code>adjudication-error</code> (AdjudicationErrorCodes) bound to element <code>ClaimResponse.error.code</code> (<code>Example</code>) is flagged as <code>experimental</code></li>
+            <li>Search Parameter: <code>ClaimResponse-created</code> (created) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>ClaimResponse-disposition</code> (disposition) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>ClaimResponse-insurer</code> (insurer) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>ClaimResponse-outcome</code> (outcome) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>ClaimResponse-payment-date</code> (payment-date) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>ClaimResponse-request</code> (request) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>ClaimResponse-requestor</code> (requestor) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>ClaimResponse-status</code> (status) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>ClaimResponse-use</code> (use) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>clinical-identifier</code> (identifier) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>clinical-patient</code> (patient) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>ClaimResponse-created</code> (created) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>ClaimResponse-disposition</code> (disposition) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>ClaimResponse-insurer</code> (insurer) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>ClaimResponse-outcome</code> (outcome) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>ClaimResponse-payment-date</code> (payment-date) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>ClaimResponse-request</code> (request) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>ClaimResponse-requestor</code> (requestor) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>ClaimResponse-status</code> (status) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>ClaimResponse-use</code> (use) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>clinical-identifier</code> (identifier) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>clinical-patient</code> (patient) has standards status <code>trial-use</code></li>
         </ul>
 
 
@@ -158,12 +210,8 @@
                 </tr>
             </thead>
             <tbody>
-                <tr><td><code>Preauthorization.This<code></td><td>No</td></tr>
-            <tr><td><code>Preauthorization.<code></td><td>No</td></tr>
-            <tr><td><code>Preauthorization<code></td><td>No</td></tr>
-            <tr><td><code>Responsess:<code></td><td>No</td></tr>
+                <tr><td><code>Responsess<code></td><td>No</td></tr>
             <tr><td><code>inforce,<code></td><td>No</td></tr>
-            <tr><td><code>preauthorization<code></td><td>No</td></tr>
             </tbody>
         </table>
 
@@ -313,19 +361,17 @@
                 </tr>
             </thead>
             <tbody>
-                <tr><td><code>.supportingInfo<code></td><td>No</td></tr>
-            <tr><td><code>.elementSequence<code></td><td>No</td></tr>
-            <tr><td><code>.careTeamSequence,<code></td><td>No</td></tr>
-            <tr><td><code>.diagnosisSequence,<code></td><td>No</td></tr>
-            <tr><td><code>.procedureSequence,<code></td><td>No</td></tr>
+                <tr><td><code>.addItem<code></td><td>No</td></tr>
+            <tr><td><code>.careTeamSequence<code></td><td>No</td></tr>
+            <tr><td><code>.diagnosisSequence<code></td><td>No</td></tr>
             <tr><td><code>.informationSequence<code></td><td>No</td></tr>
-            <tr><td><code>.itemSequence.<code></td><td>No</td></tr>
+            <tr><td><code>.itemSequence<code></td><td>No</td></tr>
             <tr><td><code>.noteNumber<code></td><td>No</td></tr>
-            <tr><td><code>.subDetail<code></td><td>No</td></tr>
-            <tr><td><code>.addItem<code></td><td>No</td></tr>
+            <tr><td><code>.procedureSequence<code></td><td>No</td></tr>
             <tr><td><code>.processNote<code></td><td>No</td></tr>
+            <tr><td><code>.subDetail<code></td><td>No</td></tr>
+            <tr><td><code>.supportingInfo<code></td><td>No</td></tr>
             <tr><td><code>indivdual<code></td><td>No</td></tr>
-            <tr><td><code>.noteNumbers<code></td><td>No</td></tr>
             </tbody>
         </table>
 
@@ -2147,6 +2193,105 @@
     </thead>
     <tbody>
         <tr>
+            <td><code>ClaimResponse-created</code></td>
+            <td><code>created</code></td>
+            <td>Draft</td>
+            <td></td>
+            <td>trial-use</td>
+            <td>False</td>
+            <td>fm</td>
+            <td>date</td>
+            <td>The creation date</td>
+        </tr>
+        <tr>
+            <td><code>ClaimResponse-disposition</code></td>
+            <td><code>disposition</code></td>
+            <td>Draft</td>
+            <td></td>
+            <td>trial-use</td>
+            <td>False</td>
+            <td>fm</td>
+            <td>string</td>
+            <td>The contents of the disposition message</td>
+        </tr>
+        <tr>
+            <td><code>ClaimResponse-insurer</code></td>
+            <td><code>insurer</code></td>
+            <td>Draft</td>
+            <td></td>
+            <td>trial-use</td>
+            <td>False</td>
+            <td>fm</td>
+            <td>reference</td>
+            <td>The organization which generated this resource</td>
+        </tr>
+        <tr>
+            <td><code>ClaimResponse-outcome</code></td>
+            <td><code>outcome</code></td>
+            <td>Draft</td>
+            <td></td>
+            <td>trial-use</td>
+            <td>False</td>
+            <td>fm</td>
+            <td>token</td>
+            <td>The processing outcome</td>
+        </tr>
+        <tr>
+            <td><code>ClaimResponse-payment-date</code></td>
+            <td><code>payment-date</code></td>
+            <td>Draft</td>
+            <td></td>
+            <td>trial-use</td>
+            <td>False</td>
+            <td>fm</td>
+            <td>date</td>
+            <td>The expected payment date</td>
+        </tr>
+        <tr>
+            <td><code>ClaimResponse-request</code></td>
+            <td><code>request</code></td>
+            <td>Draft</td>
+            <td></td>
+            <td>trial-use</td>
+            <td>False</td>
+            <td>fm</td>
+            <td>reference</td>
+            <td>The claim reference</td>
+        </tr>
+        <tr>
+            <td><code>ClaimResponse-requestor</code></td>
+            <td><code>requestor</code></td>
+            <td>Draft</td>
+            <td></td>
+            <td>trial-use</td>
+            <td>False</td>
+            <td>fm</td>
+            <td>reference</td>
+            <td>The Provider of the claim</td>
+        </tr>
+        <tr>
+            <td><code>ClaimResponse-status</code></td>
+            <td><code>status</code></td>
+            <td>Draft</td>
+            <td></td>
+            <td>trial-use</td>
+            <td>False</td>
+            <td>fm</td>
+            <td>token</td>
+            <td>The status of the ClaimResponse</td>
+        </tr>
+        <tr>
+            <td><code>ClaimResponse-use</code></td>
+            <td><code>use</code></td>
+            <td>Draft</td>
+            <td></td>
+            <td>trial-use</td>
+            <td>False</td>
+            <td>fm</td>
+            <td>token</td>
+            <td>The type of claim</td>
+        </tr>
+        <tr>
             <td><code>clinical-identifier</code></td>
             <td><code>identifier</code></td>
             <td>Draft</td>
@@ -2302,105 +2447,6 @@
 * [Task](http://hl7.org/fhir/R6/task.html): Search by patient
 * [VisionPrescription](http://hl7.org/fhir/R6/visionprescription.html): The identity of a patient to list dispenses for
 </td>
-        </tr>
-        <tr>
-            <td><code>ClaimResponse-created</code></td>
-            <td><code>created</code></td>
-            <td>Draft</td>
-            <td></td>
-            <td>trial-use</td>
-            <td>False</td>
-            <td>fm</td>
-            <td>date</td>
-            <td>The creation date</td>
-        </tr>
-        <tr>
-            <td><code>ClaimResponse-disposition</code></td>
-            <td><code>disposition</code></td>
-            <td>Draft</td>
-            <td></td>
-            <td>trial-use</td>
-            <td>False</td>
-            <td>fm</td>
-            <td>string</td>
-            <td>The contents of the disposition message</td>
-        </tr>
-        <tr>
-            <td><code>ClaimResponse-insurer</code></td>
-            <td><code>insurer</code></td>
-            <td>Draft</td>
-            <td></td>
-            <td>trial-use</td>
-            <td>False</td>
-            <td>fm</td>
-            <td>reference</td>
-            <td>The organization which generated this resource</td>
-        </tr>
-        <tr>
-            <td><code>ClaimResponse-outcome</code></td>
-            <td><code>outcome</code></td>
-            <td>Draft</td>
-            <td></td>
-            <td>trial-use</td>
-            <td>False</td>
-            <td>fm</td>
-            <td>token</td>
-            <td>The processing outcome</td>
-        </tr>
-        <tr>
-            <td><code>ClaimResponse-payment-date</code></td>
-            <td><code>payment-date</code></td>
-            <td>Draft</td>
-            <td></td>
-            <td>trial-use</td>
-            <td>False</td>
-            <td>fm</td>
-            <td>date</td>
-            <td>The expected payment date</td>
-        </tr>
-        <tr>
-            <td><code>ClaimResponse-request</code></td>
-            <td><code>request</code></td>
-            <td>Draft</td>
-            <td></td>
-            <td>trial-use</td>
-            <td>False</td>
-            <td>fm</td>
-            <td>reference</td>
-            <td>The claim reference</td>
-        </tr>
-        <tr>
-            <td><code>ClaimResponse-requestor</code></td>
-            <td><code>requestor</code></td>
-            <td>Draft</td>
-            <td></td>
-            <td>trial-use</td>
-            <td>False</td>
-            <td>fm</td>
-            <td>reference</td>
-            <td>The Provider of the claim</td>
-        </tr>
-        <tr>
-            <td><code>ClaimResponse-status</code></td>
-            <td><code>status</code></td>
-            <td>Draft</td>
-            <td></td>
-            <td>trial-use</td>
-            <td>False</td>
-            <td>fm</td>
-            <td>token</td>
-            <td>The status of the ClaimResponse</td>
-        </tr>
-        <tr>
-            <td><code>ClaimResponse-use</code></td>
-            <td><code>use</code></td>
-            <td>Draft</td>
-            <td></td>
-            <td>trial-use</td>
-            <td>False</td>
-            <td>fm</td>
-            <td>token</td>
-            <td>The type of claim</td>
         </tr>
     </tbody>
 </table>

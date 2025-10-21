@@ -7,27 +7,57 @@
         <h3>Urgent Item Checklist</h3>
                 <ul>
             <li>Confirm workgroup disposition vote has been recorded and sent to FMG!</li>
-            <li>ValueSet: <code>request-status</code> (RequestStatus) bound to element <code>NutritionOrder.status</code> is flagged as <code>trial-use</code></li>
-            <li>CodeSystem: <code>request-status</code> (RequestStatus) referenced by ValueSet <code>request-status</code> bound to element <code>NutritionOrder.status</code> is flagged as <code>trial-use</code></li>
-            <li>ValueSet: <code>request-intent</code> (RequestIntent) bound to element <code>NutritionOrder.intent</code> is flagged as <code>trial-use</code></li>
-            <li>CodeSystem: <code>request-intent</code> (RequestIntent) referenced by ValueSet <code>request-intent</code> bound to element <code>NutritionOrder.intent</code> is flagged as <code>trial-use</code></li>
-            <li>ValueSet: <code>medication-as-needed-reason</code> (SNOMEDCTMedicationAsNeededReasonCodes) bound to element <code>NutritionOrder.oralDiet.schedule.asNeededFor</code> is flagged as <code>experimental</code></li>
-            <li>ValueSet: <code>medication-as-needed-reason</code> (SNOMEDCTMedicationAsNeededReasonCodes) bound to element <code>NutritionOrder.supplement.schedule.asNeededFor</code> is flagged as <code>experimental</code></li>
-            <li>ValueSet: <code>enteral-route</code> (EnteralRouteCodes) bound to element <code>NutritionOrder.enteralFormula.routeOfAdministration</code> is flagged as <code>trial-use</code></li>
-            <li>ValueSet: <code>medication-as-needed-reason</code> (SNOMEDCTMedicationAsNeededReasonCodes) bound to element <code>NutritionOrder.enteralFormula.administration.schedule.asNeededFor</code> is flagged as <code>experimental</code></li>
-            <li>ValueSet: <code>enteral-route</code> (EnteralRouteCodes) bound to element <code>NutritionOrder.additive.routeOfAdministration</code> is flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>clinical-identifier</code> (identifier) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>clinical-patient</code> (patient) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>clinical-encounter</code> (encounter) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>NutritionOrder-additive</code> (additive) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>NutritionOrder-datetime</code> (datetime) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>NutritionOrder-formula</code> (formula) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>NutritionOrder-group-identifier</code> (group-identifier) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>NutritionOrder-oraldiet</code> (oraldiet) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>NutritionOrder-requester</code> (requester) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>NutritionOrder-status</code> (status) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>NutritionOrder-subject</code> (subject) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>NutritionOrder-supplement</code> (supplement) flagged as <code>trial-use</code></li>
+            <li>ValueSet: <code>request-status</code> (RequestStatus) bound to element <code>NutritionOrder.status</code> (<code>Required</code>) has status <code>Draft</code></li>
+            <li>ValueSet: <code>request-status</code> (RequestStatus) bound to element <code>NutritionOrder.status</code> (<code>Required</code>) has standard status <code>trial-use</code></li>
+            <li>CodeSystem: <code>request-status</code> (RequestStatus) referenced by ValueSet <code>request-status</code> bound to element <code>NutritionOrder.status</code> (<code>Required</code>) has status <code>Draft</code></li>
+            <li>CodeSystem: <code>request-status</code> (RequestStatus) referenced by ValueSet <code>request-status</code> bound to element <code>NutritionOrder.status</code> (<code>Required</code>) has standard status <code>trial-use</code></li>
+            <li>ValueSet: <code>request-intent</code> (RequestIntent) bound to element <code>NutritionOrder.intent</code> (<code>Required</code>) has status <code>Draft</code></li>
+            <li>ValueSet: <code>request-intent</code> (RequestIntent) bound to element <code>NutritionOrder.intent</code> (<code>Required</code>) has standard status <code>trial-use</code></li>
+            <li>CodeSystem: <code>request-intent</code> (RequestIntent) referenced by ValueSet <code>request-intent</code> bound to element <code>NutritionOrder.intent</code> (<code>Required</code>) has status <code>Draft</code></li>
+            <li>CodeSystem: <code>request-intent</code> (RequestIntent) referenced by ValueSet <code>request-intent</code> bound to element <code>NutritionOrder.intent</code> (<code>Required</code>) has standard status <code>trial-use</code></li>
+            <li>ValueSet: <code>edible-substance-type</code> (TypesOfEdibleSubstances) bound to element <code>NutritionOrder.foodPreferenceModifier</code> (<code>Preferred</code>) has status <code>Draft</code></li>
+            <li>ValueSet: <code>edible-substance-type</code> (TypesOfEdibleSubstances) bound to element <code>NutritionOrder.excludeFoodModifier</code> (<code>Preferred</code>) has status <code>Draft</code></li>
+            <li>ValueSet: <code>diet-type</code> (DietCodes) bound to element <code>NutritionOrder.oralDiet.type</code> (<code>Preferred</code>) has status <code>Draft</code></li>
+            <li>ValueSet: <code>medication-as-needed-reason</code> (SNOMEDCTMedicationAsNeededReasonCodes) bound to element <code>NutritionOrder.oralDiet.schedule.asNeededFor</code> (<code>Example</code>) has status <code>Draft</code></li>
+            <li>ValueSet: <code>medication-as-needed-reason</code> (SNOMEDCTMedicationAsNeededReasonCodes) bound to element <code>NutritionOrder.oralDiet.schedule.asNeededFor</code> (<code>Example</code>) is flagged as <code>experimental</code></li>
+            <li>ValueSet: <code>nutrient-code</code> (NutrientCodes) bound to element <code>NutritionOrder.oralDiet.nutrient.modifier</code> (<code>Preferred</code>) has status <code>Draft</code></li>
+            <li>ValueSet: <code>texture-code</code> (TextureModifierCodes) bound to element <code>NutritionOrder.oralDiet.texture.modifier</code> (<code>Preferred</code>) has status <code>Draft</code></li>
+            <li>ValueSet: <code>modified-foodtype</code> (TextureModifiedFoodTypeCodes) bound to element <code>NutritionOrder.oralDiet.texture.type</code> (<code>Preferred</code>) has status <code>Draft</code></li>
+            <li>ValueSet: <code>supplement-type</code> (SupplementTypeCodes) bound to element <code>NutritionOrder.supplement.type</code> (<code>Preferred</code>) has status <code>Draft</code></li>
+            <li>ValueSet: <code>medication-as-needed-reason</code> (SNOMEDCTMedicationAsNeededReasonCodes) bound to element <code>NutritionOrder.supplement.schedule.asNeededFor</code> (<code>Example</code>) has status <code>Draft</code></li>
+            <li>ValueSet: <code>medication-as-needed-reason</code> (SNOMEDCTMedicationAsNeededReasonCodes) bound to element <code>NutritionOrder.supplement.schedule.asNeededFor</code> (<code>Example</code>) is flagged as <code>experimental</code></li>
+            <li>ValueSet: <code>entformula-type</code> (EnteralFormulaTypeCodes) bound to element <code>NutritionOrder.enteralFormula.type</code> (<code>Preferred</code>) has status <code>Draft</code></li>
+            <li>ValueSet: <code>enteral-route</code> (EnteralRouteCodes) bound to element <code>NutritionOrder.enteralFormula.routeOfAdministration</code> (<code>Extensible</code>) has status <code>Draft</code></li>
+            <li>ValueSet: <code>enteral-route</code> (EnteralRouteCodes) bound to element <code>NutritionOrder.enteralFormula.routeOfAdministration</code> (<code>Extensible</code>) has standard status <code>trial-use</code></li>
+            <li>ValueSet: <code>medication-as-needed-reason</code> (SNOMEDCTMedicationAsNeededReasonCodes) bound to element <code>NutritionOrder.enteralFormula.administration.schedule.asNeededFor</code> (<code>Example</code>) has status <code>Draft</code></li>
+            <li>ValueSet: <code>medication-as-needed-reason</code> (SNOMEDCTMedicationAsNeededReasonCodes) bound to element <code>NutritionOrder.enteralFormula.administration.schedule.asNeededFor</code> (<code>Example</code>) is flagged as <code>experimental</code></li>
+            <li>ValueSet: <code>entformula-additive</code> (EnteralFormulaAdditiveTypeCode) bound to element <code>NutritionOrder.additive.modularType</code> (<code>Preferred</code>) has status <code>Draft</code></li>
+            <li>ValueSet: <code>enteral-route</code> (EnteralRouteCodes) bound to element <code>NutritionOrder.additive.routeOfAdministration</code> (<code>Extensible</code>) has status <code>Draft</code></li>
+            <li>ValueSet: <code>enteral-route</code> (EnteralRouteCodes) bound to element <code>NutritionOrder.additive.routeOfAdministration</code> (<code>Extensible</code>) has standard status <code>trial-use</code></li>
+            <li>Search Parameter: <code>NutritionOrder-additive</code> (additive) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>NutritionOrder-datetime</code> (datetime) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>NutritionOrder-formula</code> (formula) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>NutritionOrder-group-identifier</code> (group-identifier) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>NutritionOrder-oraldiet</code> (oraldiet) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>NutritionOrder-requester</code> (requester) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>NutritionOrder-status</code> (status) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>NutritionOrder-subject</code> (subject) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>NutritionOrder-supplement</code> (supplement) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>clinical-encounter</code> (encounter) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>clinical-identifier</code> (identifier) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>clinical-patient</code> (patient) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>NutritionOrder-additive</code> (additive) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>NutritionOrder-datetime</code> (datetime) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>NutritionOrder-formula</code> (formula) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>NutritionOrder-group-identifier</code> (group-identifier) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>NutritionOrder-oraldiet</code> (oraldiet) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>NutritionOrder-requester</code> (requester) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>NutritionOrder-status</code> (status) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>NutritionOrder-subject</code> (subject) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>NutritionOrder-supplement</code> (supplement) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>clinical-encounter</code> (encounter) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>clinical-identifier</code> (identifier) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>clinical-patient</code> (patient) has standards status <code>trial-use</code></li>
         </ul>
 
 
@@ -306,10 +336,10 @@
                 </tr>
             </thead>
             <tbody>
-                <tr><td><code>enteralFormula.administration.rate<code></td><td>No</td></tr>
-            <tr><td><code>enteralFormula.maxVolumeToDeliver<code></td><td>No</td></tr>
+                <tr><td><code>enteralFormula.administration<code></td><td>No</td></tr>
             <tr><td><code>enteralFormula.administration.quantity<code></td><td>No</td></tr>
-            <tr><td><code>enteralFormula.administration<code></td><td>No</td></tr>
+            <tr><td><code>enteralFormula.administration.rate<code></td><td>No</td></tr>
+            <tr><td><code>enteralFormula.maxVolumeToDeliver<code></td><td>No</td></tr>
             </tbody>
         </table>
 
@@ -1123,6 +1153,146 @@
     </thead>
     <tbody>
         <tr>
+            <td><code>NutritionOrder-additive</code></td>
+            <td><code>additive</code></td>
+            <td>Draft</td>
+            <td></td>
+            <td>trial-use</td>
+            <td>False</td>
+            <td>oo</td>
+            <td>token</td>
+            <td>Type of module component to add to the diet</td>
+        </tr>
+        <tr>
+            <td><code>NutritionOrder-datetime</code></td>
+            <td><code>datetime</code></td>
+            <td>Draft</td>
+            <td></td>
+            <td>trial-use</td>
+            <td>False</td>
+            <td>oo</td>
+            <td>date</td>
+            <td>Return nutrition orders requested on this date</td>
+        </tr>
+        <tr>
+            <td><code>NutritionOrder-formula</code></td>
+            <td><code>formula</code></td>
+            <td>Draft</td>
+            <td></td>
+            <td>trial-use</td>
+            <td>False</td>
+            <td>oo</td>
+            <td>token</td>
+            <td>Type of enteral or infant formula</td>
+        </tr>
+        <tr>
+            <td><code>NutritionOrder-group-identifier</code></td>
+            <td><code>group-identifier</code></td>
+            <td>Draft</td>
+            <td></td>
+            <td>trial-use</td>
+            <td>False</td>
+            <td>oo</td>
+            <td>token</td>
+            <td>Composite Request ID</td>
+        </tr>
+        <tr>
+            <td><code>NutritionOrder-oraldiet</code></td>
+            <td><code>oraldiet</code></td>
+            <td>Draft</td>
+            <td></td>
+            <td>trial-use</td>
+            <td>False</td>
+            <td>oo</td>
+            <td>token</td>
+            <td>Type of diet that can be consumed orally (i.e., take via the mouth).</td>
+        </tr>
+        <tr>
+            <td><code>NutritionOrder-requester</code></td>
+            <td><code>requester</code></td>
+            <td>Draft</td>
+            <td></td>
+            <td>trial-use</td>
+            <td>False</td>
+            <td>oo</td>
+            <td>reference</td>
+            <td>The identity of the provider who placed the nutrition order</td>
+        </tr>
+        <tr>
+            <td><code>NutritionOrder-status</code></td>
+            <td><code>status</code></td>
+            <td>Draft</td>
+            <td></td>
+            <td>trial-use</td>
+            <td>False</td>
+            <td>oo</td>
+            <td>token</td>
+            <td>Status of the nutrition order.</td>
+        </tr>
+        <tr>
+            <td><code>NutritionOrder-subject</code></td>
+            <td><code>subject</code></td>
+            <td>Draft</td>
+            <td></td>
+            <td>trial-use</td>
+            <td>False</td>
+            <td>oo</td>
+            <td>reference</td>
+            <td>The identity of the individual or set of individuals who requires the diet, formula or nutritional supplement</td>
+        </tr>
+        <tr>
+            <td><code>NutritionOrder-supplement</code></td>
+            <td><code>supplement</code></td>
+            <td>Draft</td>
+            <td></td>
+            <td>trial-use</td>
+            <td>False</td>
+            <td>oo</td>
+            <td>token</td>
+            <td>Type of supplement product requested</td>
+        </tr>
+        <tr>
+            <td><code>clinical-encounter</code></td>
+            <td><code>encounter</code></td>
+            <td>Draft</td>
+            <td></td>
+            <td>trial-use</td>
+            <td>False</td>
+            <td>sec</td>
+            <td>reference</td>
+            <td>Multiple Resources: 
+
+* [AuditEvent](http://hl7.org/fhir/R6/auditevent.html): Encounter related to the activity recorded in the AuditEvent
+* [CarePlan](http://hl7.org/fhir/R6/careplan.html): The Encounter during which this CarePlan was created
+* [ChargeItem](http://hl7.org/fhir/R6/chargeitem.html): Encounter associated with event
+* [Claim](http://hl7.org/fhir/R6/claim.html): Encounters associated with a billed line item
+* [Communication](http://hl7.org/fhir/R6/communication.html): The Encounter during which this Communication was created
+* [CommunicationRequest](http://hl7.org/fhir/R6/communicationrequest.html): The Encounter during which this CommunicationRequest was created
+* [Composition](http://hl7.org/fhir/R6/composition.html): Context of the Composition
+* [Condition](http://hl7.org/fhir/R6/condition.html): The Encounter during which this Condition was created
+* [DeviceRequest](http://hl7.org/fhir/R6/devicerequest.html): Encounter during which request was created
+* [DiagnosticReport](http://hl7.org/fhir/R6/diagnosticreport.html): The Encounter when the order was made
+* [EncounterHistory](http://hl7.org/fhir/R6/encounterhistory.html): The Encounter associated with this set of history values
+* [ExplanationOfBenefit](http://hl7.org/fhir/R6/explanationofbenefit.html): Encounters associated with a billed line item
+* [Flag](http://hl7.org/fhir/R6/flag.html): Alert relevant during encounter
+* [ImagingStudy](http://hl7.org/fhir/R6/imagingstudy.html): The context of the study
+* [List](http://hl7.org/fhir/R6/list.html): Context in which list created
+* [MedicationDispense](http://hl7.org/fhir/R6/medicationdispense.html): Returns dispenses with a specific encounter
+* [MedicationStatement](http://hl7.org/fhir/R6/medicationstatement.html): Returns statements for a specific encounter
+* [NutritionIntake](http://hl7.org/fhir/R6/nutritionintake.html): Returns statements for a specific encounter
+* [NutritionOrder](http://hl7.org/fhir/R6/nutritionorder.html): Return nutrition orders with this encounter identifier
+* [Observation](http://hl7.org/fhir/R6/observation.html): Encounter related to the observation
+* [Procedure](http://hl7.org/fhir/R6/procedure.html): The Encounter during which this Procedure was created
+* [Provenance](http://hl7.org/fhir/R6/provenance.html): Encounter related to the Provenance
+* [QuestionnaireResponse](http://hl7.org/fhir/R6/questionnaireresponse.html): Encounter associated with the questionnaire response
+* [RequestOrchestration](http://hl7.org/fhir/R6/requestorchestration.html): The encounter the request orchestration applies to
+* [RiskAssessment](http://hl7.org/fhir/R6/riskassessment.html): Where was assessment performed?
+* [ServiceRequest](http://hl7.org/fhir/R6/servicerequest.html): An encounter in which this request is made
+* [Task](http://hl7.org/fhir/R6/task.html): Search by encounter
+* [VisionPrescription](http://hl7.org/fhir/R6/visionprescription.html): Return prescriptions with this encounter identifier
+</td>
+        </tr>
+        <tr>
             <td><code>clinical-identifier</code></td>
             <td><code>identifier</code></td>
             <td>Draft</td>
@@ -1278,146 +1448,6 @@
 * [Task](http://hl7.org/fhir/R6/task.html): Search by patient
 * [VisionPrescription](http://hl7.org/fhir/R6/visionprescription.html): The identity of a patient to list dispenses for
 </td>
-        </tr>
-        <tr>
-            <td><code>clinical-encounter</code></td>
-            <td><code>encounter</code></td>
-            <td>Draft</td>
-            <td></td>
-            <td>trial-use</td>
-            <td>False</td>
-            <td>sec</td>
-            <td>reference</td>
-            <td>Multiple Resources: 
-
-* [AuditEvent](http://hl7.org/fhir/R6/auditevent.html): Encounter related to the activity recorded in the AuditEvent
-* [CarePlan](http://hl7.org/fhir/R6/careplan.html): The Encounter during which this CarePlan was created
-* [ChargeItem](http://hl7.org/fhir/R6/chargeitem.html): Encounter associated with event
-* [Claim](http://hl7.org/fhir/R6/claim.html): Encounters associated with a billed line item
-* [Communication](http://hl7.org/fhir/R6/communication.html): The Encounter during which this Communication was created
-* [CommunicationRequest](http://hl7.org/fhir/R6/communicationrequest.html): The Encounter during which this CommunicationRequest was created
-* [Composition](http://hl7.org/fhir/R6/composition.html): Context of the Composition
-* [Condition](http://hl7.org/fhir/R6/condition.html): The Encounter during which this Condition was created
-* [DeviceRequest](http://hl7.org/fhir/R6/devicerequest.html): Encounter during which request was created
-* [DiagnosticReport](http://hl7.org/fhir/R6/diagnosticreport.html): The Encounter when the order was made
-* [EncounterHistory](http://hl7.org/fhir/R6/encounterhistory.html): The Encounter associated with this set of history values
-* [ExplanationOfBenefit](http://hl7.org/fhir/R6/explanationofbenefit.html): Encounters associated with a billed line item
-* [Flag](http://hl7.org/fhir/R6/flag.html): Alert relevant during encounter
-* [ImagingStudy](http://hl7.org/fhir/R6/imagingstudy.html): The context of the study
-* [List](http://hl7.org/fhir/R6/list.html): Context in which list created
-* [MedicationDispense](http://hl7.org/fhir/R6/medicationdispense.html): Returns dispenses with a specific encounter
-* [MedicationStatement](http://hl7.org/fhir/R6/medicationstatement.html): Returns statements for a specific encounter
-* [NutritionIntake](http://hl7.org/fhir/R6/nutritionintake.html): Returns statements for a specific encounter
-* [NutritionOrder](http://hl7.org/fhir/R6/nutritionorder.html): Return nutrition orders with this encounter identifier
-* [Observation](http://hl7.org/fhir/R6/observation.html): Encounter related to the observation
-* [Procedure](http://hl7.org/fhir/R6/procedure.html): The Encounter during which this Procedure was created
-* [Provenance](http://hl7.org/fhir/R6/provenance.html): Encounter related to the Provenance
-* [QuestionnaireResponse](http://hl7.org/fhir/R6/questionnaireresponse.html): Encounter associated with the questionnaire response
-* [RequestOrchestration](http://hl7.org/fhir/R6/requestorchestration.html): The encounter the request orchestration applies to
-* [RiskAssessment](http://hl7.org/fhir/R6/riskassessment.html): Where was assessment performed?
-* [ServiceRequest](http://hl7.org/fhir/R6/servicerequest.html): An encounter in which this request is made
-* [Task](http://hl7.org/fhir/R6/task.html): Search by encounter
-* [VisionPrescription](http://hl7.org/fhir/R6/visionprescription.html): Return prescriptions with this encounter identifier
-</td>
-        </tr>
-        <tr>
-            <td><code>NutritionOrder-additive</code></td>
-            <td><code>additive</code></td>
-            <td>Draft</td>
-            <td></td>
-            <td>trial-use</td>
-            <td>False</td>
-            <td>oo</td>
-            <td>token</td>
-            <td>Type of module component to add to the diet</td>
-        </tr>
-        <tr>
-            <td><code>NutritionOrder-datetime</code></td>
-            <td><code>datetime</code></td>
-            <td>Draft</td>
-            <td></td>
-            <td>trial-use</td>
-            <td>False</td>
-            <td>oo</td>
-            <td>date</td>
-            <td>Return nutrition orders requested on this date</td>
-        </tr>
-        <tr>
-            <td><code>NutritionOrder-formula</code></td>
-            <td><code>formula</code></td>
-            <td>Draft</td>
-            <td></td>
-            <td>trial-use</td>
-            <td>False</td>
-            <td>oo</td>
-            <td>token</td>
-            <td>Type of enteral or infant formula</td>
-        </tr>
-        <tr>
-            <td><code>NutritionOrder-group-identifier</code></td>
-            <td><code>group-identifier</code></td>
-            <td>Draft</td>
-            <td></td>
-            <td>trial-use</td>
-            <td>False</td>
-            <td>oo</td>
-            <td>token</td>
-            <td>Composite Request ID</td>
-        </tr>
-        <tr>
-            <td><code>NutritionOrder-oraldiet</code></td>
-            <td><code>oraldiet</code></td>
-            <td>Draft</td>
-            <td></td>
-            <td>trial-use</td>
-            <td>False</td>
-            <td>oo</td>
-            <td>token</td>
-            <td>Type of diet that can be consumed orally (i.e., take via the mouth).</td>
-        </tr>
-        <tr>
-            <td><code>NutritionOrder-requester</code></td>
-            <td><code>requester</code></td>
-            <td>Draft</td>
-            <td></td>
-            <td>trial-use</td>
-            <td>False</td>
-            <td>oo</td>
-            <td>reference</td>
-            <td>The identity of the provider who placed the nutrition order</td>
-        </tr>
-        <tr>
-            <td><code>NutritionOrder-status</code></td>
-            <td><code>status</code></td>
-            <td>Draft</td>
-            <td></td>
-            <td>trial-use</td>
-            <td>False</td>
-            <td>oo</td>
-            <td>token</td>
-            <td>Status of the nutrition order.</td>
-        </tr>
-        <tr>
-            <td><code>NutritionOrder-subject</code></td>
-            <td><code>subject</code></td>
-            <td>Draft</td>
-            <td></td>
-            <td>trial-use</td>
-            <td>False</td>
-            <td>oo</td>
-            <td>reference</td>
-            <td>The identity of the individual or set of individuals who requires the diet, formula or nutritional supplement</td>
-        </tr>
-        <tr>
-            <td><code>NutritionOrder-supplement</code></td>
-            <td><code>supplement</code></td>
-            <td>Draft</td>
-            <td></td>
-            <td>trial-use</td>
-            <td>False</td>
-            <td>oo</td>
-            <td>token</td>
-            <td>Type of supplement product requested</td>
         </tr>
     </tbody>
 </table>

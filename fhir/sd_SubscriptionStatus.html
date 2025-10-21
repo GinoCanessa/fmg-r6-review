@@ -7,9 +7,11 @@
         <h3>Urgent Item Checklist</h3>
                 <ul>
             <li>Confirm workgroup disposition vote has been recorded and sent to FMG!</li>
-            <li>ValueSet: <code>subscription-status</code> (SubscriptionStatusCodes) bound to element <code>SubscriptionStatus.status</code> is flagged as <code>trial-use</code></li>
-            <li>ValueSet: <code>subscription-notification-type</code> (SubscriptionNotificationType) bound to element <code>SubscriptionStatus.type</code> is flagged as <code>trial-use</code></li>
-            <li>CodeSystem: <code>subscription-notification-type</code> (SubscriptionNotificationType) referenced by ValueSet <code>subscription-notification-type</code> bound to element <code>SubscriptionStatus.type</code> is flagged as <code>trial-use</code></li>
+            <li>ValueSet: <code>subscription-status</code> (SubscriptionStatusCodes) bound to element <code>SubscriptionStatus.status</code> (<code>Required</code>) has standard status <code>trial-use</code></li>
+            <li>ValueSet: <code>subscription-notification-type</code> (SubscriptionNotificationType) bound to element <code>SubscriptionStatus.type</code> (<code>Required</code>) has status <code>Draft</code></li>
+            <li>ValueSet: <code>subscription-notification-type</code> (SubscriptionNotificationType) bound to element <code>SubscriptionStatus.type</code> (<code>Required</code>) has standard status <code>trial-use</code></li>
+            <li>CodeSystem: <code>subscription-notification-type</code> (SubscriptionNotificationType) referenced by ValueSet <code>subscription-notification-type</code> bound to element <code>SubscriptionStatus.type</code> (<code>Required</code>) has standard status <code>trial-use</code></li>
+            <li>ValueSet: <code>subscription-error</code> (SubscriptionErrorCodes) bound to element <code>SubscriptionStatus.error</code> (<code>Example</code>) has status <code>Draft</code></li>
         </ul>
 
 
@@ -235,7 +237,7 @@
             <tbody>
                 <tr>
                     <td><b>SHALL</b></td>
-                    <td>14</td>
+                    <td>19</td>
                     <td>0</td>
                 </tr>
                 <tr>
@@ -288,40 +290,10 @@
                 </tr>
             </thead>
             <tbody>
-                <tr><td><code>desireable<code></td><td>Yes</td></tr>
-            <tr><td><code>ElementDelivery<code></td><td>No</td></tr>
-            <tr><td><code>TypeOptionalityNotes<code></td><td>No</td></tr>
-            <tr><td><code>SubscriptionStatus.eventsSinceSubscriptionStartBest<code></td><td>No</td></tr>
-            <tr><td><code>EffortRequiredServers<code></td><td>No</td></tr>
-            <tr><td><code>SubscriptionStatus.eventsSinceSubscriptionStartGuaranteedOptionalServers<code></td><td>No</td></tr>
-            <tr><td><code>SubscriptionStatus.notificationEvent.eventNumberBest<code></td><td>No</td></tr>
-            <tr><td><code>EffortRequiredEvent<code></td><td>No</td></tr>
-            <tr><td><code>eventsSinceSubscriptionStart.<code></td><td>No</td></tr>
-            <tr><td><code>SubscriptionStatus.notificationEvent.eventNumberGuaranteedRequiredA<code></td><td>No</td></tr>
-            <tr><td><code>ElementOptionalityNotes<code></td><td>No</td></tr>
-            <tr><td><code>SubscriptionStatus.statusRecommendedCurrent<code></td><td>No</td></tr>
-            <tr><td><code>SubscriptionStatus.typeRequiredSHALL<code></td><td>No</td></tr>
-            <tr><td><code>SubscriptionStatus.eventsSinceSubscriptionStartSpecialRequired<code></td><td>No</td></tr>
-            <tr><td><code>SubscriptionStatus.notificationEventRequiredFor<code></td><td>No</td></tr>
-            <tr><td><code>SubscriptionStatus.notificationEvent.eventNumberSpecialRequired<code></td><td>No</td></tr>
-            <tr><td><code>SubscriptionStatus.notificationEvent.timestampRecommendedSo<code></td><td>No</td></tr>
-            <tr><td><code>SubscriptionStatus.notificationEvent.focusSpecialLinks<code></td><td>No</td></tr>
-            <tr><td><code>presentid-only:<code></td><td>No</td></tr>
-            <tr><td><code>presentfull-resource:<code></td><td>No</td></tr>
-            <tr><td><code>presentNote<code></td><td>No</td></tr>
-            <tr><td><code>SubscriptionStatus.notificationEvent.additionalContextSpecialLinks<code></td><td>No</td></tr>
-            <tr><td><code>additionalContext<code></td><td>No</td></tr>
-            <tr><td><code>SubscriptionStatus.topicOptionalSee<code></td><td>No</td></tr>
-            <tr><td><code>SubscriptionStatus.eventsSinceSubscriptionStartOptionalFor<code></td><td>No</td></tr>
-            <tr><td><code>SubscriptionStatus.notificationEventSpecialA<code></td><td>No</td></tr>
-            <tr><td><code>SubscriptionStatus.notificationEvent.timestampSpecialIf<code></td><td>No</td></tr>
+                <tr><td><code>additionalContext<code></td><td>No</td></tr>
+            <tr><td><code>desireable<code></td><td>Yes</td></tr>
+            <tr><td><code>eventsSinceSubscriptionStart<code></td><td>No</td></tr>
             <tr><td><code>notificationEvent<code></td><td>No</td></tr>
-            <tr><td><code>includedfull-resource:<code></td><td>No</td></tr>
-            <tr><td><code>SubscriptionStatus.eventsSinceSubscriptionStartRecommendedThe<code></td><td>No</td></tr>
-            <tr><td><code>SubscriptionStatus.notificationEvent.eventNumberSpecialIf<code></td><td>No</td></tr>
-            <tr><td><code>SubscriptionStatus.statusRequiredCurrent<code></td><td>No</td></tr>
-            <tr><td><code>SubscriptionStatus.topicRecommendedSee<code></td><td>No</td></tr>
-            <tr><td><code>SubscriptionStatus.eventsSinceSubscriptionStartRecommendedThis<code></td><td>No</td></tr>
             </tbody>
         </table>
 

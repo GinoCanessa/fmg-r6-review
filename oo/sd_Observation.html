@@ -13,16 +13,32 @@
             <li>Element: <code>Observation.bodyStructure</code> flagged as <code>trial-use</code></li>
             <li>Element: <code>Observation.referenceRange.normalValue</code> flagged as <code>trial-use</code></li>
             <li>Element: <code>Observation.referenceRange.type</code> flagged as <code>trial-use</code></li>
-            <li>ValueSet: <code>observation-triggeredbytype</code> (TriggeredBytype) bound to element <code>Observation.triggeredBy.type</code> is flagged as <code>trial-use</code></li>
-            <li>ValueSet: <code>referencerange-meaning</code> (ObservationReferenceRangeMeaningCodes) bound to element <code>Observation.referenceRange.type</code> is flagged as <code>trial-use</code></li>
-            <li>Operation: <code>Observation-lastn</code> (Lastn) flagged as <code>trial-use</code></li>
-            <li>Operation: <code>Observation-stats</code> (Stats) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>clinical-identifier</code> (identifier) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>clinical-patient</code> (patient) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>clinical-code</code> (code) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>clinical-date</code> (date) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>clinical-encounter</code> (encounter) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>Observation-focus</code> (focus) flagged as <code>trial-use</code></li>
+            <li>ValueSet: <code>observation-triggeredbytype</code> (TriggeredBytype) bound to element <code>Observation.triggeredBy.type</code> (<code>Required</code>) has standard status <code>trial-use</code></li>
+            <li>ValueSet: <code>observation-category</code> (ObservationCategoryCodes) bound to element <code>Observation.category</code> (<code>Preferred</code>) has status <code>Draft</code></li>
+            <li>ValueSet: <code>observation-codes</code> (LOINCCodes) bound to element <code>Observation.code</code> (<code>Example</code>) has status <code>Draft</code></li>
+            <li>ValueSet: <code>body-site</code> (SNOMEDCTBodyStructures) bound to element <code>Observation.bodySite</code> (<code>Example</code>) has status <code>Draft</code></li>
+            <li>ValueSet: <code>observation-methods</code> (ObservationMethods) bound to element <code>Observation.method</code> (<code>Example</code>) has status <code>Draft</code></li>
+            <li>ValueSet: <code>observation-referencerange-normalvalue</code> (ObservationReferenceRangeNormalValueCodes) bound to element <code>Observation.referenceRange.normalValue</code> (<code>Example</code>) has status <code>Draft</code></li>
+            <li>ValueSet: <code>referencerange-meaning</code> (ObservationReferenceRangeMeaningCodes) bound to element <code>Observation.referenceRange.type</code> (<code>Preferred</code>) has status <code>Draft</code></li>
+            <li>ValueSet: <code>referencerange-meaning</code> (ObservationReferenceRangeMeaningCodes) bound to element <code>Observation.referenceRange.type</code> (<code>Preferred</code>) has standard status <code>trial-use</code></li>
+            <li>ValueSet: <code>referencerange-appliesto</code> (ObservationReferenceRangeAppliesToCodes) bound to element <code>Observation.referenceRange.appliesTo</code> (<code>Example</code>) has status <code>Draft</code></li>
+            <li>ValueSet: <code>observation-codes</code> (LOINCCodes) bound to element <code>Observation.component.code</code> (<code>Example</code>) has status <code>Draft</code></li>
+            <li>Operation: <code>Observation-lastn</code> (Lastn) has status of <code>Draft</code></li>
+            <li>Operation: <code>Observation-stats</code> (Stats) has status of <code>Draft</code></li>
+            <li>Operation: <code>Observation-lastn</code> (Lastn) has standards status <code>trial-use</code></li>
+            <li>Operation: <code>Observation-stats</code> (Stats) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>Observation-focus</code> (focus) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>clinical-code</code> (code) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>clinical-date</code> (date) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>clinical-encounter</code> (encounter) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>clinical-identifier</code> (identifier) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>clinical-patient</code> (patient) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>Observation-focus</code> (focus) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>clinical-code</code> (code) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>clinical-date</code> (date) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>clinical-encounter</code> (encounter) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>clinical-identifier</code> (identifier) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>clinical-patient</code> (patient) has standards status <code>trial-use</code></li>
         </ul>
 
 
@@ -259,8 +275,8 @@
                 </tr>
                 <tr>
                     <td><b>SHOULD</b></td>
-                    <td>4</td>
-                    <td>9</td>
+                    <td>3</td>
+                    <td>10</td>
                 </tr>
                 <tr>
                     <td><b>SHOULD NOT</b></td>
@@ -270,7 +286,7 @@
                 <tr>
                     <td><b>MAY</b></td>
                     <td>4</td>
-                    <td>15</td>
+                    <td>17</td>
                 </tr>
                 <tr>
                     <td><b>MAY NOT</b></td>
@@ -302,20 +318,18 @@
                 </tr>
             </thead>
             <tbody>
-                <tr><td><code>Observation-sequelTo<code></td><td>No</td></tr>
-            <tr><td><code>derivedFrom<code></td><td>No</td></tr>
-            <tr><td><code>resourceType<code></td><td>No</td></tr>
+                <tr><td><code>20th<code></td><td>No</td></tr>
+            <tr><td><code>80th<code></td><td>No</td></tr>
+            <tr><td><code>Observation-sequelTo<code></td><td>No</td></tr>
+            <tr><td><code>SNV<code></td><td>No</td></tr>
             <tr><td><code>TermInfo<code></td><td>No</td></tr>
-            <tr><td><code>derivedFrom.<code></td><td>No</td></tr>
             <tr><td><code>dataAbsentReason<code></td><td>No</td></tr>
+            <tr><td><code>dataAbsentReason.<code></td><td>No</td></tr>
+            <tr><td><code>derivedFrom<code></td><td>No</td></tr>
             <tr><td><code>effectiveDateTime<code></td><td>No</td></tr>
             <tr><td><code>effectivePeriod<code></td><td>No</td></tr>
-            <tr><td><code>dataAbsentReason.<code></td><td>No</td></tr>
-            <tr><td><code>SNV<code></td><td>No</td></tr>
-            <tr><td><code>partOf<code></td><td>No</td></tr>
             <tr><td><code>lastn<code></td><td>No</td></tr>
-            <tr><td><code>20th<code></td><td>No</td></tr>
-            <tr><td><code>80th<code></td><td>No</td></tr>
+            <tr><td><code>partOf<code></td><td>No</td></tr>
             </tbody>
         </table>
 
@@ -993,275 +1007,6 @@ The set of returned observations should represent distinct real-world observatio
     </thead>
     <tbody>
         <tr>
-            <td><code>clinical-identifier</code></td>
-            <td><code>identifier</code></td>
-            <td>Draft</td>
-            <td></td>
-            <td>trial-use</td>
-            <td>False</td>
-            <td>pa</td>
-            <td>token</td>
-            <td>Multiple Resources: 
-
-* [Account](http://hl7.org/fhir/R6/account.html): Account number
-* [AdverseEvent](http://hl7.org/fhir/R6/adverseevent.html): Business identifier for the event
-* [AllergyIntolerance](http://hl7.org/fhir/R6/allergyintolerance.html): External ids for this item
-* [Appointment](http://hl7.org/fhir/R6/appointment.html): An Identifier of the Appointment
-* [AppointmentResponse](http://hl7.org/fhir/R6/appointmentresponse.html): An Identifier in this appointment response
-* [Basic](http://hl7.org/fhir/R6/basic.html): Business identifier
-* [BiologicallyDerivedProduct](http://hl7.org/fhir/R6/biologicallyderivedproduct.html): Identifier
-* [BiologicallyDerivedProductDispense](http://hl7.org/fhir/R6/biologicallyderivedproductdispense.html): The identifier of the dispense
-* [BodyStructure](http://hl7.org/fhir/R6/bodystructure.html): Bodystructure identifier
-* [CarePlan](http://hl7.org/fhir/R6/careplan.html): External Ids for this plan
-* [CareTeam](http://hl7.org/fhir/R6/careteam.html): External Ids for this team
-* [ChargeItem](http://hl7.org/fhir/R6/chargeitem.html): Business Identifier for item
-* [Claim](http://hl7.org/fhir/R6/claim.html): The primary identifier of the financial resource
-* [ClaimResponse](http://hl7.org/fhir/R6/claimresponse.html): The identity of the ClaimResponse
-* [Communication](http://hl7.org/fhir/R6/communication.html): Unique identifier
-* [CommunicationRequest](http://hl7.org/fhir/R6/communicationrequest.html): Unique identifier
-* [Composition](http://hl7.org/fhir/R6/composition.html): Version-independent identifier for the Composition
-* [Condition](http://hl7.org/fhir/R6/condition.html): A unique identifier of the condition record
-* [Consent](http://hl7.org/fhir/R6/consent.html): Identifier for this record (external references)
-* [Contract](http://hl7.org/fhir/R6/contract.html): The identity of the contract
-* [Coverage](http://hl7.org/fhir/R6/coverage.html): The primary identifier of the insured and the coverage
-* [CoverageEligibilityRequest](http://hl7.org/fhir/R6/coverageeligibilityrequest.html): The business identifier of the Eligibility
-* [CoverageEligibilityResponse](http://hl7.org/fhir/R6/coverageeligibilityresponse.html): The business identifier
-* [DetectedIssue](http://hl7.org/fhir/R6/detectedissue.html): Unique id for the detected issue
-* [DeviceRequest](http://hl7.org/fhir/R6/devicerequest.html): Business identifier for request/order
-* [DeviceUsage](http://hl7.org/fhir/R6/deviceusage.html): Search by identifier
-* [DiagnosticReport](http://hl7.org/fhir/R6/diagnosticreport.html): An identifier for the report
-* [DocumentReference](http://hl7.org/fhir/R6/documentreference.html): Identifier of the attachment binary
-* [Encounter](http://hl7.org/fhir/R6/encounter.html): Identifier(s) by which this encounter is known
-* [EnrollmentRequest](http://hl7.org/fhir/R6/enrollmentrequest.html): The business identifier of the Enrollment
-* [EpisodeOfCare](http://hl7.org/fhir/R6/episodeofcare.html): Business Identifier(s) relevant for this EpisodeOfCare
-* [ExplanationOfBenefit](http://hl7.org/fhir/R6/explanationofbenefit.html): The business identifier of the Explanation of Benefit
-* [FamilyMemberHistory](http://hl7.org/fhir/R6/familymemberhistory.html): A search by a record identifier
-* [Flag](http://hl7.org/fhir/R6/flag.html): Business identifier
-* [Goal](http://hl7.org/fhir/R6/goal.html): External Ids for this goal
-* [GuidanceResponse](http://hl7.org/fhir/R6/guidanceresponse.html): The identifier of the guidance response
-* [ImagingSelection](http://hl7.org/fhir/R6/imagingselection.html): Identifiers for the imaging selection
-* [ImagingStudy](http://hl7.org/fhir/R6/imagingstudy.html): Identifiers for the Study, such as DICOM Study Instance UID
-* [Immunization](http://hl7.org/fhir/R6/immunization.html): Business identifier
-* [ImmunizationEvaluation](http://hl7.org/fhir/R6/immunizationevaluation.html): ID of the evaluation
-* [ImmunizationRecommendation](http://hl7.org/fhir/R6/immunizationrecommendation.html): Business identifier
-* [Invoice](http://hl7.org/fhir/R6/invoice.html): Business Identifier for item
-* [List](http://hl7.org/fhir/R6/list.html): Business identifier
-* [MeasureReport](http://hl7.org/fhir/R6/measurereport.html): External identifier of the measure report to be returned
-* [Medication](http://hl7.org/fhir/R6/medication.html): Returns medications with this external identifier
-* [MedicationAdministration](http://hl7.org/fhir/R6/medicationadministration.html): Return administrations with this external identifier
-* [MedicationDispense](http://hl7.org/fhir/R6/medicationdispense.html): Returns dispenses with this external identifier
-* [MedicationRequest](http://hl7.org/fhir/R6/medicationrequest.html): Return prescriptions with this external identifier
-* [MedicationStatement](http://hl7.org/fhir/R6/medicationstatement.html): Return statements with this external identifier
-* [NutritionIntake](http://hl7.org/fhir/R6/nutritionintake.html): Return statements with this external identifier
-* [NutritionOrder](http://hl7.org/fhir/R6/nutritionorder.html): Return nutrition orders with this external identifier
-* [Observation](http://hl7.org/fhir/R6/observation.html): The unique id for a particular observation
-* [Person](http://hl7.org/fhir/R6/person.html): A person Identifier
-* [Procedure](http://hl7.org/fhir/R6/procedure.html): A unique identifier for a procedure
-* [QuestionnaireResponse](http://hl7.org/fhir/R6/questionnaireresponse.html): The unique identifier for the questionnaire response
-* [RelatedPerson](http://hl7.org/fhir/R6/relatedperson.html): An Identifier of the RelatedPerson
-* [RequestOrchestration](http://hl7.org/fhir/R6/requestorchestration.html): External identifiers for the request orchestration
-* [ResearchSubject](http://hl7.org/fhir/R6/researchsubject.html): Business Identifier for research subject in a study
-* [RiskAssessment](http://hl7.org/fhir/R6/riskassessment.html): Unique identifier for the assessment
-* [ServiceRequest](http://hl7.org/fhir/R6/servicerequest.html): Identifiers assigned to this order
-* [Specimen](http://hl7.org/fhir/R6/specimen.html): The unique identifier associated with the specimen
-* [SupplyDelivery](http://hl7.org/fhir/R6/supplydelivery.html): External identifier
-* [SupplyRequest](http://hl7.org/fhir/R6/supplyrequest.html): Business Identifier for SupplyRequest
-* [Task](http://hl7.org/fhir/R6/task.html): Search for a task instance by its business identifier
-* [VisionPrescription](http://hl7.org/fhir/R6/visionprescription.html): Return prescriptions with this external identifier
-</td>
-        </tr>
-        <tr>
-            <td><code>clinical-patient</code></td>
-            <td><code>patient</code></td>
-            <td>Draft</td>
-            <td></td>
-            <td>trial-use</td>
-            <td>False</td>
-            <td>pa</td>
-            <td>reference</td>
-            <td>Multiple Resources: 
-
-* [Account](http://hl7.org/fhir/R6/account.html): The entity that caused the expenses
-* [AdverseEvent](http://hl7.org/fhir/R6/adverseevent.html): Subject impacted by event
-* [AllergyIntolerance](http://hl7.org/fhir/R6/allergyintolerance.html): Who the sensitivity is for
-* [Appointment](http://hl7.org/fhir/R6/appointment.html): One of the individuals of the appointment is this patient
-* [AppointmentResponse](http://hl7.org/fhir/R6/appointmentresponse.html): This Response is for this Patient
-* [AuditEvent](http://hl7.org/fhir/R6/auditevent.html): Where the activity involved patient data
-* [Basic](http://hl7.org/fhir/R6/basic.html): Identifies the focus of this resource
-* [BiologicallyDerivedProduct](http://hl7.org/fhir/R6/biologicallyderivedproduct.html): The patient who underwent the procedure to collect the product
-* [BiologicallyDerivedProductDispense](http://hl7.org/fhir/R6/biologicallyderivedproductdispense.html): The identity of a patient for whom to list dispenses
-* [BodyStructure](http://hl7.org/fhir/R6/bodystructure.html): Who this is about
-* [CarePlan](http://hl7.org/fhir/R6/careplan.html): Who the care plan is for
-* [CareTeam](http://hl7.org/fhir/R6/careteam.html): Who care team is for
-* [ChargeItem](http://hl7.org/fhir/R6/chargeitem.html): Individual service was done for/to
-* [Claim](http://hl7.org/fhir/R6/claim.html): Patient receiving the products or services
-* [ClaimResponse](http://hl7.org/fhir/R6/claimresponse.html): The subject of care
-* [Communication](http://hl7.org/fhir/R6/communication.html): Focus of message
-* [CommunicationRequest](http://hl7.org/fhir/R6/communicationrequest.html): Focus of message
-* [Composition](http://hl7.org/fhir/R6/composition.html): Who and/or what the composition is about
-* [Condition](http://hl7.org/fhir/R6/condition.html): Who has the condition?
-* [Consent](http://hl7.org/fhir/R6/consent.html): Who the consent applies to
-* [Contract](http://hl7.org/fhir/R6/contract.html): The identity of the subject of the contract (if a patient)
-* [Coverage](http://hl7.org/fhir/R6/coverage.html): Retrieve coverages for a patient
-* [CoverageEligibilityRequest](http://hl7.org/fhir/R6/coverageeligibilityrequest.html): The reference to the patient
-* [CoverageEligibilityResponse](http://hl7.org/fhir/R6/coverageeligibilityresponse.html): The reference to the patient
-* [DetectedIssue](http://hl7.org/fhir/R6/detectedissue.html): Associated patient
-* [DeviceRequest](http://hl7.org/fhir/R6/devicerequest.html): Individual the service is ordered for
-* [DeviceUsage](http://hl7.org/fhir/R6/deviceusage.html): Search by patient who used the device
-* [DiagnosticReport](http://hl7.org/fhir/R6/diagnosticreport.html): The subject of the report if a patient
-* [DocumentReference](http://hl7.org/fhir/R6/documentreference.html): Who/what is the subject of the document
-* [Encounter](http://hl7.org/fhir/R6/encounter.html): The patient present at the encounter
-* [EnrollmentRequest](http://hl7.org/fhir/R6/enrollmentrequest.html): The party to be enrolled
-* [EpisodeOfCare](http://hl7.org/fhir/R6/episodeofcare.html): The patient who is the focus of this episode of care
-* [ExplanationOfBenefit](http://hl7.org/fhir/R6/explanationofbenefit.html): The reference to the patient
-* [FamilyMemberHistory](http://hl7.org/fhir/R6/familymemberhistory.html): The identity of a subject to list family member history items for
-* [Flag](http://hl7.org/fhir/R6/flag.html): The identity of a subject to list flags for
-* [Goal](http://hl7.org/fhir/R6/goal.html): Who this goal is intended for
-* [GuidanceResponse](http://hl7.org/fhir/R6/guidanceresponse.html): The identity of a patient to search for guidance response results
-* [ImagingSelection](http://hl7.org/fhir/R6/imagingselection.html): Who the study is about
-* [ImagingStudy](http://hl7.org/fhir/R6/imagingstudy.html): Who the study is about
-* [Immunization](http://hl7.org/fhir/R6/immunization.html): The patient for the vaccination record
-* [ImmunizationEvaluation](http://hl7.org/fhir/R6/immunizationevaluation.html): The patient being evaluated
-* [ImmunizationRecommendation](http://hl7.org/fhir/R6/immunizationrecommendation.html): Who this profile is for
-* [Invoice](http://hl7.org/fhir/R6/invoice.html): Recipient(s) of goods and services
-* [List](http://hl7.org/fhir/R6/list.html): If all resources have the same subject
-* [MeasureReport](http://hl7.org/fhir/R6/measurereport.html): The identity of a patient to search for individual measure report results for
-* [MedicationAdministration](http://hl7.org/fhir/R6/medicationadministration.html): The identity of a patient to list administrations  for
-* [MedicationDispense](http://hl7.org/fhir/R6/medicationdispense.html): The identity of a patient to list dispenses  for
-* [MedicationRequest](http://hl7.org/fhir/R6/medicationrequest.html): Returns prescriptions for a specific patient
-* [MedicationStatement](http://hl7.org/fhir/R6/medicationstatement.html): Returns statements for a specific patient.
-* [NutritionIntake](http://hl7.org/fhir/R6/nutritionintake.html): Returns statements for a specific patient.
-* [NutritionOrder](http://hl7.org/fhir/R6/nutritionorder.html): The identity of the individual or set of individuals who requires the diet, formula or nutritional supplement
-* [Observation](http://hl7.org/fhir/R6/observation.html): The subject that the observation is about (if patient)
-* [Person](http://hl7.org/fhir/R6/person.html): The Person links to this Patient
-* [Procedure](http://hl7.org/fhir/R6/procedure.html): Search by subject - a patient
-* [Provenance](http://hl7.org/fhir/R6/provenance.html): Where the activity involved patient data
-* [QuestionnaireResponse](http://hl7.org/fhir/R6/questionnaireresponse.html): The patient that is the subject of the questionnaire response
-* [RelatedPerson](http://hl7.org/fhir/R6/relatedperson.html): The patient this related person is related to
-* [RequestOrchestration](http://hl7.org/fhir/R6/requestorchestration.html): The identity of a patient to search for request orchestrations
-* [ResearchSubject](http://hl7.org/fhir/R6/researchsubject.html): Who or what is part of study
-* [RiskAssessment](http://hl7.org/fhir/R6/riskassessment.html): Who/what does assessment apply to?
-* [ServiceRequest](http://hl7.org/fhir/R6/servicerequest.html): Search by subject - a patient
-* [Specimen](http://hl7.org/fhir/R6/specimen.html): The patient the specimen comes from
-* [SupplyDelivery](http://hl7.org/fhir/R6/supplydelivery.html): Patient for whom the item is supplied
-* [SupplyRequest](http://hl7.org/fhir/R6/supplyrequest.html): The patient or subject for whom the supply is destined
-* [Task](http://hl7.org/fhir/R6/task.html): Search by patient
-* [VisionPrescription](http://hl7.org/fhir/R6/visionprescription.html): The identity of a patient to list dispenses for
-</td>
-        </tr>
-        <tr>
-            <td><code>clinical-code</code></td>
-            <td><code>code</code></td>
-            <td>Draft</td>
-            <td></td>
-            <td>trial-use</td>
-            <td>False</td>
-            <td>pc</td>
-            <td>token</td>
-            <td>Multiple Resources: 
-
-* [AdverseEvent](http://hl7.org/fhir/R6/adverseevent.html): Event or incident that occurred or was averted
-* [AllergyIntolerance](http://hl7.org/fhir/R6/allergyintolerance.html): Code that identifies the allergy or intolerance
-* [Basic](http://hl7.org/fhir/R6/basic.html): Kind of Resource
-* [ChargeItem](http://hl7.org/fhir/R6/chargeitem.html): A code that identifies the charge, like a billing code
-* [Condition](http://hl7.org/fhir/R6/condition.html): Code for the condition
-* [DetectedIssue](http://hl7.org/fhir/R6/detectedissue.html): Issue Type, e.g. drug-drug, duplicate therapy, etc.
-* [DiagnosticReport](http://hl7.org/fhir/R6/diagnosticreport.html): The code for the report, as opposed to codes for the atomic results, which are the names on the observation resource referred to from the result
-* [FamilyMemberHistory](http://hl7.org/fhir/R6/familymemberhistory.html): A search by a condition code
-* [ImagingSelection](http://hl7.org/fhir/R6/imagingselection.html): The imaging selection description text or code
-* [List](http://hl7.org/fhir/R6/list.html): What the purpose of this list is
-* [Medication](http://hl7.org/fhir/R6/medication.html): Returns medications for a specific code
-* [MedicationAdministration](http://hl7.org/fhir/R6/medicationadministration.html): Return administrations of this medication code
-* [MedicationDispense](http://hl7.org/fhir/R6/medicationdispense.html): Returns dispenses of this medicine code
-* [MedicationRequest](http://hl7.org/fhir/R6/medicationrequest.html): Return prescriptions of this medication code
-* [MedicationStatement](http://hl7.org/fhir/R6/medicationstatement.html): Return statements of this medication code
-* [NutritionIntake](http://hl7.org/fhir/R6/nutritionintake.html): Returns statements of this code of NutritionIntake
-* [Observation](http://hl7.org/fhir/R6/observation.html): The code of the observation type
-* [Procedure](http://hl7.org/fhir/R6/procedure.html): A code to identify a  procedure
-* [RequestOrchestration](http://hl7.org/fhir/R6/requestorchestration.html): The code of the request orchestration
-* [Task](http://hl7.org/fhir/R6/task.html): Search by task code
-</td>
-        </tr>
-        <tr>
-            <td><code>clinical-date</code></td>
-            <td><code>date</code></td>
-            <td>Draft</td>
-            <td></td>
-            <td>trial-use</td>
-            <td>False</td>
-            <td>pc</td>
-            <td>date</td>
-            <td>Multiple Resources: 
-
-* [AllergyIntolerance](http://hl7.org/fhir/R6/allergyintolerance.html): Date first version of the resource instance was recorded
-* [Appointment](http://hl7.org/fhir/R6/appointment.html): Appointment date/time.
-* [AuditEvent](http://hl7.org/fhir/R6/auditevent.html): Time when the event was recorded
-* [CarePlan](http://hl7.org/fhir/R6/careplan.html): Time period plan covers
-* [CareTeam](http://hl7.org/fhir/R6/careteam.html): A date within the coverage time period.
-* [Composition](http://hl7.org/fhir/R6/composition.html): Composition editing time
-* [Consent](http://hl7.org/fhir/R6/consent.html): When consent was agreed to
-* [DiagnosticReport](http://hl7.org/fhir/R6/diagnosticreport.html): The clinically relevant time of the report
-* [DocumentReference](http://hl7.org/fhir/R6/documentreference.html): When this document reference was created
-* [Encounter](http://hl7.org/fhir/R6/encounter.html): A date within the actualPeriod the Encounter lasted
-* [EpisodeOfCare](http://hl7.org/fhir/R6/episodeofcare.html): The provided date search value falls within the episode of care's period
-* [FamilyMemberHistory](http://hl7.org/fhir/R6/familymemberhistory.html): When history was recorded or last updated
-* [Flag](http://hl7.org/fhir/R6/flag.html): Time period when flag is active
-* [Immunization](http://hl7.org/fhir/R6/immunization.html): Vaccination  (non)-Administration Date
-* [ImmunizationEvaluation](http://hl7.org/fhir/R6/immunizationevaluation.html): Date the evaluation was generated
-* [ImmunizationRecommendation](http://hl7.org/fhir/R6/immunizationrecommendation.html): Date recommendation(s) created
-* [Invoice](http://hl7.org/fhir/R6/invoice.html): Invoice date / posting date
-* [List](http://hl7.org/fhir/R6/list.html): When the list was prepared
-* [MeasureReport](http://hl7.org/fhir/R6/measurereport.html): The date of the measure report
-* [NutritionIntake](http://hl7.org/fhir/R6/nutritionintake.html): Date when patient was taking (or not taking) the medication
-* [Observation](http://hl7.org/fhir/R6/observation.html): Clinically relevant time/time-period for observation
-* [Procedure](http://hl7.org/fhir/R6/procedure.html): When the procedure occurred or is occurring
-* [ResearchSubject](http://hl7.org/fhir/R6/researchsubject.html): Start and end of participation
-* [RiskAssessment](http://hl7.org/fhir/R6/riskassessment.html): When was assessment made?
-* [SupplyRequest](http://hl7.org/fhir/R6/supplyrequest.html): When the request was made
-</td>
-        </tr>
-        <tr>
-            <td><code>clinical-encounter</code></td>
-            <td><code>encounter</code></td>
-            <td>Draft</td>
-            <td></td>
-            <td>trial-use</td>
-            <td>False</td>
-            <td>sec</td>
-            <td>reference</td>
-            <td>Multiple Resources: 
-
-* [AuditEvent](http://hl7.org/fhir/R6/auditevent.html): Encounter related to the activity recorded in the AuditEvent
-* [CarePlan](http://hl7.org/fhir/R6/careplan.html): The Encounter during which this CarePlan was created
-* [ChargeItem](http://hl7.org/fhir/R6/chargeitem.html): Encounter associated with event
-* [Claim](http://hl7.org/fhir/R6/claim.html): Encounters associated with a billed line item
-* [Communication](http://hl7.org/fhir/R6/communication.html): The Encounter during which this Communication was created
-* [CommunicationRequest](http://hl7.org/fhir/R6/communicationrequest.html): The Encounter during which this CommunicationRequest was created
-* [Composition](http://hl7.org/fhir/R6/composition.html): Context of the Composition
-* [Condition](http://hl7.org/fhir/R6/condition.html): The Encounter during which this Condition was created
-* [DeviceRequest](http://hl7.org/fhir/R6/devicerequest.html): Encounter during which request was created
-* [DiagnosticReport](http://hl7.org/fhir/R6/diagnosticreport.html): The Encounter when the order was made
-* [EncounterHistory](http://hl7.org/fhir/R6/encounterhistory.html): The Encounter associated with this set of history values
-* [ExplanationOfBenefit](http://hl7.org/fhir/R6/explanationofbenefit.html): Encounters associated with a billed line item
-* [Flag](http://hl7.org/fhir/R6/flag.html): Alert relevant during encounter
-* [ImagingStudy](http://hl7.org/fhir/R6/imagingstudy.html): The context of the study
-* [List](http://hl7.org/fhir/R6/list.html): Context in which list created
-* [MedicationDispense](http://hl7.org/fhir/R6/medicationdispense.html): Returns dispenses with a specific encounter
-* [MedicationStatement](http://hl7.org/fhir/R6/medicationstatement.html): Returns statements for a specific encounter
-* [NutritionIntake](http://hl7.org/fhir/R6/nutritionintake.html): Returns statements for a specific encounter
-* [NutritionOrder](http://hl7.org/fhir/R6/nutritionorder.html): Return nutrition orders with this encounter identifier
-* [Observation](http://hl7.org/fhir/R6/observation.html): Encounter related to the observation
-* [Procedure](http://hl7.org/fhir/R6/procedure.html): The Encounter during which this Procedure was created
-* [Provenance](http://hl7.org/fhir/R6/provenance.html): Encounter related to the Provenance
-* [QuestionnaireResponse](http://hl7.org/fhir/R6/questionnaireresponse.html): Encounter associated with the questionnaire response
-* [RequestOrchestration](http://hl7.org/fhir/R6/requestorchestration.html): The encounter the request orchestration applies to
-* [RiskAssessment](http://hl7.org/fhir/R6/riskassessment.html): Where was assessment performed?
-* [ServiceRequest](http://hl7.org/fhir/R6/servicerequest.html): An encounter in which this request is made
-* [Task](http://hl7.org/fhir/R6/task.html): Search by encounter
-* [VisionPrescription](http://hl7.org/fhir/R6/visionprescription.html): Return prescriptions with this encounter identifier
-</td>
-        </tr>
-        <tr>
             <td><code>Observation-based-on</code></td>
             <td><code>based-on</code></td>
             <td>Active</td>
@@ -1284,6 +1029,50 @@ The set of returned observations should represent distinct real-world observatio
             <td>The classification of the type of observation</td>
         </tr>
         <tr>
+            <td><code>Observation-code-value-concept</code></td>
+            <td><code>code-value-concept</code></td>
+            <td>Active</td>
+            <td></td>
+            <td>normative</td>
+            <td>False</td>
+            <td>oo</td>
+            <td>composite</td>
+            <td>Code and coded value parameter pair</td>
+        </tr>
+        <tr>
+            <td><code>Observation-code-value-date</code></td>
+            <td><code>code-value-date</code></td>
+            <td>Active</td>
+            <td></td>
+            <td>normative</td>
+            <td>False</td>
+            <td>oo</td>
+            <td>composite</td>
+            <td>Code and date/time value parameter pair</td>
+        </tr>
+        <tr>
+            <td><code>Observation-code-value-quantity</code></td>
+            <td><code>code-value-quantity</code></td>
+            <td>Active</td>
+            <td></td>
+            <td>normative</td>
+            <td>False</td>
+            <td>oo</td>
+            <td>composite</td>
+            <td>Code and quantity value parameter pair</td>
+        </tr>
+        <tr>
+            <td><code>Observation-code-value-string</code></td>
+            <td><code>code-value-string</code></td>
+            <td>Active</td>
+            <td></td>
+            <td>normative</td>
+            <td>False</td>
+            <td>oo</td>
+            <td>composite</td>
+            <td>Code and string value parameter pair</td>
+        </tr>
+        <tr>
             <td><code>Observation-combo-code</code></td>
             <td><code>combo-code</code></td>
             <td>Active</td>
@@ -1293,6 +1082,28 @@ The set of returned observations should represent distinct real-world observatio
             <td>oo</td>
             <td>token</td>
             <td>The code of the observation type or component type</td>
+        </tr>
+        <tr>
+            <td><code>Observation-combo-code-value-concept</code></td>
+            <td><code>combo-code-value-concept</code></td>
+            <td>Active</td>
+            <td></td>
+            <td>normative</td>
+            <td>False</td>
+            <td>oo</td>
+            <td>composite</td>
+            <td>Code and coded value parameter pair, including in components</td>
+        </tr>
+        <tr>
+            <td><code>Observation-combo-code-value-quantity</code></td>
+            <td><code>combo-code-value-quantity</code></td>
+            <td>Active</td>
+            <td></td>
+            <td>normative</td>
+            <td>False</td>
+            <td>oo</td>
+            <td>composite</td>
+            <td>Code and quantity value parameter pair, including in components</td>
         </tr>
         <tr>
             <td><code>Observation-combo-data-absent-reason</code></td>
@@ -1348,6 +1159,28 @@ The set of returned observations should represent distinct real-world observatio
             <td>oo</td>
             <td>token</td>
             <td>The component code of the observation type</td>
+        </tr>
+        <tr>
+            <td><code>Observation-component-code-value-concept</code></td>
+            <td><code>component-code-value-concept</code></td>
+            <td>Active</td>
+            <td></td>
+            <td>normative</td>
+            <td>False</td>
+            <td>oo</td>
+            <td>composite</td>
+            <td>Component code and component coded value parameter pair</td>
+        </tr>
+        <tr>
+            <td><code>Observation-component-code-value-quantity</code></td>
+            <td><code>component-code-value-quantity</code></td>
+            <td>Active</td>
+            <td></td>
+            <td>normative</td>
+            <td>False</td>
+            <td>oo</td>
+            <td>composite</td>
+            <td>Component code and component quantity value parameter pair</td>
         </tr>
         <tr>
             <td><code>Observation-component-data-absent-reason</code></td>
@@ -1614,92 +1447,273 @@ The set of returned observations should represent distinct real-world observatio
             <td>The value of the observation, if the value is a string.</td>
         </tr>
         <tr>
-            <td><code>Observation-code-value-concept</code></td>
-            <td><code>code-value-concept</code></td>
-            <td>Active</td>
+            <td><code>clinical-code</code></td>
+            <td><code>code</code></td>
+            <td>Draft</td>
             <td></td>
-            <td>normative</td>
+            <td>trial-use</td>
             <td>False</td>
-            <td>oo</td>
-            <td>composite</td>
-            <td>Code and coded value parameter pair</td>
+            <td>pc</td>
+            <td>token</td>
+            <td>Multiple Resources: 
+
+* [AdverseEvent](http://hl7.org/fhir/R6/adverseevent.html): Event or incident that occurred or was averted
+* [AllergyIntolerance](http://hl7.org/fhir/R6/allergyintolerance.html): Code that identifies the allergy or intolerance
+* [Basic](http://hl7.org/fhir/R6/basic.html): Kind of Resource
+* [ChargeItem](http://hl7.org/fhir/R6/chargeitem.html): A code that identifies the charge, like a billing code
+* [Condition](http://hl7.org/fhir/R6/condition.html): Code for the condition
+* [DetectedIssue](http://hl7.org/fhir/R6/detectedissue.html): Issue Type, e.g. drug-drug, duplicate therapy, etc.
+* [DiagnosticReport](http://hl7.org/fhir/R6/diagnosticreport.html): The code for the report, as opposed to codes for the atomic results, which are the names on the observation resource referred to from the result
+* [FamilyMemberHistory](http://hl7.org/fhir/R6/familymemberhistory.html): A search by a condition code
+* [ImagingSelection](http://hl7.org/fhir/R6/imagingselection.html): The imaging selection description text or code
+* [List](http://hl7.org/fhir/R6/list.html): What the purpose of this list is
+* [Medication](http://hl7.org/fhir/R6/medication.html): Returns medications for a specific code
+* [MedicationAdministration](http://hl7.org/fhir/R6/medicationadministration.html): Return administrations of this medication code
+* [MedicationDispense](http://hl7.org/fhir/R6/medicationdispense.html): Returns dispenses of this medicine code
+* [MedicationRequest](http://hl7.org/fhir/R6/medicationrequest.html): Return prescriptions of this medication code
+* [MedicationStatement](http://hl7.org/fhir/R6/medicationstatement.html): Return statements of this medication code
+* [NutritionIntake](http://hl7.org/fhir/R6/nutritionintake.html): Returns statements of this code of NutritionIntake
+* [Observation](http://hl7.org/fhir/R6/observation.html): The code of the observation type
+* [Procedure](http://hl7.org/fhir/R6/procedure.html): A code to identify a  procedure
+* [RequestOrchestration](http://hl7.org/fhir/R6/requestorchestration.html): The code of the request orchestration
+* [Task](http://hl7.org/fhir/R6/task.html): Search by task code
+</td>
         </tr>
         <tr>
-            <td><code>Observation-code-value-date</code></td>
-            <td><code>code-value-date</code></td>
-            <td>Active</td>
+            <td><code>clinical-date</code></td>
+            <td><code>date</code></td>
+            <td>Draft</td>
             <td></td>
-            <td>normative</td>
+            <td>trial-use</td>
             <td>False</td>
-            <td>oo</td>
-            <td>composite</td>
-            <td>Code and date/time value parameter pair</td>
+            <td>pc</td>
+            <td>date</td>
+            <td>Multiple Resources: 
+
+* [AllergyIntolerance](http://hl7.org/fhir/R6/allergyintolerance.html): Date first version of the resource instance was recorded
+* [Appointment](http://hl7.org/fhir/R6/appointment.html): Appointment date/time.
+* [AuditEvent](http://hl7.org/fhir/R6/auditevent.html): Time when the event was recorded
+* [CarePlan](http://hl7.org/fhir/R6/careplan.html): Time period plan covers
+* [CareTeam](http://hl7.org/fhir/R6/careteam.html): A date within the coverage time period.
+* [Composition](http://hl7.org/fhir/R6/composition.html): Composition editing time
+* [Consent](http://hl7.org/fhir/R6/consent.html): When consent was agreed to
+* [DiagnosticReport](http://hl7.org/fhir/R6/diagnosticreport.html): The clinically relevant time of the report
+* [DocumentReference](http://hl7.org/fhir/R6/documentreference.html): When this document reference was created
+* [Encounter](http://hl7.org/fhir/R6/encounter.html): A date within the actualPeriod the Encounter lasted
+* [EpisodeOfCare](http://hl7.org/fhir/R6/episodeofcare.html): The provided date search value falls within the episode of care's period
+* [FamilyMemberHistory](http://hl7.org/fhir/R6/familymemberhistory.html): When history was recorded or last updated
+* [Flag](http://hl7.org/fhir/R6/flag.html): Time period when flag is active
+* [Immunization](http://hl7.org/fhir/R6/immunization.html): Vaccination  (non)-Administration Date
+* [ImmunizationEvaluation](http://hl7.org/fhir/R6/immunizationevaluation.html): Date the evaluation was generated
+* [ImmunizationRecommendation](http://hl7.org/fhir/R6/immunizationrecommendation.html): Date recommendation(s) created
+* [Invoice](http://hl7.org/fhir/R6/invoice.html): Invoice date / posting date
+* [List](http://hl7.org/fhir/R6/list.html): When the list was prepared
+* [MeasureReport](http://hl7.org/fhir/R6/measurereport.html): The date of the measure report
+* [NutritionIntake](http://hl7.org/fhir/R6/nutritionintake.html): Date when patient was taking (or not taking) the medication
+* [Observation](http://hl7.org/fhir/R6/observation.html): Clinically relevant time/time-period for observation
+* [Procedure](http://hl7.org/fhir/R6/procedure.html): When the procedure occurred or is occurring
+* [ResearchSubject](http://hl7.org/fhir/R6/researchsubject.html): Start and end of participation
+* [RiskAssessment](http://hl7.org/fhir/R6/riskassessment.html): When was assessment made?
+* [SupplyRequest](http://hl7.org/fhir/R6/supplyrequest.html): When the request was made
+</td>
         </tr>
         <tr>
-            <td><code>Observation-code-value-quantity</code></td>
-            <td><code>code-value-quantity</code></td>
-            <td>Active</td>
+            <td><code>clinical-encounter</code></td>
+            <td><code>encounter</code></td>
+            <td>Draft</td>
             <td></td>
-            <td>normative</td>
+            <td>trial-use</td>
             <td>False</td>
-            <td>oo</td>
-            <td>composite</td>
-            <td>Code and quantity value parameter pair</td>
+            <td>sec</td>
+            <td>reference</td>
+            <td>Multiple Resources: 
+
+* [AuditEvent](http://hl7.org/fhir/R6/auditevent.html): Encounter related to the activity recorded in the AuditEvent
+* [CarePlan](http://hl7.org/fhir/R6/careplan.html): The Encounter during which this CarePlan was created
+* [ChargeItem](http://hl7.org/fhir/R6/chargeitem.html): Encounter associated with event
+* [Claim](http://hl7.org/fhir/R6/claim.html): Encounters associated with a billed line item
+* [Communication](http://hl7.org/fhir/R6/communication.html): The Encounter during which this Communication was created
+* [CommunicationRequest](http://hl7.org/fhir/R6/communicationrequest.html): The Encounter during which this CommunicationRequest was created
+* [Composition](http://hl7.org/fhir/R6/composition.html): Context of the Composition
+* [Condition](http://hl7.org/fhir/R6/condition.html): The Encounter during which this Condition was created
+* [DeviceRequest](http://hl7.org/fhir/R6/devicerequest.html): Encounter during which request was created
+* [DiagnosticReport](http://hl7.org/fhir/R6/diagnosticreport.html): The Encounter when the order was made
+* [EncounterHistory](http://hl7.org/fhir/R6/encounterhistory.html): The Encounter associated with this set of history values
+* [ExplanationOfBenefit](http://hl7.org/fhir/R6/explanationofbenefit.html): Encounters associated with a billed line item
+* [Flag](http://hl7.org/fhir/R6/flag.html): Alert relevant during encounter
+* [ImagingStudy](http://hl7.org/fhir/R6/imagingstudy.html): The context of the study
+* [List](http://hl7.org/fhir/R6/list.html): Context in which list created
+* [MedicationDispense](http://hl7.org/fhir/R6/medicationdispense.html): Returns dispenses with a specific encounter
+* [MedicationStatement](http://hl7.org/fhir/R6/medicationstatement.html): Returns statements for a specific encounter
+* [NutritionIntake](http://hl7.org/fhir/R6/nutritionintake.html): Returns statements for a specific encounter
+* [NutritionOrder](http://hl7.org/fhir/R6/nutritionorder.html): Return nutrition orders with this encounter identifier
+* [Observation](http://hl7.org/fhir/R6/observation.html): Encounter related to the observation
+* [Procedure](http://hl7.org/fhir/R6/procedure.html): The Encounter during which this Procedure was created
+* [Provenance](http://hl7.org/fhir/R6/provenance.html): Encounter related to the Provenance
+* [QuestionnaireResponse](http://hl7.org/fhir/R6/questionnaireresponse.html): Encounter associated with the questionnaire response
+* [RequestOrchestration](http://hl7.org/fhir/R6/requestorchestration.html): The encounter the request orchestration applies to
+* [RiskAssessment](http://hl7.org/fhir/R6/riskassessment.html): Where was assessment performed?
+* [ServiceRequest](http://hl7.org/fhir/R6/servicerequest.html): An encounter in which this request is made
+* [Task](http://hl7.org/fhir/R6/task.html): Search by encounter
+* [VisionPrescription](http://hl7.org/fhir/R6/visionprescription.html): Return prescriptions with this encounter identifier
+</td>
         </tr>
         <tr>
-            <td><code>Observation-code-value-string</code></td>
-            <td><code>code-value-string</code></td>
-            <td>Active</td>
+            <td><code>clinical-identifier</code></td>
+            <td><code>identifier</code></td>
+            <td>Draft</td>
             <td></td>
-            <td>normative</td>
+            <td>trial-use</td>
             <td>False</td>
-            <td>oo</td>
-            <td>composite</td>
-            <td>Code and string value parameter pair</td>
+            <td>pa</td>
+            <td>token</td>
+            <td>Multiple Resources: 
+
+* [Account](http://hl7.org/fhir/R6/account.html): Account number
+* [AdverseEvent](http://hl7.org/fhir/R6/adverseevent.html): Business identifier for the event
+* [AllergyIntolerance](http://hl7.org/fhir/R6/allergyintolerance.html): External ids for this item
+* [Appointment](http://hl7.org/fhir/R6/appointment.html): An Identifier of the Appointment
+* [AppointmentResponse](http://hl7.org/fhir/R6/appointmentresponse.html): An Identifier in this appointment response
+* [Basic](http://hl7.org/fhir/R6/basic.html): Business identifier
+* [BiologicallyDerivedProduct](http://hl7.org/fhir/R6/biologicallyderivedproduct.html): Identifier
+* [BiologicallyDerivedProductDispense](http://hl7.org/fhir/R6/biologicallyderivedproductdispense.html): The identifier of the dispense
+* [BodyStructure](http://hl7.org/fhir/R6/bodystructure.html): Bodystructure identifier
+* [CarePlan](http://hl7.org/fhir/R6/careplan.html): External Ids for this plan
+* [CareTeam](http://hl7.org/fhir/R6/careteam.html): External Ids for this team
+* [ChargeItem](http://hl7.org/fhir/R6/chargeitem.html): Business Identifier for item
+* [Claim](http://hl7.org/fhir/R6/claim.html): The primary identifier of the financial resource
+* [ClaimResponse](http://hl7.org/fhir/R6/claimresponse.html): The identity of the ClaimResponse
+* [Communication](http://hl7.org/fhir/R6/communication.html): Unique identifier
+* [CommunicationRequest](http://hl7.org/fhir/R6/communicationrequest.html): Unique identifier
+* [Composition](http://hl7.org/fhir/R6/composition.html): Version-independent identifier for the Composition
+* [Condition](http://hl7.org/fhir/R6/condition.html): A unique identifier of the condition record
+* [Consent](http://hl7.org/fhir/R6/consent.html): Identifier for this record (external references)
+* [Contract](http://hl7.org/fhir/R6/contract.html): The identity of the contract
+* [Coverage](http://hl7.org/fhir/R6/coverage.html): The primary identifier of the insured and the coverage
+* [CoverageEligibilityRequest](http://hl7.org/fhir/R6/coverageeligibilityrequest.html): The business identifier of the Eligibility
+* [CoverageEligibilityResponse](http://hl7.org/fhir/R6/coverageeligibilityresponse.html): The business identifier
+* [DetectedIssue](http://hl7.org/fhir/R6/detectedissue.html): Unique id for the detected issue
+* [DeviceRequest](http://hl7.org/fhir/R6/devicerequest.html): Business identifier for request/order
+* [DeviceUsage](http://hl7.org/fhir/R6/deviceusage.html): Search by identifier
+* [DiagnosticReport](http://hl7.org/fhir/R6/diagnosticreport.html): An identifier for the report
+* [DocumentReference](http://hl7.org/fhir/R6/documentreference.html): Identifier of the attachment binary
+* [Encounter](http://hl7.org/fhir/R6/encounter.html): Identifier(s) by which this encounter is known
+* [EnrollmentRequest](http://hl7.org/fhir/R6/enrollmentrequest.html): The business identifier of the Enrollment
+* [EpisodeOfCare](http://hl7.org/fhir/R6/episodeofcare.html): Business Identifier(s) relevant for this EpisodeOfCare
+* [ExplanationOfBenefit](http://hl7.org/fhir/R6/explanationofbenefit.html): The business identifier of the Explanation of Benefit
+* [FamilyMemberHistory](http://hl7.org/fhir/R6/familymemberhistory.html): A search by a record identifier
+* [Flag](http://hl7.org/fhir/R6/flag.html): Business identifier
+* [Goal](http://hl7.org/fhir/R6/goal.html): External Ids for this goal
+* [GuidanceResponse](http://hl7.org/fhir/R6/guidanceresponse.html): The identifier of the guidance response
+* [ImagingSelection](http://hl7.org/fhir/R6/imagingselection.html): Identifiers for the imaging selection
+* [ImagingStudy](http://hl7.org/fhir/R6/imagingstudy.html): Identifiers for the Study, such as DICOM Study Instance UID
+* [Immunization](http://hl7.org/fhir/R6/immunization.html): Business identifier
+* [ImmunizationEvaluation](http://hl7.org/fhir/R6/immunizationevaluation.html): ID of the evaluation
+* [ImmunizationRecommendation](http://hl7.org/fhir/R6/immunizationrecommendation.html): Business identifier
+* [Invoice](http://hl7.org/fhir/R6/invoice.html): Business Identifier for item
+* [List](http://hl7.org/fhir/R6/list.html): Business identifier
+* [MeasureReport](http://hl7.org/fhir/R6/measurereport.html): External identifier of the measure report to be returned
+* [Medication](http://hl7.org/fhir/R6/medication.html): Returns medications with this external identifier
+* [MedicationAdministration](http://hl7.org/fhir/R6/medicationadministration.html): Return administrations with this external identifier
+* [MedicationDispense](http://hl7.org/fhir/R6/medicationdispense.html): Returns dispenses with this external identifier
+* [MedicationRequest](http://hl7.org/fhir/R6/medicationrequest.html): Return prescriptions with this external identifier
+* [MedicationStatement](http://hl7.org/fhir/R6/medicationstatement.html): Return statements with this external identifier
+* [NutritionIntake](http://hl7.org/fhir/R6/nutritionintake.html): Return statements with this external identifier
+* [NutritionOrder](http://hl7.org/fhir/R6/nutritionorder.html): Return nutrition orders with this external identifier
+* [Observation](http://hl7.org/fhir/R6/observation.html): The unique id for a particular observation
+* [Person](http://hl7.org/fhir/R6/person.html): A person Identifier
+* [Procedure](http://hl7.org/fhir/R6/procedure.html): A unique identifier for a procedure
+* [QuestionnaireResponse](http://hl7.org/fhir/R6/questionnaireresponse.html): The unique identifier for the questionnaire response
+* [RelatedPerson](http://hl7.org/fhir/R6/relatedperson.html): An Identifier of the RelatedPerson
+* [RequestOrchestration](http://hl7.org/fhir/R6/requestorchestration.html): External identifiers for the request orchestration
+* [ResearchSubject](http://hl7.org/fhir/R6/researchsubject.html): Business Identifier for research subject in a study
+* [RiskAssessment](http://hl7.org/fhir/R6/riskassessment.html): Unique identifier for the assessment
+* [ServiceRequest](http://hl7.org/fhir/R6/servicerequest.html): Identifiers assigned to this order
+* [Specimen](http://hl7.org/fhir/R6/specimen.html): The unique identifier associated with the specimen
+* [SupplyDelivery](http://hl7.org/fhir/R6/supplydelivery.html): External identifier
+* [SupplyRequest](http://hl7.org/fhir/R6/supplyrequest.html): Business Identifier for SupplyRequest
+* [Task](http://hl7.org/fhir/R6/task.html): Search for a task instance by its business identifier
+* [VisionPrescription](http://hl7.org/fhir/R6/visionprescription.html): Return prescriptions with this external identifier
+</td>
         </tr>
         <tr>
-            <td><code>Observation-combo-code-value-concept</code></td>
-            <td><code>combo-code-value-concept</code></td>
-            <td>Active</td>
+            <td><code>clinical-patient</code></td>
+            <td><code>patient</code></td>
+            <td>Draft</td>
             <td></td>
-            <td>normative</td>
+            <td>trial-use</td>
             <td>False</td>
-            <td>oo</td>
-            <td>composite</td>
-            <td>Code and coded value parameter pair, including in components</td>
-        </tr>
-        <tr>
-            <td><code>Observation-combo-code-value-quantity</code></td>
-            <td><code>combo-code-value-quantity</code></td>
-            <td>Active</td>
-            <td></td>
-            <td>normative</td>
-            <td>False</td>
-            <td>oo</td>
-            <td>composite</td>
-            <td>Code and quantity value parameter pair, including in components</td>
-        </tr>
-        <tr>
-            <td><code>Observation-component-code-value-concept</code></td>
-            <td><code>component-code-value-concept</code></td>
-            <td>Active</td>
-            <td></td>
-            <td>normative</td>
-            <td>False</td>
-            <td>oo</td>
-            <td>composite</td>
-            <td>Component code and component coded value parameter pair</td>
-        </tr>
-        <tr>
-            <td><code>Observation-component-code-value-quantity</code></td>
-            <td><code>component-code-value-quantity</code></td>
-            <td>Active</td>
-            <td></td>
-            <td>normative</td>
-            <td>False</td>
-            <td>oo</td>
-            <td>composite</td>
-            <td>Component code and component quantity value parameter pair</td>
+            <td>pa</td>
+            <td>reference</td>
+            <td>Multiple Resources: 
+
+* [Account](http://hl7.org/fhir/R6/account.html): The entity that caused the expenses
+* [AdverseEvent](http://hl7.org/fhir/R6/adverseevent.html): Subject impacted by event
+* [AllergyIntolerance](http://hl7.org/fhir/R6/allergyintolerance.html): Who the sensitivity is for
+* [Appointment](http://hl7.org/fhir/R6/appointment.html): One of the individuals of the appointment is this patient
+* [AppointmentResponse](http://hl7.org/fhir/R6/appointmentresponse.html): This Response is for this Patient
+* [AuditEvent](http://hl7.org/fhir/R6/auditevent.html): Where the activity involved patient data
+* [Basic](http://hl7.org/fhir/R6/basic.html): Identifies the focus of this resource
+* [BiologicallyDerivedProduct](http://hl7.org/fhir/R6/biologicallyderivedproduct.html): The patient who underwent the procedure to collect the product
+* [BiologicallyDerivedProductDispense](http://hl7.org/fhir/R6/biologicallyderivedproductdispense.html): The identity of a patient for whom to list dispenses
+* [BodyStructure](http://hl7.org/fhir/R6/bodystructure.html): Who this is about
+* [CarePlan](http://hl7.org/fhir/R6/careplan.html): Who the care plan is for
+* [CareTeam](http://hl7.org/fhir/R6/careteam.html): Who care team is for
+* [ChargeItem](http://hl7.org/fhir/R6/chargeitem.html): Individual service was done for/to
+* [Claim](http://hl7.org/fhir/R6/claim.html): Patient receiving the products or services
+* [ClaimResponse](http://hl7.org/fhir/R6/claimresponse.html): The subject of care
+* [Communication](http://hl7.org/fhir/R6/communication.html): Focus of message
+* [CommunicationRequest](http://hl7.org/fhir/R6/communicationrequest.html): Focus of message
+* [Composition](http://hl7.org/fhir/R6/composition.html): Who and/or what the composition is about
+* [Condition](http://hl7.org/fhir/R6/condition.html): Who has the condition?
+* [Consent](http://hl7.org/fhir/R6/consent.html): Who the consent applies to
+* [Contract](http://hl7.org/fhir/R6/contract.html): The identity of the subject of the contract (if a patient)
+* [Coverage](http://hl7.org/fhir/R6/coverage.html): Retrieve coverages for a patient
+* [CoverageEligibilityRequest](http://hl7.org/fhir/R6/coverageeligibilityrequest.html): The reference to the patient
+* [CoverageEligibilityResponse](http://hl7.org/fhir/R6/coverageeligibilityresponse.html): The reference to the patient
+* [DetectedIssue](http://hl7.org/fhir/R6/detectedissue.html): Associated patient
+* [DeviceRequest](http://hl7.org/fhir/R6/devicerequest.html): Individual the service is ordered for
+* [DeviceUsage](http://hl7.org/fhir/R6/deviceusage.html): Search by patient who used the device
+* [DiagnosticReport](http://hl7.org/fhir/R6/diagnosticreport.html): The subject of the report if a patient
+* [DocumentReference](http://hl7.org/fhir/R6/documentreference.html): Who/what is the subject of the document
+* [Encounter](http://hl7.org/fhir/R6/encounter.html): The patient present at the encounter
+* [EnrollmentRequest](http://hl7.org/fhir/R6/enrollmentrequest.html): The party to be enrolled
+* [EpisodeOfCare](http://hl7.org/fhir/R6/episodeofcare.html): The patient who is the focus of this episode of care
+* [ExplanationOfBenefit](http://hl7.org/fhir/R6/explanationofbenefit.html): The reference to the patient
+* [FamilyMemberHistory](http://hl7.org/fhir/R6/familymemberhistory.html): The identity of a subject to list family member history items for
+* [Flag](http://hl7.org/fhir/R6/flag.html): The identity of a subject to list flags for
+* [Goal](http://hl7.org/fhir/R6/goal.html): Who this goal is intended for
+* [GuidanceResponse](http://hl7.org/fhir/R6/guidanceresponse.html): The identity of a patient to search for guidance response results
+* [ImagingSelection](http://hl7.org/fhir/R6/imagingselection.html): Who the study is about
+* [ImagingStudy](http://hl7.org/fhir/R6/imagingstudy.html): Who the study is about
+* [Immunization](http://hl7.org/fhir/R6/immunization.html): The patient for the vaccination record
+* [ImmunizationEvaluation](http://hl7.org/fhir/R6/immunizationevaluation.html): The patient being evaluated
+* [ImmunizationRecommendation](http://hl7.org/fhir/R6/immunizationrecommendation.html): Who this profile is for
+* [Invoice](http://hl7.org/fhir/R6/invoice.html): Recipient(s) of goods and services
+* [List](http://hl7.org/fhir/R6/list.html): If all resources have the same subject
+* [MeasureReport](http://hl7.org/fhir/R6/measurereport.html): The identity of a patient to search for individual measure report results for
+* [MedicationAdministration](http://hl7.org/fhir/R6/medicationadministration.html): The identity of a patient to list administrations  for
+* [MedicationDispense](http://hl7.org/fhir/R6/medicationdispense.html): The identity of a patient to list dispenses  for
+* [MedicationRequest](http://hl7.org/fhir/R6/medicationrequest.html): Returns prescriptions for a specific patient
+* [MedicationStatement](http://hl7.org/fhir/R6/medicationstatement.html): Returns statements for a specific patient.
+* [NutritionIntake](http://hl7.org/fhir/R6/nutritionintake.html): Returns statements for a specific patient.
+* [NutritionOrder](http://hl7.org/fhir/R6/nutritionorder.html): The identity of the individual or set of individuals who requires the diet, formula or nutritional supplement
+* [Observation](http://hl7.org/fhir/R6/observation.html): The subject that the observation is about (if patient)
+* [Person](http://hl7.org/fhir/R6/person.html): The Person links to this Patient
+* [Procedure](http://hl7.org/fhir/R6/procedure.html): Search by subject - a patient
+* [Provenance](http://hl7.org/fhir/R6/provenance.html): Where the activity involved patient data
+* [QuestionnaireResponse](http://hl7.org/fhir/R6/questionnaireresponse.html): The patient that is the subject of the questionnaire response
+* [RelatedPerson](http://hl7.org/fhir/R6/relatedperson.html): The patient this related person is related to
+* [RequestOrchestration](http://hl7.org/fhir/R6/requestorchestration.html): The identity of a patient to search for request orchestrations
+* [ResearchSubject](http://hl7.org/fhir/R6/researchsubject.html): Who or what is part of study
+* [RiskAssessment](http://hl7.org/fhir/R6/riskassessment.html): Who/what does assessment apply to?
+* [ServiceRequest](http://hl7.org/fhir/R6/servicerequest.html): Search by subject - a patient
+* [Specimen](http://hl7.org/fhir/R6/specimen.html): The patient the specimen comes from
+* [SupplyDelivery](http://hl7.org/fhir/R6/supplydelivery.html): Patient for whom the item is supplied
+* [SupplyRequest](http://hl7.org/fhir/R6/supplyrequest.html): The patient or subject for whom the supply is destined
+* [Task](http://hl7.org/fhir/R6/task.html): Search by patient
+* [VisionPrescription](http://hl7.org/fhir/R6/visionprescription.html): The identity of a patient to list dispenses for
+</td>
         </tr>
     </tbody>
 </table>

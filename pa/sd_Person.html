@@ -7,19 +7,31 @@
         <h3>Urgent Item Checklist</h3>
                 <ul>
             <li>Confirm workgroup disposition vote has been recorded and sent to FMG!</li>
-            <li>ValueSet: <code>identity-assuranceLevel</code> (IdentityAssuranceLevel) bound to element <code>Person.link.assurance</code> is flagged as <code>trial-use</code></li>
-            <li>CodeSystem: <code>identity-assuranceLevel</code> (IdentityAssuranceLevel) referenced by ValueSet <code>identity-assuranceLevel</code> bound to element <code>Person.link.assurance</code> is flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>clinical-identifier</code> (identifier) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>clinical-patient</code> (patient) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>Person-death-date</code> (death-date) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>Person-deceased</code> (deceased) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>Person-family</code> (family) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>Person-given</code> (given) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>Person-link</code> (link) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>Person-name</code> (name) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>Person-organization</code> (organization) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>Person-practitioner</code> (practitioner) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>Person-relatedperson</code> (relatedperson) flagged as <code>trial-use</code></li>
+            <li>ValueSet: <code>identity-assuranceLevel</code> (IdentityAssuranceLevel) bound to element <code>Person.link.assurance</code> (<code>Required</code>) has status <code>Draft</code></li>
+            <li>ValueSet: <code>identity-assuranceLevel</code> (IdentityAssuranceLevel) bound to element <code>Person.link.assurance</code> (<code>Required</code>) has standard status <code>trial-use</code></li>
+            <li>CodeSystem: <code>identity-assuranceLevel</code> (IdentityAssuranceLevel) referenced by ValueSet <code>identity-assuranceLevel</code> bound to element <code>Person.link.assurance</code> (<code>Required</code>) has standard status <code>trial-use</code></li>
+            <li>Search Parameter: <code>Person-death-date</code> (death-date) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>Person-deceased</code> (deceased) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>Person-family</code> (family) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>Person-given</code> (given) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>Person-link</code> (link) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>Person-name</code> (name) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>Person-organization</code> (organization) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>Person-practitioner</code> (practitioner) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>Person-relatedperson</code> (relatedperson) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>clinical-identifier</code> (identifier) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>clinical-patient</code> (patient) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>Person-death-date</code> (death-date) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>Person-deceased</code> (deceased) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>Person-family</code> (family) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>Person-given</code> (given) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>Person-link</code> (link) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>Person-name</code> (name) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>Person-organization</code> (organization) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>Person-practitioner</code> (practitioner) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>Person-relatedperson</code> (relatedperson) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>clinical-identifier</code> (identifier) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>clinical-patient</code> (patient) has standards status <code>trial-use</code></li>
         </ul>
 
 
@@ -299,9 +311,9 @@
             </thead>
             <tbody>
                 <tr><td><code>assuranceLevel<code></td><td>No</td></tr>
+            <tr><td><code>doesn’t<code></td><td>Yes</td></tr>
             <tr><td><code>level1,<code></td><td>No</td></tr>
             <tr><td><code>level3.<code></td><td>No</td></tr>
-            <tr><td><code>doesn’t<code></td><td>Yes</td></tr>
             </tbody>
         </table>
 
@@ -586,6 +598,105 @@
         </tr>
     </thead>
     <tbody>
+        <tr>
+            <td><code>Person-death-date</code></td>
+            <td><code>death-date</code></td>
+            <td>Draft</td>
+            <td></td>
+            <td>trial-use</td>
+            <td>False</td>
+            <td>pa</td>
+            <td>date</td>
+            <td>The date of death has been provided and satisfies this search value</td>
+        </tr>
+        <tr>
+            <td><code>Person-deceased</code></td>
+            <td><code>deceased</code></td>
+            <td>Draft</td>
+            <td></td>
+            <td>trial-use</td>
+            <td>False</td>
+            <td>pa</td>
+            <td>token</td>
+            <td>This person has been marked as deceased, or has a death date entered</td>
+        </tr>
+        <tr>
+            <td><code>Person-family</code></td>
+            <td><code>family</code></td>
+            <td>Draft</td>
+            <td></td>
+            <td>trial-use</td>
+            <td>False</td>
+            <td>pa</td>
+            <td>string</td>
+            <td>A portion of the family name of the person</td>
+        </tr>
+        <tr>
+            <td><code>Person-given</code></td>
+            <td><code>given</code></td>
+            <td>Draft</td>
+            <td></td>
+            <td>trial-use</td>
+            <td>False</td>
+            <td>pa</td>
+            <td>string</td>
+            <td>A portion of the given name of the person</td>
+        </tr>
+        <tr>
+            <td><code>Person-link</code></td>
+            <td><code>link</code></td>
+            <td>Draft</td>
+            <td></td>
+            <td>trial-use</td>
+            <td>False</td>
+            <td>pa</td>
+            <td>reference</td>
+            <td>Any link has this Patient, Person, RelatedPerson or Practitioner reference</td>
+        </tr>
+        <tr>
+            <td><code>Person-name</code></td>
+            <td><code>name</code></td>
+            <td>Draft</td>
+            <td></td>
+            <td>trial-use</td>
+            <td>False</td>
+            <td>pa</td>
+            <td>string</td>
+            <td>A server defined search that may match any of the string fields in the HumanName, including family, give, prefix, suffix, suffix, and/or text</td>
+        </tr>
+        <tr>
+            <td><code>Person-organization</code></td>
+            <td><code>organization</code></td>
+            <td>Draft</td>
+            <td></td>
+            <td>trial-use</td>
+            <td>False</td>
+            <td>pa</td>
+            <td>reference</td>
+            <td>The organization at which this person record is being managed</td>
+        </tr>
+        <tr>
+            <td><code>Person-practitioner</code></td>
+            <td><code>practitioner</code></td>
+            <td>Draft</td>
+            <td></td>
+            <td>trial-use</td>
+            <td>False</td>
+            <td>pa</td>
+            <td>reference</td>
+            <td>The Person links to this Practitioner</td>
+        </tr>
+        <tr>
+            <td><code>Person-relatedperson</code></td>
+            <td><code>relatedperson</code></td>
+            <td>Draft</td>
+            <td></td>
+            <td>trial-use</td>
+            <td>False</td>
+            <td>pa</td>
+            <td>reference</td>
+            <td>The Person links to this RelatedPerson</td>
+        </tr>
         <tr>
             <td><code>clinical-identifier</code></td>
             <td><code>identifier</code></td>
@@ -948,149 +1059,6 @@
 * [PractitionerRole](http://hl7.org/fhir/R6/practitionerrole.html): The value in any kind of contact
 * [RelatedPerson](http://hl7.org/fhir/R6/relatedperson.html): The value in any kind of contact
 </td>
-        </tr>
-        <tr>
-            <td><code>Person-death-date</code></td>
-            <td><code>death-date</code></td>
-            <td>Draft</td>
-            <td></td>
-            <td>trial-use</td>
-            <td>False</td>
-            <td>pa</td>
-            <td>date</td>
-            <td>The date of death has been provided and satisfies this search value</td>
-        </tr>
-        <tr>
-            <td><code>Person-deceased</code></td>
-            <td><code>deceased</code></td>
-            <td>Draft</td>
-            <td></td>
-            <td>trial-use</td>
-            <td>False</td>
-            <td>pa</td>
-            <td>token</td>
-            <td>This person has been marked as deceased, or has a death date entered</td>
-        </tr>
-        <tr>
-            <td><code>Person-family</code></td>
-            <td><code>family</code></td>
-            <td>Draft</td>
-            <td></td>
-            <td>trial-use</td>
-            <td>False</td>
-            <td>pa</td>
-            <td>string</td>
-            <td>A portion of the family name of the person</td>
-        </tr>
-        <tr>
-            <td><code>Person-given</code></td>
-            <td><code>given</code></td>
-            <td>Draft</td>
-            <td></td>
-            <td>trial-use</td>
-            <td>False</td>
-            <td>pa</td>
-            <td>string</td>
-            <td>A portion of the given name of the person</td>
-        </tr>
-        <tr>
-            <td><code>Person-link</code></td>
-            <td><code>link</code></td>
-            <td>Draft</td>
-            <td></td>
-            <td>trial-use</td>
-            <td>False</td>
-            <td>pa</td>
-            <td>reference</td>
-            <td>Any link has this Patient, Person, RelatedPerson or Practitioner reference</td>
-        </tr>
-        <tr>
-            <td><code>Person-name</code></td>
-            <td><code>name</code></td>
-            <td>Draft</td>
-            <td></td>
-            <td>trial-use</td>
-            <td>False</td>
-            <td>pa</td>
-            <td>string</td>
-            <td>A server defined search that may match any of the string fields in the HumanName, including family, give, prefix, suffix, suffix, and/or text</td>
-        </tr>
-        <tr>
-            <td><code>Person-organization</code></td>
-            <td><code>organization</code></td>
-            <td>Draft</td>
-            <td></td>
-            <td>trial-use</td>
-            <td>False</td>
-            <td>pa</td>
-            <td>reference</td>
-            <td>The organization at which this person record is being managed</td>
-        </tr>
-        <tr>
-            <td><code>Person-practitioner</code></td>
-            <td><code>practitioner</code></td>
-            <td>Draft</td>
-            <td></td>
-            <td>trial-use</td>
-            <td>False</td>
-            <td>pa</td>
-            <td>reference</td>
-            <td>The Person links to this Practitioner</td>
-        </tr>
-        <tr>
-            <td><code>Person-relatedperson</code></td>
-            <td><code>relatedperson</code></td>
-            <td>Draft</td>
-            <td></td>
-            <td>trial-use</td>
-            <td>False</td>
-            <td>pa</td>
-            <td>reference</td>
-            <td>The Person links to this RelatedPerson</td>
-        </tr>
-        <tr>
-            <td><code>PersonalRelationship-patient</code></td>
-            <td><code>patient</code></td>
-            <td>Draft</td>
-            <td></td>
-            <td>draft</td>
-            <td>False</td>
-            <td>pa</td>
-            <td>reference</td>
-            <td>The patient this related person is related to</td>
-        </tr>
-        <tr>
-            <td><code>PersonalRelationship-relationship</code></td>
-            <td><code>relationship</code></td>
-            <td>Draft</td>
-            <td></td>
-            <td>draft</td>
-            <td>False</td>
-            <td>pa</td>
-            <td>token</td>
-            <td>The personal relationship between the patient and the PersonalRelationship</td>
-        </tr>
-        <tr>
-            <td><code>PersonalRelationship-source</code></td>
-            <td><code>source</code></td>
-            <td>Draft</td>
-            <td></td>
-            <td>draft</td>
-            <td>False</td>
-            <td>pa</td>
-            <td>reference</td>
-            <td>The source of the relationship</td>
-        </tr>
-        <tr>
-            <td><code>PersonalRelationship-target</code></td>
-            <td><code>target</code></td>
-            <td>Draft</td>
-            <td></td>
-            <td>draft</td>
-            <td>False</td>
-            <td>pa</td>
-            <td>reference</td>
-            <td>The target of the relationship</td>
         </tr>
     </tbody>
 </table>

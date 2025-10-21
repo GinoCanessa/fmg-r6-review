@@ -7,21 +7,34 @@
         <h3>Urgent Item Checklist</h3>
                 <ul>
             <li>Confirm workgroup disposition vote has been recorded and sent to FMG!</li>
-            <li>ValueSet: <code>metric-operational-status</code> (DeviceMetricOperationalStatus) bound to element <code>DeviceMetric.operationalStatus</code> is flagged as <code>trial-use</code></li>
-            <li>CodeSystem: <code>metric-operational-status</code> (DeviceMetricOperationalStatus) referenced by ValueSet <code>metric-operational-status</code> bound to element <code>DeviceMetric.operationalStatus</code> is flagged as <code>trial-use</code></li>
-            <li>ValueSet: <code>color-codes</code> (ColorCodesOrRGB) bound to element <code>DeviceMetric.color</code> is flagged as <code>trial-use</code></li>
-            <li>ValueSet: <code>metric-category</code> (DeviceMetricCategory) bound to element <code>DeviceMetric.category</code> is flagged as <code>trial-use</code></li>
-            <li>CodeSystem: <code>metric-category</code> (DeviceMetricCategory) referenced by ValueSet <code>metric-category</code> bound to element <code>DeviceMetric.category</code> is flagged as <code>trial-use</code></li>
-            <li>ValueSet: <code>metric-availability</code> (DeviceMetricAvailability) bound to element <code>DeviceMetric.availability</code> is flagged as <code>trial-use</code></li>
-            <li>CodeSystem: <code>metric-availability</code> (DeviceMetricAvailability) referenced by ValueSet <code>metric-availability</code> bound to element <code>DeviceMetric.availability</code> is flagged as <code>trial-use</code></li>
-            <li>ValueSet: <code>metric-calibration-type</code> (DeviceMetricCalibrationType) bound to element <code>DeviceMetric.calibration.type</code> is flagged as <code>trial-use</code></li>
-            <li>CodeSystem: <code>metric-calibration-type</code> (DeviceMetricCalibrationType) referenced by ValueSet <code>metric-calibration-type</code> bound to element <code>DeviceMetric.calibration.type</code> is flagged as <code>trial-use</code></li>
-            <li>ValueSet: <code>metric-calibration-state</code> (DeviceMetricCalibrationState) bound to element <code>DeviceMetric.calibration.state</code> is flagged as <code>trial-use</code></li>
-            <li>CodeSystem: <code>metric-calibration-state</code> (DeviceMetricCalibrationState) referenced by ValueSet <code>metric-calibration-state</code> bound to element <code>DeviceMetric.calibration.state</code> is flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>DeviceMetric-category</code> (category) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>DeviceMetric-device</code> (device) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>DeviceMetric-identifier</code> (identifier) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>DeviceMetric-type</code> (type) flagged as <code>trial-use</code></li>
+            <li>ValueSet: <code>devicemetric-type</code> (DeviceMetricAndComponentTypes) bound to element <code>DeviceMetric.type</code> (<code>Preferred</code>) has status <code>Draft</code></li>
+            <li>ValueSet: <code>ucum-units</code> (UCUMCodes) bound to element <code>DeviceMetric.unit</code> (<code>Preferred</code>) has status <code>Draft</code></li>
+            <li>ValueSet: <code>metric-operational-status</code> (DeviceMetricOperationalStatus) bound to element <code>DeviceMetric.operationalStatus</code> (<code>Required</code>) has status <code>Draft</code></li>
+            <li>ValueSet: <code>metric-operational-status</code> (DeviceMetricOperationalStatus) bound to element <code>DeviceMetric.operationalStatus</code> (<code>Required</code>) has standard status <code>trial-use</code></li>
+            <li>CodeSystem: <code>metric-operational-status</code> (DeviceMetricOperationalStatus) referenced by ValueSet <code>metric-operational-status</code> bound to element <code>DeviceMetric.operationalStatus</code> (<code>Required</code>) has standard status <code>trial-use</code></li>
+            <li>ValueSet: <code>color-codes</code> (ColorCodesOrRGB) bound to element <code>DeviceMetric.color</code> (<code>Required</code>) has status <code>Draft</code></li>
+            <li>ValueSet: <code>color-codes</code> (ColorCodesOrRGB) bound to element <code>DeviceMetric.color</code> (<code>Required</code>) has standard status <code>trial-use</code></li>
+            <li>CodeSystem: <code>color-names</code> (ColorCodes) referenced by ValueSet <code>color-codes</code> bound to element <code>DeviceMetric.color</code> (<code>Required</code>) has status <code>Draft</code></li>
+            <li>ValueSet: <code>metric-category</code> (DeviceMetricCategory) bound to element <code>DeviceMetric.category</code> (<code>Extensible</code>) has status <code>Draft</code></li>
+            <li>ValueSet: <code>metric-category</code> (DeviceMetricCategory) bound to element <code>DeviceMetric.category</code> (<code>Extensible</code>) has standard status <code>trial-use</code></li>
+            <li>CodeSystem: <code>metric-category</code> (DeviceMetricCategory) referenced by ValueSet <code>metric-category</code> bound to element <code>DeviceMetric.category</code> (<code>Extensible</code>) has standard status <code>trial-use</code></li>
+            <li>ValueSet: <code>metric-availability</code> (DeviceMetricAvailability) bound to element <code>DeviceMetric.availability</code> (<code>Required</code>) has status <code>Draft</code></li>
+            <li>ValueSet: <code>metric-availability</code> (DeviceMetricAvailability) bound to element <code>DeviceMetric.availability</code> (<code>Required</code>) has standard status <code>trial-use</code></li>
+            <li>CodeSystem: <code>metric-availability</code> (DeviceMetricAvailability) referenced by ValueSet <code>metric-availability</code> bound to element <code>DeviceMetric.availability</code> (<code>Required</code>) has standard status <code>trial-use</code></li>
+            <li>ValueSet: <code>metric-calibration-type</code> (DeviceMetricCalibrationType) bound to element <code>DeviceMetric.calibration.type</code> (<code>Extensible</code>) has status <code>Draft</code></li>
+            <li>ValueSet: <code>metric-calibration-type</code> (DeviceMetricCalibrationType) bound to element <code>DeviceMetric.calibration.type</code> (<code>Extensible</code>) has standard status <code>trial-use</code></li>
+            <li>CodeSystem: <code>metric-calibration-type</code> (DeviceMetricCalibrationType) referenced by ValueSet <code>metric-calibration-type</code> bound to element <code>DeviceMetric.calibration.type</code> (<code>Extensible</code>) has standard status <code>trial-use</code></li>
+            <li>ValueSet: <code>metric-calibration-state</code> (DeviceMetricCalibrationState) bound to element <code>DeviceMetric.calibration.state</code> (<code>Required</code>) has status <code>Draft</code></li>
+            <li>ValueSet: <code>metric-calibration-state</code> (DeviceMetricCalibrationState) bound to element <code>DeviceMetric.calibration.state</code> (<code>Required</code>) has standard status <code>trial-use</code></li>
+            <li>CodeSystem: <code>metric-calibration-state</code> (DeviceMetricCalibrationState) referenced by ValueSet <code>metric-calibration-state</code> bound to element <code>DeviceMetric.calibration.state</code> (<code>Required</code>) has standard status <code>trial-use</code></li>
+            <li>Search Parameter: <code>DeviceMetric-category</code> (category) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>DeviceMetric-device</code> (device) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>DeviceMetric-identifier</code> (identifier) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>DeviceMetric-type</code> (type) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>DeviceMetric-category</code> (category) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>DeviceMetric-device</code> (device) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>DeviceMetric-identifier</code> (identifier) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>DeviceMetric-type</code> (type) has standards status <code>trial-use</code></li>
         </ul>
 
 

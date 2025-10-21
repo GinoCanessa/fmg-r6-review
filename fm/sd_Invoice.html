@@ -9,21 +9,35 @@
             <li>Vote on and report content disposition to FMG: Core as Normative, Relocate, or Remove</li>
             <p>Note that the following list will be based on remaining in Core as Normative.
             <li>Confirm workgroup disposition vote has been recorded and sent to FMG!</li>
-            <li>ValueSet: <code>invoice-status</code> (InvoiceStatus) bound to element <code>Invoice.status</code> is flagged as <code>trial-use</code></li>
-            <li>CodeSystem: <code>invoice-status</code> (InvoiceStatus) referenced by ValueSet <code>invoice-status</code> bound to element <code>Invoice.status</code> is flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>clinical-identifier</code> (identifier) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>clinical-patient</code> (patient) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>clinical-type</code> (type) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>clinical-date</code> (date) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>Invoice-account</code> (account) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>Invoice-issuer</code> (issuer) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>Invoice-participant</code> (participant) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>Invoice-participant-role</code> (participant-role) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>Invoice-recipient</code> (recipient) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>Invoice-status</code> (status) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>Invoice-subject</code> (subject) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>Invoice-totalgross</code> (totalgross) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>Invoice-totalnet</code> (totalnet) flagged as <code>trial-use</code></li>
+            <li>ValueSet: <code>invoice-status</code> (InvoiceStatus) bound to element <code>Invoice.status</code> (<code>Required</code>) has status <code>Draft</code></li>
+            <li>ValueSet: <code>invoice-status</code> (InvoiceStatus) bound to element <code>Invoice.status</code> (<code>Required</code>) has standard status <code>trial-use</code></li>
+            <li>CodeSystem: <code>invoice-status</code> (InvoiceStatus) referenced by ValueSet <code>invoice-status</code> bound to element <code>Invoice.status</code> (<code>Required</code>) has standard status <code>trial-use</code></li>
+            <li>Search Parameter: <code>Invoice-account</code> (account) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>Invoice-issuer</code> (issuer) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>Invoice-participant</code> (participant) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>Invoice-participant-role</code> (participant-role) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>Invoice-recipient</code> (recipient) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>Invoice-status</code> (status) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>Invoice-subject</code> (subject) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>Invoice-totalgross</code> (totalgross) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>Invoice-totalnet</code> (totalnet) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>clinical-date</code> (date) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>clinical-identifier</code> (identifier) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>clinical-patient</code> (patient) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>clinical-type</code> (type) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>Invoice-account</code> (account) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>Invoice-issuer</code> (issuer) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>Invoice-participant</code> (participant) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>Invoice-participant-role</code> (participant-role) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>Invoice-recipient</code> (recipient) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>Invoice-status</code> (status) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>Invoice-subject</code> (subject) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>Invoice-totalgross</code> (totalgross) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>Invoice-totalnet</code> (totalnet) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>clinical-date</code> (date) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>clinical-identifier</code> (identifier) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>clinical-patient</code> (patient) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>clinical-type</code> (type) has standards status <code>trial-use</code></li>
         </ul>
 
 
@@ -672,6 +686,143 @@
     </thead>
     <tbody>
         <tr>
+            <td><code>Invoice-account</code></td>
+            <td><code>account</code></td>
+            <td>Draft</td>
+            <td></td>
+            <td>trial-use</td>
+            <td>False</td>
+            <td>fm</td>
+            <td>reference</td>
+            <td>Account that is being balanced</td>
+        </tr>
+        <tr>
+            <td><code>Invoice-issuer</code></td>
+            <td><code>issuer</code></td>
+            <td>Draft</td>
+            <td></td>
+            <td>trial-use</td>
+            <td>False</td>
+            <td>fm</td>
+            <td>reference</td>
+            <td>Issuing Organization of Invoice</td>
+        </tr>
+        <tr>
+            <td><code>Invoice-participant</code></td>
+            <td><code>participant</code></td>
+            <td>Draft</td>
+            <td></td>
+            <td>trial-use</td>
+            <td>False</td>
+            <td>fm</td>
+            <td>reference</td>
+            <td>Individual who was involved</td>
+        </tr>
+        <tr>
+            <td><code>Invoice-participant-role</code></td>
+            <td><code>participant-role</code></td>
+            <td>Draft</td>
+            <td></td>
+            <td>trial-use</td>
+            <td>False</td>
+            <td>fm</td>
+            <td>token</td>
+            <td>Type of involvement in creation of this Invoice</td>
+        </tr>
+        <tr>
+            <td><code>Invoice-recipient</code></td>
+            <td><code>recipient</code></td>
+            <td>Draft</td>
+            <td></td>
+            <td>trial-use</td>
+            <td>False</td>
+            <td>fm</td>
+            <td>reference</td>
+            <td>Recipient of this invoice</td>
+        </tr>
+        <tr>
+            <td><code>Invoice-status</code></td>
+            <td><code>status</code></td>
+            <td>Draft</td>
+            <td></td>
+            <td>trial-use</td>
+            <td>False</td>
+            <td>fm</td>
+            <td>token</td>
+            <td>draft | issued | balanced | cancelled | entered-in-error</td>
+        </tr>
+        <tr>
+            <td><code>Invoice-subject</code></td>
+            <td><code>subject</code></td>
+            <td>Draft</td>
+            <td></td>
+            <td>trial-use</td>
+            <td>False</td>
+            <td>fm</td>
+            <td>reference</td>
+            <td>Recipient(s) of goods and services</td>
+        </tr>
+        <tr>
+            <td><code>Invoice-totalgross</code></td>
+            <td><code>totalgross</code></td>
+            <td>Draft</td>
+            <td></td>
+            <td>trial-use</td>
+            <td>False</td>
+            <td>fm</td>
+            <td>quantity</td>
+            <td>Gross total of this Invoice</td>
+        </tr>
+        <tr>
+            <td><code>Invoice-totalnet</code></td>
+            <td><code>totalnet</code></td>
+            <td>Draft</td>
+            <td></td>
+            <td>trial-use</td>
+            <td>False</td>
+            <td>fm</td>
+            <td>quantity</td>
+            <td>Net total of this Invoice</td>
+        </tr>
+        <tr>
+            <td><code>clinical-date</code></td>
+            <td><code>date</code></td>
+            <td>Draft</td>
+            <td></td>
+            <td>trial-use</td>
+            <td>False</td>
+            <td>pc</td>
+            <td>date</td>
+            <td>Multiple Resources: 
+
+* [AllergyIntolerance](http://hl7.org/fhir/R6/allergyintolerance.html): Date first version of the resource instance was recorded
+* [Appointment](http://hl7.org/fhir/R6/appointment.html): Appointment date/time.
+* [AuditEvent](http://hl7.org/fhir/R6/auditevent.html): Time when the event was recorded
+* [CarePlan](http://hl7.org/fhir/R6/careplan.html): Time period plan covers
+* [CareTeam](http://hl7.org/fhir/R6/careteam.html): A date within the coverage time period.
+* [Composition](http://hl7.org/fhir/R6/composition.html): Composition editing time
+* [Consent](http://hl7.org/fhir/R6/consent.html): When consent was agreed to
+* [DiagnosticReport](http://hl7.org/fhir/R6/diagnosticreport.html): The clinically relevant time of the report
+* [DocumentReference](http://hl7.org/fhir/R6/documentreference.html): When this document reference was created
+* [Encounter](http://hl7.org/fhir/R6/encounter.html): A date within the actualPeriod the Encounter lasted
+* [EpisodeOfCare](http://hl7.org/fhir/R6/episodeofcare.html): The provided date search value falls within the episode of care's period
+* [FamilyMemberHistory](http://hl7.org/fhir/R6/familymemberhistory.html): When history was recorded or last updated
+* [Flag](http://hl7.org/fhir/R6/flag.html): Time period when flag is active
+* [Immunization](http://hl7.org/fhir/R6/immunization.html): Vaccination  (non)-Administration Date
+* [ImmunizationEvaluation](http://hl7.org/fhir/R6/immunizationevaluation.html): Date the evaluation was generated
+* [ImmunizationRecommendation](http://hl7.org/fhir/R6/immunizationrecommendation.html): Date recommendation(s) created
+* [Invoice](http://hl7.org/fhir/R6/invoice.html): Invoice date / posting date
+* [List](http://hl7.org/fhir/R6/list.html): When the list was prepared
+* [MeasureReport](http://hl7.org/fhir/R6/measurereport.html): The date of the measure report
+* [NutritionIntake](http://hl7.org/fhir/R6/nutritionintake.html): Date when patient was taking (or not taking) the medication
+* [Observation](http://hl7.org/fhir/R6/observation.html): Clinically relevant time/time-period for observation
+* [Procedure](http://hl7.org/fhir/R6/procedure.html): When the procedure occurred or is occurring
+* [ResearchSubject](http://hl7.org/fhir/R6/researchsubject.html): Start and end of participation
+* [RiskAssessment](http://hl7.org/fhir/R6/riskassessment.html): When was assessment made?
+* [SupplyRequest](http://hl7.org/fhir/R6/supplyrequest.html): When the request was made
+</td>
+        </tr>
+        <tr>
             <td><code>clinical-identifier</code></td>
             <td><code>identifier</code></td>
             <td>Draft</td>
@@ -850,143 +1001,6 @@
 * [MedicationDispense](http://hl7.org/fhir/R6/medicationdispense.html): Returns dispenses of a specific type
 * [Specimen](http://hl7.org/fhir/R6/specimen.html): The specimen type
 </td>
-        </tr>
-        <tr>
-            <td><code>clinical-date</code></td>
-            <td><code>date</code></td>
-            <td>Draft</td>
-            <td></td>
-            <td>trial-use</td>
-            <td>False</td>
-            <td>pc</td>
-            <td>date</td>
-            <td>Multiple Resources: 
-
-* [AllergyIntolerance](http://hl7.org/fhir/R6/allergyintolerance.html): Date first version of the resource instance was recorded
-* [Appointment](http://hl7.org/fhir/R6/appointment.html): Appointment date/time.
-* [AuditEvent](http://hl7.org/fhir/R6/auditevent.html): Time when the event was recorded
-* [CarePlan](http://hl7.org/fhir/R6/careplan.html): Time period plan covers
-* [CareTeam](http://hl7.org/fhir/R6/careteam.html): A date within the coverage time period.
-* [Composition](http://hl7.org/fhir/R6/composition.html): Composition editing time
-* [Consent](http://hl7.org/fhir/R6/consent.html): When consent was agreed to
-* [DiagnosticReport](http://hl7.org/fhir/R6/diagnosticreport.html): The clinically relevant time of the report
-* [DocumentReference](http://hl7.org/fhir/R6/documentreference.html): When this document reference was created
-* [Encounter](http://hl7.org/fhir/R6/encounter.html): A date within the actualPeriod the Encounter lasted
-* [EpisodeOfCare](http://hl7.org/fhir/R6/episodeofcare.html): The provided date search value falls within the episode of care's period
-* [FamilyMemberHistory](http://hl7.org/fhir/R6/familymemberhistory.html): When history was recorded or last updated
-* [Flag](http://hl7.org/fhir/R6/flag.html): Time period when flag is active
-* [Immunization](http://hl7.org/fhir/R6/immunization.html): Vaccination  (non)-Administration Date
-* [ImmunizationEvaluation](http://hl7.org/fhir/R6/immunizationevaluation.html): Date the evaluation was generated
-* [ImmunizationRecommendation](http://hl7.org/fhir/R6/immunizationrecommendation.html): Date recommendation(s) created
-* [Invoice](http://hl7.org/fhir/R6/invoice.html): Invoice date / posting date
-* [List](http://hl7.org/fhir/R6/list.html): When the list was prepared
-* [MeasureReport](http://hl7.org/fhir/R6/measurereport.html): The date of the measure report
-* [NutritionIntake](http://hl7.org/fhir/R6/nutritionintake.html): Date when patient was taking (or not taking) the medication
-* [Observation](http://hl7.org/fhir/R6/observation.html): Clinically relevant time/time-period for observation
-* [Procedure](http://hl7.org/fhir/R6/procedure.html): When the procedure occurred or is occurring
-* [ResearchSubject](http://hl7.org/fhir/R6/researchsubject.html): Start and end of participation
-* [RiskAssessment](http://hl7.org/fhir/R6/riskassessment.html): When was assessment made?
-* [SupplyRequest](http://hl7.org/fhir/R6/supplyrequest.html): When the request was made
-</td>
-        </tr>
-        <tr>
-            <td><code>Invoice-account</code></td>
-            <td><code>account</code></td>
-            <td>Draft</td>
-            <td></td>
-            <td>trial-use</td>
-            <td>False</td>
-            <td>fm</td>
-            <td>reference</td>
-            <td>Account that is being balanced</td>
-        </tr>
-        <tr>
-            <td><code>Invoice-issuer</code></td>
-            <td><code>issuer</code></td>
-            <td>Draft</td>
-            <td></td>
-            <td>trial-use</td>
-            <td>False</td>
-            <td>fm</td>
-            <td>reference</td>
-            <td>Issuing Organization of Invoice</td>
-        </tr>
-        <tr>
-            <td><code>Invoice-participant</code></td>
-            <td><code>participant</code></td>
-            <td>Draft</td>
-            <td></td>
-            <td>trial-use</td>
-            <td>False</td>
-            <td>fm</td>
-            <td>reference</td>
-            <td>Individual who was involved</td>
-        </tr>
-        <tr>
-            <td><code>Invoice-participant-role</code></td>
-            <td><code>participant-role</code></td>
-            <td>Draft</td>
-            <td></td>
-            <td>trial-use</td>
-            <td>False</td>
-            <td>fm</td>
-            <td>token</td>
-            <td>Type of involvement in creation of this Invoice</td>
-        </tr>
-        <tr>
-            <td><code>Invoice-recipient</code></td>
-            <td><code>recipient</code></td>
-            <td>Draft</td>
-            <td></td>
-            <td>trial-use</td>
-            <td>False</td>
-            <td>fm</td>
-            <td>reference</td>
-            <td>Recipient of this invoice</td>
-        </tr>
-        <tr>
-            <td><code>Invoice-status</code></td>
-            <td><code>status</code></td>
-            <td>Draft</td>
-            <td></td>
-            <td>trial-use</td>
-            <td>False</td>
-            <td>fm</td>
-            <td>token</td>
-            <td>draft | issued | balanced | cancelled | entered-in-error</td>
-        </tr>
-        <tr>
-            <td><code>Invoice-subject</code></td>
-            <td><code>subject</code></td>
-            <td>Draft</td>
-            <td></td>
-            <td>trial-use</td>
-            <td>False</td>
-            <td>fm</td>
-            <td>reference</td>
-            <td>Recipient(s) of goods and services</td>
-        </tr>
-        <tr>
-            <td><code>Invoice-totalgross</code></td>
-            <td><code>totalgross</code></td>
-            <td>Draft</td>
-            <td></td>
-            <td>trial-use</td>
-            <td>False</td>
-            <td>fm</td>
-            <td>quantity</td>
-            <td>Gross total of this Invoice</td>
-        </tr>
-        <tr>
-            <td><code>Invoice-totalnet</code></td>
-            <td><code>totalnet</code></td>
-            <td>Draft</td>
-            <td></td>
-            <td>trial-use</td>
-            <td>False</td>
-            <td>fm</td>
-            <td>quantity</td>
-            <td>Net total of this Invoice</td>
         </tr>
     </tbody>
 </table>

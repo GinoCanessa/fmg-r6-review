@@ -10,10 +10,17 @@
             <li>Element: <code>Patient.contact.role</code> flagged as <code>trial-use</code></li>
             <li>Element: <code>Patient.contact.additionalName</code> flagged as <code>trial-use</code></li>
             <li>Element: <code>Patient.contact.additionalAddress</code> flagged as <code>trial-use</code></li>
-            <li>Operation: <code>Patient-everything</code> (Everything) flagged as <code>trial-use</code></li>
-            <li>Operation: <code>Patient-match</code> (Match) flagged as <code>trial-use</code></li>
-            <li>Operation: <code>Patient-merge</code> (Merge) flagged as <code>trial-use</code></li>
-            <li>Operation: <code>Patient-purge</code> (Purge) flagged as <code>trial-use</code></li>
+            <li>ValueSet: <code>relatedperson-relationshiptype</code> (PatientRelationshipType) bound to element <code>Patient.contact.role</code> (<code>Preferred</code>) has status <code>Draft</code></li>
+            <li>Operation: <code>Patient-everything</code> (Everything) has status of <code>Draft</code></li>
+            <li>Operation: <code>Patient-match</code> (Match) has status of <code>Draft</code></li>
+            <li>Operation: <code>Patient-merge</code> (Merge) has status of <code>Draft</code></li>
+            <li>Operation: <code>Patient-purge</code> (Purge) has status of <code>Draft</code></li>
+            <li>Operation: <code>example-query-high-risk</code> (ExampleOfHighRiskPatientQuery) has status of <code>Draft</code></li>
+            <li>Operation: <code>Patient-everything</code> (Everything) has standards status <code>trial-use</code></li>
+            <li>Operation: <code>Patient-match</code> (Match) has standards status <code>trial-use</code></li>
+            <li>Operation: <code>Patient-merge</code> (Merge) has standards status <code>trial-use</code></li>
+            <li>Operation: <code>Patient-purge</code> (Purge) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>example-extension</code> (ExampleSearchParameterOnAnExtension) has status <code>Draft</code></li>
             <li>Search Parameter: <code>example-extension</code> (ExampleSearchParameterOnAnExtension) flagged as <code>experimental</code></li>
         </ul>
 
@@ -261,7 +268,7 @@
                 <tr>
                     <td><b>MAY</b></td>
                     <td>0</td>
-                    <td>17</td>
+                    <td>19</td>
                 </tr>
                 <tr>
                     <td><b>MAY NOT</b></td>
@@ -294,14 +301,14 @@
                 </tr>
             </thead>
             <tbody>
-                <tr><td><code>multipleBirth<code></td><td>No</td></tr>
-            <tr><td><code>genderIdentity<code></td><td>No</td></tr>
+                <tr><td><code>(RSG)<code></td><td>No</td></tr>
             <tr><td><code>(SPCU)<code></td><td>No</td></tr>
-            <tr><td><code>sexParameterForClinicalUse<code></td><td>No</td></tr>
-            <tr><td><code>(RSG)<code></td><td>No</td></tr>
-            <tr><td><code>genderStatus<code></td><td>No</td></tr>
-            <tr><td><code>partOf<code></td><td>No</td></tr>
             <tr><td><code>MPIs<code></td><td>No</td></tr>
+            <tr><td><code>genderIdentity<code></td><td>No</td></tr>
+            <tr><td><code>genderStatus<code></td><td>No</td></tr>
+            <tr><td><code>multipleBirth<code></td><td>No</td></tr>
+            <tr><td><code>partOf<code></td><td>No</td></tr>
+            <tr><td><code>sexParameterForClinicalUse<code></td><td>No</td></tr>
             </tbody>
         </table>
 
@@ -829,6 +836,105 @@ Note that the deletion of resources typically involves many policy decisions.  I
             <td>Whether the patient record is active</td>
         </tr>
         <tr>
+            <td><code>Patient-death-date</code></td>
+            <td><code>death-date</code></td>
+            <td>Active</td>
+            <td></td>
+            <td>normative</td>
+            <td>False</td>
+            <td>pa</td>
+            <td>date</td>
+            <td>The date of death has been provided and satisfies this search value</td>
+        </tr>
+        <tr>
+            <td><code>Patient-deceased</code></td>
+            <td><code>deceased</code></td>
+            <td>Active</td>
+            <td></td>
+            <td>normative</td>
+            <td>False</td>
+            <td>pa</td>
+            <td>token</td>
+            <td>This patient has been marked as deceased, or has a death date entered</td>
+        </tr>
+        <tr>
+            <td><code>Patient-general-practitioner</code></td>
+            <td><code>general-practitioner</code></td>
+            <td>Active</td>
+            <td></td>
+            <td>normative</td>
+            <td>False</td>
+            <td>pa</td>
+            <td>reference</td>
+            <td>Patient's nominated general practitioner, not the organization that manages the record</td>
+        </tr>
+        <tr>
+            <td><code>Patient-identifier</code></td>
+            <td><code>identifier</code></td>
+            <td>Active</td>
+            <td></td>
+            <td>normative</td>
+            <td>False</td>
+            <td>pa</td>
+            <td>token</td>
+            <td>A patient identifier</td>
+        </tr>
+        <tr>
+            <td><code>Patient-language</code></td>
+            <td><code>language</code></td>
+            <td>Active</td>
+            <td></td>
+            <td>normative</td>
+            <td>False</td>
+            <td>pa</td>
+            <td>token</td>
+            <td>Language code (irrespective of use value)</td>
+        </tr>
+        <tr>
+            <td><code>Patient-link</code></td>
+            <td><code>link</code></td>
+            <td>Active</td>
+            <td></td>
+            <td>normative</td>
+            <td>False</td>
+            <td>pa</td>
+            <td>reference</td>
+            <td>All patients/related persons linked to the given patient</td>
+        </tr>
+        <tr>
+            <td><code>Patient-name</code></td>
+            <td><code>name</code></td>
+            <td>Active</td>
+            <td></td>
+            <td>normative</td>
+            <td>False</td>
+            <td>pa</td>
+            <td>string</td>
+            <td>A server defined search that may match any of the string fields in the HumanName, including family, given, prefix, suffix, and/or text</td>
+        </tr>
+        <tr>
+            <td><code>Patient-organization</code></td>
+            <td><code>organization</code></td>
+            <td>Active</td>
+            <td></td>
+            <td>normative</td>
+            <td>False</td>
+            <td>pa</td>
+            <td>reference</td>
+            <td>The organization that is the custodian of the patient record</td>
+        </tr>
+        <tr>
+            <td><code>example-extension</code></td>
+            <td><code>ExampleSearchParameterOnAnExtension</code></td>
+            <td>Draft</td>
+            <td></td>
+            <td></td>
+            <td>True</td>
+            <td>fhir</td>
+            <td>reference</td>
+            <td>Search by url for a participation agreement, which is stored as an extension referencing a DocumentReference</td>
+        </tr>
+        <tr>
             <td><code>individual-address</code></td>
             <td><code>address</code></td>
             <td>Active</td>
@@ -947,28 +1053,6 @@ Note that the deletion of resources typically involves many policy decisions.  I
 </td>
         </tr>
         <tr>
-            <td><code>Patient-death-date</code></td>
-            <td><code>death-date</code></td>
-            <td>Active</td>
-            <td></td>
-            <td>normative</td>
-            <td>False</td>
-            <td>pa</td>
-            <td>date</td>
-            <td>The date of death has been provided and satisfies this search value</td>
-        </tr>
-        <tr>
-            <td><code>Patient-deceased</code></td>
-            <td><code>deceased</code></td>
-            <td>Active</td>
-            <td></td>
-            <td>normative</td>
-            <td>False</td>
-            <td>pa</td>
-            <td>token</td>
-            <td>This patient has been marked as deceased, or has a death date entered</td>
-        </tr>
-        <tr>
             <td><code>individual-email</code></td>
             <td><code>email</code></td>
             <td>Active</td>
@@ -1019,17 +1103,6 @@ Note that the deletion of resources typically involves many policy decisions.  I
 </td>
         </tr>
         <tr>
-            <td><code>Patient-general-practitioner</code></td>
-            <td><code>general-practitioner</code></td>
-            <td>Active</td>
-            <td></td>
-            <td>normative</td>
-            <td>False</td>
-            <td>pa</td>
-            <td>reference</td>
-            <td>Patient's nominated general practitioner, not the organization that manages the record</td>
-        </tr>
-        <tr>
             <td><code>individual-given</code></td>
             <td><code>given</code></td>
             <td>Active</td>
@@ -1043,61 +1116,6 @@ Note that the deletion of resources typically involves many policy decisions.  I
 * [Patient](http://hl7.org/fhir/R6/patient.html): A portion of the given name of the patient
 * [Practitioner](http://hl7.org/fhir/R6/practitioner.html): A portion of the given name
 </td>
-        </tr>
-        <tr>
-            <td><code>Patient-identifier</code></td>
-            <td><code>identifier</code></td>
-            <td>Active</td>
-            <td></td>
-            <td>normative</td>
-            <td>False</td>
-            <td>pa</td>
-            <td>token</td>
-            <td>A patient identifier</td>
-        </tr>
-        <tr>
-            <td><code>Patient-language</code></td>
-            <td><code>language</code></td>
-            <td>Active</td>
-            <td></td>
-            <td>normative</td>
-            <td>False</td>
-            <td>pa</td>
-            <td>token</td>
-            <td>Language code (irrespective of use value)</td>
-        </tr>
-        <tr>
-            <td><code>Patient-link</code></td>
-            <td><code>link</code></td>
-            <td>Active</td>
-            <td></td>
-            <td>normative</td>
-            <td>False</td>
-            <td>pa</td>
-            <td>reference</td>
-            <td>All patients/related persons linked to the given patient</td>
-        </tr>
-        <tr>
-            <td><code>Patient-name</code></td>
-            <td><code>name</code></td>
-            <td>Active</td>
-            <td></td>
-            <td>normative</td>
-            <td>False</td>
-            <td>pa</td>
-            <td>string</td>
-            <td>A server defined search that may match any of the string fields in the HumanName, including family, given, prefix, suffix, and/or text</td>
-        </tr>
-        <tr>
-            <td><code>Patient-organization</code></td>
-            <td><code>organization</code></td>
-            <td>Active</td>
-            <td></td>
-            <td>normative</td>
-            <td>False</td>
-            <td>pa</td>
-            <td>reference</td>
-            <td>The organization that is the custodian of the patient record</td>
         </tr>
         <tr>
             <td><code>individual-phone</code></td>
@@ -1151,17 +1169,6 @@ Note that the deletion of resources typically involves many policy decisions.  I
 * [PractitionerRole](http://hl7.org/fhir/R6/practitionerrole.html): The value in any kind of contact
 * [RelatedPerson](http://hl7.org/fhir/R6/relatedperson.html): The value in any kind of contact
 </td>
-        </tr>
-        <tr>
-            <td><code>example-extension</code></td>
-            <td><code>ExampleSearchParameterOnAnExtension</code></td>
-            <td>Draft</td>
-            <td></td>
-            <td></td>
-            <td>True</td>
-            <td>fhir</td>
-            <td>reference</td>
-            <td>Search by url for a participation agreement, which is stored as an extension referencing a DocumentReference</td>
         </tr>
     </tbody>
 </table>

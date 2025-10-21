@@ -7,29 +7,46 @@
         <h3>Urgent Item Checklist</h3>
                 <ul>
             <li>Confirm workgroup disposition vote has been recorded and sent to FMG!</li>
-            <li>ValueSet: <code>subscription-status</code> (SubscriptionStatusCodes) bound to element <code>Subscription.status</code> is flagged as <code>trial-use</code></li>
-            <li>ValueSet: <code>search-comparator</code> (SearchComparator) bound to element <code>Subscription.filterBy.comparator</code> is flagged as <code>trial-use</code></li>
-            <li>CodeSystem: <code>search-comparator</code> (SearchComparator) referenced by ValueSet <code>search-comparator</code> bound to element <code>Subscription.filterBy.comparator</code> is flagged as <code>trial-use</code></li>
-            <li>ValueSet: <code>search-modifier-code</code> (SearchModifierCode) bound to element <code>Subscription.filterBy.modifier</code> is flagged as <code>trial-use</code></li>
-            <li>CodeSystem: <code>search-modifier-code</code> (SearchModifierCode) referenced by ValueSet <code>search-modifier-code</code> bound to element <code>Subscription.filterBy.modifier</code> is flagged as <code>trial-use</code></li>
-            <li>ValueSet: <code>subscription-channel-type</code> (SubscriptionChannelType) bound to element <code>Subscription.channelType</code> is flagged as <code>trial-use</code></li>
-            <li>ValueSet: <code>subscription-payload-content</code> (SubscriptionPayloadContent) bound to element <code>Subscription.content</code> is flagged as <code>trial-use</code></li>
-            <li>CodeSystem: <code>subscription-payload-content</code> (SubscriptionPayloadContent) referenced by ValueSet <code>subscription-payload-content</code> bound to element <code>Subscription.content</code> is flagged as <code>trial-use</code></li>
-            <li>Operation: <code>Subscription-events</code> (Events) flagged as <code>trial-use</code></li>
-            <li>Operation: <code>Subscription-get-ws-binding-token</code> (GetWsBindingToken) flagged as <code>trial-use</code></li>
-            <li>Operation: <code>Subscription-status</code> (Status) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>Subscription-contact</code> (contact) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>Subscription-content-level</code> (content-level) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>Subscription-filter-event</code> (filter-event) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>Subscription-filter-value</code> (filter-value) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>Subscription-identifier</code> (identifier) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>Subscription-name</code> (name) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>Subscription-owner</code> (owner) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>Subscription-payload</code> (payload) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>Subscription-status</code> (status) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>Subscription-topic</code> (topic) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>Subscription-type</code> (type) flagged as <code>trial-use</code></li>
-            <li>Search Parameter: <code>Subscription-url</code> (url) flagged as <code>trial-use</code></li>
+            <li>ValueSet: <code>subscription-status</code> (SubscriptionStatusCodes) bound to element <code>Subscription.status</code> (<code>Required</code>) has standard status <code>trial-use</code></li>
+            <li>ValueSet: <code>search-comparator</code> (SearchComparator) bound to element <code>Subscription.filterBy.comparator</code> (<code>Required</code>) has status <code>Draft</code></li>
+            <li>ValueSet: <code>search-comparator</code> (SearchComparator) bound to element <code>Subscription.filterBy.comparator</code> (<code>Required</code>) has standard status <code>trial-use</code></li>
+            <li>CodeSystem: <code>search-comparator</code> (SearchComparator) referenced by ValueSet <code>search-comparator</code> bound to element <code>Subscription.filterBy.comparator</code> (<code>Required</code>) has standard status <code>trial-use</code></li>
+            <li>ValueSet: <code>search-modifier-code</code> (SearchModifierCode) bound to element <code>Subscription.filterBy.modifier</code> (<code>Required</code>) has status <code>Draft</code></li>
+            <li>ValueSet: <code>search-modifier-code</code> (SearchModifierCode) bound to element <code>Subscription.filterBy.modifier</code> (<code>Required</code>) has standard status <code>trial-use</code></li>
+            <li>CodeSystem: <code>search-modifier-code</code> (SearchModifierCode) referenced by ValueSet <code>search-modifier-code</code> bound to element <code>Subscription.filterBy.modifier</code> (<code>Required</code>) has standard status <code>trial-use</code></li>
+            <li>ValueSet: <code>subscription-channel-type</code> (SubscriptionChannelType) bound to element <code>Subscription.channelType</code> (<code>Extensible</code>) has standard status <code>trial-use</code></li>
+            <li>ValueSet: <code>subscription-payload-content</code> (SubscriptionPayloadContent) bound to element <code>Subscription.content</code> (<code>Required</code>) has status <code>Draft</code></li>
+            <li>ValueSet: <code>subscription-payload-content</code> (SubscriptionPayloadContent) bound to element <code>Subscription.content</code> (<code>Required</code>) has standard status <code>trial-use</code></li>
+            <li>CodeSystem: <code>subscription-payload-content</code> (SubscriptionPayloadContent) referenced by ValueSet <code>subscription-payload-content</code> bound to element <code>Subscription.content</code> (<code>Required</code>) has standard status <code>trial-use</code></li>
+            <li>Operation: <code>Subscription-events</code> (Events) has status of <code>Draft</code></li>
+            <li>Operation: <code>Subscription-get-ws-binding-token</code> (GetWsBindingToken) has status of <code>Draft</code></li>
+            <li>Operation: <code>Subscription-status</code> (Status) has status of <code>Draft</code></li>
+            <li>Operation: <code>Subscription-events</code> (Events) has standards status <code>trial-use</code></li>
+            <li>Operation: <code>Subscription-get-ws-binding-token</code> (GetWsBindingToken) has standards status <code>trial-use</code></li>
+            <li>Operation: <code>Subscription-status</code> (Status) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>Subscription-contact</code> (contact) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>Subscription-content-level</code> (content-level) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>Subscription-filter-event</code> (filter-event) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>Subscription-filter-value</code> (filter-value) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>Subscription-identifier</code> (identifier) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>Subscription-name</code> (name) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>Subscription-owner</code> (owner) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>Subscription-status</code> (status) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>Subscription-topic</code> (topic) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>Subscription-type</code> (type) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>Subscription-url</code> (url) has status <code>Draft</code></li>
+            <li>Search Parameter: <code>Subscription-contact</code> (contact) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>Subscription-content-level</code> (content-level) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>Subscription-filter-event</code> (filter-event) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>Subscription-filter-value</code> (filter-value) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>Subscription-identifier</code> (identifier) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>Subscription-name</code> (name) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>Subscription-owner</code> (owner) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>Subscription-payload</code> (payload) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>Subscription-status</code> (status) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>Subscription-topic</code> (topic) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>Subscription-type</code> (type) has standards status <code>trial-use</code></li>
+            <li>Search Parameter: <code>Subscription-url</code> (url) has standards status <code>trial-use</code></li>
         </ul>
 
 
@@ -145,7 +162,7 @@
                 </tr>
             </thead>
             <tbody>
-                <tr><td><code>(SubscriptionTopic.canFilterBy),<code></td><td>Element</td></tr>
+                <tr><td><code>SubscriptionTopic.canFilterBy<code></td><td>Element</td></tr>
             </tbody>
         </table>
 
@@ -308,13 +325,13 @@
                 </tr>
             </thead>
             <tbody>
-                <tr><td><code>filterBy.resourceType<code></td><td>No</td></tr>
-            <tr><td><code>channelType<code></td><td>No</td></tr>
-            <tr><td><code>heartbeatPeriod).<code></td><td>No</td></tr>
-            <tr><td><code>(wss://<code></td><td>No</td></tr>
+                <tr><td><code>'secure-mq'<code></td><td>No</td></tr>
             <tr><td><code>JWT<code></td><td>No</td></tr>
+            <tr><td><code>channelType<code></td><td>No</td></tr>
             <tr><td><code>desireable<code></td><td>Yes</td></tr>
-            <tr><td><code>'secure-mq'<code></td><td>No</td></tr>
+            <tr><td><code>filterBy.resourceType<code></td><td>No</td></tr>
+            <tr><td><code>heartbeatPeriod<code></td><td>No</td></tr>
+            <tr><td><code>wss://<code></td><td>No</td></tr>
             </tbody>
         </table>
 
@@ -328,10 +345,10 @@
                 </tr>
             </thead>
             <tbody>
-                <tr><td><code>subscription-channel-rest-hook.svg<code></td><td>Yes</td><td>No</td></tr>
-            <tr><td><code>subscription-channel-websocket.svg<code></td><td>Yes</td><td>No</td></tr>
-            <tr><td><code>subscription-channel-email.svg<code></td><td>Yes</td><td>No</td></tr>
+                <tr><td><code>subscription-channel-email.svg<code></td><td>Yes</td><td>No</td></tr>
             <tr><td><code>subscription-channel-messaging.svg<code></td><td>Yes</td><td>No</td></tr>
+            <tr><td><code>subscription-channel-rest-hook.svg<code></td><td>Yes</td><td>No</td></tr>
+            <tr><td><code>subscription-channel-websocket.svg<code></td><td>Yes</td><td>No</td></tr>
             </tbody>
         </table>
 
