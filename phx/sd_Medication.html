@@ -7,32 +7,7 @@
         <h3>Urgent Item Checklist</h3>
                 <ul>
             <li>Confirm workgroup disposition vote has been recorded and sent to FMG!</li>
-            <li>ValueSet: <code>medication-codes</code> (SNOMEDCTMedicationCodes) bound to element <code>Medication.code</code> (<code>Example</code>) has status <code>Draft</code></li>
-            <li>ValueSet: <code>medication-status</code> (MedicationStatusCodes) bound to element <code>Medication.status</code> (<code>Required</code>) has status <code>Draft</code></li>
-            <li>ValueSet: <code>medication-status</code> (MedicationStatusCodes) bound to element <code>Medication.status</code> (<code>Required</code>) has standard status <code>trial-use</code></li>
-            <li>ValueSet: <code>medication-form-codes</code> (SNOMEDCTFormCodes) bound to element <code>Medication.doseForm</code> (<code>Example</code>) has status <code>Draft</code></li>
-            <li>ValueSet: <code>medication-codes</code> (SNOMEDCTMedicationCodes) bound to element <code>Medication.ingredient.item</code> (<code>Example</code>) has status <code>Draft</code></li>
-            <li>ValueSet: <code>medication-ingredientstrength</code> (MedicationIngredientStrengthCodes) bound to element <code>Medication.ingredient.strength[x]</code> (<code>Preferred</code>) has status <code>Draft</code></li>
-            <li>Search Parameter: <code>Medication-expiration-date</code> (expiration-date) has status <code>Draft</code></li>
-            <li>Search Parameter: <code>Medication-form</code> (form) has status <code>Draft</code></li>
-            <li>Search Parameter: <code>Medication-ingredient</code> (ingredient) has status <code>Draft</code></li>
-            <li>Search Parameter: <code>Medication-ingredient-code</code> (ingredient-code) has status <code>Draft</code></li>
-            <li>Search Parameter: <code>Medication-lot-number</code> (lot-number) has status <code>Draft</code></li>
-            <li>Search Parameter: <code>Medication-marketingauthorizationholder</code> (marketingauthorizationholder) has status <code>Draft</code></li>
-            <li>Search Parameter: <code>Medication-serial-number</code> (serial-number) has status <code>Draft</code></li>
-            <li>Search Parameter: <code>Medication-status</code> (status) has status <code>Draft</code></li>
-            <li>Search Parameter: <code>clinical-code</code> (code) has status <code>Draft</code></li>
-            <li>Search Parameter: <code>clinical-identifier</code> (identifier) has status <code>Draft</code></li>
-            <li>Search Parameter: <code>Medication-expiration-date</code> (expiration-date) has standards status <code>trial-use</code></li>
-            <li>Search Parameter: <code>Medication-form</code> (form) has standards status <code>trial-use</code></li>
-            <li>Search Parameter: <code>Medication-ingredient</code> (ingredient) has standards status <code>trial-use</code></li>
-            <li>Search Parameter: <code>Medication-ingredient-code</code> (ingredient-code) has standards status <code>trial-use</code></li>
-            <li>Search Parameter: <code>Medication-lot-number</code> (lot-number) has standards status <code>trial-use</code></li>
-            <li>Search Parameter: <code>Medication-marketingauthorizationholder</code> (marketingauthorizationholder) has standards status <code>trial-use</code></li>
-            <li>Search Parameter: <code>Medication-serial-number</code> (serial-number) has standards status <code>trial-use</code></li>
-            <li>Search Parameter: <code>Medication-status</code> (status) has standards status <code>trial-use</code></li>
-            <li>Search Parameter: <code>clinical-code</code> (code) has standards status <code>trial-use</code></li>
-            <li>Search Parameter: <code>clinical-identifier</code> (identifier) has standards status <code>trial-use</code></li>
+            <li>CodeSystem: <code>medication-ingredientstrength</code> (MedicationIngredientStrengthCodes) referenced by ValueSet <code>medication-ingredientstrength</code> bound to element <code>Medication.ingredient.strength[x]</code> is never bound to a <code>code</code>-type element. Should it move to THO?</li>
         </ul>
 
 
@@ -707,6 +682,7 @@
 * [ChargeItem](http://hl7.org/fhir/R6/chargeitem.html): Business Identifier for item
 * [Claim](http://hl7.org/fhir/R6/claim.html): The primary identifier of the financial resource
 * [ClaimResponse](http://hl7.org/fhir/R6/claimresponse.html): The identity of the ClaimResponse
+* [ClinicalAssessment](http://hl7.org/fhir/R6/clinicalassessment.html): Business identifier
 * [Communication](http://hl7.org/fhir/R6/communication.html): Unique identifier
 * [CommunicationRequest](http://hl7.org/fhir/R6/communicationrequest.html): Unique identifier
 * [Composition](http://hl7.org/fhir/R6/composition.html): Version-independent identifier for the Composition

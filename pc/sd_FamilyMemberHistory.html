@@ -7,29 +7,6 @@
         <h3>Urgent Item Checklist</h3>
                 <ul>
             <li>Confirm workgroup disposition vote has been recorded and sent to FMG!</li>
-            <li>ValueSet: <code>history-status</code> (FamilyHistoryStatus) bound to element <code>FamilyMemberHistory.status</code> (<code>Required</code>) has status <code>Draft</code></li>
-            <li>ValueSet: <code>history-status</code> (FamilyHistoryStatus) bound to element <code>FamilyMemberHistory.status</code> (<code>Required</code>) has standard status <code>trial-use</code></li>
-            <li>CodeSystem: <code>history-status</code> (FamilyHistoryStatus) referenced by ValueSet <code>history-status</code> bound to element <code>FamilyMemberHistory.status</code> (<code>Required</code>) has standard status <code>trial-use</code></li>
-            <li>ValueSet: <code>history-absent-reason</code> (FamilyHistoryAbsentReason) bound to element <code>FamilyMemberHistory.dataAbsentReason</code> (<code>Example</code>) has status <code>Draft</code></li>
-            <li>ValueSet: <code>clinical-findings</code> (SNOMEDCTClinicalFindings) bound to element <code>FamilyMemberHistory.reason</code> (<code>Example</code>) has status <code>Draft</code></li>
-            <li>ValueSet: <code>condition-code</code> (ConditionProblemDiagnosisCodes) bound to element <code>FamilyMemberHistory.condition.code</code> (<code>Example</code>) has status <code>Draft</code></li>
-            <li>ValueSet: <code>condition-outcome</code> (ConditionOutcomeCodes) bound to element <code>FamilyMemberHistory.condition.outcome</code> (<code>Example</code>) has status <code>Draft</code></li>
-            <li>ValueSet: <code>procedure-code</code> (ProcedureCodesSNOMEDCT) bound to element <code>FamilyMemberHistory.procedure.code</code> (<code>Example</code>) has status <code>Draft</code></li>
-            <li>ValueSet: <code>clinical-findings</code> (SNOMEDCTClinicalFindings) bound to element <code>FamilyMemberHistory.procedure.outcome</code> (<code>Example</code>) has status <code>Draft</code></li>
-            <li>Search Parameter: <code>FamilyMemberHistory-relationship</code> (relationship) has status <code>Draft</code></li>
-            <li>Search Parameter: <code>FamilyMemberHistory-sex</code> (sex) has status <code>Draft</code></li>
-            <li>Search Parameter: <code>FamilyMemberHistory-status</code> (status) has status <code>Draft</code></li>
-            <li>Search Parameter: <code>clinical-code</code> (code) has status <code>Draft</code></li>
-            <li>Search Parameter: <code>clinical-date</code> (date) has status <code>Draft</code></li>
-            <li>Search Parameter: <code>clinical-identifier</code> (identifier) has status <code>Draft</code></li>
-            <li>Search Parameter: <code>clinical-patient</code> (patient) has status <code>Draft</code></li>
-            <li>Search Parameter: <code>FamilyMemberHistory-relationship</code> (relationship) has standards status <code>trial-use</code></li>
-            <li>Search Parameter: <code>FamilyMemberHistory-sex</code> (sex) has standards status <code>trial-use</code></li>
-            <li>Search Parameter: <code>FamilyMemberHistory-status</code> (status) has standards status <code>trial-use</code></li>
-            <li>Search Parameter: <code>clinical-code</code> (code) has standards status <code>trial-use</code></li>
-            <li>Search Parameter: <code>clinical-date</code> (date) has standards status <code>trial-use</code></li>
-            <li>Search Parameter: <code>clinical-identifier</code> (identifier) has standards status <code>trial-use</code></li>
-            <li>Search Parameter: <code>clinical-patient</code> (patient) has standards status <code>trial-use</code></li>
         </ul>
 
 
@@ -808,6 +785,7 @@
 * [AuditEvent](http://hl7.org/fhir/R6/auditevent.html): Time when the event was recorded
 * [CarePlan](http://hl7.org/fhir/R6/careplan.html): Time period plan covers
 * [CareTeam](http://hl7.org/fhir/R6/careteam.html): A date within the coverage time period.
+* [ClinicalAssessment](http://hl7.org/fhir/R6/clinicalassessment.html): When the assessment was documented
 * [Composition](http://hl7.org/fhir/R6/composition.html): Composition editing time
 * [Consent](http://hl7.org/fhir/R6/consent.html): When consent was agreed to
 * [DiagnosticReport](http://hl7.org/fhir/R6/diagnosticreport.html): The clinically relevant time of the report
@@ -855,6 +833,7 @@
 * [ChargeItem](http://hl7.org/fhir/R6/chargeitem.html): Business Identifier for item
 * [Claim](http://hl7.org/fhir/R6/claim.html): The primary identifier of the financial resource
 * [ClaimResponse](http://hl7.org/fhir/R6/claimresponse.html): The identity of the ClaimResponse
+* [ClinicalAssessment](http://hl7.org/fhir/R6/clinicalassessment.html): Business identifier
 * [Communication](http://hl7.org/fhir/R6/communication.html): Unique identifier
 * [CommunicationRequest](http://hl7.org/fhir/R6/communicationrequest.html): Unique identifier
 * [Composition](http://hl7.org/fhir/R6/composition.html): Version-independent identifier for the Composition
@@ -934,6 +913,7 @@
 * [ChargeItem](http://hl7.org/fhir/R6/chargeitem.html): Individual service was done for/to
 * [Claim](http://hl7.org/fhir/R6/claim.html): Patient receiving the products or services
 * [ClaimResponse](http://hl7.org/fhir/R6/claimresponse.html): The subject of care
+* [ClinicalAssessment](http://hl7.org/fhir/R6/clinicalassessment.html): Patient assessed
 * [Communication](http://hl7.org/fhir/R6/communication.html): Focus of message
 * [CommunicationRequest](http://hl7.org/fhir/R6/communicationrequest.html): Focus of message
 * [Composition](http://hl7.org/fhir/R6/composition.html): Who and/or what the composition is about

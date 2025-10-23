@@ -7,36 +7,7 @@
         <h3>Urgent Item Checklist</h3>
                 <ul>
             <li>Confirm workgroup disposition vote has been recorded and sent to FMG!</li>
-            <li>ValueSet: <code>event-status</code> (EventStatus) bound to element <code>NutritionIntake.status</code> (<code>Required</code>) has status <code>Draft</code></li>
-            <li>ValueSet: <code>event-status</code> (EventStatus) bound to element <code>NutritionIntake.status</code> (<code>Required</code>) has standard status <code>trial-use</code></li>
-            <li>CodeSystem: <code>event-status</code> (EventStatus) referenced by ValueSet <code>event-status</code> bound to element <code>NutritionIntake.status</code> (<code>Required</code>) has status <code>Draft</code></li>
-            <li>CodeSystem: <code>event-status</code> (EventStatus) referenced by ValueSet <code>event-status</code> bound to element <code>NutritionIntake.status</code> (<code>Required</code>) has standard status <code>trial-use</code></li>
-            <li>ValueSet: <code>nutritionintake-status-reason</code> (NutritionIntakeStatusReason) bound to element <code>NutritionIntake.statusReason</code> (<code>Example</code>) has status <code>Draft</code></li>
-            <li>ValueSet: <code>diet-type</code> (DietCodes) bound to element <code>NutritionIntake.code</code> (<code>Preferred</code>) has status <code>Draft</code></li>
-            <li>ValueSet: <code>food-type</code> (FoodTypeCodes) bound to element <code>NutritionIntake.nutritionItem.type</code> (<code>Example</code>) has status <code>Draft</code></li>
-            <li>ValueSet: <code>edible-substance-type</code> (TypesOfEdibleSubstances) bound to element <code>NutritionIntake.nutritionItem.nutritionProduct</code> (<code>Preferred</code>) has status <code>Draft</code></li>
-            <li>ValueSet: <code>nutrient-code</code> (NutrientCodes) bound to element <code>NutritionIntake.nutritionItem.consumedItem.totalIntake.nutrient</code> (<code>Example</code>) has status <code>Draft</code></li>
-            <li>ValueSet: <code>not-consumed-reason</code> (ReasonsFoodItemNotConsumed) bound to element <code>NutritionIntake.nutritionItem.notConsumedItem.reason</code> (<code>Example</code>) has status <code>Draft</code></li>
-            <li>ValueSet: <code>performer-role</code> (ProcedurePerformerRoleCodes) bound to element <code>NutritionIntake.performer.function</code> (<code>Example</code>) has status <code>Draft</code></li>
-            <li>ValueSet: <code>condition-code</code> (ConditionProblemDiagnosisCodes) bound to element <code>NutritionIntake.reason</code> (<code>Example</code>) has status <code>Draft</code></li>
-            <li>Search Parameter: <code>NutritionIntake-nutrition</code> (nutrition) has status <code>Draft</code></li>
-            <li>Search Parameter: <code>NutritionIntake-source</code> (source) has status <code>Draft</code></li>
-            <li>Search Parameter: <code>NutritionIntake-status</code> (status) has status <code>Draft</code></li>
-            <li>Search Parameter: <code>NutritionIntake-subject</code> (subject) has status <code>Draft</code></li>
-            <li>Search Parameter: <code>clinical-code</code> (code) has status <code>Draft</code></li>
-            <li>Search Parameter: <code>clinical-date</code> (date) has status <code>Draft</code></li>
-            <li>Search Parameter: <code>clinical-encounter</code> (encounter) has status <code>Draft</code></li>
-            <li>Search Parameter: <code>clinical-identifier</code> (identifier) has status <code>Draft</code></li>
-            <li>Search Parameter: <code>clinical-patient</code> (patient) has status <code>Draft</code></li>
-            <li>Search Parameter: <code>NutritionIntake-nutrition</code> (nutrition) has standards status <code>trial-use</code></li>
-            <li>Search Parameter: <code>NutritionIntake-source</code> (source) has standards status <code>trial-use</code></li>
-            <li>Search Parameter: <code>NutritionIntake-status</code> (status) has standards status <code>trial-use</code></li>
-            <li>Search Parameter: <code>NutritionIntake-subject</code> (subject) has standards status <code>trial-use</code></li>
-            <li>Search Parameter: <code>clinical-code</code> (code) has standards status <code>trial-use</code></li>
-            <li>Search Parameter: <code>clinical-date</code> (date) has standards status <code>trial-use</code></li>
-            <li>Search Parameter: <code>clinical-encounter</code> (encounter) has standards status <code>trial-use</code></li>
-            <li>Search Parameter: <code>clinical-identifier</code> (identifier) has standards status <code>trial-use</code></li>
-            <li>Search Parameter: <code>clinical-patient</code> (patient) has standards status <code>trial-use</code></li>
+            <li>CodeSystem: <code>nutritionintake-status-reason</code> (NutritionIntakeStatusReason) referenced by ValueSet <code>nutritionintake-status-reason</code> bound to element <code>NutritionIntake.statusReason</code> is never bound to a <code>code</code>-type element. Should it move to THO?</li>
         </ul>
 
 
@@ -888,6 +859,7 @@
 * [AuditEvent](http://hl7.org/fhir/R6/auditevent.html): Time when the event was recorded
 * [CarePlan](http://hl7.org/fhir/R6/careplan.html): Time period plan covers
 * [CareTeam](http://hl7.org/fhir/R6/careteam.html): A date within the coverage time period.
+* [ClinicalAssessment](http://hl7.org/fhir/R6/clinicalassessment.html): When the assessment was documented
 * [Composition](http://hl7.org/fhir/R6/composition.html): Composition editing time
 * [Consent](http://hl7.org/fhir/R6/consent.html): When consent was agreed to
 * [DiagnosticReport](http://hl7.org/fhir/R6/diagnosticreport.html): The clinically relevant time of the report
@@ -925,6 +897,7 @@
 * [CarePlan](http://hl7.org/fhir/R6/careplan.html): The Encounter during which this CarePlan was created
 * [ChargeItem](http://hl7.org/fhir/R6/chargeitem.html): Encounter associated with event
 * [Claim](http://hl7.org/fhir/R6/claim.html): Encounters associated with a billed line item
+* [ClinicalAssessment](http://hl7.org/fhir/R6/clinicalassessment.html): The Encounter during which this ClinicalAssessment was created
 * [Communication](http://hl7.org/fhir/R6/communication.html): The Encounter during which this Communication was created
 * [CommunicationRequest](http://hl7.org/fhir/R6/communicationrequest.html): The Encounter during which this CommunicationRequest was created
 * [Composition](http://hl7.org/fhir/R6/composition.html): Context of the Composition
@@ -976,6 +949,7 @@
 * [ChargeItem](http://hl7.org/fhir/R6/chargeitem.html): Business Identifier for item
 * [Claim](http://hl7.org/fhir/R6/claim.html): The primary identifier of the financial resource
 * [ClaimResponse](http://hl7.org/fhir/R6/claimresponse.html): The identity of the ClaimResponse
+* [ClinicalAssessment](http://hl7.org/fhir/R6/clinicalassessment.html): Business identifier
 * [Communication](http://hl7.org/fhir/R6/communication.html): Unique identifier
 * [CommunicationRequest](http://hl7.org/fhir/R6/communicationrequest.html): Unique identifier
 * [Composition](http://hl7.org/fhir/R6/composition.html): Version-independent identifier for the Composition
@@ -1055,6 +1029,7 @@
 * [ChargeItem](http://hl7.org/fhir/R6/chargeitem.html): Individual service was done for/to
 * [Claim](http://hl7.org/fhir/R6/claim.html): Patient receiving the products or services
 * [ClaimResponse](http://hl7.org/fhir/R6/claimresponse.html): The subject of care
+* [ClinicalAssessment](http://hl7.org/fhir/R6/clinicalassessment.html): Patient assessed
 * [Communication](http://hl7.org/fhir/R6/communication.html): Focus of message
 * [CommunicationRequest](http://hl7.org/fhir/R6/communicationrequest.html): Focus of message
 * [Composition](http://hl7.org/fhir/R6/composition.html): Who and/or what the composition is about
